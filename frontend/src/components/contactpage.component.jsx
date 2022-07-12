@@ -1,9 +1,10 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
 
 export default function ContactPage() {
     return (
-      <div className="container-fluid">
-        <h1>the contact page</h1>
-      </div>
+      <Container className="content-container">
+        <h1>The Contact Page</h1>
+      </Container>
     );
 }

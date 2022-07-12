@@ -1,12 +1,18 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+
+import MainBanner from "./mainbanner.component";
+import MissionStatement from "./missionstatement.component";
+import Strengths from "./strengths.component";
+import Infographic from './infographic.component';
 
 export default function SplashPage() {
-    return (
-      <div className="container-fluid">
-        <h1>Flatiron Energy Main Banner goes here</h1>
-        <h2>Mission Statement goes here</h2>
-        <h3>Carousel of Strengths goes here</h3>
-        <h4>What we Do plus infographic goes here</h4>
-      </div>
-    );
+  return (
+    <Container className="content-container">
+      <MainBanner />
+      <MissionStatement />
+      <Strengths />
+      <Infographic />
+    </Container>
+  );
 }

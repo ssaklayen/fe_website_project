@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import components here
 import NavBar from "./components/navbar.component";
@@ -13,11 +13,7 @@ import ContactPage from "./components/contactpage.component";
 function App() {
   return (
     <Router>
-      <header>
         <NavBar />
-      </header>
-
-      <div className="container-fluid">
         <Routes>
           <Route path="/" element={<SplashPage />} exact />
           <Route path="/energystorage" element={<EnergyStoragePage />} />
@@ -25,11 +21,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-      </div>
-
-      <footer>
         <FooterBar />
-      </footer>
     </Router>
   );
 }

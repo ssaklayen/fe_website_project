@@ -1,9 +1,10 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 export default function AboutUsPage() {
     return (
-      <div className="container-fluid">
+      <Container className="content-container">
         <h1>About Us</h1>
-      </div>
+      </Container>
     );
 }
