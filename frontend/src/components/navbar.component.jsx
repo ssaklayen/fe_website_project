@@ -6,7 +6,13 @@ import bcorplogo from "../images/bcorplogo.png";
 
 export default function NavBar() {
   return (
-    <Navbar sticky="top" collapseOnSelect bg="light" expand="lg" className="navbarCustom">
+    <Navbar
+      sticky="top"
+      collapseOnSelect
+      bg="light"
+      expand="lg"
+      className="navbarCustom"
+    >
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} width="158" height="98" alt="Flatiron Energy" />
