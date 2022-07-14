@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function Strengths() {
     return (
-        <Container className="pt-5">
+        <Container className="pt-5 strengthsCustom">
             <Row>
                 <Col className="p-0">
                     <h4>Experienced</h4>

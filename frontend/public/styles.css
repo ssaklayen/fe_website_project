@@ -86,6 +86,13 @@ body {
   font-weight: 700;
 }
 
+/* Strengths Customs */
+
+.strengthsCustom h4 {
+  color: #004359;
+  font-weight: 700;
+}
+
 /* Infographic Customs */
 
 .infoCustom {
