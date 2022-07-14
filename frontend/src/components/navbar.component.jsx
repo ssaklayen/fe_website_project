@@ -19,7 +19,7 @@ export default function NavBar() {
         </Navbar.Brand>
         <Nav className="me-auto">
           <a href="https://www.bcorporation.net/en-us/certification">
-            <img src={bcorplogo} width="75%" alt="Certified B Corporation" />
+            <img src={bcorplogo} className="mt-5" width="15%" alt="Certified B Corporation" />
           </a>
         </Nav>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -35,10 +35,10 @@ export default function NavBar() {
               to="/energystorage"
               className="nav-link navItemPad customNavItem"
             >
-              Why Energy Storage
+              Energy Storage
             </Link>
             <NavDropdown
-              title={"About Us"}
+              title={"About"}
               id="fe-nav-dropdown"
               className="navItemPad"
             >
@@ -54,13 +54,13 @@ export default function NavBar() {
               {/* <Dropdown.Divider />
               <Link to="/contact" className="dropdown-item">Contact Us</Link> */}
             </NavDropdown>
-            {/* <Link to="/contact" className="nav-link">Contact Us</Link> */}
+            <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
           </Nav>
-          <Nav className="ms-auto">
+          {/* <Nav className="ms-auto">
             <Link to="/contact" className="nav-link customNavItem">
               Contact Us
             </Link>
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

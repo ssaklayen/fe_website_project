@@ -1,6 +1,10 @@
 body {
     background-color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body h1, h2, h4, h5 {
+    font-family: 'Montserrat', sans-serif
   }
 
 .content-container {
@@ -39,10 +43,6 @@ body {
   text-shadow: .5px .5px 2px #3e9a68;
 }
 
-/* a#fe-nav-dropdown.dropdown-toggle.nav-link {
-  color: #004359 !important;
-} */
-
 /* Main Banner Customs */
 
 .mainBannerWrapper {
@@ -78,11 +78,11 @@ body {
 /* Mission Statement */
 
 .msWrapper {
-  text-align: center;
+  text-align: left;
 }
 
 .msCustom {
-  color: #0b8040;
+  color: #0B8040;
   font-weight: 700;
 }
 
@@ -131,16 +131,56 @@ body {
 
 /* Footer Customs */
 .footerCustom {
-  background-color: #f8f9fa;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 63px;
-  box-shadow: 5px -5px 5px lightgrey; 
+  color: #ffffff;
+  background-color: #1b3138;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 63px; 
   position: relative;
   left: 0;
   bottom: 0;
 }
 
+.footerCustom h5 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.footerCustom p {
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.footerCustom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.verticalCenterLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.symbolCustom {
+  margin: auto;
+}
+.symbolCustom img {
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
 .fLeftImage {
   text-align: center;
   vertical-align: top;
@@ -152,4 +192,4 @@ body {
   text-align: center;
   display: inline-block;
   width: 50%;
-}
+} */

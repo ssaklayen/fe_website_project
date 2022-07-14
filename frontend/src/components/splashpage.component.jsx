@@ -1,6 +1,5 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-
 import MainBanner from "./mainbanner.component";
 import MissionStatement from "./missionstatement.component";
 import Strengths from "./strengths.component";

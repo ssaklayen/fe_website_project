@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 
-import batteryArray from "../images/batteryarray.png";
+import batteryArray from "../images/bannerImage.png";
 
 export default function Infographic() {
   return (
-    <Container className="mt-5 infoCustom">
+    <Container className="pt-0 mt-5 infoCustom">
 
       {/* Image */}
       <div className="w-50 infoCustomImage">
@@ -14,7 +14,7 @@ export default function Infographic() {
 
       {/* Text */}
       <div className="w-50 d-inline-block infoCustomText">
-        <h1>Leading The Industry In</h1>
+        <h1>Leading the industry in</h1>
         <div className="infoListWrapper">
           <ul>
             <li>Greenfield Development</li>
