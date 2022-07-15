@@ -1,11 +1,14 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-
-import batteryArray from "../images/bannerImage.png";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import batteryArray from "../images/urbanImage.png";
 
 export default function Infographic() {
   return (
-    <Container className="pt-0 mt-5 infoCustom">
+
+    // Infographic Desktop
+    <Container className="pt-0 infoCustom" id="infographicDesktop">
 
       {/* Image */}
       <div className="w-50 infoCustomImage">
@@ -14,15 +17,15 @@ export default function Infographic() {
 
       {/* Text */}
       <div className="w-50 d-inline-block infoCustomText">
-        <h1>Leading the industry in</h1>
+        <h1>What We Do</h1>
         <div className="infoListWrapper">
           <ul>
+            <li>Land Acquisition</li>
             <li>Greenfield Development</li>
-            <li>Property Acquisition</li>
-            <li>Debt and Tax Equity Financing</li>
-            <li>Procurement</li>
-            <li>Construction Management</li>
-            <li>Asset Management</li>
+            <li>Acquisition</li>
+            <li>Commercial Structuring</li>
+            <li>Construction & Procurement</li>
+            <li>Operation & Bidding</li>
           </ul>
         </div>
       </div>

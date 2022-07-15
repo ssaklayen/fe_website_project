@@ -1,14 +1,17 @@
 body {
-    background-color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-  }
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
 
-  body h1, h2, h4, h5 {
-    font-family: 'Montserrat', sans-serif
-  }
+body h1,
+h2,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
 
 .content-container {
-  min-height: calc(100vh - 233px);
+  min-height: calc(100vh - 614px);
 }
 
 /* Navbar Customs */
@@ -29,7 +32,7 @@ body {
 
 .customNavItem:hover {
   color: #3e9a68 !important;
-  text-shadow: .5px .5px 2px #3e9a68;
+  text-shadow: 0.5px 0.5px 2px #3e9a68;
 }
 
 #fe-nav-dropdown {
@@ -40,7 +43,7 @@ body {
 
 #fe-nav-dropdown:hover {
   color: #3e9a68 !important;
-  text-shadow: .5px .5px 2px #3e9a68;
+  text-shadow: 0.5px 0.5px 2px #3e9a68;
 }
 
 /* Main Banner Customs */
@@ -51,13 +54,14 @@ body {
 }
 
 .bannerText {
-  color: #FFFFFF;
+  color: #ffffff;
   height: 400px;
-  background: radial-gradient(circle at top left, #40666A, #1B3138);
+  background: radial-gradient(circle at top left, #40666a, #1b3138);
   vertical-align: top;
 }
 
 .bannerText h1 {
+  text-shadow: #ffffff 1px 0 10px;
   margin-top: 100px;
   margin-left: 42px;
 }
@@ -75,6 +79,47 @@ body {
   display: inline-block;
 }
 
+.bannerMobile {
+  height: 400px;
+  width: 100%;
+  max-width: 648px;
+  vertical-align: top;
+  /* background-image: url(./images/fe_storage.png); */
+  /* background: #000000; */
+  overflow: hidden;
+  background: -webkit-radial-gradient(
+      circle at top left,
+      rgba(64, 102, 106, 0.3),
+      rgba(27, 49, 56, 0.3)
+    ),
+    url(./images/fe_storage.png);
+  background: radial-gradient(
+      circle at top left,
+      rgba(64, 102, 106, 0.45),
+      rgba(27, 49, 56, 0.45)
+    ),
+    url(./images/fe_storage.png); /* The least supported option. */
+  z-index: -1;
+}
+
+.bannerMobile img {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.bannerMobile h1 {
+  color: #ffffff;
+  text-shadow: #ffffff 1px 0 10px;
+  margin-top: 150px;
+  margin-left: 42px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerMobile h1 {
+    margin-left: 21px;
+  }
+}
 /* Mission Statement */
 
 .msWrapper {
@@ -82,7 +127,7 @@ body {
 }
 
 .msCustom {
-  color: #0B8040;
+  color: #0b8040;
   font-weight: 700;
 }
 
@@ -98,14 +143,15 @@ body {
 .infoCustom {
   width: 100%;
   height: 500px;
-  background-color: #DBEBE2;
+  margin-top: 112px;
+  background-color: #dbebe2;
 }
 
 .infoCustom h1 {
   margin-top: 40px;
   margin-left: 30px;
   font-weight: 700;
-  color: #0B8040;
+  color: #0b8040;
 }
 
 .infoCustomText {
@@ -142,7 +188,7 @@ body {
   background-color: #1b3138;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 63px; 
+  margin-top: 126px;
   position: relative;
   left: 0;
   bottom: 0;
@@ -172,31 +218,95 @@ body {
 }
 
 .symbolCustom {
-  margin: auto;
+  display: grid;
+  place-items: center;
+  height: auto;
 }
-.symbolCustom img {
-  margin-left: 50px;
-}
 
-
-
-
-
-
-
-
-
-
-/* 
-.fLeftImage {
+.symbolCustom p {
   text-align: center;
-  vertical-align: top;
-  display: inline-block;
-  width: 50%;
 }
 
-.fRightImage {
-  text-align: center;
-  display: inline-block;
-  width: 50%;
-} */
+/* MEDIA */
+
+@media only screen and (max-width: 1199px) {
+  #mainBannerDesktop {
+    display: none;
+  }
+
+  #mainBannerMobile {
+    display: visible;
+  }
+
+  #missionStatementDesktop {
+    display: none;
+  }
+
+  #missionStatementMobile {
+    display: visible;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #mainBannerDesktop {
+    display: visible;
+  }
+
+  #mainBannerMobile {
+    display: none;
+  }
+
+  #missionStatementDesktop {
+    display: visible;
+  }
+
+  #missionStatementMobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #strengthsDesktop {
+    display: none;
+  }
+
+  #strengthsMobile {
+    display: visible;
+  }
+  
+  #infographicDesktop {
+    display: none;
+  }
+
+  #footerDesktop {
+    display: none;
+  }
+
+  #footerMobile {
+    display: visible;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  #strengthsDesktop {
+    display: visible;
+  }
+
+  #strengthsMobile {
+    display: none;
+  }
+
+  #infographicDesktop {
+    display: visible;
+  }
+
+  #footerDesktop {
+    display: visible;
+  }
+
+  #footerMobile {
+    display: none;
+  }
+
+}

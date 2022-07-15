@@ -2,13 +2,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import bannerImage from "../images/mountainStorage.png";
+import bannerImage from "../images/fe_storage.png";
+
 export default function MainBanner() {
   return (
     <Container className="mt-5 mainBannerWrapper">
-      <Row>
+      <Row className="row-cols-auto" id="mainBannerDesktop">
         {/* Banner Text */}
-        <Col className="g-0">
+        <Col className="g-0 col-lg-6 col-md-12">
           <div className="d-inline-block bannerText">
             <h1>Building the clean infrastructure for our future</h1>
             <p>
@@ -20,14 +21,21 @@ export default function MainBanner() {
         </Col>
 
         {/* Banner Image */}
-        <Col className="g-0">
+        <Col className="g-0 col-6">
           <div className="bannerImage">
             <img src={bannerImage} alt="Mountain Energy Storage" />
           </div>
         </Col>
       </Row>
 
-      {/* Banner Image */}
+      {/* Banner Mobile */}
+      <Row id="mainBannerMobile">
+        <Col className="g-0">
+          <div className="d-inline-block bannerMobile">
+            <h1>Building the clean infrastructure for our future</h1>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }
