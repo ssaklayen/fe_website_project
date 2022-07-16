@@ -56,7 +56,7 @@ export default function FooterBar() {
           {/* B Corp Logo Block  */}
           <Col className="verticalCenterLogo">
             <a href="https://www.bcorporation.net/en-us/certification">
-              <img src={bcorpwhite} width="250rem" alt="B Corporation Certified" />
+              <img src={bcorpwhite} width="190rem" alt="B Corporation Certified" />
             </a>
           </Col>
 
