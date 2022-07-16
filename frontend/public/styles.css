@@ -111,7 +111,8 @@ h5 {
   color: #ffffff;
   text-shadow: #ffffff 1px 0 10px;
   margin-top: 150px;
-  margin-left: 42px;
+  margin-left: 40px;
+  margin-right: 40px;
   z-index: 1;
 }
 
@@ -310,7 +311,9 @@ h5 {
 @media only screen and (max-width: 767px) {
 
   .bannerMobile h1 {
-    margin-left: 21px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
   }
 
   .bcorpLinkMobile {
@@ -319,6 +322,10 @@ h5 {
 
   .symbolCustom p {
     font-size: .8rem;
+  }
+
+  .msWrapper h2 {
+    font-size: 1.3rem;
   }
 }
 

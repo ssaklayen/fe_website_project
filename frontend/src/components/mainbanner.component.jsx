@@ -31,7 +31,7 @@ export default function MainBanner() {
       {/* Banner Mobile */}
       <Row id="mainBannerMobile">
         <Col className="g-0">
-          <div className="d-inline-block bannerMobile">
+          <div className="bannerMobile">
             <h1>Building the clean infrastructure for our future</h1>
           </div>
         </Col>
