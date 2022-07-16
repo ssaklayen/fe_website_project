@@ -17,7 +17,7 @@ export default function NavBar() {
         <Navbar.Brand href="/">
           <img src={logo} width="158" height="98" alt="Flatiron Energy" />
         </Navbar.Brand>
-        <Nav className="me-auto">
+        <Nav className="me-auto bcorpLinkMobile">
           <a href="https://www.bcorporation.net/en-us/certification">
             <img src={bcorplogo} className="mt-5" width="15%" alt="Certified B Corporation" />
           </a>

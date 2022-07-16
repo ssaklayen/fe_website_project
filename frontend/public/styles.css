@@ -115,11 +115,6 @@ h5 {
   z-index: 1;
 }
 
-@media only screen and (max-width: 768px) {
-  .bannerMobile h1 {
-    margin-left: 21px;
-  }
-}
 /* Mission Statement */
 
 .msWrapper {
@@ -225,6 +220,7 @@ h5 {
 
 .symbolCustom p {
   text-align: center;
+  font-size: 1rem;
 }
 
 /* MEDIA */
@@ -309,4 +305,15 @@ h5 {
     display: none;
   }
 
+}
+
+@media only screen and (max-width: 767px) {
+
+  .bannerMobile h1 {
+    margin-left: 21px;
+  }
+
+  .bcorpLinkMobile {
+    display: none;
+  }
 }
