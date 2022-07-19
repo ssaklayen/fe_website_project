@@ -6,31 +6,29 @@ import Carousel from "react-bootstrap/Carousel";
 
 export default function Strengths() {
   return (
-    <Container className="pt-5 strengthsCustom">
+    <Container className="pt-5 pb-4 strengthsCustom">
       {/* Strengths Desktop */}
       <Row id="strengthsDesktop">
         <Col className="p-0">
           <h4>Experienced</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad
+            Flatiron Energy is lead by a team of energy storage veterans with a
+            long track record of delivering operational and profitable storage
+            projects.
           </p>
         </Col>
         <Col className="p-0">
           <h4>Innovative</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad
+            We continue to seek new ideas and to implement pioneering
+            development strategies and first-of-a-kind products.
           </p>
         </Col>
         <Col className="p-0">
           <h4>Passionate</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad
+            We are on a mission to build the energy storage infrastructure
+            needed to enable the clean energy transition.
           </p>
         </Col>
       </Row>
@@ -42,25 +40,23 @@ export default function Strengths() {
             <Carousel.Item interval={5000}>
               <h4>Experienced</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad
+                Flatiron Energy is lead by a team of energy storage veterans
+                with a long track record of delivering operational and
+                profitable storage projects.
               </p>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <h4>Innovative</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad
+                We continue to seek new ideas and to implement pioneering
+                development strategies and first-of-a-kind products.
               </p>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <h4>Passionate</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad
+                We are on a mission to build the energy storage infrastructure
+                needed to enable the clean energy transition.
               </p>
             </Carousel.Item>
           </Carousel>

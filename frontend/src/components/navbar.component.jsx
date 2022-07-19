@@ -18,9 +18,9 @@ export default function NavBar() {
           <img src={logo} width="158" height="98" alt="Flatiron Energy" />
         </Navbar.Brand>
         <Nav className="me-auto bcorpLinkMobile">
-          <a href="https://www.bcorporation.net/en-us/certification">
+          {/* <a href="https://www.bcorporation.net/en-us/certification"> */}
             <img src={bcorplogo} className="mt-5" width="15%" alt="Certified B Corporation" />
-          </a>
+          {/* </a> */}
         </Nav>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

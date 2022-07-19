@@ -10,7 +10,9 @@ export default function SplashPage() {
     <Container className="content-container">
       <MainBanner />
       <MissionStatement />
+      <hr />
       <Strengths />
+      <hr />
       <Infographic />
     </Container>
   );
