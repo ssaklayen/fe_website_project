@@ -10,31 +10,41 @@ import bcorpwhite from "../images/bcorpwhite.png";
 export default function FooterBar() {
   return (
     <footer className="footerCustom">
+      <div className="footerImage"></div>
       <Container>
-
         {/* Footer Desktop */}
         <Row id="footerDesktop">
           {/* Company Block */}
           <Col>
-            <h5>Company</h5>
-            <Link to="/landowners">
-              <p>Landowners</p>
-            </Link>
-            <Link to="/energystorage">
-              <p>Energy Storage</p>
-            </Link>
-            <Link to="/aboutus">
-              <p>About Us</p>
-            </Link>
+            <div className="w-50 mx-auto">
+              <h5>Company</h5>
+              <Link to="/landowners">
+                <p>Landowners</p>
+              </Link>
+              <Link to="/energystorage">
+                <p>Energy Storage</p>
+              </Link>
+              <Link to="/aboutus">
+                <p>About Us</p>
+              </Link>
+            </div>
           </Col>
 
           {/* Contact Block */}
           <Col>
-            <h5>Contact</h5>
-            <p>2101 Pearl St<br />Boulder, CO 80302<br />(630) 697-9270</p>
-            <Link to="/contact">
-              <p>Contact Us</p>
-            </Link>
+            <div className="w-50 mx-auto">
+              <h5>Contact</h5>
+              <p>
+                2101 Pearl St
+                <br />
+                Boulder, CO 80302
+                <br />
+                (630) 697-9270
+              </p>
+              <Link to="/contact">
+                <p>Contact Us</p>
+              </Link>
+            </div>
           </Col>
 
           {/* B Corp Logo Block  */}
@@ -47,7 +57,11 @@ export default function FooterBar() {
           {/* Fe Logo & Copyright Block */}
           <Col className="symbolCustom">
             <img src={symbol} width="200" alt="Flatiron Energy Symbol" />
-            <p>Copyright © 2022<br />Flatiron Energy LLC</p>
+            <p>
+              Copyright © 2022
+              <br />
+              Flatiron Energy LLC
+            </p>
           </Col>
         </Row>
 
@@ -56,17 +70,24 @@ export default function FooterBar() {
           {/* B Corp Logo Block  */}
           <Col className="verticalCenterLogo">
             <a href="https://www.bcorporation.net/en-us/certification">
-              <img src={bcorpwhite} width="190rem" alt="B Corporation Certified" />
+              <img
+                src={bcorpwhite}
+                width="190rem"
+                alt="B Corporation Certified"
+              />
             </a>
           </Col>
 
           {/* Fe Logo & Copyright Block */}
           <Col className="symbolCustom">
             <img src={symbol} width="120rem" alt="Flatiron Energy Symbol" />
-            <p>Copyright © 2022<br />Flatiron Energy LLC</p>
+            <p>
+              Copyright © 2022
+              <br />
+              Flatiron Energy LLC
+            </p>
           </Col>
         </Row>
-
       </Container>
     </footer>
   );

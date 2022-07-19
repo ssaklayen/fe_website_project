@@ -51,16 +51,10 @@ export default function NavBar() {
               <Link to="/aboutus#partners" className="dropdown-item">
                 Our Partners
               </Link>
-              {/* <Dropdown.Divider />
-              <Link to="/contact" className="dropdown-item">Contact Us</Link> */}
             </NavDropdown>
             <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
           </Nav>
-          {/* <Nav className="ms-auto">
-            <Link to="/contact" className="nav-link customNavItem">
-              Contact Us
-            </Link>
-          </Nav> */}
+         
         </Navbar.Collapse>
       </Container>
     </Navbar>

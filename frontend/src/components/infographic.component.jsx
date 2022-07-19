@@ -2,7 +2,11 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Carousel from "react-bootstrap/Carousel";
+
 import urbanImage from "../images/urbanImage.jpg";
+import facilityImage from "../images/facility.png";
+import powerLinesImage from "../images/power_lines.png";
 
 export default function Infographic() {
   const [hText, setHText] = React.useState("");
@@ -56,7 +60,7 @@ export default function Infographic() {
         setPText("[Language TBD]");
         setDisplay("block");
         break;
-        
+
       default:
         setDisplay("none");
     }
@@ -124,15 +128,29 @@ export default function Infographic() {
         </Col>
 
         {/* Image */}
-        <Col>
-          <div className="infoCustomImage">
-            <img src={urbanImage} alt="Urban Energy Network" />
-            <div className="infoCustomImageText" style={{ display: display }}>
-              <h3>{hText}</h3>
-              <p>{pText}</p>
-            </div>
+        <div className="infoCustomCarousel">
+          <Carousel controls={false} indicators={false} fade={true}>
+            <Carousel.Item>
+              <div className="infoCustomImage">
+                <img src={urbanImage} alt="Urban Energy Network" />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="infoCustomImage">
+                <img src={facilityImage} alt="Urban Energy Network" />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="infoCustomImage">
+                <img src={powerLinesImage} alt="Urban Energy Network" />
+              </div>
+            </Carousel.Item>
+          </Carousel>
+          <div className="infoCustomImageText" style={{ display: display }}>
+            <h3>{hText}</h3>
+            <p>{pText}</p>
           </div>
-        </Col>
+        </div>
       </Row>
     </Container>
   );

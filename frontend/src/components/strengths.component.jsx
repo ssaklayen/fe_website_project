@@ -6,7 +6,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 export default function Strengths() {
   return (
-    <Container className="pt-5 pb-4 strengthsCustom">
+    <Container className="pt-5 pb-5 strengthsCustom">
       {/* Strengths Desktop */}
       <Row id="strengthsDesktop">
         <Col className="p-0">
