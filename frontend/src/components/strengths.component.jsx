@@ -10,26 +10,32 @@ export default function Strengths() {
       {/* Strengths Desktop */}
       <Row id="strengthsDesktop">
         <Col className="p-0">
-          <h4>Experienced</h4>
-          <p>
-            Flatiron Energy is lead by a team of energy storage veterans with a
-            long track record of delivering operational and profitable storage
-            projects.
-          </p>
+          <div className="strengthWrapper">
+            <h4>Experienced</h4>
+            <p>
+              Flatiron Energy is led by a team of energy storage veterans with a
+              long track record of delivering operational and profitable
+              projects.
+            </p>
+          </div>
         </Col>
         <Col className="p-0">
-          <h4>Innovative</h4>
-          <p>
-            We continue to seek new ideas and to implement pioneering
-            development strategies and first-of-a-kind products.
-          </p>
+          <div className="strengthWrapper">
+            <h4>Innovative</h4>
+            <p>
+              We continue to seek new ideas and to implement pioneering
+              development strategies and first-of-a-kind products.
+            </p>
+          </div>
         </Col>
         <Col className="p-0">
-          <h4>Passionate</h4>
-          <p>
-            We are on a mission to build the energy storage infrastructure
-            needed to enable the clean energy transition.
-          </p>
+          <div className="strengthWrapper">
+            <h4>Passionate</h4>
+            <p>
+              We are on a mission to build the energy storage infrastructure
+              needed to enable the clean energy transition.
+            </p>
+          </div>
         </Col>
       </Row>
 

@@ -65,10 +65,9 @@ hr {
 }
 
 .bannerText h1 {
-  /* text-shadow: #ffffff 1px 0 10px; */
-  margin-top: 100px;
+  margin-top: 90px;
   margin-left: 42px;
-  margin-bottom: 16px;
+  margin-bottom: 70px;
 }
 
 .bannerText p {
@@ -123,6 +122,7 @@ hr {
 
 .msWrapper h2 {
   line-height: 2.6rem;
+  text-align: center;
 }
 
 .msCustom {
@@ -137,36 +137,54 @@ hr {
   font-weight: 700;
 }
 
+.strengthsCustom p {
+  margin-left: 2px;
+  margin-bottom: 0;
+}
+
+.strengthWrapper {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Infographic Customs */
 
 .infoCustom {
   width: 100%;
-  height: 660px;
+  height: 600px;
   margin-top: 60px;
   background-color: #dbebe2;
 }
 
-.infoCustom h1 {
-  margin-top: 40px;
-  font-weight: 700;
+.infoCustomText {
+  vertical-align: top;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.infoCustomText h1 {
+  font-weight: 600;
   font-size: 4rem;
   color: #0b8040;
 }
 
-.infoCustomText {
-  vertical-align: top;
-  margin-top: 80px;
-  margin-left: 60px;
-}
-
 .infoListWrapper {
-  margin-left: 25px;
+  margin-left: 28px;
   font-size: 1.3rem;
   color: #004359;
 }
 
 .infoListWrapper li {
-  margin-top: 35px;
+  margin-top: 25px;
+}
+
+.infoListWrapper li:first-child {
+  margin-top: 12px;
+}
+
+.infoListWrapper li::marker {
+  font-size: 2rem;
 }
 
 .infoListWrapper li:hover {
@@ -177,11 +195,12 @@ hr {
 .infoCustomImage {
   margin: 120px auto;
   position: relative;
-
+  width: 587px;
 }
 
 .infoCustomImage img {
-  box-shadow: 10px -10px #b3cfc0;
+  box-shadow: 10px -10px #b3cfc0 !important;
+  max-width: 98%;
 }
 
 .infoCustomImageText {
@@ -200,10 +219,10 @@ hr {
   color: #3e9a68;
 }
 
-.infoCustomCarousel {
-  position: absolute;
-  left: 700px;
+.infoCustomCarouselWrapper {
+  position: relative;
 }
+
 /* Footer Customs */
 .footerCustom {
   color: #ffffff;
@@ -274,6 +293,20 @@ hr {
 
 /* MEDIA */
 
+@media only screen and (max-width: 1399px) {
+  .infoCustomImage img {
+    max-width: 95%;
+  }
+
+  .infoCustomText h1 {
+    font-size: 3.5rem;
+  }
+
+  .infoListWrapper {
+    margin-left: 23px;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   #mainBannerDesktop {
     display: none;
@@ -289,6 +322,28 @@ hr {
 
   #missionStatementMobile {
     display: visible;
+  }
+
+
+  .infoCustomText {
+    margin-left: 30px;
+  }
+
+  .infoCustomText h1 {
+    font-size: 2.2rem;
+  }
+
+  .infoListWrapper {
+    margin-left: 6px;
+    font-size: 1.1rem;
+  }
+
+  .infoListWrapper li:first-child {
+    margin-top: 40px;
+  }
+
+  .infoListWrapper li::marker {
+    font-size: 1.3rem;
   }
 }
 

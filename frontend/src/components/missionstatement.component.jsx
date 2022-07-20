@@ -23,13 +23,14 @@ export default function MissionStatement() {
       </div> */}
       <Row id="missionStatementDesktop">
         <Col></Col>
-        <Col className="msWrapper">
+        <Col className="col-10 msWrapper">
           <h2>
-            Energy storage systems that integrate{" "}
-            <span className="msCustom">renewable energy</span> onto the grid,
-            replace fossil fuel plants, and increase grid reliability.
+            <span className="msCustom">Energy storage systems</span>{" "}that
+            integrate renewable energy onto the grid, replace fossil fuel
+            plants, and increase grid reliability.
           </h2>
         </Col>
+        <Col></Col>
       </Row>
 
       {/* Mission Statement Mobile */}

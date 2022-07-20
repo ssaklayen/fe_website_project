@@ -12,10 +12,12 @@ export default function Infographic() {
   const [hText, setHText] = React.useState("");
   const [pText, setPText] = React.useState("");
   const [display, setDisplay] = React.useState("none");
+  const [index, setIndex] = React.useState(0);
 
   function mouseOver(e) {
     switch (e.target.id) {
       case "landAcquisition":
+        setIndex(0);
         setHText("Land Acquisition");
         setPText(
           "We identify and acquire key land positions for energy storage projects via options, long-term leasing, and purchasing."
@@ -24,14 +26,16 @@ export default function Infographic() {
         break;
 
       case "greenfieldDevelopment":
+        setIndex(1);
         setHText("Greenfield Development");
         setPText(
-          "We develop utility-scale standalone energy storage projects. We manage the entire development process from early site analysis and identification through full entitlement and interconnection approval."
+          "We manage the entire development process from early site analysis and identification through full entitlement and interconnection approval."
         );
         setDisplay("block");
         break;
 
       case "projectAcquisition":
+        setIndex(2);
         setHText("Project Acquisition");
         setPText(
           "We also acquire early to mid-stage storage development projects and bring them to operation"
@@ -40,6 +44,7 @@ export default function Infographic() {
         break;
 
       case "commercialStructuring":
+        setIndex(3);
         setHText("Commercial Structuring");
         setPText(
           "We originate project offtake and revenue optimization through innovative power marketing, policy engagement, and partnerships."
@@ -48,6 +53,7 @@ export default function Infographic() {
         break;
 
       case "constructionProcurement":
+        setIndex(4);
         setHText("Construction & Procurement");
         setPText(
           "Our team leverages storage project management expertise and partnerships with market leaders to deliver projects on time and within budget."
@@ -56,6 +62,7 @@ export default function Infographic() {
         break;
 
       case "operationBidding":
+        setIndex(5);
         setHText("Operation & Bidding");
         setPText("[Language TBD]");
         setDisplay("block");
@@ -128,30 +135,78 @@ export default function Infographic() {
         </Col>
 
         {/* Image */}
-        <div className="infoCustomCarousel">
-          <Carousel controls={false} indicators={false} fade={true}>
-            <Carousel.Item>
-              <div className="infoCustomImage">
-                <img src={urbanImage} alt="Urban Energy Network" />
+        <Col>
+          <div className="infoCustomCarouselWrapper">
+            <div>
+              <Carousel activeIndex={index} controls={false} indicators={false} fade={true}>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={urbanImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={facilityImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={powerLinesImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={urbanImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={facilityImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={powerLinesImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+              <div className="infoCustomImageText" style={{ display: display }}>
+                <h3>{hText}</h3>
+                <p>{pText}</p>
               </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="infoCustomImage">
-                <img src={facilityImage} alt="Urban Energy Network" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="infoCustomImage">
-                <img src={powerLinesImage} alt="Urban Energy Network" />
-              </div>
-            </Carousel.Item>
-          </Carousel>
-          <div className="infoCustomImageText" style={{ display: display }}>
-            <h3>{hText}</h3>
-            <p>{pText}</p>
+            </div>
           </div>
-        </div>
+        </Col>
       </Row>
     </Container>
   );
 }
+
+
+{/* <Col>
+          <div className="infoCustomCarouselWrapper">
+            <div className="infoCustomCarousel">
+              <Carousel controls={false} indicators={false} fade={true}>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={urbanImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={facilityImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infoCustomImage">
+                    <img src={powerLinesImage} alt="Urban Energy Network" />
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+              <div className="infoCustomImageText" style={{ display: display }}>
+                <h3>{hText}</h3>
+                <p>{pText}</p>
+              </div>
+            </div>
+          </div>
+        </Col> */}
