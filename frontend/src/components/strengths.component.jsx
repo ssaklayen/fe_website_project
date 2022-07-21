@@ -13,9 +13,8 @@ export default function Strengths() {
           <div className="strengthWrapper">
             <h4>Experienced</h4>
             <p>
-              Flatiron Energy is led by a team of energy storage veterans with a
-              long track record of delivering operational and profitable
-              projects.
+              We are a team of energy storage veterans with a long track record
+              of delivering operational and profitable projects.
             </p>
           </div>
         </Col>

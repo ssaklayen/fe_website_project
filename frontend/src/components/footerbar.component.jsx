@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 // import logo from "../images/fe_logo_420_260.png";
 import symbol from "../images/fe_logo_symbol_297_185.png";
-import bcorpwhite from "../images/bcorpwhite.png";
+import bcorpwhitepending from "../images/bcorpwhitepending.png";
 
 export default function FooterBar() {
   return (
@@ -51,7 +51,7 @@ export default function FooterBar() {
           {/* B Corp Logo Block  */}
           <Col className="verticalCenterLogo">
             <a href="https://www.bcorporation.net/en-us/certification">
-              <img src={bcorpwhite} width="320" alt="B Corporation Certified" />
+              <img src={bcorpwhitepending} width="320" alt="B Corporation Certified" />
             </a>
           </Col>
 
@@ -72,7 +72,7 @@ export default function FooterBar() {
           <Col className="verticalCenterLogo">
             <a href="https://www.bcorporation.net/en-us/certification">
               <img
-                src={bcorpwhite}
+                src={bcorpwhitepending}
                 width="190rem"
                 alt="B Corporation Certified"
               />

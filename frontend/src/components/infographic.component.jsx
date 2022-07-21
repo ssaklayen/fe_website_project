@@ -4,13 +4,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
-import urbanImage from "../images/urbanImage.jpg";
-import facilityImage from "../images/facility.png";
-import powerLinesImage from "../images/power_lines.png";
+import landAcquisitionImg from "../images/land_acquisition.png";
+import greenfieldDevelopmentImg from "../images/greenfield_development.png";
+import projectAcquisitionImg from "../images/project_acquisition.png";
+import commercialStructuringImg from "../images/commercial_structuring.png";
+import constructionProcurementImg from "../images/construction_procurement.png";
+import operationBiddingImg from "../images/operation_bidding.jpg";
 
 export default function Infographic() {
-  const [hText, setHText] = React.useState("");
-  const [pText, setPText] = React.useState("");
+  const [hText, setHText] = React.useState("Land Acquisition");
+  const [pText, setPText] = React.useState("We identify and acquire key land positions for energy storage projects via options, long-term leasing, and purchasing.");
   const [display, setDisplay] = React.useState("none");
   const [index, setIndex] = React.useState(0);
 
@@ -141,36 +144,36 @@ export default function Infographic() {
               <Carousel activeIndex={index} controls={false} indicators={false} fade={true}>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={urbanImage} alt="Urban Energy Network" />
+                    <img src={landAcquisitionImg} alt="Land Acquisition" />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={facilityImage} alt="Urban Energy Network" />
+                    <img src={greenfieldDevelopmentImg} alt="Greenfield Development" />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={powerLinesImage} alt="Urban Energy Network" />
+                    <img src={projectAcquisitionImg} alt="Project Acquisition" />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={urbanImage} alt="Urban Energy Network" />
+                    <img src={commercialStructuringImg} alt="Commercial Structuring" />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={facilityImage} alt="Urban Energy Network" />
+                    <img src={constructionProcurementImg} alt="Construction and Procurement" />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={powerLinesImage} alt="Urban Energy Network" />
+                    <img src={operationBiddingImg} alt="Operation and Bidding" />
                   </div>
                 </Carousel.Item>
               </Carousel>
-              <div className="infoCustomImageText" style={{ display: display }}>
+              <div className="infoCustomImageText">
                 <h3>{hText}</h3>
                 <p>{pText}</p>
               </div>

@@ -67,7 +67,7 @@ hr {
 .bannerText h1 {
   margin-top: 90px;
   margin-left: 42px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   font-size: 2.5rem;
 }
 
@@ -97,13 +97,13 @@ hr {
       rgba(64, 102, 106, 0.3),
       rgba(27, 49, 56, 0.3)
     ),
-    url(./images/fe_storage4.png) center no-repeat;
+    url(./images/fe_storage5.png) center no-repeat;
   background: radial-gradient(
       circle at top left,
       rgba(64, 102, 106, 0.3),
       rgba(27, 49, 56, 0.3)
     ),
-    url(./images/fe_storage4.png) center no-repeat;
+    url(./images/fe_storage5.png) center no-repeat;
 }
 
 .bannerMobile img {
@@ -156,14 +156,14 @@ hr {
 
 .infoCustom {
   width: 100%;
-  height: 600px;
+  height: 640px;
   margin-top: 60px;
   background-color: #dbebe2;
 }
 
 .infoCustomText {
   vertical-align: top;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: 60px;
 }
 
@@ -201,11 +201,11 @@ hr {
 .infoListWrapper li:before {
   content: "";
   position: absolute;
-  left: -24px;
+  left: -25px;
   top: 30px;
-  border-left: 1px solid #004359;
+  border-left: 3px solid #004359;
   height: 60px;
-  width: 1px;
+  width: 2px;
 }
 
 .infoListWrapper li:last-child:before {
@@ -213,7 +213,7 @@ hr {
 }
 
 .infoCustomImage {
-  margin: 120px auto;
+  margin: 60px auto;
   position: relative;
   width: 587px;
 }
@@ -227,10 +227,10 @@ hr {
   position: absolute;
   background-color: white;
   padding: 20px;
-  bottom: 140px;
-  left: -20px;
+  bottom: -55px;
+  left: 55px;
   width: 500px;
-  height: 170px;
+  height: 160px;
   z-index: 1;
 }
 
@@ -329,6 +329,10 @@ hr {
   .bannerText h1 {
     font-size: 2.1rem;
   }
+
+  .infoCustomImageText {
+    left: 30px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -367,17 +371,17 @@ hr {
   }
 
   .infoListWrapper li::marker {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .infoListWrapper li:before {
-    left: -20px;
-    top: 22px;
+    left: -25px;
+    top: 30px;
     height: 60px;
   }
 
   .infoListWrapper li:nth-child(5):before {
-    height: 78px;
+    height: 84px;
   }
 
 }

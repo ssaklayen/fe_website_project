@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import bannerImage from "../images/fe_storage4.png";
+import bannerImage from "../images/fe_storage5.png";
 
 export default function MainBanner() {
   return (
