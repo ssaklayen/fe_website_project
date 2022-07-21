@@ -181,32 +181,3 @@ export default function Infographic() {
     </Container>
   );
 }
-
-
-{/* <Col>
-          <div className="infoCustomCarouselWrapper">
-            <div className="infoCustomCarousel">
-              <Carousel controls={false} indicators={false} fade={true}>
-                <Carousel.Item>
-                  <div className="infoCustomImage">
-                    <img src={urbanImage} alt="Urban Energy Network" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="infoCustomImage">
-                    <img src={facilityImage} alt="Urban Energy Network" />
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="infoCustomImage">
-                    <img src={powerLinesImage} alt="Urban Energy Network" />
-                  </div>
-                </Carousel.Item>
-              </Carousel>
-              <div className="infoCustomImageText" style={{ display: display }}>
-                <h3>{hText}</h3>
-                <p>{pText}</p>
-              </div>
-            </div>
-          </div>
-        </Col> */}

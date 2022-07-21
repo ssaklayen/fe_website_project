@@ -25,7 +25,7 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Link
+            {/* <Link
               to="/landowners"
               className="nav-link navItemPad customNavItem"
             >
@@ -51,7 +51,7 @@ export default function NavBar() {
               <Link to="/aboutus#partners" className="dropdown-item">
                 Our Partners
               </Link>
-            </NavDropdown>
+            </NavDropdown> */}
             <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
           </Nav>
          

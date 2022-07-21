@@ -68,6 +68,7 @@ hr {
   margin-top: 90px;
   margin-left: 42px;
   margin-bottom: 70px;
+  font-size: 2.5rem;
 }
 
 .bannerText p {
@@ -89,33 +90,32 @@ hr {
   max-width: 648px;
   vertical-align: top;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
   background: -webkit-radial-gradient(
       circle at top left,
       rgba(64, 102, 106, 0.3),
       rgba(27, 49, 56, 0.3)
     ),
-    url(./images/fe_storage2.png);
+    url(./images/fe_storage4.png) center no-repeat;
   background: radial-gradient(
       circle at top left,
       rgba(64, 102, 106, 0.3),
       rgba(27, 49, 56, 0.3)
     ),
-    url(./images/fe_storage2.png);
-  z-index: -1;
+    url(./images/fe_storage4.png) center no-repeat;
 }
 
 .bannerMobile img {
   object-fit: cover;
-  z-index: -1;
   max-width: 100%;
 }
 
 .bannerMobile h1 {
   color: #ffffff;
-  margin-top: 200px;
+  margin-top: 125px;
   margin-left: 40px;
   margin-right: 40px;
-  z-index: 1;
 }
 
 /* Mission Statement */
@@ -131,6 +131,10 @@ hr {
 }
 
 /* Strengths Customs */
+
+.strengthsCustom {
+  padding: 24px 12px;
+}
 
 .strengthsCustom h4 {
   color: #004359;
@@ -176,7 +180,9 @@ hr {
 }
 
 .infoListWrapper li {
+  position: relative;
   margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .infoListWrapper li:first-child {
@@ -190,6 +196,20 @@ hr {
 .infoListWrapper li:hover {
   color: #3e9a68;
   cursor: default;
+}
+
+.infoListWrapper li:before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 30px;
+  border-left: 1px solid #004359;
+  height: 60px;
+  width: 1px;
+}
+
+.infoListWrapper li:last-child:before {
+  height: 0px;
 }
 
 .infoCustomImage {
@@ -305,6 +325,10 @@ hr {
   .infoListWrapper {
     margin-left: 23px;
   }
+
+  .bannerText h1 {
+    font-size: 2.1rem;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -343,8 +367,19 @@ hr {
   }
 
   .infoListWrapper li::marker {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
+
+  .infoListWrapper li:before {
+    left: -20px;
+    top: 22px;
+    height: 60px;
+  }
+
+  .infoListWrapper li:nth-child(5):before {
+    height: 78px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -385,6 +420,22 @@ hr {
   #footerMobile {
     display: visible;
   }
+
+  .strengthsCustom {
+    padding: 24px 12px;
+  }
+
+  .verticalCenterLogo {
+    margin-top: 25px;
+  }
+
+  .symbolCustom {
+    margin-top: 25px;
+  }
+
+  .footerCustom {
+    padding-bottom: 25px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -413,7 +464,9 @@ hr {
   .bannerMobile h1 {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 125px;
     font-size: 1.5rem;
+    /* font-weight: 500; */
   }
 
   .bcorpLinkMobile {
@@ -426,7 +479,9 @@ hr {
 
   .msWrapper h2 {
     font-size: 1.2rem;
+    line-height: 1.8rem;
   }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -437,21 +492,6 @@ hr {
   .symbolCustom p {
     font-size: 1rem;
   }
+
 }
 
-@media only screen and (max-width: 500px) {
-  .bannerMobile {
-    background: -webkit-radial-gradient(
-      circle at top left,
-      rgba(64, 102, 106, 0.3),
-      rgba(27, 49, 56, 0.3)
-    ),
-    url(./images/fe_storage3.png);
-  background: radial-gradient(
-      circle at top left,
-      rgba(64, 102, 106, 0.35),
-      rgba(27, 49, 56, 0.35)
-    ),
-    url(./images/fe_storage3.png);
-  }
-}

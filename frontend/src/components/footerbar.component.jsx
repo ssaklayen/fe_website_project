@@ -14,8 +14,9 @@ export default function FooterBar() {
       <Container>
         {/* Footer Desktop */}
         <Row id="footerDesktop">
+
           {/* Company Block */}
-          <Col>
+          {/* <Col>
             <div className="w-50 mx-auto">
               <h5>Company</h5>
               <Link to="/landowners">
@@ -28,7 +29,7 @@ export default function FooterBar() {
                 <p>About Us</p>
               </Link>
             </div>
-          </Col>
+          </Col> */}
 
           {/* Contact Block */}
           <Col>
