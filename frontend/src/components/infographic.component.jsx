@@ -14,7 +14,6 @@ import operationBiddingImg from "../images/operation_bidding.jpg";
 export default function Infographic() {
   const [hText, setHText] = React.useState("Land Acquisition");
   const [pText, setPText] = React.useState("We identify and acquire key land positions for energy storage projects via options, long-term leasing, and purchasing.");
-  const [display, setDisplay] = React.useState("none");
   const [index, setIndex] = React.useState(0);
 
   function mouseOver(e) {
@@ -25,7 +24,6 @@ export default function Infographic() {
         setPText(
           "We identify and acquire key land positions for energy storage projects via options, long-term leasing, and purchasing."
         );
-        setDisplay("block");
         break;
 
       case "greenfieldDevelopment":
@@ -34,7 +32,6 @@ export default function Infographic() {
         setPText(
           "We manage the entire development process from early site analysis and identification through full entitlement and interconnection approval."
         );
-        setDisplay("block");
         break;
 
       case "projectAcquisition":
@@ -43,7 +40,6 @@ export default function Infographic() {
         setPText(
           "We also acquire early to mid-stage storage development projects and bring them to operation"
         );
-        setDisplay("block");
         break;
 
       case "commercialStructuring":
@@ -52,7 +48,6 @@ export default function Infographic() {
         setPText(
           "We originate project offtake and revenue optimization through innovative power marketing, policy engagement, and partnerships."
         );
-        setDisplay("block");
         break;
 
       case "constructionProcurement":
@@ -61,23 +56,16 @@ export default function Infographic() {
         setPText(
           "Our team leverages storage project management expertise and partnerships with market leaders to deliver projects on time and within budget."
         );
-        setDisplay("block");
         break;
 
       case "operationBidding":
         setIndex(5);
         setHText("Operation & Bidding");
         setPText("[Language TBD]");
-        setDisplay("block");
         break;
 
       default:
-        setDisplay("none");
     }
-  }
-
-  function mouseLeave() {
-    setDisplay("none");
   }
 
   return (
@@ -93,42 +81,36 @@ export default function Infographic() {
                 <li
                   id="landAcquisition"
                   onMouseOver={mouseOver}
-                  onMouseLeave={mouseLeave}
                 >
                   Land Acquisition
                 </li>
                 <li
                   id="greenfieldDevelopment"
                   onMouseOver={mouseOver}
-                  onMouseLeave={mouseLeave}
                 >
                   Greenfield Development
                 </li>
                 <li
                   id="projectAcquisition"
                   onMouseOver={mouseOver}
-                  onMouseLeave={mouseLeave}
                 >
                   Project Acquisition
                 </li>
                 <li
                   id="commercialStructuring"
                   onMouseOver={mouseOver}
-                  onMouseLeave={mouseLeave}
                 >
                   Commercial Structuring
                 </li>
                 <li
                   id="constructionProcurement"
                   onMouseOver={mouseOver}
-                  onMouseLeave={mouseLeave}
                 >
                   Construction & Procurement
                 </li>
                 <li
                   id="operationBidding"
                   onMouseOver={mouseOver}
-                  onMouseLeave={mouseLeave}
                 >
                   Operation & Bidding
                 </li>

@@ -19,7 +19,7 @@ export default function MainBanner() {
         </Col>
 
         {/* Banner Image */}
-        <Col className="g-0 col-6">
+        <Col className="g-0 col-lg-6">
           <div className="bannerImage">
             <img src={bannerImage} alt="Mountain Energy Storage" />
           </div>
