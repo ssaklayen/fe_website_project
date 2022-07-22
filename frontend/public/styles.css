@@ -37,7 +37,6 @@ hr {
 
 .customNavItem:hover {
   color: #3e9a68 !important;
-
 }
 
 #fe-nav-dropdown {
@@ -182,6 +181,28 @@ hr {
   color: #0b8040;
 }
 
+@keyframes bulletLineDown {
+  from {
+    height: 0px;
+    border-left: 3px solid #3e9a68;
+  }
+  to {
+    height: 60px;
+    border-left: 3px solid #3e9a68;
+  }
+}
+
+@keyframes bulletLineUp {
+  from {
+    height: 60px;
+    border-left: 3px solid #3e9a68;
+  }
+  to {
+    height: 0px;
+    border-left: 3px solid #3e9a68;
+  }
+}
+
 .infoListWrapper {
   margin-left: 28px;
   font-size: 1.3rem;
@@ -192,7 +213,7 @@ hr {
   position: relative;
   margin-top: 25px;
   margin-bottom: 0;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
 }
 
 .infoListWrapper li:first-child {
@@ -203,23 +224,35 @@ hr {
   font-size: 2rem;
 }
 
-.infoListWrapper li:hover {
-  color: #3e9a68;
-  cursor: default;
-}
-
-.infoListWrapper li:before {
+.infoListWrapper li:not(:first-child):before {
   content: "";
   position: absolute;
   left: -25px;
-  top: 30px;
+  top: -39px;
   border-left: 3px solid #004359;
   height: 60px;
-  width: 2px;
+  width: 3px;
 }
 
-.infoListWrapper li:last-child:before {
+.infoListWrapper li:not(:first-child):hover:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -39px;
+  border-left: 3px solid #3e9a68;
+  height: 60px;
+  width: 3px;
+  animation-name: bulletLineDown;
+  animation-duration: .6s;
+}
+
+/* .infoListWrapper li:last-child:before {
   height: 0px;
+} */
+
+.infoListWrapper li:hover {
+  color: #3e9a68;
+  cursor: default;
 }
 
 .infoCustomImage {
@@ -236,7 +269,7 @@ hr {
 .infoCustomImageText {
   position: absolute;
   background-color: white;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
   padding: 20px;
   bottom: -55px;
   left: 55px;
@@ -296,8 +329,7 @@ hr {
       rgba(27, 49, 56, 0.8)
     ),
     url(./images/front_range2.png) center fixed;
-    background-size: cover;
-    
+  background-size: cover;
 }
 
 #footerDesktop {
@@ -321,9 +353,6 @@ hr {
   text-align: center;
   font-size: 1rem;
 }
-
-
-
 
 /****************** CONTACT PAGE *****************/
 
@@ -442,7 +471,7 @@ hr {
   height: 600px;
   width: 110%;
   background-color: #ffffff;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
   top: 50px;
   left: -110px;
 }
@@ -517,7 +546,6 @@ hr {
     display: visible;
   }
 
-
   .infoCustomText {
     margin-left: 30px;
   }
@@ -577,15 +605,15 @@ hr {
     display: none;
   }
 
-    /* Contact Page */
+  /* Contact Page */
 
-    #contactBannerDesktop {
-      display: visible;
-    }
-  
-    #contactBannerMobile {
-      display: none;
-    }
+  #contactBannerDesktop {
+    display: visible;
+  }
+
+  #contactBannerMobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -625,21 +653,27 @@ hr {
     padding-bottom: 25px;
   }
 
+  /* Contact Page */
+
   #contactInformation {
     display: none;
   }
 
   .contactFormBackground {
     position: static;
+    width: 100%;
+    height: 625px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .contactFormForeground {
     position: static;
-    width: 85%;
-    margin: 45px 45px;
+    width: 95%;
+    margin: 12px auto;
     display: inline-block;
+    text-align: left;
   }
 }
 
@@ -665,7 +699,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
   .bannerMobile h1 {
     margin-left: 20px;
     margin-right: 20px;
@@ -687,6 +721,10 @@ hr {
     line-height: 1.8rem;
   }
 
+  /* Contact Page */
+  .contactFormWrapper {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -697,6 +735,4 @@ hr {
   .symbolCustom p {
     font-size: 1rem;
   }
-
 }
-
