@@ -12,7 +12,7 @@ export default function ContactPage() {
         <ContactBanner />
         <Row>
           
-          <Col>
+          <Col id="contactInformation">
             <ContactInformation />
           </Col>
           
