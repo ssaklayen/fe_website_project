@@ -16,13 +16,13 @@ export default function ContactForm() {
                 <Row>
                   <Col>
                     <Form.Group className="mt-5 mb-4" controlId="formFirstName">
-                      <Form.Label>First Name</Form.Label>
+                      <Form.Label>First name</Form.Label>
                       <Form.Control type="text" />
                     </Form.Group>
                   </Col>
                   <Col>
                     <Form.Group className="mt-5 mb-4" controlId="formLastName">
-                      <Form.Label>Last Name</Form.Label>
+                      <Form.Label>Last name</Form.Label>
                       <Form.Control type="text" />
                     </Form.Group>
                   </Col>

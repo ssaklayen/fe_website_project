@@ -21,16 +21,16 @@ export default function ContactBanner() {
 
         {/* Banner Image */}
         <Col className="g-0 col-lg-6">
-          <div className="bannerImage">
+          <div className="contactBannerImage">
             <img src={contactBannerImage} alt="Contact Banner" />
           </div>
         </Col>
       </Row>
 
       {/* Banner Mobile */}
-      <Row id="mainBannerMobile">
+      <Row id="contactBannerMobile">
         <Col className="g-0">
-          <div className="bannerMobile">
+          <div className="contactBannerMobile">
             <h1>Contact us now</h1>
           </div>
         </Col>

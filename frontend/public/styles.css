@@ -229,6 +229,7 @@ hr {
 .infoCustomImageText {
   position: absolute;
   background-color: white;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .25);
   padding: 20px;
   bottom: -55px;
   left: 55px;
@@ -360,16 +361,16 @@ hr {
   margin-right: auto;
   background: -webkit-radial-gradient(
       circle at top left,
-      rgba(64, 102, 106, 0.3),
-      rgba(27, 49, 56, 0.3)
+      rgba(93, 161, 128, 0.3),
+      rgba(11, 128, 64, 0.3)
     ),
-    url(./images/fe_storage5.png) center no-repeat;
+    url(./images/contact_banner.png) center no-repeat;
   background: radial-gradient(
       circle at top left,
-      rgba(64, 102, 106, 0.3),
-      rgba(27, 49, 56, 0.3)
+      rgba(93, 161, 128, 0.3),
+      rgba(11, 128, 64, 0.3)
     ),
-    url(./images/fe_storage5.png) center no-repeat;
+    url(./images/contact_banner.png) center no-repeat;
 }
 
 .contactBannerMobile img {
@@ -530,6 +531,15 @@ hr {
     height: 84px;
   }
 
+  /* Contact Page */
+
+  #contactBannerDesktop {
+    display: none;
+  }
+
+  #contactBannerMobile {
+    display: visible;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -548,6 +558,16 @@ hr {
   #missionStatementMobile {
     display: none;
   }
+
+    /* Contact Page */
+
+    #contactBannerDesktop {
+      display: visible;
+    }
+  
+    #contactBannerMobile {
+      display: none;
+    }
 }
 
 @media only screen and (max-width: 991px) {
