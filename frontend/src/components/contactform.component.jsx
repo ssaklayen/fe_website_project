@@ -12,7 +12,7 @@ export default function ContactForm() {
   const [email, setEmail] = React.useState("");
   const [phone, setPhone] = React.useState("");
   const [company, setCompany] = React.useState("");
-  const [subject, setSubject] = React.useState("");
+  const [subject, setSubject] = React.useState("Careers");
   const [message, setMessage] = React.useState("");
 
   function handlefName(e) {
@@ -107,7 +107,7 @@ export default function ContactForm() {
                   <Form.Group className="mb-4" controlId="formSubject">
                     <Form.Label>What is this about</Form.Label>
                     <Form.Select onChange={handleSubject}>
-                      <option value="Careers">Careers</option>
+                      <option defaultValue value="Careers">Careers</option>
                       <option value="Property Sales" onChange={handleSubject}>Property Sales</option>
                       <option value="Feedback" onChange={handleSubject}>Feedback</option>
                     </Form.Select>
