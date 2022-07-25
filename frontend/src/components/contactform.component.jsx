@@ -10,8 +10,7 @@ export default function ContactForm() {
       <div className="ms-auto contactFormBackground">
         <div className="contactFormForeground">
           <div className="contactFormWrapper">
-            <form action="/contact" method="post">
-              <Form>
+              <Form action="/contact" method="post">
                 <Row>
                   <Col>
                     <Form.Group className="mt-5 mb-4" controlId="formFirstName">
@@ -70,7 +69,6 @@ export default function ContactForm() {
                   </Col>
                 </Row>
               </Form>
-            </form>
           </div>
         </div>
       </div>

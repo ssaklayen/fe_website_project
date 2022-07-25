@@ -4,6 +4,7 @@ import MainBanner from "./mainbanner.component";
 import MissionStatement from "./missionstatement.component";
 import Strengths from "./strengths.component";
 import Infographic from './infographic.component';
+import {Link} from "react-router-dom";
 
 export default function SplashPage() {
   return (
@@ -13,6 +14,9 @@ export default function SplashPage() {
       <hr />
       <Strengths />
       <hr />
+      <div id="contactMobileBtn" className="contactMobileWrapper">
+        <Link to="/contact" className="contactMobile">Contact Us Now</Link>
+      </div>
       <Infographic />
     </Container>
   );

@@ -12,60 +12,44 @@ import constructionProcurementImg from "../images/construction_procurement.png";
 import operationBiddingImg from "../images/operation_bidding.jpg";
 
 export default function Infographic() {
-  const [hText, setHText] = React.useState("Land Acquisition");
-  const [pText, setPText] = React.useState("We identify and acquire key land positions for energy storage projects via options, long-term leasing, and purchasing.");
+  const slide = {
+    id: [
+      "landAcquisition",
+      "greenfieldDevelopment",
+      "projectAcquisition",
+      "commercialStructuring",
+      "constructionProcurement",
+      "operationBidding",
+    ],
+    header: [
+      "Land Acquisition",
+      "Greenfield Development",
+      "Project Acquisition",
+      "Commercial Structuring",
+      "Construction & Procurement",
+      "Operation & Bidding",
+    ],
+    body: [
+      "We identify and acquire key land positions for energy storage projects via options, long-term leasing, and purchasing.",
+      "We manage the entire development process from early site analysis and identification through full entitlement and interconnection approval.",
+      "We also acquire early to mid-stage storage development projects and bring them to operation",
+      "We originate project offtake and revenue optimization through innovative power marketing, policy engagement, and partnerships.",
+      "Our team leverages storage project management expertise and partnerships with market leaders to deliver projects on time and within budget.",
+      "[Language TBD]",
+    ],
+  };
+
+  // const [hText, setHText] = React.useState(slide.header[0]);
+  // const [pText, setPText] = React.useState(slide.body[0]);
   const [index, setIndex] = React.useState(0);
 
-  function mouseOver(e) {
-    switch (e.target.id) {
-      case "landAcquisition":
-        setIndex(0);
-        setHText("Land Acquisition");
-        setPText(
-          "We identify and acquire key land positions for energy storage projects via options, long-term leasing, and purchasing."
-        );
-        break;
+  function liMouseOver(e) {
+    const slideIndex = slide.id.indexOf(e.target.id);
 
-      case "greenfieldDevelopment":
-        setIndex(1);
-        setHText("Greenfield Development");
-        setPText(
-          "We manage the entire development process from early site analysis and identification through full entitlement and interconnection approval."
-        );
-        break;
+    // setHText(slide.header[slideIndex]);
+    // setPText(slide.body[slideIndex]);
+    setIndex(slideIndex);
 
-      case "projectAcquisition":
-        setIndex(2);
-        setHText("Project Acquisition");
-        setPText(
-          "We also acquire early to mid-stage storage development projects and bring them to operation"
-        );
-        break;
-
-      case "commercialStructuring":
-        setIndex(3);
-        setHText("Commercial Structuring");
-        setPText(
-          "We originate project offtake and revenue optimization through innovative power marketing, policy engagement, and partnerships."
-        );
-        break;
-
-      case "constructionProcurement":
-        setIndex(4);
-        setHText("Construction & Procurement");
-        setPText(
-          "Our team leverages storage project management expertise and partnerships with market leaders to deliver projects on time and within budget."
-        );
-        break;
-
-      case "operationBidding":
-        setIndex(5);
-        setHText("Operation & Bidding");
-        setPText("[Language TBD]");
-        break;
-
-      default:
-    }
   }
 
   return (
@@ -77,41 +61,29 @@ export default function Infographic() {
           <div className="infoCustomText">
             <h1>What We Do</h1>
             <div className="infoListWrapper">
-              <ul>
-                <li
-                  id="landAcquisition"
-                  onMouseOver={mouseOver}
-                >
+              <ul id="slideList">
+                <li id="landAcquisition" onMouseOver={liMouseOver}>
+                  <span className="fas fa-arrow-alt-circle-right"></span>
                   Land Acquisition
                 </li>
-                <li
-                  id="greenfieldDevelopment"
-                  onMouseOver={mouseOver}
-                >
+                <li id="greenfieldDevelopment" onMouseOver={liMouseOver}>
+                  <span className="fas fa-arrow-alt-circle-right"></span>
                   Greenfield Development
                 </li>
-                <li
-                  id="projectAcquisition"
-                  onMouseOver={mouseOver}
-                >
+                <li id="projectAcquisition" onMouseOver={liMouseOver}>
+                  <span className="fas fa-arrow-alt-circle-right"></span>
                   Project Acquisition
                 </li>
-                <li
-                  id="commercialStructuring"
-                  onMouseOver={mouseOver}
-                >
+                <li id="commercialStructuring" onMouseOver={liMouseOver}>
+                  <span className="fas fa-arrow-alt-circle-right"></span>
                   Commercial Structuring
                 </li>
-                <li
-                  id="constructionProcurement"
-                  onMouseOver={mouseOver}
-                >
+                <li id="constructionProcurement" onMouseOver={liMouseOver}>
+                  <span className="fas fa-arrow-alt-circle-right"></span>
                   Construction & Procurement
                 </li>
-                <li
-                  id="operationBidding"
-                  onMouseOver={mouseOver}
-                >
+                <li id="operationBidding" onMouseOver={liMouseOver}>
+                  <span className="fas fa-arrow-alt-circle-right"></span>
                   Operation & Bidding
                 </li>
               </ul>
@@ -123,7 +95,12 @@ export default function Infographic() {
         <Col>
           <div className="infoCustomCarouselWrapper">
             <div>
-              <Carousel activeIndex={index} controls={false} indicators={false} fade={true}>
+              <Carousel
+                activeIndex={index}
+                controls={false}
+                indicators={false}
+                fade={true}
+              >
                 <Carousel.Item>
                   <div className="infoCustomImage">
                     <img src={landAcquisitionImg} alt="Land Acquisition" />
@@ -131,33 +108,88 @@ export default function Infographic() {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={greenfieldDevelopmentImg} alt="Greenfield Development" />
+                    <img
+                      src={greenfieldDevelopmentImg}
+                      alt="Greenfield Development"
+                    />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={projectAcquisitionImg} alt="Project Acquisition" />
+                    <img
+                      src={projectAcquisitionImg}
+                      alt="Project Acquisition"
+                    />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={commercialStructuringImg} alt="Commercial Structuring" />
+                    <img
+                      src={commercialStructuringImg}
+                      alt="Commercial Structuring"
+                    />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={constructionProcurementImg} alt="Construction and Procurement" />
+                    <img
+                      src={constructionProcurementImg}
+                      alt="Construction and Procurement"
+                    />
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="infoCustomImage">
-                    <img src={operationBiddingImg} alt="Operation and Bidding" />
+                    <img
+                      src={operationBiddingImg}
+                      alt="Operation and Bidding"
+                    />
                   </div>
                 </Carousel.Item>
               </Carousel>
               <div className="infoCustomImageText">
-                <h3>{hText}</h3>
-                <p>{pText}</p>
+                <Carousel
+                  activeIndex={index}
+                  controls={false}
+                  indicators={false}
+                >
+                  <Carousel.Item>
+                    <div>
+                      <h3>{slide.header[0]}</h3>
+                      <p>{slide.body[0]}</p>
+                    </div>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div>
+                      <h3>{slide.header[1]}</h3>
+                      <p>{slide.body[1]}</p>
+                    </div>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div>
+                      <h3>{slide.header[2]}</h3>
+                      <p>{slide.body[2]}</p>
+                    </div>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div>
+                      <h3>{slide.header[3]}</h3>
+                      <p>{slide.body[3]}</p>
+                    </div>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div>
+                      <h3>{slide.header[4]}</h3>
+                      <p>{slide.body[4]}</p>
+                    </div>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div>
+                      <h3>{slide.header[5]}</h3>
+                      <p>{slide.body[5]}</p>
+                    </div>
+                  </Carousel.Item>
+                </Carousel>
               </div>
             </div>
           </div>

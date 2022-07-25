@@ -1,3 +1,12 @@
+:root {
+  --border-left: none;
+  --border-left-hover: 3px solid #3e9a68;
+  --animation-time: 0.6s;
+  --animation-name: bulletLineDown;
+  --marker-color: #004359;
+  --line-top: -39px;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -181,78 +190,37 @@ hr {
   color: #0b8040;
 }
 
-@keyframes bulletLineDown {
-  from {
-    height: 0px;
-    border-left: 3px solid #3e9a68;
-  }
-  to {
-    height: 60px;
-    border-left: 3px solid #3e9a68;
-  }
-}
-
-@keyframes bulletLineUp {
-  from {
-    height: 60px;
-    border-left: 3px solid #3e9a68;
-  }
-  to {
-    height: 0px;
-    border-left: 3px solid #3e9a68;
-  }
-}
-
 .infoListWrapper {
-  margin-left: 28px;
+  padding-left: 27px;
   font-size: 1.3rem;
   color: #004359;
 }
 
 .infoListWrapper li {
   position: relative;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-bottom: 0;
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
+  list-style-type: none;
 }
 
 .infoListWrapper li:first-child {
-  margin-top: 12px;
+  margin-top: 24px;
 }
 
-.infoListWrapper li::marker {
-  font-size: 2rem;
-}
 
-.infoListWrapper li:not(:first-child):before {
-  content: "";
-  position: absolute;
-  left: -25px;
-  top: -39px;
-  border-left: 3px solid #004359;
-  height: 60px;
-  width: 3px;
+.infoListWrapper span {
+  padding-right: 16px;
 }
-
-.infoListWrapper li:not(:first-child):hover:before {
-  content: "";
-  position: absolute;
-  left: -25px;
-  top: -39px;
-  border-left: 3px solid #3e9a68;
-  height: 60px;
-  width: 3px;
-  animation-name: bulletLineDown;
-  animation-duration: .6s;
-}
-
-/* .infoListWrapper li:last-child:before {
-  height: 0px;
-} */
 
 .infoListWrapper li:hover {
   color: #3e9a68;
   cursor: default;
+}
+
+#slideList {
+  margin: 0;
+  padding: 0;
 }
 
 .infoCustomImage {
@@ -488,6 +456,30 @@ hr {
   font-weight: 500;
 }
 
+.contactMobileWrapper {
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
+
+.contactMobile {
+    padding: 5px 20px;
+    background-color: #1b3138;
+    color: #ffffff;
+    border-style: none;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+}
+
+.contactMobile:hover {
+  background-color: #3e9a68;
+  color: #ffffff;
+}
+
 .contactSubmit {
   padding: 5px 20px;
   background-color: #1b3138;
@@ -513,7 +505,7 @@ hr {
   }
 
   .infoListWrapper {
-    margin-left: 23px;
+    padding-left: 22px;
   }
 
   .bannerText h1 {
@@ -555,7 +547,7 @@ hr {
   }
 
   .infoListWrapper {
-    margin-left: 6px;
+    padding-left: 12px;
     font-size: 1.1rem;
   }
 
@@ -637,6 +629,10 @@ hr {
     display: visible;
   }
 
+  #contactMobileBtn {
+    display: visible;
+  }
+
   .strengthsCustom {
     padding: 24px 12px;
   }
@@ -695,6 +691,10 @@ hr {
   }
 
   #footerMobile {
+    display: none;
+  }
+
+  #contactMobileBtn {
     display: none;
   }
 }
