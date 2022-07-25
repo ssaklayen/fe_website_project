@@ -7,13 +7,9 @@ app.use(express.json());
 app.use(express.urlencoded( {extended: false}));
 
 
-// ********** GET methods **********
-appRoutes.route("/").get((req, res) => {
-    res.status(200).send("Hello, World")
-});
-
-appRoutes.route("/contact").get((req, res) => {
+appRoutes.route("/contact").post((req, res) => {
     res.status(200).send("Contact Us Now")
+    console.log("Contact made!");
 });
 
 let port = process.env.PORT;
