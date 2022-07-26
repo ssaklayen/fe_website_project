@@ -59,7 +59,7 @@ export default function ContactForm() {
     };
 
     try {
-      const response = axios.post("http://localhost:5000/contact", newMessage);
+      const response = axios.post("https://fe-website-test-356121.uc.r.appspot.com/contact", newMessage);
       setFormDisplay("none");
       setSuccess("grid");
       console.log(success);

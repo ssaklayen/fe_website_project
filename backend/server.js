@@ -2,12 +2,19 @@ require("dotenv").config();
 const express = require("express");
 const nodemail = require("nodemailer");
 const cors = require("cors");
-
+const path = require('path');
 const app = express();
 
+app.use(express.static(path.join(__dirname,"../frontend/build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://fe-website-test-356121.uc.r.appspot.com/")
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 function sendMail(fName, lName, email, phone, company, subject, message) {
   const transporter = nodemail.createTransport({
@@ -43,6 +50,10 @@ function sendMail(fName, lName, email, phone, company, subject, message) {
     })
 }
 
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+})
+
 app.post("/contact", async (req, res, next) => {
   const { fName, lName, email, phone, company, subject, message } = req.body;
   try {
@@ -57,7 +68,7 @@ app.post("/contact", async (req, res, next) => {
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 5000;
+  port = 8080;
 }
 
 app.listen(port, function () {

@@ -63,7 +63,7 @@ export default function Infographic() {
             <div className="infoListWrapper">
               <ul id="slideList">
                 <li id="landAcquisition" onMouseOver={liMouseOver}>
-                  <span className="fas fa-arrow-alt-circle-right"></span>
+                  <i className="fas fa-arrow-alt-circle-right"></i>
                   Land Acquisition
                 </li>
                 <li id="greenfieldDevelopment" onMouseOver={liMouseOver}>
