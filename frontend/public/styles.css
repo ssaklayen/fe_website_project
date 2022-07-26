@@ -135,6 +135,13 @@ hr {
   margin-right: 40px;
 }
 
+.bannerMobile p {
+  color: #ffffff;
+  margin-left: 42px;
+  margin-right: 66px;
+  /* font-size: 1.2rem; */
+  font-weight: 300;
+}
 /* Mission Statement */
 
 .msWrapper h2 {
@@ -493,6 +500,17 @@ hr {
   background-color: #3e9a68;
 }
 
+.contactSuccess {
+  display: grid;
+  place-items: center;
+  margin-top: 200px;
+}
+
+.customIcon {
+  color: #3e9a68;
+  margin-bottom: 16px;
+}
+
 /* MEDIA */
 
 @media only screen and (max-width: 1399px) {
@@ -704,8 +722,15 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 125px;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     /* font-weight: 500; */
+  }
+
+  .bannerMobile p {
+    margin-left: 22px;
+    margin-right: 66px;
+    /* font-size: 1.2rem;*/
+    font-weight: 400;
   }
 
   .bcorpLinkMobile {

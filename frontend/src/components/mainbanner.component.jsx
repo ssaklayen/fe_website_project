@@ -31,6 +31,9 @@ export default function MainBanner() {
         <Col className="g-0">
           <div className="bannerMobile">
             <h1>Building the clean infrastructure for our future</h1>
+            <p>
+              Flatiron Energy develops, builds, owns, and operates standalone utility-scale energy storage.
+            </p>
           </div>
         </Col>
       </Row>

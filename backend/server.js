@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-async function sendMail(fName, lName, email, phone, company, subject, message) {
-  const transporter = await nodemail.createTransport({
+function sendMail(fName, lName, email, phone, company, subject, message) {
+  const transporter = nodemail.createTransport({
     service: "gmail",
     auth: {
       user: process.env.FE_USER,
@@ -22,32 +22,35 @@ async function sendMail(fName, lName, email, phone, company, subject, message) {
     from: email,
     to: process.env.FE_USER,
     subject: subject,
-    html: `New Message<br /><br />
+    html: `Message regarding ${subject}<br />
         
-        ${fName} ${lName}<br />
-        ${email}<br />
-        ${phone}<br />
-        ${company}<br /><br />
+        Name    : ${fName} ${lName}<br />
+        Email   : ${email}<br />
+        Phone   : ${phone}<br />
+        Company : ${company}<br /><br />
         
-        ${message}`,
+        Message : ${message}`,
   };
 
-  try {
-    await transporter.sendMail(mailOption);
-    return Promise.resolve("Message Sent Successfully!");
-  } catch (error) {
-    return Promise.reject(error);
-  }
+    transporter.sendMail(mailOption, function(error, info) {
+        if (error) {
+            console.log(error);
+            return Promise.reject(error);
+        } else {
+            console.log(`Email sent: ${info.response}`);
+            return Promise.resolve("Message Sent Successfully!");
+        }
+    })
 }
 
 app.post("/contact", async (req, res, next) => {
   const { fName, lName, email, phone, company, subject, message } = req.body;
   try {
-    await sendMail(fName, lName, email, phone, company, subject, message);
-    res.status(200);
+    result = sendMail(fName, lName, email, phone, company, subject, message);
+    res.send(result);
     console.log('Message Sent!');
   } catch (error) {
-    res.status(500);
+    res.send(err);
     console.log(error);
   } 
 });
