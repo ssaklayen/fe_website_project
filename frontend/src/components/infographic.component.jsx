@@ -63,27 +63,27 @@ export default function Infographic() {
             <div className="infoListWrapper">
               <ul id="slideList">
                 <li id="landAcquisition" onMouseOver={liMouseOver}>
-                  <i className="fas fa-arrow-alt-circle-right"></i>
+                  <span id="landAcquisition" className="fas fa-arrow-alt-circle-right"></span>
                   Land Acquisition
                 </li>
                 <li id="greenfieldDevelopment" onMouseOver={liMouseOver}>
-                  <span className="fas fa-arrow-alt-circle-right"></span>
+                  <span id="greenfieldDevelopment" className="fas fa-arrow-alt-circle-right"></span>
                   Greenfield Development
                 </li>
                 <li id="projectAcquisition" onMouseOver={liMouseOver}>
-                  <span className="fas fa-arrow-alt-circle-right"></span>
+                  <span id="projectAcquisition" className="fas fa-arrow-alt-circle-right"></span>
                   Project Acquisition
                 </li>
                 <li id="commercialStructuring" onMouseOver={liMouseOver}>
-                  <span className="fas fa-arrow-alt-circle-right"></span>
+                  <span id="commercialStructuring" className="fas fa-arrow-alt-circle-right"></span>
                   Commercial Structuring
                 </li>
                 <li id="constructionProcurement" onMouseOver={liMouseOver}>
-                  <span className="fas fa-arrow-alt-circle-right"></span>
+                  <span id="constructionProcurement" className="fas fa-arrow-alt-circle-right"></span>
                   Construction & Procurement
                 </li>
                 <li id="operationBidding" onMouseOver={liMouseOver}>
-                  <span className="fas fa-arrow-alt-circle-right"></span>
+                  <span id="operationBidding" className="fas fa-arrow-alt-circle-right"></span>
                   Operation & Bidding
                 </li>
               </ul>
