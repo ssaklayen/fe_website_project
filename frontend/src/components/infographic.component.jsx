@@ -39,20 +39,23 @@ export default function Infographic() {
     ],
   };
 
-  // const [hText, setHText] = React.useState(slide.header[0]);
-  // const [pText, setPText] = React.useState(slide.body[0]);
+  
   const [index, setIndex] = React.useState(0);
+  const [collapsed, setCollapsed] = React.useState(true);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   }
 
-  function liMouseOver(e) {
+  function handleMouseOver(e) {
     const slideIndex = slide.id.indexOf(e.target.id);
-
-    // setHText(slide.header[slideIndex]);
-    // setPText(slide.body[slideIndex]);
     setIndex(slideIndex);
+  }
+
+  function handleMouseClick(e) {
+    const slideText = document.getElementById(e.target.id).nextElementSibling;
+    slideText.classList.toggle("animateDown");
+    slideText.classList.toggle("animateUp");
   }
 
   return (
@@ -66,42 +69,42 @@ export default function Infographic() {
               <h1>What We Do</h1>
               <div className="infoListWrapper">
                 <ul id="slideList">
-                  <li id="landAcquisition" onMouseOver={liMouseOver}>
+                  <li id="landAcquisition" onMouseOver={handleMouseOver}>
                     <span
                       id="landAcquisition"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Land Acquisition
                   </li>
-                  <li id="greenfieldDevelopment" onMouseOver={liMouseOver}>
+                  <li id="greenfieldDevelopment" onMouseOver={handleMouseOver}>
                     <span
                       id="greenfieldDevelopment"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Greenfield Development
                   </li>
-                  <li id="projectAcquisition" onMouseOver={liMouseOver}>
+                  <li id="projectAcquisition" onMouseOver={handleMouseOver}>
                     <span
                       id="projectAcquisition"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Project Acquisition
                   </li>
-                  <li id="commercialStructuring" onMouseOver={liMouseOver}>
+                  <li id="commercialStructuring" onMouseOver={handleMouseOver}>
                     <span
                       id="commercialStructuring"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Commercial Structuring
                   </li>
-                  <li id="constructionProcurement" onMouseOver={liMouseOver}>
+                  <li id="constructionProcurement" onMouseOver={handleMouseOver}>
                     <span
                       id="constructionProcurement"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Construction & Procurement
                   </li>
-                  <li id="operationBidding" onMouseOver={liMouseOver}>
+                  <li id="operationBidding" onMouseOver={handleMouseOver}>
                     <span
                       id="operationBidding"
                       className="fas fa-arrow-alt-circle-right"
@@ -229,69 +232,69 @@ export default function Infographic() {
               <h1>What We Do</h1>
               <div className="infoListWrapperMobile">
                 <ul id="slideList">
-                  <li id="landAcquisition">
+                  <li id="landAcquisitionMobile" onClick={handleMouseClick}>
                     <span
-                      id="landAcquisition"
+                      id="landAcquisitionMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Land Acquisition
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographicMobileText animateUp">
                     <p>{slide.body[0]}</p>
                   </div>
 
-                  <li id="greenfieldDevelopment">
+                  <li id="greenfieldDevelopmentMobile" onClick={handleMouseClick}>
                     <span
-                      id="greenfieldDevelopment"
+                      id="greenfieldDevelopmentMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Greenfield Development
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographicMobileText animateUp">
                     <p>{slide.body[1]}</p>
                   </div>
 
-                  <li id="projectAcquisition">
+                  <li id="projectAcquisitionMobile" onClick={handleMouseClick}>
                     <span
-                      id="projectAcquisition"
+                      id="projectAcquisitionMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Project Acquisition
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographicMobileText animateUp">
                     <p>{slide.body[2]}</p>
                   </div>
 
-                  <li id="commercialStructuring">
+                  <li id="commercialStructuringMobile" onClick={handleMouseClick}>
                     <span
-                      id="commercialStructuring"
+                      id="commercialStructuringMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Commercial Structuring
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographicMobileText animateUp">
                     <p>{slide.body[3]}</p>
                   </div>
 
-                  <li id="constructionProcurement">
+                  <li id="constructionProcurementMobile" onClick={handleMouseClick}>
                     <span
-                      id="constructionProcurement"
+                      id="constructionProcurementMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Construction & Procurement
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographicMobileText animateUp">
                     <p>{slide.body[4]}</p>
                   </div>
 
-                  <li id="operationBidding">
+                  <li id="operationBiddingMobile" onClick={handleMouseClick}>
                     <span
-                      id="operationBidding"
+                      id="operationBiddingMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Operation & Bidding
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographicMobileText animateUp">
                     <p>{slide.body[5]}</p>
                   </div>
                 </ul>
