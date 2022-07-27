@@ -14,10 +14,10 @@ export default function SplashPage() {
       <hr />
       <Strengths />
       <hr />
-      <div id="contactMobileBtn" className="contactMobileWrapper">
-        <Link to="/contact" className="contactMobile">Contact Us Now</Link>
-      </div>
       <Infographic />
+      <div id="contactMobileBtn" className="contactMobileWrapper">
+        <Link to="/contact" className="contactMobile">Contact Us</Link>
+      </div>
     </Container>
   );
 }

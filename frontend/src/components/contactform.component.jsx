@@ -142,8 +142,8 @@ export default function ContactForm() {
                       <option defaultValue value="Careers">
                         Careers
                       </option>
-                      <option value="Property Sales" onChange={handleSubject}>
-                        Property Sales
+                      <option value="Landowners" onChange={handleSubject}>
+                        Landowners
                       </option>
                       <option value="Feedback" onChange={handleSubject}>
                         Feedback

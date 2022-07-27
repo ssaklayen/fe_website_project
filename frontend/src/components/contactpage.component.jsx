@@ -10,7 +10,7 @@ export default function ContactPage() {
     return (
       <Container className="content-container">
         <ContactBanner />
-        <Row>
+        <Row className="contactMobileRow">
           
           <Col id="contactInformation">
             <ContactInformation />

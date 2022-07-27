@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import bannerImage from "../images/fe_storage5.png";
+import bannerImage from "../images/fe_storage6.png";
 
 export default function MainBanner() {
   return (
@@ -13,7 +13,8 @@ export default function MainBanner() {
           <div className="d-inline-block bannerText">
             <h1>Building the clean infrastructure for our future</h1>
             <p>
-              Flatiron Energy develops, builds, owns, and operates standalone utility-scale energy storage.
+              Flatiron Energy develops, builds, owns, and operates standalone
+              utility-scale energy storage.
             </p>
           </div>
         </Col>
@@ -29,11 +30,17 @@ export default function MainBanner() {
       {/* Banner Mobile */}
       <Row id="mainBannerMobile">
         <Col className="g-0">
-          <div className="bannerMobile">
-            <h1>Building the clean infrastructure for our future</h1>
-            <p>
-              Flatiron Energy develops, builds, owns, and operates standalone utility-scale energy storage.
-            </p>
+          <div className="bannerMobileHead">
+            <div className="bannerMobileHeadWrapper">
+              <h1>Building the clean infrastructure for our future</h1>
+              <p>
+                Flatiron Energy develops, builds, owns, and operates standalone
+                utility-scale energy storage.
+              </p>
+            </div>
+          </div>
+          <div className="bannerImageMobile">
+            <img src={bannerImage} alt="Mountain Energy Storage" />
           </div>
         </Col>
       </Row>

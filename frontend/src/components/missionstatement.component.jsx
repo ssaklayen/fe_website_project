@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 export default function MissionStatement() {
   return (
-    <Container className="p-0 pt-5 pb-4">
+    <Container className="p-0 pt-5 pb-4 missionStatementCustom">
       {/* Mission Statement Desktop */}
 
       <Row id="missionStatementDesktop">

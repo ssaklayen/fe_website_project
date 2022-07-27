@@ -28,15 +28,13 @@ function sendMail(fName, lName, email, phone, company, subject, message) {
   const mailOption = {
     from: email,
     to: process.env.FE_USER,
-    subject: subject,
-    html: `Message regarding ${subject}<br />
-        
-        Name    : ${fName} ${lName}<br />
+    subject: `${subject}`,
+    html: `Name    : ${fName} ${lName}<br />
         Email   : ${email}<br />
         Phone   : ${phone}<br />
         Company : ${company}<br /><br />
         
-        Message : ${message}`,
+        ${message}`,
   };
 
     transporter.sendMail(mailOption, function(error, info) {

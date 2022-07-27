@@ -11,10 +11,11 @@ export default function ContactBanner() {
         {/* Banner Text */}
         <Col className="g-0 col-lg-6 col-md-12">
           <div className="d-inline-block contactBannerText">
-            <h1>Contact us now</h1>
+            <h1>Contact us</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              We would love to hear from you. If you would like to speak with a
+              member of our team. please fill out the form and let us know your
+              inquiry.
             </p>
           </div>
         </Col>
@@ -30,8 +31,27 @@ export default function ContactBanner() {
       {/* Banner Mobile */}
       <Row id="contactBannerMobile">
         <Col className="g-0">
+          <div className="contactBannerMobileHead">
+            <div className="contactBannerMobileHeadWrapper">
+              <h1>Contact us</h1>
+              <p>
+                We would love to hear from you. If you would like to speak with
+                a member of our team. please fill out the form and let us know
+                your inquiry.
+              </p>
+            </div>
+          </div>
+          <div className="contactBannerImageMobile">
+            <img src={contactBannerImage} alt="Contact Banner" />
+          </div>
+        </Col>
+      </Row>
+
+      {/* Banner Mobile old */}
+      <Row id="contactBannerMobile">
+        <Col className="g-0">
           <div className="contactBannerMobile">
-            <h1>Contact us now</h1>
+            <h1>Contact us</h1>
           </div>
         </Col>
       </Row>
