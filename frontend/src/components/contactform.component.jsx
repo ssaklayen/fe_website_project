@@ -118,7 +118,8 @@ export default function ContactForm() {
                       type="tel"
                       value={phone}
                       onChange={handlePhone}
-                      placeholder="(123) 456-7890"
+                      placeholder="123-456-7890"
+                      pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
                       required
                     />
                   </Form.Group>
@@ -137,7 +138,7 @@ export default function ContactForm() {
                 </Col>
                 <Col>
                   <Form.Group className="mb-4" controlId="formSubject">
-                    <Form.Label>What is this about</Form.Label>
+                    <Form.Label>Regarding</Form.Label>
                     <Form.Select onChange={handleSubject}>
                       <option defaultValue value="Careers">
                         Careers

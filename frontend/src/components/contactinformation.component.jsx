@@ -10,8 +10,8 @@ export default function ContactInformation() {
           <div className="contactInfoWrapper">
             <h4>Careers</h4>
             <p>
-              At Flatiron Energy we continue to expand our team and are always
-              looking to connect new talented individuals.
+              We continue to expand our team and are always looking to connect
+              with talented individuals.
             </p>
             <p>
               We believe strongly in creating a diverse, inclusive, and
@@ -24,13 +24,13 @@ export default function ContactInformation() {
           <div className="contactInfoWrapper">
             <h4>Landowners</h4>
             <p>
-              Flatiron partners with landowners through the Northeast to lease
-              or purchase their property for future energy storage projects.
+              We partner with landowners throughout the Northeast and offer
+              flexible structuring and attractive rates.
             </p>
             <p>
-              We offer flexible structuring and attractive rates. If you are a
-              landowner interested in working with us, please provide a
-              description of your property including location.
+              If you are a landowner
+              interested in working with us, please provide a description of
+              your property including size and location in your message.
             </p>
           </div>
         </Row>
@@ -38,7 +38,7 @@ export default function ContactInformation() {
           <div className="contactInfoWrapper">
             <h4>Feedback</h4>
             <p>
-              We welcome and additional feedback you might have, ideas for
+              We welcome any additional feedback you might have, ideas for
               partnership, or press inquiries. Thank you!
             </p>
           </div>

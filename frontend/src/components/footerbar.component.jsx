@@ -6,18 +6,11 @@ import { Link } from "react-router-dom";
 
 import symbol from "../images/fe_symbol.png";
 import bcorpwhitepending from "../images/bcorpwhitepending.png";
-import hullstreetenergy from "../images/hullstreetenergy.png";
 
 export default function FooterBar() {
   return (
     <footer>
-      <div className="footerInvestor">
-        <img className="footerInvestorImg" src={hullstreetenergy} alt="Hull Street Energy" />
-        <p>
-          Hull Street Energy invests in companies that are strategically
-          positioned for growth as North America transitions to a more sustainable future
-        </p>
-      </div>
+      
       <div className="footerCustom">
         <div className="footerImage"></div>
         <Container>

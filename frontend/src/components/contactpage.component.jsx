@@ -8,7 +8,7 @@ import ContactForm from "./contactform.component";
 
 export default function ContactPage() {
     return (
-      <Container className="content-container">
+      <Container className="content-container contactPageCustom">
         <ContactBanner />
         <Row className="contactMobileRow">
           

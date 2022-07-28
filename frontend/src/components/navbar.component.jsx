@@ -18,14 +18,32 @@ export default function NavBar() {
           <img src={logo} width="158" height="98" alt="Flatiron Energy" />
         </Navbar.Brand>
         <Nav className="me-auto bcorpLinkMobile">
-          {/* <a href="https://www.bcorporation.net/en-us/certification"> */}
-            {/* <img src={bcorplogo} className="mt-5" width="15%" alt="Certified B Corporation" /> */}
-          {/* </a> */}
+          <a href="https://www.bcorporation.net/en-us/certification">
+            <img
+              src={bcorplogo}
+              className="mt-5"
+              width="15%"
+              alt="Certified B Corporation"
+            />
+          </a>
         </Nav>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Nav id="navContactUs" className="ms-auto">
+          <Link to="/contact" className="nav-link customNavItem">
+            Contact Us
+          </Link>
+        </Nav>
+      </Container>
+    </Navbar>
+  );
+}
+
+/*********************** Collapsable Nav Bar *********************************/
+
+{
+  /* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            {/* <Link
+            <Link
               to="/landowners"
               className="nav-link navItemPad customNavItem"
             >
@@ -51,12 +69,9 @@ export default function NavBar() {
               <Link to="/aboutus#partners" className="dropdown-item">
                 Our Partners
               </Link>
-            </NavDropdown> */}
+            </NavDropdown>
             <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
-          </Nav>
-         
+          </Nav>  
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+          */
 }
