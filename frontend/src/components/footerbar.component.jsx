@@ -3,8 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-// import logo from "../images/fe_logo_420_260.png";
-import symbol from "../images/fe_logo_symbol_297_185.png";
+
+import symbol from "../images/fe_symbol.png";
 import bcorpwhitepending from "../images/bcorpwhitepending.png";
 import hullstreetenergy from "../images/hullstreetenergy.png";
 

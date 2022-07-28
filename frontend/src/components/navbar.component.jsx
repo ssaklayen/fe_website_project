@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import logo from "../images/fe_logo_420_260.png";
+import logo from "../images/fe_logo.png";
 import bcorplogo from "../images/bcorplogo.png";
 
 export default function NavBar() {

@@ -4,6 +4,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
+const slides = {
+  header: ["Experience", "Innovative", "Passionate"],
+  body: [
+    "We are a team of energy storage veterans with a long track record of delivering operational and profitable projects.",
+    "We continue to seek new ideas and to implement pioneering development strategies and first-of-a-kind products.",
+    "We are on a mission to build the energy storage infrastructure needed to enable the clean energy transition from fossil fuels.",
+  ],
+};
+
 export default function Strengths() {
   return (
     <Container className="strengthsCustom">
@@ -11,29 +20,20 @@ export default function Strengths() {
       <Row id="strengthsDesktop">
         <Col className="p-0">
           <div className="strengthWrapper">
-            <h4>Experienced</h4>
-            <p>
-              We are a team of energy storage veterans with a long track record
-              of delivering operational and profitable projects.
-            </p>
+            <h4>{slides.header[0]}</h4>
+            <p>{slides.body[0]}</p>
           </div>
         </Col>
         <Col className="p-0">
           <div className="strengthWrapper">
-            <h4>Innovative</h4>
-            <p>
-              We continue to seek new ideas and to implement pioneering
-              development strategies and first-of-a-kind products.
-            </p>
+            <h4>{slides.header[1]}</h4>
+            <p>{slides.body[1]}</p>
           </div>
         </Col>
         <Col className="p-0">
           <div className="strengthWrapper">
-            <h4>Passionate</h4>
-            <p>
-              We are on a mission to build the energy storage infrastructure
-              needed to enable the clean energy transition.
-            </p>
+            <h4>{slides.header[2]}</h4>
+            <p>{slides.body[2]}</p>
           </div>
         </Col>
       </Row>
@@ -44,30 +44,20 @@ export default function Strengths() {
           <Carousel controls={false} indicators={false}>
             <Carousel.Item interval={4000}>
               <div className="strengthWrapper">
-                <h4>Experienced</h4>
-                <p>
-                  Flatiron Energy is lead by a team of energy storage veterans
-                  with a long track record of delivering operational and
-                  profitable storage projects.
-                </p>
+                <h4>{slides.header[0]}</h4>
+                <p>{slides.body[0]}</p>
               </div>
             </Carousel.Item>
             <Carousel.Item interval={4000}>
               <div className="strengthWrapper">
-                <h4>Innovative</h4>
-                <p>
-                  We continue to seek new ideas and to implement pioneering
-                  development strategies and first-of-a-kind products.
-                </p>
+                <h4>{slides.header[1]}</h4>
+                <p>{slides.body[1]}</p>
               </div>
             </Carousel.Item>
             <Carousel.Item interval={4000}>
               <div className="strengthWrapper">
-                <h4>Passionate</h4>
-                <p>
-                  We are on a mission to build the energy storage infrastructure
-                  needed to enable the clean energy transition.
-                </p>
+                <h4>{slides.header[2]}</h4>
+                <p>{slides.body[2]}</p>
               </div>
             </Carousel.Item>
           </Carousel>
