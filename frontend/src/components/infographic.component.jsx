@@ -39,13 +39,16 @@ export default function Infographic() {
     ],
   };
 
-  
   const [index, setIndex] = React.useState(0);
-  const [collapsed, setCollapsed] = React.useState(true);
+  const [infoHeight, setInfoHeight] = React.useState(500);
+
+  React.useEffect(() => {
+    document.documentElement.style.setProperty("--info-mobile-height", infoHeight + "px");
+  }, [infoHeight]);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
-  }
+  };
 
   function handleMouseOver(e) {
     const slideIndex = slide.id.indexOf(e.target.id);
@@ -54,8 +57,33 @@ export default function Infographic() {
 
   function handleMouseClick(e) {
     const slideText = document.getElementById(e.target.id).nextElementSibling;
-    slideText.classList.toggle("animateDown");
-    slideText.classList.toggle("animateUp");
+    let newHeight = 0;
+   
+
+    if (
+      !slideText.classList.contains("animateUp") &&
+      !slideText.classList.contains("animateDown")
+    ) {
+      
+      slideText.classList.add("animateDown");
+      newHeight = infoHeight + 70;
+
+    } else if (slideText.classList.contains("animateUp")) {
+      
+      slideText.classList.toggle("animateUp");
+      slideText.classList.toggle("animateDown");
+      newHeight = infoHeight + 70;
+
+    } else if (slideText.classList.contains("animateDown")) {
+      
+      slideText.classList.toggle("animateUp");
+      slideText.classList.toggle("animateDown");
+      newHeight = infoHeight - 70;
+    }
+
+    console.log(newHeight);
+    setInfoHeight(newHeight);
+    console.group(infoHeight);
   }
 
   return (
@@ -97,7 +125,10 @@ export default function Infographic() {
                     ></span>
                     Commercial Structuring
                   </li>
-                  <li id="constructionProcurement" onMouseOver={handleMouseOver}>
+                  <li
+                    id="constructionProcurement"
+                    onMouseOver={handleMouseOver}
+                  >
                     <span
                       id="constructionProcurement"
                       className="fas fa-arrow-alt-circle-right"
@@ -239,18 +270,21 @@ export default function Infographic() {
                     ></span>
                     Land Acquisition
                   </li>
-                  <div className="infographicMobileText animateUp">
+                  <div className="infographicMobileText">
                     <p>{slide.body[0]}</p>
                   </div>
 
-                  <li id="greenfieldDevelopmentMobile" onClick={handleMouseClick}>
+                  <li
+                    id="greenfieldDevelopmentMobile"
+                    onClick={handleMouseClick}
+                  >
                     <span
                       id="greenfieldDevelopmentMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Greenfield Development
                   </li>
-                  <div className="infographicMobileText animateUp">
+                  <div className="infographicMobileText">
                     <p>{slide.body[1]}</p>
                   </div>
 
@@ -261,29 +295,35 @@ export default function Infographic() {
                     ></span>
                     Project Acquisition
                   </li>
-                  <div className="infographicMobileText animateUp">
+                  <div className="infographicMobileText">
                     <p>{slide.body[2]}</p>
                   </div>
 
-                  <li id="commercialStructuringMobile" onClick={handleMouseClick}>
+                  <li
+                    id="commercialStructuringMobile"
+                    onClick={handleMouseClick}
+                  >
                     <span
                       id="commercialStructuringMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Commercial Structuring
                   </li>
-                  <div className="infographicMobileText animateUp">
+                  <div className="infographicMobileText">
                     <p>{slide.body[3]}</p>
                   </div>
 
-                  <li id="constructionProcurementMobile" onClick={handleMouseClick}>
+                  <li
+                    id="constructionProcurementMobile"
+                    onClick={handleMouseClick}
+                  >
                     <span
                       id="constructionProcurementMobile"
                       className="fas fa-arrow-alt-circle-right"
                     ></span>
                     Construction & Procurement
                   </li>
-                  <div className="infographicMobileText animateUp">
+                  <div className="infographicMobileText">
                     <p>{slide.body[4]}</p>
                   </div>
 
@@ -294,7 +334,7 @@ export default function Infographic() {
                     ></span>
                     Operation & Bidding
                   </li>
-                  <div className="infographicMobileText animateUp">
+                  <div className="infographicMobileText">
                     <p>{slide.body[5]}</p>
                   </div>
                 </ul>

@@ -1,10 +1,5 @@
 :root {
-  --border-left: none;
-  --border-left-hover: 3px solid #3e9a68;
-  --animation-time: 0.6s;
-  --animation-name: bulletLineDown;
-  --marker-color: #004359;
-  --line-top: -39px;
+  --info-mobile-height: 500px;
 }
 
 body {
@@ -107,29 +102,9 @@ hr {
   width: 100%;
   max-width: 648px;
   vertical-align: top;
-  /* overflow: hidden; */
   margin-left: auto;
   margin-right: auto;
-  /* background: -webkit-radial-gradient(
-      circle at top left,
-      rgba(64, 102, 106, 0.3),
-      rgba(27, 49, 56, 0.3)
-    ),
-    url(./images/fe_storage5.png) center no-repeat;
-  background: radial-gradient(
-      circle at top left,
-      rgba(64, 102, 106, 0.3),
-      rgba(27, 49, 56, 0.3)
-    ),
-    url(./images/fe_storage5.png) center no-repeat; */
 }
-
-/* .bannerMobile img {
-  object-fit: cover;
-  max-width: 100%;
-} */
-
-
 
 .bannerMobileHead {
   color: #ffffff;
@@ -151,7 +126,7 @@ hr {
   margin-right: 20px;
   padding-top: 20px;
   margin-bottom: 16px;
-  font-size: 5.5vw;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -159,7 +134,7 @@ hr {
   color: #ffffff;
   margin-left: 21px;
   margin-right: 33px;
-  font-size: 3.3vw;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -216,7 +191,7 @@ hr {
 .infoCustom {
   width: 100%;
   height: 640px;
-  margin-top: 60px;
+  margin-top: 120px;
   background-color: #dbebe2;
 }
 
@@ -298,55 +273,71 @@ hr {
 }
 
 /* Infographic Mobile */
-
-@keyframes slideDown {
+@keyframes slideDownHeight {
   from {
-    opacity: 0;
     height: 0;
   }
 
   to {
-    opacity: 1;
-    height: 100px;
+    height: 70px;
   }
 }
 
-@keyframes slideUp {
+@keyframes slideDownOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpHeight {
+  from {
+    height: 70px;
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+@keyframes slideUpOpacity {
   from {
     opacity: 1;
-    height: 100px;
   }
 
   to {
     opacity: 0;
-    height: 0;
   }
 }
 
 .animateDown {
-  animation-duration: .4s;
-  animation-name: slideDown;
-  animation-fill-mode: forwards;
+  animation:
+    slideDownHeight .4s forwards,
+    slideDownOpacity .2s .1s forwards;
 }
 
 .animateUp {
-  animation-duration: .4s;
-  animation-name: slideUp;
-  animation-fill-mode: forwards;
+  animation:
+    slideUpOpacity .2s forwards,
+    slideUpHeight .4s forwards;
+    
 }
 
 .infoCustomMobile {
   width: 100%;
-  height: 1000px;
+  height: var(--info-mobile-height);
   margin-top: 60px;
   background-color: #dbebe2;
+  transition-duration: 0.4s;
 }
 
 .infographicMobileText {
   color: #000000;
   padding-top: 5px;
-  padding-left: 39px;
-  padding-right: 35px;
+  padding-right: 15px;
   font-size: .9rem;
   height: 0;
   opacity: 0;
@@ -377,7 +368,7 @@ hr {
 
 .infoListWrapperMobile li {
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 0;
   transition-duration: 0.4s;
   list-style-type: none;
@@ -401,8 +392,9 @@ hr {
 .footerCustom {
   color: #ffffff;
   background-color: #1b3138;
+  padding-top: 100px;
   padding-bottom: 50px;
-  margin-top: 126px;
+  margin-top: 0px;
   position: relative;
   left: 0;
   bottom: 0;
@@ -464,6 +456,16 @@ hr {
   font-size: 1rem;
 }
 
+.footerInvestor {
+  text-align: center;
+  font-size: .8rem;
+  width: 95%;
+  margin: 200px auto 50px auto;
+}
+
+.footerInvestorImg {
+  width: 20%;
+}
 /****************** CONTACT PAGE *****************/
 
 .contactBannerWrapper {
@@ -544,7 +546,7 @@ hr {
   margin-right: 20px;
   padding-top: 20px;
   margin-bottom: 16px;
-  font-size: 5.5vw;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -552,7 +554,7 @@ hr {
   color: #ffffff;
   margin-left: 21px;
   margin-right: 33px;
-  font-size: 3.3vw;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -939,6 +941,10 @@ hr {
     line-height: 1.8rem;
   }
 
+  .footerInvestorImg {
+    width: 35%;
+  }
+
   /* Contact Page */
   .contactFormWrapper {
     width: 90%;
@@ -953,4 +959,35 @@ hr {
   .symbolCustom p {
     font-size: 1rem;
   }
+}
+
+@media only screen and (max-width: 550px) {
+  .bannerMobileHeadWrapper h1 {
+    font-size: 5.5vw;
+  }
+
+  .bannerMobileHeadWrapper p {
+    font-size: 3.3vw;
+  }
+
+  .infoCustomTextMobile h1 {
+    font-size: 10vw;
+  }
+  
+  .infoListWrapperMobile {
+    font-size: 5vw;
+  }
+
+  .infoCustomTextMobile p {
+    font-size: 3.7vw;
+  }
+
+  .contactBannerMobileHeadWrapper h1 {
+    font-size: 5.5vw;
+  }
+
+  .contactBannerMobileHeadWrapper p {
+    font-size: 3.3vw;
+  }
+
 }
