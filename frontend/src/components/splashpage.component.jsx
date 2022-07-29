@@ -27,13 +27,16 @@ export default function SplashPage() {
           Contact Us
         </Link>
       </div>
-      <div className="footerInvestor">
+      {/* <div className="footerInvestor">
         <img
           className="footerInvestorImg"
           src={hullstreetenergy}
           alt="Hull Street Energy"
         />
         <p>{investorCaption[0]}<br />{investorCaption[1]}</p>
+      </div> */}
+      <div className="space">
+        
       </div>
     </Container>
   );
