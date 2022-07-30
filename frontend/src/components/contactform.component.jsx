@@ -3,6 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
+import { Link } from 'react-router-dom';
+
 import axios from "axios";
 
 export default function ContactForm() {
@@ -60,6 +62,7 @@ export default function ContactForm() {
 
     try {
       const response = axios.post("https://flatiron.energy/contact", newMessage);
+      // const response = axios.post("http://localhost:8080/contact", newMessage);
       setFormDisplay("none");
       setSuccess("grid");
       console.log(success);
@@ -184,6 +187,7 @@ export default function ContactForm() {
           <div className="contactSuccess" style={{ display: success }}>
               <span className="fas fa-envelope fa-5x customIcon"></span>
               <p>Thank you! Your message has been sent!</p>
+              <Link to="/" className="mt-2 contactSubmit contactReturnHome">Back to <span className="fas fa-home"></span></Link>
           </div>
         </div>
       </div>
