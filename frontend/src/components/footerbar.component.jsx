@@ -10,7 +10,6 @@ import bcorpwhitepending from "../images/bcorpwhitepending.png";
 export default function FooterBar() {
   return (
     <footer>
-      
       <div className="footerCustom">
         <div className="footerImage"></div>
         <Container>
@@ -62,12 +61,14 @@ export default function FooterBar() {
 
             {/* Fe Logo & Copyright Block */}
             <Col className="symbolCustom">
-              <img src={symbol} width="200" alt="Flatiron Energy Symbol" />
-              <p>
-                Copyright © 2022
-                <br />
-                Flatiron Energy LLC
-              </p>
+              <Link to="/">
+                <img src={symbol} width="200" alt="Flatiron Energy Symbol" />
+                <p>
+                  Copyright © 2022
+                  <br />
+                  Flatiron Energy LLC
+                </p>
+              </Link>
             </Col>
           </Row>
 
@@ -86,12 +87,14 @@ export default function FooterBar() {
 
             {/* Fe Logo & Copyright Block */}
             <Col className="symbolCustom">
-              <img src={symbol} width="120rem" alt="Flatiron Energy Symbol" />
-              <p>
-                Copyright © 2022
-                <br />
-                Flatiron Energy LLC
-              </p>
+              <Link to="/">
+                <img src={symbol} width="120rem" alt="Flatiron Energy Symbol" />
+                <p>
+                  Copyright © 2022
+                  <br />
+                  Flatiron Energy LLC
+                </p>
+              </Link>
             </Col>
           </Row>
         </Container>

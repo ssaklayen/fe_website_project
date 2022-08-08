@@ -1,26 +1,29 @@
-import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React, {useEffect } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import ContactBanner from "./contactbanner.component";
 import ContactInformation from "./contactinformation.component";
 import ContactForm from "./contactform.component";
 
 export default function ContactPage() {
-    return (
-      <Container className="content-container contactPageCustom">
-        <ContactBanner />
-        <Row className="contactMobileRow">
-          
-          <Col id="contactInformation">
-            <ContactInformation />
-          </Col>
-          
-          <Col>
-            <ContactForm />
-          </Col>
-          
-        </Row>
-      </Container>
-    );
+
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
+  return (
+    <Container className="content-container contactPageCustom">
+      <ContactBanner />
+      <Row className="contactMobileRow">
+        <Col id="contactInformation">
+          <ContactInformation />
+        </Col>
+
+        <Col>
+          <ContactForm />
+        </Col>
+      </Row>
+    </Container>
+  );
 }

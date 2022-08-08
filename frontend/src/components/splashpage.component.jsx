@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import MainBanner from "./mainbanner.component";
 import MissionStatement from "./missionstatement.component";
@@ -14,6 +14,10 @@ export default function SplashPage() {
     "Hull Street Energy invests in companies that are strategically positioned for growth as North America transitions to a more sustainable future.",
   ];
 
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
   return (
     <Container className="content-container">
       <MainBanner />
@@ -27,16 +31,13 @@ export default function SplashPage() {
           Contact Us
         </Link>
       </div>
-      {/* <div className="footerInvestor">
+      <div className="footerInvestor">
         <img
           className="footerInvestorImg"
           src={hullstreetenergy}
           alt="Hull Street Energy"
         />
         <p>{investorCaption[0]}<br />{investorCaption[1]}</p>
-      </div> */}
-      <div className="space">
-        
       </div>
     </Container>
   );
