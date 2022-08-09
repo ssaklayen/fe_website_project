@@ -65,7 +65,7 @@ export default function ContactForm() {
       // const response = axios.post("http://localhost:8080/contact", newMessage);
       setFormDisplay("none");
       setSuccess("grid");
-      console.log(success);
+      console.log(response);
     } catch (err) {
       console.log(err);
     }

@@ -43,6 +43,23 @@ hr {
   color: #3e9a68 !important;
 }
 
+.customNavToggle {
+  color: #004359;
+  transition-duration: 0.4s;
+}
+
+.customNavToggle:hover {
+  color: #3e9a68 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 #fe-nav-dropdown {
   font-size: 1.2rem !important;
   font-weight: 500 !important;

@@ -5,6 +5,7 @@ import logo from "../images/fe_logo.png";
 import bcorplogo from "../images/bcorplogo.png";
 
 export default function NavBar() {
+
   return (
     <Navbar
       sticky="top"
@@ -27,11 +28,14 @@ export default function NavBar() {
             />
           </a>
         </Nav> */}
-        <Nav id="navContactUs" className="ms-auto">
-          <Link to="/contact" className="nav-link customNavItem">
-            Contact Us
-          </Link>
-        </Nav>
+        <Navbar.Toggle aria-controls="fe-navbar-nav"><span className="fas fa-bars customNavToggle"></span></Navbar.Toggle>
+        <Navbar.Collapse id="fe-navbar-nav">
+          <Nav className="ms-auto">
+            <Link to="/contact" className="nav-link customNavItem">
+              Contact Us
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
@@ -72,6 +76,6 @@ export default function NavBar() {
             </NavDropdown>
             <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
           </Nav>  
-        </Navbar.Collapse>
+        </Navbar.Collapse> 
           */
 }
