@@ -478,8 +478,13 @@ hr {
   text-align: center;
   font-size: 1rem;
   width: 95%;
-  margin: 150px auto;
+  margin: 200px auto;
   color: grey;
+}
+
+.footerInvestor p {
+  margin-top: 16px;
+  line-height: 1.4rem;
 }
 
 .footerInvestorImg {
@@ -656,7 +661,7 @@ hr {
 .contactMobileWrapper {
   display: grid;
   place-items: center;
-  margin-top: 60px;
+  margin-top: 150px;
 }
 
 .contactMobile {
