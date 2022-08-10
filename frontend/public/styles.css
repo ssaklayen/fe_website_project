@@ -1,5 +1,6 @@
 :root {
   --info-mobile-height: 500px;
+  --nav-toggle-color: #004359;
 }
 
 body {
@@ -44,16 +45,16 @@ hr {
 }
 
 .customNavToggle {
-  color: #004359;
   transition-duration: 0.4s;
 }
 
-.customNavToggle:hover {
+/* .customNavToggle:hover {
   color: #3e9a68 !important;
-}
+} */
 
 .navbar-toggler {
   border: none !important;
+  color: var(--nav-toggle-color);
 }
 
 .navbar-toggler:focus {
