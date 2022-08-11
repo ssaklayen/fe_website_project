@@ -62,7 +62,6 @@ export default function ContactForm() {
 
     try {
       const response = axios.post("https://flatiron.energy/contact", newMessage);
-      // const response = axios.post("http://localhost:8080/contact", newMessage);
       setFormDisplay("none");
       setSuccess("grid");
       console.log(response);

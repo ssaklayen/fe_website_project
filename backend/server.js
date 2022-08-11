@@ -12,7 +12,6 @@ app.use(cors());
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "https://flatiron.energy/");
-  // res.header("Access-Control-Allow-Origin", "http://localhost:8080/");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -84,7 +83,7 @@ function sendMail(fName, lName, email, phone, company, subject, message) {
 }
 
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+  res.redirect('https://flatiron.energy');
 });
 
 app.post("/contact", async (req, res, next) => {

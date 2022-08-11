@@ -478,7 +478,7 @@ hr {
   text-align: center;
   font-size: 1rem;
   width: 95%;
-  margin: 200px auto;
+  margin: 150px auto 200px auto;
   color: grey;
 }
 
@@ -661,7 +661,7 @@ hr {
 .contactMobileWrapper {
   display: grid;
   place-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .contactMobile {
@@ -862,6 +862,10 @@ hr {
 
   .footerCustom {
     padding-bottom: 25px;
+  }
+
+  .footerInvestor {
+    margin: 100px auto 100px auto;
   }
 
   /* Contact Page */
