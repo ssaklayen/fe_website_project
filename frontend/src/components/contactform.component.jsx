@@ -72,9 +72,9 @@ export default function ContactForm() {
 
   return (
     <Container className="p-0">
-      <div className="ms-auto contactFormBackground">
-        <div className="contactFormForeground">
-          <div className="contactFormWrapper" style={{ display: formDisplay }}>
+      <div className="ms-auto contact-page-form-background">
+        <div className="contact-page-form-foreground">
+          <div className="contact-page-form-wrapper" style={{ display: formDisplay }}>
             <Form action="/contact" method="post" onSubmit={handleSubmit}>
               <Row>
                 <Col>
@@ -172,7 +172,7 @@ export default function ContactForm() {
                   <Form.Group className="d-flex justify-content-end">
                     <input
                       type="submit"
-                      className="contactSubmit"
+                      className="contact-page-button"
                       id="submitButton"
                       name="submitButton"
                       value="Send Message"
@@ -186,7 +186,7 @@ export default function ContactForm() {
           <div className="contactSuccess" style={{ display: success }}>
               <span className="fas fa-envelope fa-5x customIcon"></span>
               <p>Thank you! Your message has been sent!</p>
-              <Link to="/" className="mt-2 contactSubmit contactReturnHome">Back to <span className="fas fa-home"></span></Link>
+              <Link to="/" className="mt-2 contact-page-button contactReturnHome">Back to <span className="fas fa-home"></span></Link>
           </div>
         </div>
       </div>

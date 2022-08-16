@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import logo from "../images/fe_logo.png";
-import bcorplogo from "../images/bcorplogo.png";
+import fe_logo from "../images/fe_logo.png";
+
+// import bcorplogo from "../images/bcorplogo.png";
 
 export default function NavBar() {
   const [collapsed, setCollapsed] = React.useState(true);
@@ -22,26 +23,16 @@ export default function NavBar() {
       collapseOnSelect
       bg="light"
       expand="lg"
-      className="navbarCustom"
     >
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} width="158" height="98" alt="Flatiron Energy" />
+          <img src={fe_logo} width="158" height="98" alt="Flatiron Energy" />
         </Navbar.Brand>
-        {/* <Nav className="me-auto bcorpLinkMobile">
-          <a href="https://www.bcorporation.net/en-us/certification">
-            <img
-              src={bcorplogo}
-              className="mt-5"
-              width="15%"
-              alt="Certified B Corporation"
-            />
-          </a>
-        </Nav> */}
-        <Navbar.Toggle onClick={handleNavToggleClick} aria-controls="fe-navbar-nav"><span className="fas fa-bars customNavToggle"></span></Navbar.Toggle>
+    
+        <Navbar.Toggle onClick={handleNavToggleClick} aria-controls="fe-navbar-nav"><span className="fas fa-bars"></span></Navbar.Toggle>
         <Navbar.Collapse id="fe-navbar-nav">
           <Nav className="ms-auto">
-            <Link to="/contact" className="nav-link customNavItem">
+            <Link to="/contact" className="nav-link">
               Contact Us
             </Link>
           </Nav>
@@ -52,6 +43,16 @@ export default function NavBar() {
 }
 
 /*********************** Collapsable Nav Bar *********************************/
+    {/* <Nav className="me-auto bcorpLinkMobile">
+          <a href="https://www.bcorporation.net/en-us/certification">
+            <img
+              src={bcorplogo}
+              className="mt-5"
+              width="15%"
+              alt="Certified B Corporation"
+            />
+          </a>
+        </Nav> */}
 
 {
   /* <Navbar.Toggle aria-controls="responsive-navbar-nav" />

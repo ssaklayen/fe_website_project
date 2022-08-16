@@ -43,7 +43,10 @@ export default function Infographic() {
   const [infoHeight, setInfoHeight] = React.useState(500);
 
   React.useEffect(() => {
-    document.documentElement.style.setProperty("--info-mobile-height", infoHeight + "px");
+    document.documentElement.style.setProperty(
+      "--info-mobile-height",
+      infoHeight + "px"
+    );
   }, [infoHeight]);
 
   const handleSelect = (selectedIndex, e) => {
@@ -58,44 +61,35 @@ export default function Infographic() {
   function handleMouseClick(e) {
     const slideText = document.getElementById(e.target.id).nextElementSibling;
     let newHeight = 0;
-   
 
     if (
-      !slideText.classList.contains("animateUp") &&
-      !slideText.classList.contains("animateDown")
+      !slideText.classList.contains("animate-up") &&
+      !slideText.classList.contains("animate-down")
     ) {
-      
-      slideText.classList.add("animateDown");
+      slideText.classList.add("animate-down");
       newHeight = infoHeight + 70;
-
-    } else if (slideText.classList.contains("animateUp")) {
-      
-      slideText.classList.toggle("animateUp");
-      slideText.classList.toggle("animateDown");
+    } else if (slideText.classList.contains("animate-up")) {
+      slideText.classList.toggle("animate-up");
+      slideText.classList.toggle("animate-down");
       newHeight = infoHeight + 70;
-
-    } else if (slideText.classList.contains("animateDown")) {
-      
-      slideText.classList.toggle("animateUp");
-      slideText.classList.toggle("animateDown");
+    } else if (slideText.classList.contains("animate-down")) {
+      slideText.classList.toggle("animate-up");
+      slideText.classList.toggle("animate-down");
       newHeight = infoHeight - 70;
     }
 
-    console.log(newHeight);
     setInfoHeight(newHeight);
-    console.group(infoHeight);
   }
 
   return (
     // Infographic Desktop
     <Container className="pt-0">
-      <div className="infoCustom" id="infographicDesktop">
+      <div className="infographic-wrapper" id="infographicDesktop">
         <Row>
-          {/* List */}
           <Col>
-            <div className="infoCustomText">
+            <div className="infographic-text-panel">
               <h1>What We Do</h1>
-              <div className="infoListWrapper">
+              <div className="infographic-list-wrapper">
                 <ul id="slideList">
                   <li id="landAcquisition" onMouseOver={handleMouseOver}>
                     <span
@@ -149,106 +143,104 @@ export default function Infographic() {
 
           {/* Image */}
           <Col>
-            <div className="infoCustomCarouselWrapper">
-              <div>
+            <div className="infographic-carousel-wrapper">
+              <Carousel
+                activeIndex={index}
+                onSelect={handleSelect}
+                controls={false}
+                indicators={false}
+                fade={true}
+              >
+                <Carousel.Item>
+                  <div className="infographic-carousel-image">
+                    <img src={landAcquisitionImg} alt="Land Acquisition" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infographic-carousel-image">
+                    <img
+                      src={greenfieldDevelopmentImg}
+                      alt="Greenfield Development"
+                    />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infographic-carousel-image">
+                    <img
+                      src={projectAcquisitionImg}
+                      alt="Project Acquisition"
+                    />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infographic-carousel-image">
+                    <img
+                      src={commercialStructuringImg}
+                      alt="Commercial Structuring"
+                    />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infographic-carousel-image">
+                    <img
+                      src={constructionProcurementImg}
+                      alt="Construction and Procurement"
+                    />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="infographic-carousel-image">
+                    <img
+                      src={operationBiddingImg}
+                      alt="Operation and Bidding"
+                    />
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+              <div className="infographic-carousel-image-caption">
                 <Carousel
                   activeIndex={index}
                   onSelect={handleSelect}
                   controls={false}
                   indicators={false}
-                  fade={true}
                 >
                   <Carousel.Item>
-                    <div className="infoCustomImage">
-                      <img src={landAcquisitionImg} alt="Land Acquisition" />
+                    <div>
+                      <h3>{slide.header[0]}</h3>
+                      <p>{slide.body[0]}</p>
                     </div>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <div className="infoCustomImage">
-                      <img
-                        src={greenfieldDevelopmentImg}
-                        alt="Greenfield Development"
-                      />
+                    <div>
+                      <h3>{slide.header[1]}</h3>
+                      <p>{slide.body[1]}</p>
                     </div>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <div className="infoCustomImage">
-                      <img
-                        src={projectAcquisitionImg}
-                        alt="Project Acquisition"
-                      />
+                    <div>
+                      <h3>{slide.header[2]}</h3>
+                      <p>{slide.body[2]}</p>
                     </div>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <div className="infoCustomImage">
-                      <img
-                        src={commercialStructuringImg}
-                        alt="Commercial Structuring"
-                      />
+                    <div>
+                      <h3>{slide.header[3]}</h3>
+                      <p>{slide.body[3]}</p>
                     </div>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <div className="infoCustomImage">
-                      <img
-                        src={constructionProcurementImg}
-                        alt="Construction and Procurement"
-                      />
+                    <div>
+                      <h3>{slide.header[4]}</h3>
+                      <p>{slide.body[4]}</p>
                     </div>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <div className="infoCustomImage">
-                      <img
-                        src={operationBiddingImg}
-                        alt="Operation and Bidding"
-                      />
+                    <div>
+                      <h3>{slide.header[5]}</h3>
+                      <p>{slide.body[5]}</p>
                     </div>
                   </Carousel.Item>
                 </Carousel>
-                <div className="infoCustomImageText">
-                  <Carousel
-                    activeIndex={index}
-                    onSelect={handleSelect}
-                    controls={false}
-                    indicators={false}
-                  >
-                    <Carousel.Item>
-                      <div>
-                        <h3>{slide.header[0]}</h3>
-                        <p>{slide.body[0]}</p>
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <div>
-                        <h3>{slide.header[1]}</h3>
-                        <p>{slide.body[1]}</p>
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <div>
-                        <h3>{slide.header[2]}</h3>
-                        <p>{slide.body[2]}</p>
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <div>
-                        <h3>{slide.header[3]}</h3>
-                        <p>{slide.body[3]}</p>
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <div>
-                        <h3>{slide.header[4]}</h3>
-                        <p>{slide.body[4]}</p>
-                      </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <div>
-                        <h3>{slide.header[5]}</h3>
-                        <p>{slide.body[5]}</p>
-                      </div>
-                    </Carousel.Item>
-                  </Carousel>
-                </div>
               </div>
             </div>
           </Col>
@@ -256,12 +248,12 @@ export default function Infographic() {
       </div>
 
       {/* Mobile View */}
-      <div className="infoCustomMobile" id="infographicMobile">
+      <div className="infographic-mobile-wrapper" id="infographicMobile">
         <Row>
           <Col>
-            <div className="infoCustomTextMobile">
+            <div className="infographic-text-panel-mobile">
               <h1>What We Do</h1>
-              <div className="infoListWrapperMobile">
+              <div className="infographic-list-wrapper-mobile">
                 <ul id="slideList">
                   <li id="landAcquisitionMobile" onClick={handleMouseClick}>
                     <span
@@ -270,10 +262,9 @@ export default function Infographic() {
                     ></span>
                     Land Acquisition
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographic-caption-mobile">
                     <p>{slide.body[0]}</p>
                   </div>
-
                   <li
                     id="greenfieldDevelopmentMobile"
                     onClick={handleMouseClick}
@@ -284,10 +275,9 @@ export default function Infographic() {
                     ></span>
                     Greenfield Development
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographic-caption-mobile">
                     <p>{slide.body[1]}</p>
                   </div>
-
                   <li id="projectAcquisitionMobile" onClick={handleMouseClick}>
                     <span
                       id="projectAcquisitionMobile"
@@ -295,10 +285,9 @@ export default function Infographic() {
                     ></span>
                     Project Acquisition
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographic-caption-mobile">
                     <p>{slide.body[2]}</p>
                   </div>
-
                   <li
                     id="commercialStructuringMobile"
                     onClick={handleMouseClick}
@@ -309,10 +298,9 @@ export default function Infographic() {
                     ></span>
                     Commercial Structuring
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographic-caption-mobile">
                     <p>{slide.body[3]}</p>
                   </div>
-
                   <li
                     id="constructionProcurementMobile"
                     onClick={handleMouseClick}
@@ -323,10 +311,9 @@ export default function Infographic() {
                     ></span>
                     Construction & Procurement
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographic-caption-mobile">
                     <p>{slide.body[4]}</p>
                   </div>
-
                   <li id="operationBiddingMobile" onClick={handleMouseClick}>
                     <span
                       id="operationBiddingMobile"
@@ -334,7 +321,7 @@ export default function Infographic() {
                     ></span>
                     Operation & Bidding
                   </li>
-                  <div className="infographicMobileText">
+                  <div className="infographic-caption-mobile">
                     <p>{slide.body[5]}</p>
                   </div>
                 </ul>

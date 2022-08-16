@@ -25,32 +25,39 @@ hr {
 
 /* Navbar Customs */
 
-.navbarCustom {
-  box-shadow: 5px 5px 5px lightgrey;
-}
-
-.navItemPad {
-  padding-right: 52px !important;
-}
-
-.customNavItem {
+#fe-nav-dropdown {
   font-size: 1.2rem !important;
   font-weight: 500 !important;
   color: #004359 !important;
   transition-duration: 0.4s;
 }
 
-.customNavItem:hover {
+#fe-nav-dropdown:hover {
   color: #3e9a68 !important;
 }
 
-.customNavToggle {
+.navbar {
+  box-shadow: 0 5px 20px 0 rgba(0, 67, 89, 0.25);
+}
+
+.navbar span {
   transition-duration: 0.4s;
 }
 
-/* .customNavToggle:hover {
+.nav-link {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  color: #004359 !important;
+}
+
+.nav-link:hover {
   color: #3e9a68 !important;
-} */
+}
+
+.navItemPad {
+  padding-right: 52px !important;
+}
+
 
 .navbar-toggler {
   border: none !important;
@@ -61,33 +68,21 @@ hr {
   box-shadow: none !important;
 }
 
-#fe-nav-dropdown {
-  font-size: 1.2rem !important;
-  font-weight: 500 !important;
-  color: #004359 !important;
-  transition-duration: 0.4s;
-}
-
-#fe-nav-dropdown:hover {
-  color: #3e9a68 !important;
-  /* text-shadow: 0.5px 0.5px 2px #3e9a68; */
-}
-
 /* Main Banner Customs */
 
-.mainBannerWrapper {
+.main-banner-wrapper {
   width: 100%;
   height: 400px;
 }
 
-.bannerText {
+.main-banner-text {
   color: #ffffff;
   height: 400px;
   background: radial-gradient(circle at top left, #40666a, #1b3138);
   vertical-align: top;
 }
 
-.bannerText h1 {
+.main-banner-text h1 {
   margin-top: 90px;
   margin-left: 42px;
   margin-bottom: 20px;
@@ -95,36 +90,26 @@ hr {
   font-weight: 600;
 }
 
-.bannerText p {
+.main-banner-text p {
   margin-left: 42px;
   margin-right: 66px;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-.bannerImage {
+.main-banner-image-wrapper {
   max-width: 100%;
-  /* height: auto; */
   display: inline-block;
 }
 
-.bannerImage img {
+.main-banner-image-wrapper img {
   object-fit: none;
   object-position: center;
   width: 100%;
   height: 400px;
 }
 
-.bannerMobile {
-  height: 400px;
-  width: 100%;
-  max-width: 648px;
-  vertical-align: top;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bannerMobileHead {
+.main-banner-wrapper-mobile {
   color: #ffffff;
   height: 180px;
   max-width: 648px;
@@ -134,11 +119,7 @@ hr {
   margin-right: auto;
 }
 
-.bannerMobileHeadWrapper {
-  
-}
-
-.bannerMobileHeadWrapper h1 {
+.main-banner-wrapper-mobile h1 {
   color: #ffffff;
   margin-left: 20px;
   margin-right: 20px;
@@ -148,7 +129,7 @@ hr {
   font-weight: 600;
 }
 
-.bannerMobileHeadWrapper p {
+.main-banner-wrapper-mobile p {
   color: #ffffff;
   margin-left: 21px;
   margin-right: 33px;
@@ -156,13 +137,12 @@ hr {
   font-weight: 300;
 }
 
-.bannerImageMobile {
+.main-banner-image-wrapper-mobile {
   max-width: 100%;
-  /* height: auto; */
   display: block;
 }
 
-.bannerImageMobile img {
+.main-banner-image-wrapper-mobile img {
   object-fit: none;
   object-position: center;
   width: 100%;
@@ -171,34 +151,38 @@ hr {
 
 /* Mission Statement */
 
-.msWrapper h2 {
-  line-height: 2.6rem;
+.mission-statement-wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+.mission-statement-wrapper h2 {
+  line-height: 2.8rem;
   text-align: center;
 }
 
-.msCustom {
+.mission-statement-wrapper span {
   color: #0b8040;
   font-weight: 700;
 }
 
-
 /* Strengths Customs */
 
-.strengthsCustom {
+.strengths-container {
   padding: 24px 12px;
 }
 
-.strengthsCustom h4 {
+.strengths-container h4 {
   color: #004359;
   font-weight: 700;
 }
 
-.strengthsCustom p {
+.strengths-container p {
   margin-left: 2px;
   margin-bottom: 0;
 }
 
-.strengthWrapper {
+.strength-wrapper {
   width: 91%;
   margin-left: auto;
   margin-right: auto;
@@ -206,32 +190,37 @@ hr {
 
 /* Infographic Customs */
 
-.infoCustom {
+#slideList {
+  margin: 0;
+  padding: 0;
+}
+
+.infographic-wrapper {
   width: 100%;
   height: 640px;
   margin-top: 120px;
   background-color: #dbebe2;
 }
 
-.infoCustomText {
+.infographic-text-panel {
   vertical-align: top;
   margin-top: 40px;
   margin-left: 60px;
 }
 
-.infoCustomText h1 {
+.infographic-text-panel h1 {
   font-weight: 600;
   font-size: 4rem;
   color: #0b8040;
 }
 
-.infoListWrapper {
+.infographic-list-wrapper {
   padding-left: 27px;
   font-size: 1.3rem;
   color: #004359;
 }
 
-.infoListWrapper li {
+.infographic-list-wrapper li {
   position: relative;
   margin-top: 40px;
   margin-bottom: 0;
@@ -239,40 +228,35 @@ hr {
   list-style-type: none;
 }
 
-.infoListWrapper li:first-child {
+.infographic-list-wrapper li:first-child {
   margin-top: 24px;
 }
 
 
-.infoListWrapper span {
+.infographic-list-wrapper span {
   padding-right: 16px;
 }
 
-.infoListWrapper li:hover {
+.infographic-list-wrapper li:hover {
   color: #3e9a68;
   cursor: default;
 }
 
-#slideList {
-  margin: 0;
-  padding: 0;
-}
-
-.infoCustomImage {
+.infographic-carousel-image {
   margin: 60px auto;
   position: relative;
   width: 587px;
 }
 
-.infoCustomImage img {
+.infographic-carousel-image img {
   box-shadow: 10px -10px #b3cfc0 !important;
   max-width: 98%;
 }
 
-.infoCustomImageText {
+.infographic-carousel-image-caption {
   position: absolute;
   background-color: white;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 30px 0 rgba(0, 67, 89, 0.25);
   padding: 20px;
   bottom: -55px;
   left: 55px;
@@ -281,12 +265,12 @@ hr {
   z-index: 1;
 }
 
-.infoCustomImageText h3 {
+.infographic-carousel-image-caption h3 {
   font-weight: 300;
   color: #3e9a68;
 }
 
-.infoCustomCarouselWrapper {
+.infographic-carousel-wrapper {
   position: relative;
 }
 
@@ -331,20 +315,20 @@ hr {
   }
 }
 
-.animateDown {
+.animate-down {
   animation:
     slideDownHeight .4s forwards,
     slideDownOpacity .2s .1s forwards;
 }
 
-.animateUp {
+.animate-up {
   animation:
     slideUpOpacity .2s forwards,
     slideUpHeight .4s forwards;
     
 }
 
-.infoCustomMobile {
+.infographic-mobile-wrapper {
   width: 100%;
   height: var(--info-mobile-height);
   margin-top: 60px;
@@ -352,7 +336,7 @@ hr {
   transition-duration: 0.4s;
 }
 
-.infographicMobileText {
+.infographic-caption-mobile {
   color: #000000;
   padding-top: 5px;
   padding-right: 15px;
@@ -361,30 +345,30 @@ hr {
   opacity: 0;
 }
 
-.infoCustomTextMobile {
+.infographic-text-panel-mobile {
   vertical-align: top;
   margin-top: 30px;
   margin-left: 20px;
 }
 
-.infoCustomTextMobile h1 {
+.infographic-text-panel-mobile h1 {
   font-weight: 600;
   font-size: 2.8rem;
   color: #0b8040;
   margin-left: 0;
 }
 
-.infoCustomTextMobile p {
+.infographic-text-panel-mobile p {
   margin: 0;
 }
 
-.infoListWrapperMobile {
+.infographic-list-wrapper-mobile {
   padding-left: 16px;
   font-size: 1.3rem;
   color: #004359;
 }
 
-.infoListWrapperMobile li {
+.infographic-list-wrapper-mobile li {
   position: relative;
   margin-top: 30px;
   margin-bottom: 0;
@@ -392,22 +376,27 @@ hr {
   list-style-type: none;
 }
 
-.infoListWrapperMobile li:first-child {
+.infographic-list-wrapper-mobile li:first-child {
   margin-top: 24px;
 }
 
 
-.infoListWrapperMobile span {
+.infographic-list-wrapper-mobile span {
   padding-right: 16px;
 }
 
-.infoListWrapperMobile li:hover {
+.infographic-list-wrapper-mobile li:hover {
   color: #3e9a68;
   cursor: default;
 }
 
 /* Footer Customs */
-.footerCustom {
+
+#footerDesktop {
+  margin-top: 50px;
+}
+
+.footer-wrapper {
   color: #ffffff;
   background-color: #1b3138;
   padding-top: 100px;
@@ -418,23 +407,23 @@ hr {
   bottom: 0;
 }
 
-.footerCustom h5 {
+.footer-wrapper h5 {
   margin-top: 24px;
   margin-bottom: 24px;
   font-weight: 600;
 }
 
-.footerCustom p {
+.footer-wrapper p {
   margin-bottom: 24px;
   font-weight: 300;
 }
 
-.footerCustom a {
+.footer-wrapper a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.footerImage {
+.footer-image {
   height: 200px;
 
   background: -webkit-radial-gradient(
@@ -452,29 +441,25 @@ hr {
   background-size: cover;
 }
 
-#footerDesktop {
-  margin-top: 50px;
-}
-
-.verticalCenterLogo {
+.footer-bcorp-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
 }
 
-.symbolCustom {
+.footer-fe-symbol {
   display: grid;
   place-items: center;
   height: auto;
 }
 
-.symbolCustom p {
+.footer-fe-symbol p {
   text-align: center;
   font-size: 1rem;
 }
 
-.footerInvestor {
+.footer-investor-wrapper {
   text-align: center;
   font-size: 1rem;
   width: 95%;
@@ -482,33 +467,33 @@ hr {
   color: grey;
 }
 
-.footerInvestor p {
+.footer-investor-wrapper p {
   margin-top: 16px;
   line-height: 1.4rem;
 }
 
-.footerInvestorImg {
+.footer-investor-image {
   width: 30%;
 }
 
 /****************** CONTACT PAGE *****************/
 
-.contactPageCustom {
+.contact-page-wrapper {
   margin-bottom: 200px;
 }
 
-.contactBannerWrapper {
+.contact-page-banner-wrapper {
   width: 100%;
   height: 400px;
 }
 
-.contactBannerText {
+.contact-page-banner-text {
   color: #ffffff;
   height: 400px;
   background: radial-gradient(circle at top left, #5daa80, #0b8040);
 }
 
-.contactBannerText h1 {
+.contact-page-banner-text h1 {
   margin-top: 90px;
   margin-left: 42px;
   margin-bottom: 20px;
@@ -516,37 +501,27 @@ hr {
   font-weight: 600;
 }
 
-.contactBannerText p {
+.contact-page-banner-text p {
   margin-left: 42px;
   margin-right: 66px;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-.contactBannerImage {
+.contact-page-banner-image {
   max-width: 100%;
   height: auto;
   display: inline-block;
 }
 
-.contactBannerImage img {
+.contact-page-banner-image img {
   object-fit: none;
   object-position: center;
   width: 100%;
   height: 400px;
 }
 
-.contactBannerMobile {
-  height: 180px;
-  width: 100%;
-  max-width: 648px;
-  vertical-align: top;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.contactBannerMobileHead {
+.contact-page-banner-wrapper-mobile-outer {
   color: #ffffff;
   height: 180px;
   max-width: 648px;
@@ -556,11 +531,7 @@ hr {
   margin-right: auto;
 }
 
-.contactBannerMobileHeadWrapper {
-  
-}
-
-.contactBannerMobileHeadWrapper h1 {
+.contact-page-banner-wrapper-mobile h1 {
   color: #ffffff;
   margin-left: 20px;
   margin-right: 20px;
@@ -570,7 +541,7 @@ hr {
   font-weight: 600;
 }
 
-.contactBannerMobileHeadWrapper p {
+.contact-page-banner-wrapper-mobile p {
   color: #ffffff;
   margin-left: 21px;
   margin-right: 33px;
@@ -578,57 +549,50 @@ hr {
   font-weight: 300;
 }
 
-.contactBannerImageMobile {
+.contact-page-image-wrapper-mobile {
   max-width: 100%;
   /* height: auto; */
   display: block;
 }
 
-.contactBannerImageMobile img {
+.contact-page-image-wrapper-mobile img {
   object-fit: none;
   object-position: center;
   width: 100%;
   height: 400px;
 }
 
-.contactBannerMobile h1 {
-  color: #ffffff;
-  margin-top: 125px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
 /* Contact Information */
 
-.contactInformationOuterWrapper {
+.contact-page-info-outer-wrapper {
   margin-left: auto;
   margin-right: auto;
 }
 
-.contactInformationInnerWrapper {
+.contact-page-info-inner-wrapper {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
 }
 
-.contactInfoWrapper {
+.contact-page-card {
   margin-top: 40px;
 }
 
-.contactInfoWrapper h4 {
+.contact-page-card h4 {
   color: #1b3138;
   font-weight: 700;
 }
 
-.contactInfoWrapper p {
+.contact-page-card p {
   margin-left: 2px;
   margin-bottom: 8px;
 }
 
 /* Contact Form */
 
-.contactFormBackground {
+.contact-page-form-background {
   width: 85%;
   height: 700px;
   background-color: #dbebe2;
@@ -636,35 +600,35 @@ hr {
   position: relative;
 }
 
-.contactFormForeground {
+.contact-page-form-foreground {
   position: absolute;
   height: 600px;
   width: 110%;
   background-color: #ffffff;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 30px 0 rgba(0, 67, 89, 0.25);
   top: 50px;
   left: -110px;
 }
 
-.contactFormWrapper {
+.contact-page-form-wrapper {
   width: 80%;
   height: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.contactFormWrapper label {
+.contact-page-form-wrapper label {
   color: #1b3138;
   font-weight: 500;
 }
 
-.contactMobileWrapper {
+.contact-mobile-wrapper {
   display: grid;
   place-items: center;
   margin-top: 100px;
 }
 
-.contactMobile {
+.contact-mobile-button {
     padding: 5px 20px;
     background-color: #1b3138;
     color: #ffffff;
@@ -677,12 +641,12 @@ hr {
     text-decoration-line: none;
 }
 
-.contactMobile:hover {
+.contact-mobile-button:hover {
   background-color: #3e9a68;
   color: #ffffff;
 }
 
-.contactSubmit {
+.contact-page-button {
   padding: 5px 20px;
   background-color: #1b3138;
   color: #ffffff;
@@ -691,27 +655,27 @@ hr {
   border-radius: 4px;
 }
 
-.contactReturnHome {
+.contact-page-return-btn {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 500;
 }
 
-.contactReturnHome:hover {
+.contact-page-return-btn:hover {
   color: #FFFFFF;
 }
 
-.contactSubmit:hover {
+.contact-page-button:hover {
   background-color: #3e9a68;
 }
 
-.contactSuccess {
+.contact-page-message-sent {
   display: grid;
   place-items: center;
   margin-top: 200px;
 }
 
-.customIcon {
+.contact-page-custom-icon {
   color: #3e9a68;
   margin-bottom: 16px;
 }
@@ -719,86 +683,66 @@ hr {
 /* MEDIA */
 
 @media only screen and (max-width: 1399px) {
-  .infoCustomImage img {
+  .infographic-carousel-image img {
     max-width: 95%;
   }
 
-  .infoCustomText h1 {
+  .infographic-text-panel h1 {
     font-size: 3.5rem;
   }
 
-  .infoListWrapper {
+  .infographic-list-wrapper {
     padding-left: 22px;
   }
 
-  .bannerText h1 {
+  .main-banner-text h1 {
     font-size: 2.1rem;
   }
 
-  .infoCustomImageText {
+  .infographic-carousel-image-caption {
     left: 30px;
   }
 
-  .contactFormForeground {
+  .contact-page-form-foreground {
     left: -95px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
 
-  #missionStatementDesktop {
-    display: none;
-  }
-
-  #missionStatementMobile {
-    display: visible;
-  }
-
-  .infoCustomText {
+  .infographic-text-panel {
     margin-left: 30px;
   }
 
-  .infoCustomText h1 {
+  .infographic-text-panel h1 {
     font-size: 2.2rem;
   }
 
-  .infoListWrapper {
+  .infographic-list-wrapper {
     padding-left: 12px;
     font-size: 1.1rem;
   }
 
-  .infoListWrapper li:first-child {
+  .infographic-list-wrapper li:first-child {
     margin-top: 40px;
   }
 
-  .infoListWrapper li::marker {
+  .infographic-list-wrapper li::marker {
     font-size: 2rem;
   }
 
-  .infoListWrapper li:before {
+  .infographic-list-wrapper li:before {
     left: -25px;
     top: 30px;
     height: 60px;
   }
 
-  .infoListWrapper li:nth-child(5):before {
+  .infographic-list-wrapper li:nth-child(5):before {
     height: 84px;
   }
 
-  .contactMobileRow {
+  .contact-page-row-wrapper {
     margin-top: 180px;
-  }
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-  #missionStatementDesktop {
-    display: visible;
-  }
-
-  #missionStatementMobile {
-    display: none;
   }
 
 }
@@ -836,7 +780,7 @@ hr {
     display: visible;
   }
 
-  #contactMobileBtn {
+  #contactMobileButton {
     display: visible;
   }
 
@@ -844,27 +788,27 @@ hr {
     display: none;
   }
 
-  .missionStatementCustom {
+  .mt-mission-statement {
     margin-top: 180px;
   }
 
-  .strengthsCustom {
+  .strengths-container {
     padding: 24px 12px;
   }
 
-  .verticalCenterLogo {
+  .footer-bcorp-logo {
     margin-top: 25px;
   }
 
-  .symbolCustom {
+  .footer-fe-symbol {
     margin-top: 25px;
   }
 
-  .footerCustom {
+  .footer-wrapper {
     padding-bottom: 25px;
   }
 
-  .footerInvestor {
+  .footer-investor-wrapper {
     margin: 100px auto 100px auto;
   }
 
@@ -882,7 +826,7 @@ hr {
     display: none;
   }
 
-  .contactFormBackground {
+  .contact-page-form-background {
     position: static;
     width: 100%;
     height: 625px;
@@ -891,7 +835,7 @@ hr {
     text-align: center;
   }
 
-  .contactFormForeground {
+  .contact-page-form-foreground {
     position: static;
     width: 95%;
     margin: 12px auto;
@@ -933,7 +877,7 @@ hr {
     display: none;
   }
 
-  #contactMobileBtn {
+  #contactMobileButton {
     display: none;
   }
 
@@ -972,21 +916,21 @@ hr {
     display: none;
   }
 
-  .symbolCustom p {
+  .footer-fe-symbol p {
     font-size: 0.8rem;
   }
 
-  .msWrapper h2 {
+  .mission-statement-wrapper h2 {
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
 
-  .footerInvestorImg {
+  .footer-investor-image {
     width: 50%;
   }
 
   /* Contact Page */
-  .contactFormWrapper {
+  .contact-page-form-wrapper {
     width: 90%;
   }
 }
@@ -996,60 +940,60 @@ hr {
     display: visible;
   }
 
-  .symbolCustom p {
+  .footer-fe-symbol p {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .bannerMobileHeadWrapper h1 {
+  .main-banner-wrapper-mobile h1 {
     font-size: 5.5vw;
   }
 
-  .bannerMobileHeadWrapper p {
+  .main-banner-wrapper-mobile p {
     font-size: 3.3vw;
   }
 
-  .contactBannerMobileHeadWrapper h1 {
+  .contact-page-banner-wrapper-mobile h1 {
     font-size: 5.5vw;
   }
 
-  .contactBannerMobileHeadWrapper p {
+  .contact-page-banner-wrapper-mobile p {
     font-size: 3.3vw;
   }
   
-  .footerInvestor {
+  .footer-investor-wrapper {
     font-size: 2.8vw;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .infoCustomTextMobile h1 {
+  .infographic-text-panel-mobile h1 {
     font-size: 10vw;
   }
   
-  .infoListWrapperMobile {
+  .infographic-list-wrapper-mobile {
     font-size: 5vw;
   }
 
-  .infoCustomTextMobile p {
+  .infographic-text-panel-mobile p {
     font-size: 3.7vw;
   }
 
-  .bannerMobileHeadWrapper h1 {
+  .main-banner-wrapper-mobile h1 {
     padding-top: 30px;
   }
 
-  .contactBannerMobileHeadWrapper h1 {
+  .contact-page-banner-wrapper-mobile h1 {
     padding-top: 30px;
   }
 
-  .msWrapper h2{
+  .mission-statement-wrapper h2{
     font-size: 4.1vw;
     line-height: 1.7rem;
   }
 
-  .strengthWrapper p{
+  .strength-wrapper p{
     font-size: 3.8vw
   }
 

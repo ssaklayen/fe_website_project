@@ -4,37 +4,37 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
-const slides = {
-  header: ["Experience", "Innovative", "Passionate"],
-  body: [
-    "We are a team of energy storage veterans with a long track record of delivering operational and profitable projects.",
-    "We continue to seek new ideas and to implement pioneering development strategies and first-of-a-kind products.",
-    "We are on a mission to build the energy storage infrastructure necessary to enable the clean energy transition.",
-  ],
+const Strength = (props) => {
+  const slides = {
+    header: ["Experience", "Innovative", "Passionate"],
+    body: [
+      "We are a team of energy storage veterans with a long track record of delivering operational and profitable projects.",
+      "We continue to seek new ideas and to implement pioneering development strategies and first-of-a-kind products.",
+      "We are on a mission to build the energy storage infrastructure necessary to enable the clean energy transition.",
+    ],
+  };
+
+  return (
+    <div className="strength-wrapper">
+      <h4>{slides.header[props.slide]}</h4>
+      <p>{slides.body[props.slide]}</p>
+    </div>
+  );
 };
 
 export default function Strengths() {
   return (
-    <Container className="strengthsCustom">
+    <Container className="strengths-container">
       {/* Strengths Desktop */}
       <Row id="strengthsDesktop">
         <Col className="p-0">
-          <div className="strengthWrapper">
-            <h4>{slides.header[0]}</h4>
-            <p>{slides.body[0]}</p>
-          </div>
+          <Strength slide={0} />
         </Col>
         <Col className="p-0">
-          <div className="strengthWrapper">
-            <h4>{slides.header[1]}</h4>
-            <p>{slides.body[1]}</p>
-          </div>
+          <Strength slide={1} />
         </Col>
         <Col className="p-0">
-          <div className="strengthWrapper">
-            <h4>{slides.header[2]}</h4>
-            <p>{slides.body[2]}</p>
-          </div>
+          <Strength slide={2} />
         </Col>
       </Row>
 
@@ -43,22 +43,13 @@ export default function Strengths() {
         <Col className="p-0">
           <Carousel controls={false} indicators={false}>
             <Carousel.Item interval={4000}>
-              <div className="strengthWrapper">
-                <h4>{slides.header[0]}</h4>
-                <p>{slides.body[0]}</p>
-              </div>
+              <Strength slide={0} />
             </Carousel.Item>
             <Carousel.Item interval={4000}>
-              <div className="strengthWrapper">
-                <h4>{slides.header[1]}</h4>
-                <p>{slides.body[1]}</p>
-              </div>
+              <Strength slide={1} />
             </Carousel.Item>
             <Carousel.Item interval={4000}>
-              <div className="strengthWrapper">
-                <h4>{slides.header[2]}</h4>
-                <p>{slides.body[2]}</p>
-              </div>
+              <Strength slide={2} />
             </Carousel.Item>
           </Carousel>
         </Col>

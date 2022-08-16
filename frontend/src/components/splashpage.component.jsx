@@ -6,7 +6,7 @@ import Strengths from "./strengths.component";
 import Infographic from "./infographic.component";
 import { Link } from "react-router-dom";
 
-import hullstreetenergy from "../images/hullstreetenergy.png";
+import hullStreetEnergy from "../images/hullstreetenergy.png";
 
 export default function SplashPage() {
   const investorCaption = [
@@ -26,15 +26,15 @@ export default function SplashPage() {
       <Strengths />
       <hr />
       <Infographic />
-      <div id="contactMobileBtn" className="contactMobileWrapper">
-        <Link to="/contact" className="contactMobile">
+      <div id="contactMobileButton" className="contact-mobile-wrapper">
+        <Link to="/contact" className="contact-mobile-button">
           Contact Us
         </Link>
       </div>
-      <div className="footerInvestor">
+      <div className="footer-investor-wrapper">
         <img
-          className="footerInvestorImg"
-          src={hullstreetenergy}
+          className="footer-investor-image"
+          src={hullStreetEnergy}
           alt="Hull Street Energy"
         />
         <p>{investorCaption[0]}<br />{investorCaption[1]}</p>

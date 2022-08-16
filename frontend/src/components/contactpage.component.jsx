@@ -13,9 +13,9 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <Container className="content-container contactPageCustom">
+    <Container className="content-container contact-page-wrapper">
       <ContactBanner />
-      <Row className="contactMobileRow">
+      <Row className="contact-page-row-wrapper">
         <Col id="contactInformation">
           <ContactInformation />
         </Col>

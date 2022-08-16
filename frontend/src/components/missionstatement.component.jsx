@@ -9,26 +9,14 @@ export default function MissionStatement() {
     "that integrate renewable energy onto the grid, replace fossil fuel plants, and increase grid reliability.";
 
   return (
-    <Container className="p-0 pt-5 pb-4 missionStatementCustom">
-      {/* Mission Statement Desktop */}
-
-      <Row id="missionStatementDesktop">
-        <Col></Col>
-        <Col className="col-10 msWrapper">
-          <h2>
-            <span className="msCustom">{msHighlight}</span> {msBody}
-          </h2>
-        </Col>
-        <Col></Col>
-      </Row>
-
-      {/* Mission Statement Mobile */}
-
-      <Row id="missionStatementMobile">
-        <Col className="msWrapper">
-          <h2>
-            <span className="msCustom">{msHighlight}</span> {msBody}
-          </h2>
+    <Container className="p-0 pt-5 pb-4 mt-mission-statement">
+      <Row>
+        <Col>
+          <div className="mission-statement-wrapper">
+            <h2>
+              <span>{msHighlight}</span> {msBody}
+            </h2>
+          </div>
         </Col>
       </Row>
     </Container>

@@ -12,11 +12,11 @@ export default function ContactBanner() {
   };
 
   return (
-    <Container className="mt-5 contactBannerWrapper">
+    <Container className="mt-5 contact-page-banner-wrapper">
       <Row className="row-cols-auto" id="contactBannerDesktop">
         {/* Banner Text */}
         <Col className="g-0 col-lg-6 col-md-12">
-          <div className="d-inline-block contactBannerText">
+          <div className="d-inline-block contact-page-banner-text">
             <h1>{contactBannerText.header}</h1>
             <p>{contactBannerText.body}</p>
           </div>
@@ -24,7 +24,7 @@ export default function ContactBanner() {
 
         {/* Banner Image */}
         <Col className="g-0 col-lg-6">
-          <div className="contactBannerImage">
+          <div className="contact-page-banner-image">
             <img src={contactBannerImage} alt="Contact Banner" />
           </div>
         </Col>
@@ -33,26 +33,18 @@ export default function ContactBanner() {
       {/* Banner Mobile */}
       <Row id="contactBannerMobile">
         <Col className="g-0">
-          <div className="contactBannerMobileHead">
-            <div className="contactBannerMobileHeadWrapper">
+          <div className="contact-page-banner-wrapper-mobile-outer">
+            <div className="contact-page-banner-wrapper-mobile">
               <h1>{contactBannerText.header}</h1>
               <p>{contactBannerText.body}</p>
             </div>
           </div>
-          <div className="contactBannerImageMobile">
+          <div className="contact-page-image-wrapper-mobile">
             <img src={contactBannerImage} alt="Contact Banner" />
           </div>
         </Col>
       </Row>
 
-      {/* Banner Mobile old */}
-      <Row id="contactBannerMobile">
-        <Col className="g-0">
-          <div className="contactBannerMobile">
-            <h1>Contact us</h1>
-          </div>
-        </Col>
-      </Row>
     </Container>
   );
 }

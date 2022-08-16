@@ -4,14 +4,14 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 
-import symbol from "../images/fe_symbol.png";
+import fe_symbol from "../images/fe_symbol.png";
 import bcorpwhitepending from "../images/bcorpwhitepending.png";
 
 export default function FooterBar() {
   return (
     <footer>
-      <div className="footerCustom">
-        <div className="footerImage"></div>
+      <div className="footer-wrapper">
+        <div className="footer-image"></div>
         <Container>
           {/* Footer Desktop */}
           <Row id="footerDesktop">
@@ -49,7 +49,7 @@ export default function FooterBar() {
             </Col>
 
             {/* B Corp Logo Block  */}
-            <Col className="verticalCenterLogo">
+            <Col className="footer-bcorp-logo">
               <a href="https://www.bcorporation.net/en-us/certification">
                 <img
                   src={bcorpwhitepending}
@@ -60,9 +60,9 @@ export default function FooterBar() {
             </Col>
 
             {/* Fe Logo & Copyright Block */}
-            <Col className="symbolCustom">
+            <Col className="footer-fe-symbol">
               <Link to="/">
-                <img src={symbol} width="200" alt="Flatiron Energy Symbol" />
+                <img src={fe_symbol} width="200" alt="Flatiron Energy Symbol" />
                 <p>
                   Copyright © 2022
                   <br />
@@ -75,7 +75,7 @@ export default function FooterBar() {
           {/* Footer Mobile*/}
           <Row id="footerMobile">
             {/* B Corp Logo Block  */}
-            <Col className="verticalCenterLogo">
+            <Col className="footer-bcorp-logo">
               <a href="https://www.bcorporation.net/en-us/certification">
                 <img
                   src={bcorpwhitepending}
@@ -86,9 +86,9 @@ export default function FooterBar() {
             </Col>
 
             {/* Fe Logo & Copyright Block */}
-            <Col className="symbolCustom">
+            <Col className="footer-fe-symbol">
               <Link to="/">
-                <img src={symbol} width="120rem" alt="Flatiron Energy Symbol" />
+                <img src={fe_symbol} width="120rem" alt="Flatiron Energy Symbol" />
                 <p>
                   Copyright © 2022
                   <br />
