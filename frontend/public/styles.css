@@ -1,5 +1,6 @@
 :root {
   --info-mobile-height: 500px;
+  --info-mobile-slide-size: 336;
   --nav-toggle-color: #004359;
 }
 
@@ -281,7 +282,7 @@ hr {
   }
 
   to {
-    height: 70px;
+    height: var(--info-mobile-height);
   }
 }
 
@@ -297,7 +298,7 @@ hr {
 
 @keyframes slideUpHeight {
   from {
-    height: 70px;
+    height: var(--info-mobile-height);
   }
 
   to {
@@ -336,13 +337,19 @@ hr {
   transition-duration: 0.4s;
 }
 
-.infographic-caption-mobile {
+.infographic-card-mobile {
   color: #000000;
   padding-top: 5px;
   padding-right: 15px;
   font-size: .9rem;
   height: 0;
   opacity: 0;
+}
+
+.infographic-card-caption-mobile {
+  width: 95%;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .infographic-text-panel-mobile {
@@ -364,6 +371,7 @@ hr {
 
 .infographic-list-wrapper-mobile {
   padding-left: 16px;
+  padding-bottom: 20px;
   font-size: 1.3rem;
   color: #004359;
 }
@@ -933,6 +941,10 @@ hr {
   .contact-page-form-wrapper {
     width: 90%;
   }
+
+  :root {
+    --info-mobile-slide-size: 500;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -945,7 +957,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 515px) {
   .main-banner-wrapper-mobile h1 {
     font-size: 5.5vw;
   }
@@ -964,6 +976,10 @@ hr {
   
   .footer-investor-wrapper {
     font-size: 2.8vw;
+  }
+
+  :root {
+    --info-mobile-slide-size: 400;
   }
 }
 
@@ -997,4 +1013,7 @@ hr {
     font-size: 3.8vw
   }
 
+  :root {
+    --info-mobile-slide-size: 336;
+  }
 }

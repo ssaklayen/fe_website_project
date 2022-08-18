@@ -183,10 +183,10 @@ export default function ContactForm() {
             </Form>
           </div>
 
-          <div className="contactSuccess" style={{ display: success }}>
-              <span className="fas fa-envelope fa-5x customIcon"></span>
+          <div className="contact-page-message-sent" style={{ display: success }}>
+              <span className="fas fa-envelope fa-5x contact-page-custom-icon"></span>
               <p>Thank you! Your message has been sent!</p>
-              <Link to="/" className="mt-2 contact-page-button contactReturnHome">Back to <span className="fas fa-home"></span></Link>
+              <Link to="/" className="mt-2 contact-page-button contact-page-return-btn">Back to <span className="fas fa-home"></span></Link>
           </div>
         </div>
       </div>
