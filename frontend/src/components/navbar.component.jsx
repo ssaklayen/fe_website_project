@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import Offcanvas from 'react-bootstrap';
 import fe_logo from "../images/fe_logo.png";
 
 // import bcorplogo from "../images/bcorplogo.png";
@@ -32,11 +33,36 @@ export default function NavBar() {
         <Navbar.Toggle onClick={handleNavToggleClick} aria-controls="fe-navbar-nav"><span className="fas fa-bars"></span></Navbar.Toggle>
         <Navbar.Collapse id="fe-navbar-nav">
           <Nav className="ms-auto">
-            <Link to="/contact" className="nav-link">
-              Contact Us
+            <Link
+              to="/landowners"
+              className="nav-link navItemPad customNavItem"
+            >
+              Landowners
             </Link>
-          </Nav>
-        </Navbar.Collapse>
+            <Link
+              to="/energystorage"
+              className="nav-link navItemPad customNavItem"
+            >
+              Energy Storage
+            </Link>
+            <NavDropdown
+              title={"About"}
+              id="fe-nav-dropdown"
+              className="navItemPad"
+            >
+              <Link to="/aboutus#team" className="dropdown-item">
+                Our Team
+              </Link>
+              <Link to="/aboutus#values" className="dropdown-item">
+                Our Values
+              </Link>
+              <Link to="/aboutus#partners" className="dropdown-item">
+                Our Partners
+              </Link>
+            </NavDropdown>
+            <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
+          </Nav>  
+        </Navbar.Collapse> 
       </Container>
     </Navbar>
   );

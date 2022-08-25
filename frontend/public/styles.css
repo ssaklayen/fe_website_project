@@ -2,6 +2,8 @@
   --info-mobile-height: 500px;
   --info-mobile-slide-size: 336;
   --nav-toggle-color: #004359;
+  --banner-gs: #40666a;
+  --banner-ge: #1b3138;
 }
 
 body {
@@ -69,21 +71,21 @@ hr {
   box-shadow: none !important;
 }
 
-/* Main Banner Customs */
+/* Banner Customs */
 
-.main-banner-wrapper {
+.banner-wrapper {
   width: 100%;
   height: 400px;
 }
 
-.main-banner-text {
+.banner-text {
   color: #ffffff;
   height: 400px;
-  background: radial-gradient(circle at top left, #40666a, #1b3138);
-  vertical-align: top;
+  background: radial-gradient(circle at top left, var(--banner-gs), var(--banner-ge));
+  /* vertical-align: top; */
 }
 
-.main-banner-text h1 {
+.banner-text h1 {
   margin-top: 90px;
   margin-left: 42px;
   margin-bottom: 20px;
@@ -91,36 +93,36 @@ hr {
   font-weight: 600;
 }
 
-.main-banner-text p {
+.banner-text p {
   margin-left: 42px;
   margin-right: 66px;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-.main-banner-image-wrapper {
+.banner-image-wrapper {
   max-width: 100%;
   display: inline-block;
 }
 
-.main-banner-image-wrapper img {
+.banner-image-wrapper img {
   object-fit: none;
   object-position: center;
   width: 100%;
   height: 400px;
 }
 
-.main-banner-wrapper-mobile {
+.banner-wrapper-mobile {
   color: #ffffff;
   height: 180px;
   max-width: 648px;
-  background: radial-gradient(circle at top left, #40666a, #1b3138);
+  background: radial-gradient(circle at top left, var(--banner-gs), var(--banner-ge));
   vertical-align: top;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main-banner-wrapper-mobile h1 {
+.banner-wrapper-mobile h1 {
   color: #ffffff;
   margin-left: 20px;
   margin-right: 20px;
@@ -130,7 +132,7 @@ hr {
   font-weight: 600;
 }
 
-.main-banner-wrapper-mobile p {
+.banner-wrapper-mobile p {
   color: #ffffff;
   margin-left: 21px;
   margin-right: 33px;
@@ -138,12 +140,12 @@ hr {
   font-weight: 300;
 }
 
-.main-banner-image-wrapper-mobile {
+.banner-image-wrapper-mobile {
   max-width: 100%;
   display: block;
 }
 
-.main-banner-image-wrapper-mobile img {
+.banner-image-wrapper-mobile img {
   object-fit: none;
   object-position: center;
   width: 100%;
@@ -490,86 +492,6 @@ hr {
   margin-bottom: 200px;
 }
 
-.contact-page-banner-wrapper {
-  width: 100%;
-  height: 400px;
-}
-
-.contact-page-banner-text {
-  color: #ffffff;
-  height: 400px;
-  background: radial-gradient(circle at top left, #5daa80, #0b8040);
-}
-
-.contact-page-banner-text h1 {
-  margin-top: 90px;
-  margin-left: 42px;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.contact-page-banner-text p {
-  margin-left: 42px;
-  margin-right: 66px;
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-.contact-page-banner-image {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-}
-
-.contact-page-banner-image img {
-  object-fit: none;
-  object-position: center;
-  width: 100%;
-  height: 400px;
-}
-
-.contact-page-banner-wrapper-mobile-outer {
-  color: #ffffff;
-  height: 180px;
-  max-width: 648px;
-  background: radial-gradient(circle at top left, #5daa80, #0b8040);
-  vertical-align: top;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-page-banner-wrapper-mobile h1 {
-  color: #ffffff;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 20px;
-  margin-bottom: 16px;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.contact-page-banner-wrapper-mobile p {
-  color: #ffffff;
-  margin-left: 21px;
-  margin-right: 33px;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.contact-page-image-wrapper-mobile {
-  max-width: 100%;
-  /* height: auto; */
-  display: block;
-}
-
-.contact-page-image-wrapper-mobile img {
-  object-fit: none;
-  object-position: center;
-  width: 100%;
-  height: 400px;
-}
-
 /* Contact Information */
 
 .contact-page-info-outer-wrapper {
@@ -704,7 +626,7 @@ hr {
     padding-left: 22px;
   }
 
-  .main-banner-text h1 {
+  .banner-text h1 {
     font-size: 2.1rem;
   }
 
@@ -757,11 +679,11 @@ hr {
 }
 
 @media only screen and (max-width: 991px) {
-  #mainBannerDesktop {
+  #bannerDesktop {
     display: none;
   }
 
-  #mainBannerMobile {
+  #bannerMobile {
     display: visible;
   }
   
@@ -823,14 +745,6 @@ hr {
 
   /* Contact Page */
 
-  #contactBannerDesktop {
-    display: none;
-  }
-
-  #contactBannerMobile {
-    display: visible;
-  }
-
   #contactInformation {
     display: none;
   }
@@ -854,11 +768,11 @@ hr {
 }
 
 @media only screen and (min-width: 992px) {
-  #mainBannerDesktop {
+  #bannerDesktop {
     display: visible;
   }
 
-  #mainBannerMobile {
+  #bannerMobile {
     display: none;
   }
 
@@ -893,34 +807,9 @@ hr {
   #navContactUs {
     display: visible;
   }
-
-  /* Contact Page */
-
-  #contactBannerDesktop {
-    display: visible;
-  }
-
-  #contactBannerMobile {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 767px) {
-  .bannerMobile h1 {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 125px;
-    /* font-size: 1.5rem; */
-    /* font-weight: 500; */
-  }
-
-  .bannerMobile p {
-    margin-left: 22px;
-    margin-right: 66px;
-    /* font-size: 1.2rem;*/
-    font-weight: 400;
-  }
-
   .bcorpLinkMobile {
     display: none;
   }
@@ -959,19 +848,11 @@ hr {
 }
 
 @media only screen and (max-width: 515px) {
-  .main-banner-wrapper-mobile h1 {
+  .banner-wrapper-mobile h1 {
     font-size: 5.5vw;
   }
 
-  .main-banner-wrapper-mobile p {
-    font-size: 3.3vw;
-  }
-
-  .contact-page-banner-wrapper-mobile h1 {
-    font-size: 5.5vw;
-  }
-
-  .contact-page-banner-wrapper-mobile p {
+  .banner-wrapper-mobile p {
     font-size: 3.3vw;
   }
   
@@ -997,11 +878,7 @@ hr {
     font-size: 3.7vw;
   }
 
-  .main-banner-wrapper-mobile h1 {
-    padding-top: 30px;
-  }
-
-  .contact-page-banner-wrapper-mobile h1 {
+  .banner-wrapper-mobile h1 {
     padding-top: 30px;
   }
 

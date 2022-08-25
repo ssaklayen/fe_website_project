@@ -2,9 +2,11 @@ import React, {useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ContactBanner from "./contactbanner.component";
+import Banner from "./banner.component";
 import ContactInformation from "./contactinformation.component";
 import ContactForm from "./contactform.component";
+
+import contactBannerImage from "../images/contact_banner.png";
 
 export default function ContactPage() {
 
@@ -12,9 +14,21 @@ export default function ContactPage() {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
 
+  const bannerText = {
+    header: "Contact Us",
+    body:
+      "We would love to hear from you. If you would like to speak with a member of our team, please fill out the form below.",
+  };
+
   return (
     <Container className="content-container contact-page-wrapper">
-      <ContactBanner />
+      <Banner
+        header={bannerText.header}
+        body={bannerText.body}
+        image={contactBannerImage}
+        imageAlt="Power Lines"
+        gradient="green"
+      />
       <Row className="contact-page-row-wrapper">
         <Col id="contactInformation">
           <ContactInformation />
