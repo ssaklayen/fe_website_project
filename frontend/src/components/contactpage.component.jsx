@@ -9,9 +9,14 @@ import ContactForm from "./contactform.component";
 import contactBannerImage from "../images/contact_banner.png";
 
 export default function ContactPage() {
-
   useEffect(() => {
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    let navbarLinks = document.querySelectorAll(".nav-link");
+    navbarLinks.forEach((navlink) => {
+      navlink.classList.remove("nav-link-active");
+    });
+    let activeLink = document.getElementById("contactLink");
+    activeLink.classList.add("nav-link-active");
   }, []);
 
   const bannerText = {

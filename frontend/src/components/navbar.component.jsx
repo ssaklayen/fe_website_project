@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import Offcanvas from 'react-bootstrap';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+
+// import Offcanvas from 'react-bootstrap';
 import fe_logo from "../images/fe_logo.png";
 
 // import bcorplogo from "../images/bcorplogo.png";
@@ -15,61 +19,68 @@ export default function NavBar() {
 
   useEffect(() => {
     let root = document.documentElement;
-    collapsed === false ? root.style.setProperty('--nav-toggle-color', '#3e9a68') : root.style.setProperty('--nav-toggle-color', '#004359');
-  })
+    collapsed === false
+      ? root.style.setProperty("--nav-toggle-color", "#3e9a68")
+      : root.style.setProperty("--nav-toggle-color", "#004359");
+  });
 
   return (
-    <Navbar
-      sticky="top"
-      collapseOnSelect
-      bg="light"
-      expand="lg"
-    >
+    <Navbar sticky="top" collapseOnSelect bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className="nav-link-line">
           <img src={fe_logo} width="158" height="98" alt="Flatiron Energy" />
         </Navbar.Brand>
-    
-        <Navbar.Toggle onClick={handleNavToggleClick} aria-controls="fe-navbar-nav"><span className="fas fa-bars"></span></Navbar.Toggle>
+
+        <Navbar.Toggle
+          onClick={handleNavToggleClick}
+          aria-controls="fe-navbar-nav"
+        >
+          <span className="fas fa-bars"></span>
+        </Navbar.Toggle>
         <Navbar.Collapse id="fe-navbar-nav">
           <Nav className="ms-auto">
-            <Link
+            <Nav.Link
+              id="landownersNavlink"
+              as={Link}
               to="/landowners"
-              className="nav-link navItemPad customNavItem"
+              className="nav-link nav-link-pad nav-link-line"
             >
               Landowners
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
+              id="energystorageLink"
+              as={Link}
               to="/energystorage"
-              className="nav-link navItemPad customNavItem"
+              className="nav-link nav-link-pad nav-link-line"
             >
               Energy Storage
-            </Link>
-            <NavDropdown
-              title={"About"}
-              id="fe-nav-dropdown"
-              className="navItemPad"
+            </Nav.Link>
+            <Nav.Link
+              id="aboutusLink"
+              as={Link}
+              to="/aboutus"
+              className="nav-link nav-link-pad nav-link-line"
             >
-              <Link to="/aboutus#team" className="dropdown-item">
-                Our Team
-              </Link>
-              <Link to="/aboutus#values" className="dropdown-item">
-                Our Values
-              </Link>
-              <Link to="/aboutus#partners" className="dropdown-item">
-                Our Partners
-              </Link>
-            </NavDropdown>
-            <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
-          </Nav>  
-        </Navbar.Collapse> 
+              About Us
+            </Nav.Link>
+            <Nav.Link
+              id="contactLink"
+              as={Link}
+              to="/contact"
+              className="nav-link nav-link-line"
+            >
+              Contact Us
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
 /*********************** Collapsable Nav Bar *********************************/
-    {/* <Nav className="me-auto bcorpLinkMobile">
+{
+  /* <Nav className="me-auto bcorpLinkMobile">
           <a href="https://www.bcorporation.net/en-us/certification">
             <img
               src={bcorplogo}
@@ -78,41 +89,29 @@ export default function NavBar() {
               alt="Certified B Corporation"
             />
           </a>
-        </Nav> */}
+        </Nav> */
+}
 
 {
-  /* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
-            <Link
-              to="/landowners"
-              className="nav-link navItemPad customNavItem"
-            >
-              Landowners
-            </Link>
-            <Link
-              to="/energystorage"
-              className="nav-link navItemPad customNavItem"
-            >
-              Energy Storage
-            </Link>
-            <NavDropdown
+  /* <NavDropdown
               title={"About"}
               id="fe-nav-dropdown"
-              className="navItemPad"
+              className="nav-link-pad nav-link-line"
             >
-              <Link to="/aboutus#team" className="dropdown-item">
+              <NavDropdown.Item href="/aboutus#team" className="dropdown-item">
                 Our Team
-              </Link>
-              <Link to="/aboutus#values" className="dropdown-item">
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/aboutus#values"
+                className="dropdown-item"
+              >
                 Our Values
-              </Link>
-              <Link to="/aboutus#partners" className="dropdown-item">
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/aboutus#partners"
+                className="dropdown-item"
+              >
                 Our Partners
-              </Link>
-            </NavDropdown>
-            <Link to="/contact" className="nav-link customNavItem">Contact Us</Link>
-          </Nav>  
-        </Navbar.Collapse> 
-          */
+              </NavDropdown.Item>
+            </NavDropdown> */
 }

@@ -9,6 +9,12 @@ import landownersBannerImage from "../images/landowners_banner.png";
 export default function LandownersPage() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    let navbarLinks = document.querySelectorAll(".nav-link");
+    navbarLinks.forEach(navlink => {
+      navlink.classList.remove("nav-link-active");
+    });
+    let activeLink = document.getElementById("landownersNavlink");
+    activeLink.classList.add("nav-link-active");
   }, []);
 
   const bannerText = {

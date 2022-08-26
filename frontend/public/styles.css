@@ -53,14 +53,50 @@ hr {
   color: #004359 !important;
 }
 
-.nav-link:hover {
+.navbar-nav a {
+  padding: 0 0 2px 0 !important;
+}
+
+.nav-link-line {
+  display: block;
+  position: relative;
+}
+
+
+.nav-link-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0b8040 ;
+  opacity: 1;
+  transition: opacity 0.4s, transform 0.4s;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+
+.nav-link-line:hover::after, .nav-link-line:focus::after {
+  transform: scale(1);
+}
+
+.nav-link:hover, .nav-link:focus {
   color: #3e9a68 !important;
 }
 
-.navItemPad {
-  padding-right: 52px !important;
+.nav-link-active {
+  color:#3e9a68 !important;
 }
 
+.nav-link-active::after {
+  transform: scale(1);
+}
+
+.nav-link-pad {
+  margin-right: 66px !important;
+}
 
 .navbar-toggler {
   border: none !important;
@@ -71,6 +107,13 @@ hr {
   box-shadow: none !important;
 }
 
+.dropdown-menu a {
+  padding-left: 8px !important;
+}
+
+.bigMargin {
+  margin-bottom: 500px;
+}
 /* Banner Customs */
 
 .banner-wrapper {
@@ -429,10 +472,14 @@ hr {
 }
 
 .footer-wrapper a {
-  color: #ffffff;
+  color: #9eebbf;
   text-decoration: none;
+  transition: 0.4s;
 }
 
+.footer-wrapper a:hover {
+  opacity: .5;
+}
 .footer-image {
   height: 200px;
 
@@ -467,6 +514,7 @@ hr {
 .footer-fe-symbol p {
   text-align: center;
   font-size: 1rem;
+  color: #FFFFFF;
 }
 
 .footer-investor-wrapper {

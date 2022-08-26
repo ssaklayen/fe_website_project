@@ -21,7 +21,11 @@ export default function SplashPage() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
+    let navbarLinks = document.querySelectorAll(".nav-link");
+    navbarLinks.forEach((navlink) => {
+      navlink.classList.remove("nav-link-active");
+    });
+  });
 
   return (
     <Container className="content-container">
