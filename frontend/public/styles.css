@@ -767,6 +767,10 @@ hr {
     display: none;
   }
 
+  .nav-link-pad {
+    margin-right: 0 !important;
+  }
+
   .mt-mission-statement {
     margin-top: 180px;
   }
