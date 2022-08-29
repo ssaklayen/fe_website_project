@@ -125,19 +125,18 @@ hr {
   color: #ffffff;
   height: 400px;
   background: radial-gradient(circle at top left, var(--banner-gs), var(--banner-ge));
-  /* vertical-align: top; */
 }
 
 .banner-text h1 {
   margin-top: 90px;
-  margin-left: 42px;
+  margin-left: 30px;
   margin-bottom: 20px;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .banner-text p {
-  margin-left: 42px;
+  margin-left: 32px;
   margin-right: 66px;
   font-size: 1.2rem;
   font-weight: 300;
@@ -565,7 +564,6 @@ hr {
 
 .contact-page-card p {
   margin-left: 2px;
-  margin-bottom: 8px;
 }
 
 /* Contact Form */
@@ -657,6 +655,87 @@ hr {
 .contact-page-custom-icon {
   color: #3e9a68;
   margin-bottom: 16px;
+}
+
+/****************** LANDOWNERS PAGE *****************/
+
+/* Landowners Information */
+
+.landowners-information-wrapper {
+  margin-left: 18px;
+  padding-right: 24px;
+  margin-bottom: 200px;
+}
+
+.landowners-information-wrapper h1 {
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+
+.landowners-information-wrapper p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Landowners Bullet Card */
+
+.landowners-bullet-card {
+  background-color:#004359;
+  padding: 16px 0 16px;
+  height: 80px;
+  margin-bottom: 32px;
+  display: grid;
+  place-content: center;
+  border-radius: 40px;
+}
+
+.landowners-bullet-card p {
+  margin: 0 8px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+/* Landowners Steps */
+
+.landowners-steps-wrapper {
+  width: 75%;
+  margin-left: 120px;
+}
+
+.landowners-steps-wrapper h1 {
+  color:#0b8040;
+  margin-bottom: 18px;
+}
+
+.step-card-outer-wrapper {
+  height: 256px;
+  background-color: #f6f6f6;
+  margin-bottom: 32px;
+  border-radius: 24px;
+  box-shadow: 0 2px 30px 0 rgba(0, 67, 89, 0.15);
+}
+
+.step-card-inner-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.step-card-inner-wrapper h4 {
+  padding-top: 24px;
+  color: #004359;
+  font-weight: 600;
+}
+
+.step-card-inner-wrapper p {
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+.step-card-active {
+  background-color: #dbebe2;
 }
 
 /* MEDIA */
