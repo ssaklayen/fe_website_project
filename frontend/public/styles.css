@@ -128,9 +128,7 @@ hr {
 }
 
 .banner-text h1 {
-  margin-top: 90px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin: 90px 30px 20px;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -661,15 +659,10 @@ hr {
 
 /* Landowners Information */
 
-.landowners-information-wrapper {
-  margin-left: 18px;
-  padding-right: 24px;
-  margin-bottom: 200px;
-}
-
 .landowners-information-wrapper h1 {
   font-weight: 600;
   margin-bottom: 36px;
+  text-align: center;
 }
 
 .landowners-information-wrapper p {
@@ -678,10 +671,44 @@ hr {
   margin-bottom: 40px;
 }
 
+.landowners-information-image-wrapper {
+  width: 100%;
+}
+
+.landowners-information-image-wrapper img {
+  width: 586px;
+  height: 424px;
+  object-fit: cover;
+  object-position: right;
+  margin-left: 50px;
+  border: 2px solid #0b8040;
+  border-radius: 5px;
+}
+
+.landowners-information-bullets-wrapper {
+  width: 90%;
+  margin: 8px auto 0;
+}
+
+.landowners-information-heading-wrapper {
+  margin-top: 48px;
+  text-align: center;
+  background: radial-gradient(circle at bottom right, var(--banner-gs), var(--banner-ge));
+  margin-bottom: 100px;
+  padding-bottom: 64px;
+}
+
+.landowners-information-heading-wrapper h1 {
+  padding-top: 60px;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
 /* Landowners Bullet Card */
 
 .landowners-bullet-card {
-  background-color:#004359;
+  background-color:#0b8040;
   padding: 16px 0 16px;
   height: 80px;
   margin-bottom: 32px;
@@ -693,7 +720,7 @@ hr {
 .landowners-bullet-card p {
   margin: 0 8px;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: center;
 }
@@ -701,32 +728,46 @@ hr {
 /* Landowners Steps */
 
 .landowners-steps-wrapper {
-  width: 75%;
-  margin-left: 120px;
+  width: 90%;
+  margin: auto;
 }
 
 .landowners-steps-wrapper h1 {
-  color:#0b8040;
-  margin-bottom: 18px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .step-card-outer-wrapper {
-  height: 256px;
+  height: 344px;
   background-color: #f6f6f6;
   margin-bottom: 32px;
   border-radius: 24px;
-  box-shadow: 0 2px 30px 0 rgba(0, 67, 89, 0.15);
+  box-shadow: 0 2px 10px 0 rgba(0, 67, 89, 0.15);
+  transition-duration: 0.4s;
+}
+
+.step-card-outer-wrapper:hover {
+  background-color: #f0f7e9;
 }
 
 .step-card-inner-wrapper {
   width: 90%;
   margin: auto;
+  text-align: center;
+}
+
+.step-card-inner-wrapper h3 {
+  font-weight: 700;
+  color: #7cc56c;
+
+  letter-spacing: 1px;
+  padding-top: 24px;
 }
 
 .step-card-inner-wrapper h4 {
-  padding-top: 24px;
   color: #004359;
   font-weight: 600;
+  
 }
 
 .step-card-inner-wrapper p {
@@ -734,10 +775,11 @@ hr {
   font-size: 1rem;
 }
 
-.step-card-active {
-  background-color: #dbebe2;
+.step-card-image {
+  margin-bottom: 40px;
+  display: grid;
+  place-items: center;
 }
-
 /* MEDIA */
 
 @media only screen and (max-width: 1399px) {

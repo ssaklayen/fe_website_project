@@ -20,7 +20,7 @@ export default function LandownersPage() {
   }, []);
 
   const bannerText = {
-    header: "Landowners",
+    header: "Real estate has a new tenant",
     body: "Learn more about the immediate benefits to your bottom line below.",
   };
 
@@ -35,10 +35,12 @@ export default function LandownersPage() {
       />
       <Row>
         <Col className="mt-5">
-          <LandownersInformation />
-        </Col>
-        <Col className="mt-5">
           <LandownersSteps />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <LandownersInformation />
         </Col>
       </Row>
     </Container>
