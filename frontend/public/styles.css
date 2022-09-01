@@ -278,6 +278,7 @@ hr {
 
 .infographic-list-wrapper span {
   padding-right: 16px;
+  max-width: 40px;
 }
 
 .infographic-list-wrapper li:hover {
@@ -894,6 +895,14 @@ hr {
 
   .mt-mission-statement {
     margin-top: 180px;
+  }
+
+  .landowners-steps-wrapper {
+    margin-top: 180px;
+  }
+
+  .landowners-steps-wrapper h1 {
+    line-height: 2.5rem;
   }
 
   .strengths-container {

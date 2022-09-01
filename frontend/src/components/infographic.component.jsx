@@ -123,28 +123,28 @@ export default function Infographic() {
                   <li id="landAcquisition" onMouseOver={handleMouseOver}>
                     <span
                       id="landAcquisition"
-                      className="fas fa-arrow-alt-circle-right"
+                      className="fas fa-warehouse"
                     ></span>
                     Land Acquisition
                   </li>
                   <li id="greenfieldDevelopment" onMouseOver={handleMouseOver}>
                     <span
                       id="greenfieldDevelopment"
-                      className="fas fa-arrow-alt-circle-right"
+                      className="fas fa-solar-panel"
                     ></span>
                     Greenfield Development
                   </li>
                   <li id="projectAcquisition" onMouseOver={handleMouseOver}>
                     <span
                       id="projectAcquisition"
-                      className="fas fa-arrow-alt-circle-right"
+                      className="fas fa-handshake"
                     ></span>
                     Project Acquisition
                   </li>
                   <li id="commercialStructuring" onMouseOver={handleMouseOver}>
                     <span
                       id="commercialStructuring"
-                      className="fas fa-arrow-alt-circle-right"
+                      className="fas fa-project-diagram"
                     ></span>
                     Commercial Structuring
                   </li>
@@ -154,14 +154,14 @@ export default function Infographic() {
                   >
                     <span
                       id="constructionProcurement"
-                      className="fas fa-arrow-alt-circle-right"
+                      className="fas fa-hard-hat fa-lg"
                     ></span>
                     Construction & Procurement
                   </li>
                   <li id="operationBidding" onMouseOver={handleMouseOver}>
                     <span
                       id="operationBidding"
-                      className="fas fa-arrow-alt-circle-right"
+                      className="fas fa-funnel-dollar"
                     ></span>
                     Operation & Bidding
                   </li>
