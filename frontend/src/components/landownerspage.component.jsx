@@ -33,16 +33,8 @@ export default function LandownersPage() {
         imageAlt="Landowner Leasing"
         gradient="blue"
       />
-      <Row>
-        <Col className="mt-5">
-          <LandownersSteps />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <LandownersInformation />
-        </Col>
-      </Row>
+      <LandownersSteps />
+      <LandownersInformation />
     </Container>
   );
 }

@@ -14,14 +14,14 @@ export default function LandownersInformation() {
       <div className="landowners-information-heading-wrapper">
         <h1>{landownersText}</h1>
       
-      <Container className="landowners-information-wrapper">
+      <Container>
         <Row>
-          <Col className="p-0 mt-5">
+          <Col className="p-0 mt-5" md={12} lg={6}>
             <div className="landowners-information-image-wrapper">
               <img src={landownersHandshake} alt="Landowner's Handshake" />
             </div>
           </Col>
-          <Col className="mt-5">
+          <Col className="mt-5" md={12} lg={6}>
             <div className="landowners-information-bullets-wrapper">
               <BulletCard card={0} />
               <BulletCard card={1} />

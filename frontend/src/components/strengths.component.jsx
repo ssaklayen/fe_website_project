@@ -4,6 +4,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
+import experience_image from "../images/experience.png";
+import innovative_image from "../images/innovative.png";
+import passionate_image from "../images/passionate.png";
+
 const Strength = (props) => {
   const slides = {
     header: ["Experience", "Innovative", "Passionate"],
@@ -12,13 +16,19 @@ const Strength = (props) => {
       "We continue to seek new ideas and to implement pioneering development strategies and first-of-a-kind products.",
       "We are on a mission to build the energy storage infrastructure necessary to enable the clean energy transition.",
     ],
+    image: [experience_image, innovative_image, passionate_image],
   };
 
   return (
-    <div className="strength-wrapper">
-      <h4>{slides.header[props.slide]}</h4>
-      <p>{slides.body[props.slide]}</p>
+    <>
+    <div className="strength-image-wrapper">
+      <img src={slides.image[props.slide]} alt="Strength Image" />
     </div>
+      <div className="strength-wrapper">
+        <h4>{slides.header[props.slide]}</h4>
+        <p>{slides.body[props.slide]}</p>
+      </div>
+    </>
   );
 };
 

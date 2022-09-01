@@ -8,17 +8,17 @@ export default function LandownersSteps() {
     "Earn stable, long-term revenue and attractive returns by leasing or selling your property to Flatiron Energy";
 
   return (
-    <div className="landowners-steps-wrapper">
+    <div className="mt-5 landowners-steps-wrapper">
       <h1>{landownersText}</h1>
       <hr />
       <Row className="mt-5">
-        <Col>
+        <Col md={12} lg={6} xl={4}>
           <StepCard card={0} />
         </Col>
-        <Col>
+        <Col md={12} lg={6} xl={4}>
           <StepCard card={1} />
         </Col>
-        <Col>
+        <Col md={12} lg={12} xl={4}>
           <StepCard card={2} />
         </Col>
       </Row>

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,7 +40,9 @@ hr {
 }
 
 .navbar {
-  box-shadow: 0 5px 20px 0 rgba(0, 67, 89, 0.25);
+  /* box-shadow: 0 5px 20px 0 rgba(0, 67, 89, 0.25); */
+  border-bottom: 24px solid #1b3138;
+  background-color: #f5fdf8 !important;
 }
 
 .navbar span {
@@ -62,32 +64,32 @@ hr {
   position: relative;
 }
 
-
 .nav-link-line::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #0b8040 ;
+  background-color: #0b8040;
   opacity: 1;
   transition: opacity 0.4s, transform 0.4s;
   transform: scale(0);
   transform-origin: center;
 }
 
-
-.nav-link-line:hover::after, .nav-link-line:focus::after {
+.nav-link-line:hover::after,
+.nav-link-line:focus::after {
   transform: scale(1);
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #3e9a68 !important;
 }
 
 .nav-link-active {
-  color:#3e9a68 !important;
+  color: #3e9a68 !important;
 }
 
 .nav-link-active::after {
@@ -124,7 +126,11 @@ hr {
 .banner-text {
   color: #ffffff;
   height: 400px;
-  background: radial-gradient(circle at top left, var(--banner-gs), var(--banner-ge));
+  background: radial-gradient(
+    circle at top left,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
 }
 
 .banner-text h1 {
@@ -156,7 +162,11 @@ hr {
   color: #ffffff;
   height: 180px;
   max-width: 648px;
-  background: radial-gradient(circle at top left, var(--banner-gs), var(--banner-ge));
+  background: radial-gradient(
+    circle at top left,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
   vertical-align: top;
   margin-left: auto;
   margin-right: auto;
@@ -212,7 +222,7 @@ hr {
 /* Strengths Customs */
 
 .strengths-container {
-  padding: 24px 12px;
+  padding: 0 12px 24px;
 }
 
 .strengths-container h4 {
@@ -229,6 +239,20 @@ hr {
   width: 91%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.strength-image-wrapper {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.strength-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+
 }
 
 /* Infographic Customs */
@@ -274,7 +298,6 @@ hr {
 .infographic-list-wrapper li:first-child {
   margin-top: 24px;
 }
-
 
 .infographic-list-wrapper span {
   padding-right: 16px;
@@ -360,16 +383,11 @@ hr {
 }
 
 .animate-down {
-  animation:
-    slideDownHeight .4s forwards,
-    slideDownOpacity .2s .1s forwards;
+  animation: slideDownHeight 0.4s forwards, slideDownOpacity 0.2s 0.1s forwards;
 }
 
 .animate-up {
-  animation:
-    slideUpOpacity .2s forwards,
-    slideUpHeight .4s forwards;
-    
+  animation: slideUpOpacity 0.2s forwards, slideUpHeight 0.4s forwards;
 }
 
 .infographic-mobile-wrapper {
@@ -384,7 +402,7 @@ hr {
   color: #000000;
   padding-top: 5px;
   padding-right: 15px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   height: 0;
   opacity: 0;
 }
@@ -431,7 +449,6 @@ hr {
   margin-top: 24px;
 }
 
-
 .infographic-list-wrapper-mobile span {
   padding-right: 16px;
 }
@@ -476,7 +493,7 @@ hr {
 }
 
 .footer-wrapper a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-image {
   height: 200px;
@@ -512,7 +529,7 @@ hr {
 .footer-fe-symbol p {
   text-align: center;
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-investor-wrapper {
@@ -604,17 +621,17 @@ hr {
 }
 
 .contact-mobile-button {
-    padding: 5px 20px;
-    background-color: #1b3138;
-    color: #ffffff;
-    border-style: none;
-    transition-duration: 0.4s;
-    border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5rem;
-    text-decoration-line: none;
-    z-index: 2;
+  padding: 5px 20px;
+  background-color: #1b3138;
+  color: #ffffff;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  text-decoration-line: none;
+  z-index: 2;
 }
 
 .contact-mobile-button:hover {
@@ -633,12 +650,12 @@ hr {
 
 .contact-page-return-btn {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
 }
 
 .contact-page-return-btn:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contact-page-button:hover {
@@ -660,68 +677,61 @@ hr {
 
 /* Landowners Information */
 
-.landowners-information-wrapper h1 {
-  font-weight: 600;
-  margin-bottom: 36px;
-  text-align: center;
-}
-
-.landowners-information-wrapper p {
-  font-size: 1.1rem;
-  line-height: 2rem;
-  margin-bottom: 40px;
-}
-
 .landowners-information-image-wrapper {
   width: 100%;
 }
 
 .landowners-information-image-wrapper img {
   width: 586px;
-  height: 424px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: right;
-  margin-left: 50px;
   border: 2px solid #0b8040;
   border-radius: 5px;
 }
 
 .landowners-information-bullets-wrapper {
-  width: 90%;
-  margin: 8px auto 0;
+  width: 100%;
+  margin: 24px 0 0 auto;
 }
 
 .landowners-information-heading-wrapper {
   margin-top: 48px;
   text-align: center;
-  background: radial-gradient(circle at bottom right, var(--banner-gs), var(--banner-ge));
+  background: radial-gradient(
+    circle at bottom right,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
   margin-bottom: 100px;
   padding-bottom: 64px;
 }
 
 .landowners-information-heading-wrapper h1 {
-  padding-top: 60px;
+  font-size: calc(1.2rem + 2vw);
   font-weight: 700;
-  font-size: 4rem;
   color: #ffffff;
+  padding-top: 48px;
 }
 
 /* Landowners Bullet Card */
 
 .landowners-bullet-card {
-  background-color:#0b8040;
+  background-color: #0b8040;
   padding: 16px 0 16px;
-  height: 80px;
+  height: 64px;
   margin-bottom: 32px;
   display: grid;
   place-content: center;
   border-radius: 40px;
+  width: 95%;
 }
 
 .landowners-bullet-card p {
-  margin: 0 8px;
-  color: #FFFFFF;
-  font-size: 1.2rem;
+  margin: 0 16px;
+  color: #ffffff;
+  font-size: calc(1rem + 0.2vw);
   line-height: 1.5rem;
   text-align: center;
 }
@@ -736,6 +746,7 @@ hr {
 .landowners-steps-wrapper h1 {
   margin-bottom: 40px;
   text-align: center;
+  font-size: calc(.7rem + 2vw);
 }
 
 .step-card-outer-wrapper {
@@ -768,7 +779,6 @@ hr {
 .step-card-inner-wrapper h4 {
   color: #004359;
   font-weight: 600;
-  
 }
 
 .step-card-inner-wrapper p {
@@ -810,7 +820,6 @@ hr {
 }
 
 @media only screen and (max-width: 1199px) {
-
   .infographic-text-panel {
     margin-left: 30px;
   }
@@ -845,7 +854,6 @@ hr {
   .contact-page-row-wrapper {
     margin-top: 180px;
   }
-
 }
 
 @media only screen and (max-width: 991px) {
@@ -856,7 +864,7 @@ hr {
   #bannerMobile {
     display: visible;
   }
-  
+
   #strengthsDesktop {
     display: none;
   }
@@ -870,7 +878,7 @@ hr {
   }
 
   #infographicMobile {
-    display: visible
+    display: visible;
   }
 
   #footerDesktop {
@@ -895,14 +903,6 @@ hr {
 
   .mt-mission-statement {
     margin-top: 180px;
-  }
-
-  .landowners-steps-wrapper {
-    margin-top: 180px;
-  }
-
-  .landowners-steps-wrapper h1 {
-    line-height: 2.5rem;
   }
 
   .strengths-container {
@@ -946,6 +946,19 @@ hr {
     margin: 12px auto;
     display: inline-block;
     text-align: left;
+  }
+
+  /* Landowner's Page */
+
+  .landowners-steps-wrapper {
+    margin-top: 228px !important;
+  }
+
+  .landowners-steps-wrapper h1 {
+    line-height: 2.5rem;
+  }
+  .landowners-bullet-card {
+    width: 100%;
   }
 }
 
@@ -1037,7 +1050,7 @@ hr {
   .banner-wrapper-mobile p {
     font-size: 3.3vw;
   }
-  
+
   .footer-investor-wrapper {
     font-size: 2.8vw;
   }
@@ -1051,7 +1064,7 @@ hr {
   .infographic-text-panel-mobile h1 {
     font-size: 10vw;
   }
-  
+
   .infographic-list-wrapper-mobile {
     font-size: 5vw;
   }
@@ -1064,13 +1077,13 @@ hr {
     padding-top: 30px;
   }
 
-  .mission-statement-wrapper h2{
+  .mission-statement-wrapper h2 {
     font-size: 4.1vw;
     line-height: 1.7rem;
   }
 
-  .strength-wrapper p{
-    font-size: 3.8vw
+  .strength-wrapper p {
+    font-size: 3.8vw;
   }
 
   :root {

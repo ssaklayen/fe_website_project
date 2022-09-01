@@ -15,7 +15,7 @@ export default function StepCard(props) {
     body: [
       "You option-to-lease your property to Flatiron Energy at a competitive rate. These payments are paid to you day 1 and continue as Flatiron continues to explore the feasibility of the project.",
       "Flatiron obtains the necessary approvals from the utility, state and local permitting offices.",
-      "We trigger the option-to-lease to prepare for construction of the facility and you start receiving payments under the lease agreement. We handle all equipment procurement, operations, and long-term maintenance of the energy storage system. As the property owner, you simply earn predictable lease revenue over the long haul.",
+      "We trigger the option-to-lease to prepare for construction of the facility and you start receiving payments under the lease agreement. As the property owner, you simply earn predictable lease revenue over the long haul.",
     ],
     image: [step1_image, step2_image, step3_image]
   };
@@ -35,3 +35,6 @@ export default function StepCard(props) {
     </>
   );
 }
+
+
+/* We handle all equipment procurement, operations, and long-term maintenance of the energy storage system. */
