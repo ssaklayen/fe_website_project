@@ -11,6 +11,7 @@ export default function LandownersSteps() {
     <div className="mt-5 landowners-steps-wrapper">
       <h1>{landownersText}</h1>
       <hr />
+      <h2>HOW IT WORKS</h2>
       <Row className="mt-5">
         <Col md={12} lg={6} xl={4}>
           <StepCard card={0} />
@@ -22,6 +23,7 @@ export default function LandownersSteps() {
           <StepCard card={2} />
         </Col>
       </Row>
+      <hr />
     </div>
   );
 }

@@ -8,10 +8,17 @@ export default function Banner(props) {
     if (props.gradient === "blue") {
       document.documentElement.style.setProperty("--banner-gs", "#40666a");
       document.documentElement.style.setProperty("--banner-ge", "#1b3138");
+      document.documentElement.style.setProperty("--banner-text-color", "#FFFFFF");
     }
     if (props.gradient === "green") {
       document.documentElement.style.setProperty("--banner-gs", "#5daa80");
       document.documentElement.style.setProperty("--banner-ge", "#0b8040");
+      document.documentElement.style.setProperty("--banner-text-color", "#FFFFFF");
+    }
+    if (props.gradient === "teal") {
+      document.documentElement.style.setProperty("--banner-gs", "#d1e8e2");
+      document.documentElement.style.setProperty("--banner-ge", "#e5f1ea");
+      document.documentElement.style.setProperty("--banner-text-color", "#004359");
     }
   }, [props.gradient]);
 

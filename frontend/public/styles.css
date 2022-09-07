@@ -4,6 +4,7 @@
   --nav-toggle-color: #004359;
   --banner-gs: #40666a;
   --banner-ge: #1b3138;
+  --banner-text-color: #ffffff;
 }
 
 body {
@@ -124,7 +125,7 @@ hr {
 }
 
 .banner-text {
-  color: #ffffff;
+  color: var(--banner-text-color);
   height: 400px;
   background: radial-gradient(
     circle at top left,
@@ -682,23 +683,23 @@ hr {
 }
 
 .landowners-information-image-wrapper img {
-  width: 586px;
-  max-width: 100%;
+  /* width: 586px; */
+  max-width: 90%;
   height: auto;
   object-fit: cover;
   object-position: right;
-  border: 2px solid #0b8040;
+  border: 2px solid #004359;
   border-radius: 5px;
 }
 
 .landowners-information-bullets-wrapper {
   width: 100%;
-  margin: 24px 0 0 auto;
+  margin: 64px 0 0 auto;
 }
 
 .landowners-information-heading-wrapper {
   margin-top: 48px;
-  text-align: center;
+  text-align: left;
   background: radial-gradient(
     circle at bottom right,
     var(--banner-gs),
@@ -706,34 +707,35 @@ hr {
   );
   margin-bottom: 100px;
   padding-bottom: 64px;
+  padding-left: 30px;
 }
 
 .landowners-information-heading-wrapper h1 {
   font-size: calc(1.2rem + 2vw);
   font-weight: 700;
-  color: #ffffff;
+  color: #004359;
   padding-top: 48px;
 }
 
 /* Landowners Bullet Card */
 
 .landowners-bullet-card {
-  background-color: #0b8040;
+  background-color: #f1fae6;
   padding: 16px 0 16px;
   height: 64px;
   margin-bottom: 32px;
-  display: grid;
-  place-content: center;
-  border-radius: 40px;
+  /* display: grid;
+  place-content: center; */
+  border-radius: 10px;
+  border: 1px solid #004359;
   width: 95%;
 }
 
 .landowners-bullet-card p {
   margin: 0 16px;
-  color: #ffffff;
+  color: #000000;
   font-size: calc(1rem + 0.2vw);
-  line-height: 1.5rem;
-  text-align: center;
+  line-height: 1.5rem;  
 }
 
 /* Landowners Steps */
@@ -747,6 +749,14 @@ hr {
   margin-bottom: 40px;
   text-align: center;
   font-size: calc(.7rem + 2vw);
+}
+
+.landowners-steps-wrapper h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: #0b8040;
+  font-size: calc(.4rem + 2vw);
 }
 
 .step-card-outer-wrapper {

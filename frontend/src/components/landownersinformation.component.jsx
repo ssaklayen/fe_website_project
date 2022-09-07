@@ -4,10 +4,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BulletCard from "./bulletcard.component";
 
-import landownersHandshake from "../images/landowners_handshake.png";
+import landownersHandshake from "../images/landowners_handshake2.png";
 
 export default function LandownersInformation() {
-  const landownersText = "A tenant that you can trust";
+  const landownersText = "Flatiron Energy is a tenant you can trust";
 
   return (
     <>
@@ -16,12 +16,12 @@ export default function LandownersInformation() {
       
       <Container>
         <Row>
-          <Col className="p-0 mt-5" md={12} lg={6}>
+          <Col className="p-0 mt-5" md={12} lg={8}>
             <div className="landowners-information-image-wrapper">
               <img src={landownersHandshake} alt="Landowner's Handshake" />
             </div>
           </Col>
-          <Col className="mt-5" md={12} lg={6}>
+          <Col className="mt-5" md={12} lg={4}>
             <div className="landowners-information-bullets-wrapper">
               <BulletCard card={0} />
               <BulletCard card={1} />
