@@ -684,12 +684,12 @@ hr {
 
 .landowners-information-image-wrapper img {
   /* width: 586px; */
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   object-position: right;
-  border: 2px solid #004359;
-  border-radius: 5px;
+  /* border: 2px solid #004359; */
+  /* border-radius: 5px; */
 }
 
 .landowners-information-bullets-wrapper {
@@ -698,44 +698,64 @@ hr {
 }
 
 .landowners-information-heading-wrapper {
-  margin-top: 48px;
+  margin: 0 auto 100px;
+  padding-bottom: 40px;
   text-align: left;
+  /* background-color: #e0f8d8; */
   background: radial-gradient(
     circle at bottom right,
     var(--banner-gs),
     var(--banner-ge)
   );
-  margin-bottom: 100px;
-  padding-bottom: 64px;
-  padding-left: 30px;
 }
 
 .landowners-information-heading-wrapper h1 {
   font-size: calc(1.2rem + 2vw);
-  font-weight: 700;
+  font-weight: 600;
   color: #004359;
   padding-top: 48px;
+  text-align: center;
+}
+
+.landowners-information-heading-wrapper span {
+  color: #3e9a68;
+  font-weight: 400;
+}
+
+.landowners-information-banner-wrapper {
+  width: 100%;
+}
+
+.landowners-information-banner-wrapper img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Landowners Bullet Card */
 
 .landowners-bullet-card {
-  background-color: #f1fae6;
+  background-color: #e0f8d8;
   padding: 16px 0 16px;
-  height: 64px;
-  margin-bottom: 32px;
-  /* display: grid;
-  place-content: center; */
-  border-radius: 10px;
-  border: 1px solid #004359;
-  width: 95%;
+  height: 88px;
+  margin: 0 auto 32px;
+  display: grid;
+  align-items: center;
+  /* border-radius: 10px;
+  border: 1px solid #004359; */
+  width: 75%;
 }
 
-.landowners-bullet-card p {
+.landowners-bullet-card li {
   margin: 0 16px;
   color: #000000;
-  font-size: calc(1rem + 0.2vw);
-  line-height: 1.5rem;  
+  font-size: calc(1.3rem + 0.2vw);
+  line-height: 1.8rem;
+  padding-left: 1rem;  
+}
+
+.landowners-bullet-card li::marker {
+  content: '✅';
+  font-size: calc(1.3rem + 0.2vw);
 }
 
 /* Landowners Steps */
@@ -760,7 +780,7 @@ hr {
 }
 
 .step-card-outer-wrapper {
-  height: 344px;
+  height: 300px;
   background-color: #f6f6f6;
   margin-bottom: 32px;
   border-radius: 24px;
