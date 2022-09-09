@@ -29,7 +29,8 @@ export default function LandownersInformation() {
               </div>
             </Col>
           </Row>
-          <Row>
+
+          <Row id="landownersDesktop">
             <Col className="mt-2">
               <div className="landowners-information-bullets-wrapper">
                 <BulletCard card={0} />
@@ -38,6 +39,17 @@ export default function LandownersInformation() {
             </Col>
             <Col className="mt-2">
               <div className="landowners-information-bullets-wrapper">
+                <BulletCard card={2} />
+                <BulletCard card={3} />
+              </div>
+            </Col>
+          </Row>
+
+          <Row id="landownersMobile">
+            <Col>
+              <div className="landowners-information-bullets-wrapper">
+                <BulletCard card={0} />
+                <BulletCard card={5} />
                 <BulletCard card={2} />
                 <BulletCard card={3} />
               </div>

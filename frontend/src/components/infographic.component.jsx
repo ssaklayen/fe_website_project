@@ -112,7 +112,7 @@ export default function Infographic() {
 
   return (
     // Infographic Desktop
-    <Container className="pt-0">
+    <Container className="p-0">
       <div className="infographic-wrapper" id="infographicDesktop">
         <Row>
           <Col>

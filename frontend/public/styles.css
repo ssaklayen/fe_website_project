@@ -21,6 +21,9 @@ h5 {
 
 hr {
   border-top: 3px solid #004359;
+  /* width: 25%;
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 .content-container {
@@ -160,7 +163,7 @@ hr {
 }
 
 .banner-wrapper-mobile {
-  color: #ffffff;
+  color: var(--banner-text-color);
   height: 180px;
   max-width: 648px;
   background: radial-gradient(
@@ -174,7 +177,7 @@ hr {
 }
 
 .banner-wrapper-mobile h1 {
-  color: #ffffff;
+ 
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 20px;
@@ -184,7 +187,7 @@ hr {
 }
 
 .banner-wrapper-mobile p {
-  color: #ffffff;
+ 
   margin-left: 21px;
   margin-right: 33px;
   font-size: 18px;
@@ -266,7 +269,7 @@ hr {
 .infographic-wrapper {
   width: 100%;
   height: 640px;
-  margin-top: 120px;
+  margin-top: 48px;
   background-color: #dbebe2;
 }
 
@@ -327,7 +330,7 @@ hr {
   box-shadow: 0 5px 30px 0 rgba(0, 67, 89, 0.25);
   padding: 20px;
   bottom: -55px;
-  left: 55px;
+  left: 60px;
   width: 500px;
   height: 160px;
   z-index: 1;
@@ -735,8 +738,9 @@ hr {
 
 .landowners-bullet-card {
   background-color: #e0f8d8;
-  padding: 16px 0 16px;
-  height: 88px;
+  /* padding: 16px 0 16px; */
+  padding-top: 16px;
+  height: auto;
   margin: 0 auto 32px;
   display: grid;
   align-items: center;
@@ -748,14 +752,14 @@ hr {
 .landowners-bullet-card li {
   margin: 0 16px;
   color: #000000;
-  font-size: calc(1.3rem + 0.2vw);
+  font-size: calc(.8rem + .6vw);
   line-height: 1.8rem;
   padding-left: 1rem;  
 }
 
 .landowners-bullet-card li::marker {
   content: '✅';
-  font-size: calc(1.3rem + 0.2vw);
+  font-size: calc(.8rem + .6vw);
 }
 
 /* Landowners Steps */
@@ -765,7 +769,9 @@ hr {
   margin: auto;
 }
 
-.landowners-steps-wrapper h1 {
+.landowners-steps-h1-wrapper {
+  width: 90%;
+  margin: auto;
   margin-bottom: 40px;
   text-align: center;
   font-size: calc(.7rem + 2vw);
@@ -776,7 +782,7 @@ hr {
   text-align: center;
   font-weight: 700;
   color: #0b8040;
-  font-size: calc(.4rem + 2vw);
+  font-size: calc(1.2rem + 1.5vw);
 }
 
 .step-card-outer-wrapper {
@@ -927,6 +933,14 @@ hr {
     display: none;
   }
 
+  #landownersDesktop {
+    display: none;
+  }
+
+  #landownersMobile {
+    display: visible;
+  }
+
   .nav-link-pad {
     margin-right: 0 !important;
   }
@@ -980,13 +994,14 @@ hr {
 
   /* Landowner's Page */
 
-  .landowners-steps-wrapper {
-    margin-top: 228px !important;
+  .landowners-steps-h1-wrapper {
+    margin-top: 220px !important;
   }
 
-  .landowners-steps-wrapper h1 {
+  .landowners-steps-h1-wrapper h1 {
     line-height: 2.5rem;
   }
+
   .landowners-bullet-card {
     width: 100%;
   }
@@ -1031,6 +1046,14 @@ hr {
 
   #navContactUs {
     display: visible;
+  }
+
+  #landownersDesktop {
+    display: visible;
+  }
+
+  #landownersMobile {
+    display: none;
   }
 }
 
