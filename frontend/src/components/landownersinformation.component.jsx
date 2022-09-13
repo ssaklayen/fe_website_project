@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BulletCard from "./bulletcard.component";
 
-import landownersHandshake from "../images/landowners_handshake2.png";
+import landownersHandshake from "../images/landowners_handshake3.png";
 import landownersCity from "../images/landowners_city.png";
 
 export default function LandownersInformation() {
@@ -18,12 +18,12 @@ export default function LandownersInformation() {
       <div className="landowners-information-heading-wrapper">
         <h1>
           <span style={{ color: "#004359", fontWeight: "700" }}>Flatiron</span>{" "}
-          <span>Energy</span> is a tenant you can trust
+          <span style={{ color: "#004359", fontWeight: "400" }}>Energy</span> is a tenant you can <span>trust</span>
         </h1>
-
-        <Container className="">
+      </div>
+        <Container className="landowners-information-body-wrapper">
           <Row>
-            <Col className="p-0 mt-5">
+            <Col className="p-0">
               <div className="landowners-information-image-wrapper">
                 <img src={landownersHandshake} alt="Landowner's Handshake" />
               </div>
@@ -31,13 +31,13 @@ export default function LandownersInformation() {
           </Row>
 
           <Row id="landownersDesktop">
-            <Col className="mt-2">
+            <Col>
               <div className="landowners-information-bullets-wrapper">
                 <BulletCard card={0} />
                 <BulletCard card={5} />
               </div>
             </Col>
-            <Col className="mt-2">
+            <Col>
               <div className="landowners-information-bullets-wrapper">
                 <BulletCard card={2} />
                 <BulletCard card={3} />
@@ -56,7 +56,6 @@ export default function LandownersInformation() {
             </Col>
           </Row>
         </Container>
-      </div>
     </>
   );
 }

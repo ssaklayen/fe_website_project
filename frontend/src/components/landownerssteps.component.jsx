@@ -9,10 +9,10 @@ export default function LandownersSteps() {
 
   return (
     <>
-      <div className="mt-5 landowners-steps-h1-wrapper">
+      {/* <div className="mt-5 landowners-steps-h1-wrapper">
         <h1>{landownersText}</h1>
       </div>
-      <hr />
+      <hr /> */}
       <div className="landowners-steps-wrapper">
         <h2>HOW IT WORKS</h2>
         <Row className="mt-5">

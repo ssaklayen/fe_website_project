@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import Banner from "./banner.component";
 import LandownersInformation from "./landownersinformation.component";
 import LandownersSteps from "./landownerssteps.component";
 
-import landownersBannerImage from "../images/landowners_banner2.png";
+import landownersBannerImage from "../images/landowners_banner3.png";
 
 export default function LandownersPage() {
   useEffect(() => {
@@ -20,8 +20,8 @@ export default function LandownersPage() {
   }, []);
 
   const bannerText = {
-    header: "Real estate has a new tenant",
-    body: "Learn more about the immediate benefits to your bottom line below.",
+    header: "Lease or sell your property to Flatiron Energy",
+    body: "Partner with us to earn stable, long-term revenue and attractive returns.",
   };
 
   return (

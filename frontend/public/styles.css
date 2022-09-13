@@ -686,34 +686,26 @@ hr {
 }
 
 .landowners-information-image-wrapper img {
-  /* width: 586px; */
   max-width: 100%;
   height: auto;
   object-fit: cover;
   object-position: right;
-  /* border: 2px solid #004359; */
-  /* border-radius: 5px; */
 }
 
 .landowners-information-bullets-wrapper {
   width: 100%;
-  margin: 64px 0 0 auto;
+  margin: 48px 0 0 auto;
 }
 
 .landowners-information-heading-wrapper {
-  margin: 0 auto 100px;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  padding-bottom: 32px;
   text-align: left;
-  /* background-color: #e0f8d8; */
-  background: radial-gradient(
-    circle at bottom right,
-    var(--banner-gs),
-    var(--banner-ge)
-  );
+  background-color: #e0f8d8;
 }
 
 .landowners-information-heading-wrapper h1 {
-  font-size: calc(1.2rem + 2vw);
+  font-size: calc(2rem + 1vw);
   font-weight: 600;
   color: #004359;
   padding-top: 48px;
@@ -721,8 +713,12 @@ hr {
 }
 
 .landowners-information-heading-wrapper span {
-  color: #3e9a68;
-  font-weight: 400;
+  color: #7cc56c;
+}
+
+.landowners-information-body-wrapper {
+  background-color: #1b3138;
+  margin-bottom: 100px;
 }
 
 .landowners-information-banner-wrapper {
@@ -737,29 +733,27 @@ hr {
 /* Landowners Bullet Card */
 
 .landowners-bullet-card {
-  background-color: #e0f8d8;
-  /* padding: 16px 0 16px; */
-  padding-top: 16px;
+  background-color: #1b3138;
   height: auto;
-  margin: 0 auto 32px;
+  margin: 0 auto 24px;
   display: grid;
   align-items: center;
-  /* border-radius: 10px;
-  border: 1px solid #004359; */
   width: 75%;
 }
 
 .landowners-bullet-card li {
   margin: 0 16px;
-  color: #000000;
-  font-size: calc(.8rem + .6vw);
+  color: #FFFFFF;
+  font-size: calc(1rem + .4vw);
   line-height: 1.8rem;
   padding-left: 1rem;  
 }
 
 .landowners-bullet-card li::marker {
-  content: '✅';
-  font-size: calc(.8rem + .6vw);
+  color: #FFFFFF;
+  content: '\f138';
+  font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
 /* Landowners Steps */
