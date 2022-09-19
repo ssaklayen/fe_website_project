@@ -6,7 +6,7 @@ import Banner from "./banner.component";
 import LandownersInformation from "./landownersinformation.component";
 import LandownersSteps from "./landownerssteps.component";
 
-import landownersBannerImage from "../images/landowners_banner3.png";
+import landownersBannerImage from "../images/landowners_banner4.png";
 
 export default function LandownersPage() {
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function LandownersPage() {
 
   const bannerText = {
     header: "Lease or sell your property to Flatiron Energy",
-    body: "Partner with us to earn stable, long-term revenue and attractive returns.",
+    body: "Partner with Flatiron Energy to earn stable, long-term revenue and attractive returns on your property.",
   };
 
   return (

@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BulletCard from "./bulletcard.component";
 
-import landownersHandshake from "../images/landowners_handshake3.png";
+import landownersHandshake from "../images/landowners_handshake.png";
 import landownersCity from "../images/landowners_city.png";
 
 export default function LandownersInformation() {
@@ -23,14 +23,23 @@ export default function LandownersInformation() {
       </div>
         <Container className="landowners-information-body-wrapper">
           <Row>
-            <Col className="p-0">
+            <Col md={0} lg={6} className="p-0">
               <div className="landowners-information-image-wrapper">
                 <img src={landownersHandshake} alt="Landowner's Handshake" />
               </div>
             </Col>
+            <Col md={0} lg={6} className="p-0">
+              <div className="landowners-information-bullets-wrapper">
+                <BulletCard card={0} />
+                <BulletCard card={5} />
+                <BulletCard card={2} />
+                <BulletCard card={3} />
+                <BulletCard card={1} />
+              </div>
+            </Col>
           </Row>
 
-          <Row id="landownersDesktop">
+          {/* <Row id="landownersDesktop">
             <Col>
               <div className="landowners-information-bullets-wrapper">
                 <BulletCard card={0} />
@@ -54,7 +63,7 @@ export default function LandownersInformation() {
                 <BulletCard card={3} />
               </div>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
     </>
   );

@@ -226,7 +226,7 @@ hr {
 /* Strengths Customs */
 
 .strengths-container {
-  padding: 0 12px 24px;
+  padding: 12px 12px;
 }
 
 .strengths-container h4 {
@@ -738,7 +738,7 @@ hr {
   margin: 0 auto 24px;
   display: grid;
   align-items: center;
-  width: 75%;
+  width: 100%;
 }
 
 .landowners-bullet-card li {
@@ -821,6 +821,7 @@ hr {
   display: grid;
   place-items: center;
 }
+
 /* MEDIA */
 
 @media only screen and (max-width: 1399px) {
@@ -927,13 +928,13 @@ hr {
     display: none;
   }
 
-  #landownersDesktop {
+  /* #landownersDesktop {
     display: none;
   }
 
   #landownersMobile {
     display: visible;
-  }
+  } */
 
   .nav-link-pad {
     margin-right: 0 !important;
@@ -941,10 +942,6 @@ hr {
 
   .mt-mission-statement {
     margin-top: 180px;
-  }
-
-  .strengths-container {
-    padding: 24px 12px;
   }
 
   .footer-bcorp-logo {
@@ -988,10 +985,6 @@ hr {
 
   /* Landowner's Page */
 
-  .landowners-steps-h1-wrapper {
-    margin-top: 220px !important;
-  }
-
   .landowners-steps-h1-wrapper h1 {
     line-height: 2.5rem;
   }
@@ -999,6 +992,11 @@ hr {
   .landowners-bullet-card {
     width: 100%;
   }
+
+  .landowners-steps-wrapper {
+    margin-top: 224px;
+  }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -1042,13 +1040,13 @@ hr {
     display: visible;
   }
 
-  #landownersDesktop {
+  /* #landownersDesktop {
     display: visible;
   }
 
   #landownersMobile {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) {

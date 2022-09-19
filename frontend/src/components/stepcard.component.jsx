@@ -8,12 +8,12 @@ export default function StepCard(props) {
   const cards = {
     header: ["STEP 1", "STEP 2", "STEP 3"],
     subheader: [
-      "Lease to Flatiron Energy",
+      "Lease or Sell to Flatiron Energy",
       "Project Permitting",
       "Energize and Optimize",
     ],
     body: [
-      "You option-to-lease your property to Flatiron Energy at a competitive rate. These payments are paid to you day 1 and continue as Flatiron continues to explore the feasibility of the project.",
+      "You option-to-lease or sell your property to Flatiron Energy at a competitive rate. These payments are paid to you day 1 and continue as Flatiron continues to explore the feasibility of the project.",
       "Flatiron obtains the necessary approvals from the utility, state and local permitting offices.",
       "We trigger the option-to-lease to prepare for construction of the facility and you start receiving payments under the lease agreement. As the property owner, you simply earn predictable lease revenue over the long haul.",
     ],

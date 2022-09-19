@@ -123,14 +123,14 @@ export default function Infographic() {
                   <li id="landAcquisition" onMouseOver={handleMouseOver}>
                     <span
                       id="landAcquisition"
-                      className="fas fa-warehouse"
+                      className="fas fa-mountain"
                     ></span>
                     Land Acquisition
                   </li>
                   <li id="greenfieldDevelopment" onMouseOver={handleMouseOver}>
                     <span
                       id="greenfieldDevelopment"
-                      className="fas fa-solar-panel"
+                      className="fas fa-warehouse"
                     ></span>
                     Greenfield Development
                   </li>
