@@ -7,7 +7,7 @@ export default function BulletCard(props) {
     "Predictable, long-term lease revenue",
     "Landowner can be named as additional co-insured",
     "Minimal impact to your property",
-    "Up to one year of rent as collateral, guaranteed to you",
+    "Rent collateral guaranteed to you",
   ];
 
   return (

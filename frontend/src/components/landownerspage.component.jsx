@@ -20,8 +20,8 @@ export default function LandownersPage() {
   }, []);
 
   const bannerText = {
-    header: "Lease or sell your property to Flatiron Energy",
-    body: "Partner with Flatiron Energy to earn stable, long-term revenue and attractive returns on your property.",
+    header: "Let's work together",
+    body: "Lease or sell your property to Flatiron Energy to earn stable, long-term revenue and attractive returns.",
   };
 
   return (
