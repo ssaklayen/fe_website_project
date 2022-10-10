@@ -8,6 +8,7 @@ import SplashPage from "./components/splashpage.component";
 import EnergyStoragePage from "./components/energystoragepage.component";
 import LandownersPage from "./components/landownerspage.component";
 import AboutUsPage from "./components/aboutuspage.component";
+import CareersPage from "./components/careerspage.component";
 import ContactPage from "./components/contactpage.component";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/energystorage" element={<EnergyStoragePage />} />
           <Route path="/landowners" element={<LandownersPage />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/careers" element={<CareersPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <FooterBar />

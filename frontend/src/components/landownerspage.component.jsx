@@ -21,7 +21,7 @@ export default function LandownersPage() {
 
   const bannerText = {
     header: "Let's work together",
-    body: "Lease or sell your property to Flatiron Energy to earn stable, long-term revenue and attractive returns.",
+    body: "Lease or sell your property to Flatiron Energy to earn stable, long-term revenue and returns.",
   };
 
   return (
@@ -31,7 +31,7 @@ export default function LandownersPage() {
         body={bannerText.body}
         image={landownersBannerImage}
         imageAlt="Landowner Leasing"
-        gradient="teal"
+        gradient="lightgreen"
       />
       <LandownersSteps />
       <LandownersInformation />

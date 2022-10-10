@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 
-import fe_symbol from "../images/fe_symbol.png";
+import fe_symbol from "../images/fe_symbol2.png";
 import bcorpwhitepending from "../images/bcorpwhitepending.png";
 
 export default function FooterBar() {
@@ -53,7 +53,7 @@ export default function FooterBar() {
               <a href="https://www.bcorporation.net/en-us/certification">
                 <img
                   src={bcorpwhitepending}
-                  width="300"
+                  width="310"
                   alt="B Corporation Certified"
                 />
               </a>

@@ -12,7 +12,7 @@ import mainBannerImage from "../images/main_banner.png";
 export default function SplashPage() {
   const bannerText = {
     header: "Building the clean infrastructure for our future",
-    body: "Flatiron Energy develops, builds, owns, and operates standalone utility-scale energy storage."
+    body: "Flatiron Energy is a utility-scale independent power producer (IPP) that develops, builds, owns and operates advanced standalone energy storage projects."
   }
   const investorCaption = [
     "Flatiron Energy is a portfolio company of Hull Street Energy.",

@@ -142,14 +142,14 @@ export default function ContactForm() {
                   <Form.Group className="mb-4" controlId="formSubject">
                     <Form.Label>Regarding</Form.Label>
                     <Form.Select onChange={handleSubject}>
-                      <option defaultValue value="Careers">
-                        Careers
-                      </option>
-                      <option value="Landowners" onChange={handleSubject}>
+                      <option defaultValue value="Landowners" onChange={handleSubject}>
                         Landowners
                       </option>
-                      <option value="Feedback" onChange={handleSubject}>
-                        Feedback
+                      <option value="Partners" onChange={handleSubject}>
+                        Partners
+                      </option>
+                      <option value="Careers" onChange={handleSubject}>
+                        Careers
                       </option>
                     </Form.Select>
                   </Form.Group>

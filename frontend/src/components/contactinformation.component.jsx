@@ -1,6 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
 export default function ContactInformation() {
   const careerCard = {
@@ -19,22 +20,18 @@ export default function ContactInformation() {
     ],
   };
 
-  const feedbackCard = {
-    header : "Feedback",
-    body: "We welcome any additional feedback you might have, ideas for partnership, or press inquiries. Thank you!"
-  }
+  const partnersCard = {
+    header: "Partners",
+    body: [
+      "We work with a large number of partners in the community and across the energy storage value chain.",
+      "We welcome your outreach and feedback, and look forward to working with you.",
+    ],
+  };
 
   return (
     <Container className="mt-5 contact-page-info-outer-wrapper">
       <div className="contact-page-info-inner-wrapper">
-        <Row>
-          <div className="contact-page-card">
-            <h4>{careerCard.header}</h4>
-            <p>{careerCard.body[0]}</p>
-            <p>{careerCard.body[1]}</p>
-          </div>
-        </Row>
-        <Row>
+        <Row as={Link} to="/landowners" className="contact-page-info-link">
           <div className="contact-page-card">
             <h4>{landownersCard.header}</h4>
             <p>{landownersCard.body[0]}</p>
@@ -43,8 +40,16 @@ export default function ContactInformation() {
         </Row>
         <Row>
           <div className="contact-page-card">
-            <h4>{feedbackCard.header}</h4>
-            <p>{feedbackCard.body}</p>
+            <h4>{partnersCard.header}</h4>
+            <p>{partnersCard.body[0]}</p>
+            <p>{partnersCard.body[1]}</p>
+          </div>
+        </Row>
+        <Row as={Link} to="/careers" className="contact-page-info-link">
+          <div className="contact-page-card">
+            <h4>{careerCard.header}</h4>
+            <p>{careerCard.body[0]}</p>
+            <p>{careerCard.body[1]}</p>
           </div>
         </Row>
       </div>

@@ -43,7 +43,7 @@ export default function NavBar() {
               id="landownersNavlink"
               as={Link}
               to="/landowners"
-              className="nav-link nav-link-pad nav-link-line"
+              className="nav-link nav-link-landowners nav-link-line"
             >
               Landowners
             </Nav.Link>
@@ -62,6 +62,14 @@ export default function NavBar() {
               className="nav-link nav-link-pad nav-link-line"
             >
               About Us
+            </Nav.Link>
+            <Nav.Link
+              id="careersLink"
+              as={Link}
+              to="/careers"
+              className="nav-link nav-link-pad nav-link-line"
+            >
+              Careers
             </Nav.Link>
             <Nav.Link
               id="contactLink"

@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import BulletCard from "./bulletcard.component";
 
 import landownersHandshake from "../images/landowners_handshake.png";
-import landownersCity from "../images/landowners_city.png";
+import landownersCity from "../images/landowners_city2.png";
 
 export default function LandownersInformation() {
   const landownersText = "Flatiron Energy is a tenant you can trust";
@@ -17,8 +17,8 @@ export default function LandownersInformation() {
       </div>
       <div className="landowners-information-heading-wrapper">
         <h1>
-          <span style={{ color: "#004359", fontWeight: "700" }}>Flatiron</span>{" "}
-          <span style={{ color: "#004359", fontWeight: "400" }}>Energy</span> is a tenant you can <span>trust</span>
+          <span style={{ color: "#004359", fontWeight: "700" }}>Flatiron Energy</span>{" "}
+          <span style={{ color: "#004359", fontWeight: "400" }}>is a tenant you can </span><span>trust</span>
         </h1>
       </div>
         <Container className="landowners-information-body-wrapper">
@@ -31,60 +31,14 @@ export default function LandownersInformation() {
             <Col md={0} lg={6} className="p-0">
               <div className="landowners-information-bullets-wrapper">
                 <BulletCard card={0} />
-                <BulletCard card={5} />
                 <BulletCard card={2} />
+                <BulletCard card={5} />
                 <BulletCard card={3} />
                 <BulletCard card={1} />
               </div>
             </Col>
           </Row>
-
-          {/* <Row id="landownersDesktop">
-            <Col>
-              <div className="landowners-information-bullets-wrapper">
-                <BulletCard card={0} />
-                <BulletCard card={5} />
-              </div>
-            </Col>
-            <Col>
-              <div className="landowners-information-bullets-wrapper">
-                <BulletCard card={2} />
-                <BulletCard card={3} />
-              </div>
-            </Col>
-          </Row>
-
-          <Row id="landownersMobile">
-            <Col>
-              <div className="landowners-information-bullets-wrapper">
-                <BulletCard card={0} />
-                <BulletCard card={5} />
-                <BulletCard card={2} />
-                <BulletCard card={3} />
-              </div>
-            </Col>
-          </Row> */}
         </Container>
     </>
   );
-}
-
-{
-  /* <Container>
-<Row>
-  <Col className="p-0 mt-5" md={12} lg={8}>
-    <div className="landowners-information-image-wrapper">
-      <img src={landownersHandshake} alt="Landowner's Handshake" />
-    </div>
-  </Col>
-  <Col className="mt-5" md={12} lg={4}>
-    <div className="landowners-information-bullets-wrapper">
-      <BulletCard card={0} />
-      <BulletCard card={1} />
-      <BulletCard card={2} />
-      <BulletCard card={3} />
-    </div>
-  </Col>
-</Row>
-</Container> */
 }

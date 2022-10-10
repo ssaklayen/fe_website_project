@@ -13,9 +13,9 @@ export default function StepCard(props) {
       "Energize and Optimize",
     ],
     body: [
-      "You option-to-lease or sell your property to Flatiron Energy at a competitive rate. These payments are paid to you day 1 and continue as Flatiron continues to explore the feasibility of the project.",
-      "Flatiron obtains the necessary approvals from the utility, state and local permitting offices.",
-      "We trigger the option to prepare for construction of the facility and you start receiving payments under the lease or sale agreement. As the property owner, you simply earn predictable lease revenue over the long haul.",
+      "You option to lease or sell your property to Flatiron Energy at a competitive rate. These payments are paid to you day 1.",
+      "Flatiron obtains the necessary approvals from the utility, state and local permitting offices. Payments continue as Flatiron advances project feasibility.",
+      "You start receiving payments under the competitive lease or sale agreement once we trigger the option to prepare for construction of the facility.",
     ],
     image: [step1_image, step2_image, step3_image]
   };
@@ -35,6 +35,3 @@ export default function StepCard(props) {
     </>
   );
 }
-
-
-/* We handle all equipment procurement, operations, and long-term maintenance of the energy storage system. */

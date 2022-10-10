@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -46,7 +46,7 @@ hr {
 .navbar {
   /* box-shadow: 0 5px 20px 0 rgba(0, 67, 89, 0.25); */
   border-bottom: 24px solid #1b3138;
-  background-color: #f5fdf8 !important;
+  background-color: #ffffff !important;
 }
 
 .navbar span {
@@ -54,9 +54,9 @@ hr {
 }
 
 .nav-link {
-  font-size: 1.2rem !important;
-  font-weight: 500 !important;
-  color: #004359 !important;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  color: #004359;
 }
 
 .navbar-nav a {
@@ -101,7 +101,7 @@ hr {
 }
 
 .nav-link-pad {
-  margin-right: 66px !important;
+  margin-right: 66px;
 }
 
 .navbar-toggler {
@@ -111,6 +111,13 @@ hr {
 
 .navbar-toggler:focus {
   box-shadow: none !important;
+}
+
+.nav-link-landowners {
+  margin-right: 66px;
+  padding-top: 33px !important;
+  color: #ffffff;
+  background-color: #004359;
 }
 
 .dropdown-menu a {
@@ -177,7 +184,6 @@ hr {
 }
 
 .banner-wrapper-mobile h1 {
- 
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 20px;
@@ -187,7 +193,6 @@ hr {
 }
 
 .banner-wrapper-mobile p {
- 
   margin-left: 21px;
   margin-right: 33px;
   font-size: 18px;
@@ -256,7 +261,6 @@ hr {
 .strength-image-wrapper img {
   max-width: 100%;
   height: auto;
-
 }
 
 /* Infographic Customs */
@@ -520,7 +524,8 @@ hr {
 .footer-bcorp-logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  padding-top: 12px;
   height: auto;
 }
 
@@ -531,7 +536,8 @@ hr {
 }
 
 .footer-fe-symbol p {
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 10px;
   font-size: 1rem;
   color: #ffffff;
 }
@@ -584,6 +590,15 @@ hr {
 
 .contact-page-card p {
   margin-left: 2px;
+}
+
+.contact-page-info-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact-page-info-link:hover {
+  color: #000000;
 }
 
 /* Contact Form */
@@ -713,7 +728,7 @@ hr {
 }
 
 .landowners-information-heading-wrapper span {
-  color: #7cc56c;
+  color: #0b8040;
 }
 
 .landowners-information-body-wrapper {
@@ -743,17 +758,17 @@ hr {
 
 .landowners-bullet-card li {
   margin: 0 16px;
-  color: #FFFFFF;
-  font-size: calc(1rem + .4vw);
+  color: #ffffff;
+  font-size: calc(1rem + 0.4vw);
   line-height: 1.8rem;
-  padding-left: 1rem;  
+  padding-left: 1rem;
 }
 
 .landowners-bullet-card li::marker {
-  color: #FFFFFF;
-  content: '\f138';
+  color: #ffffff;
+  content: "\f138";
   font-family: "Font Awesome 6 Free";
-    font-weight: 900;
+  font-weight: 900;
 }
 
 /* Landowners Steps */
@@ -991,14 +1006,13 @@ hr {
     width: 100%;
   }
 
-  /* .landowners-steps-wrapper {
-    margin-top: 224px;
-  } */
-
-  .landowners-steps-hr-wrapper {
-    margin-top: 224px;
+  .landowners-steps-wrapper {
+    margin-top: 168px;
   }
 
+  /* .landowners-steps-hr-wrapper {
+    margin-top: 224px;
+  } */
 }
 
 @media only screen and (min-width: 992px) {
