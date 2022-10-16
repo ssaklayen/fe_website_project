@@ -3,18 +3,33 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
-// import Offcanvas from 'react-bootstrap';
 import fe_logo from "../images/fe_logo.png";
-
-// import bcorplogo from "../images/bcorplogo.png";
 
 export default function NavBar() {
   const [collapsed, setCollapsed] = React.useState(true);
 
   function handleNavToggleClick() {
     collapsed === false ? setCollapsed(true) : setCollapsed(false);
+  }
+
+  function handleMouseOver() {
+    document.documentElement.style.setProperty(
+      "--nav-landowners-color",
+      "#FFFFFF"
+    );
+  }
+
+  function handleMouseOut() {
+    if (
+      !document
+        .getElementById("landownersNavlink")
+        .classList.contains("nav-link-active")
+    )
+      document.documentElement.style.setProperty(
+        "--nav-landowners-color",
+        "#004359"
+      );
   }
 
   useEffect(() => {
@@ -25,9 +40,9 @@ export default function NavBar() {
   });
 
   return (
-    <Navbar sticky="top" collapseOnSelect bg="light" expand="lg">
+    <Navbar sticky="top" collapseOnSelect bg="light" expand="xl">
       <Container>
-        <Navbar.Brand href="/" className="nav-link-line">
+        <Navbar.Brand as={Link} to="/" className="nav-link-line">
           <img src={fe_logo} width="158" height="98" alt="Flatiron Energy" />
         </Navbar.Brand>
 
@@ -39,87 +54,72 @@ export default function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="fe-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link
-              id="landownersNavlink"
-              as={Link}
-              to="/landowners"
-              className="nav-link nav-link-landowners nav-link-line"
-            >
-              Landowners
-            </Nav.Link>
-            <Nav.Link
-              id="energystorageLink"
-              as={Link}
-              to="/energystorage"
-              className="nav-link nav-link-pad nav-link-line"
-            >
-              Energy Storage
-            </Nav.Link>
-            <Nav.Link
-              id="aboutusLink"
-              as={Link}
-              to="/aboutus"
-              className="nav-link nav-link-pad nav-link-line"
-            >
-              About Us
-            </Nav.Link>
-            <Nav.Link
-              id="careersLink"
-              as={Link}
-              to="/careers"
-              className="nav-link nav-link-pad nav-link-line"
-            >
-              Careers
-            </Nav.Link>
-            <Nav.Link
-              id="contactLink"
-              as={Link}
-              to="/contact"
-              className="nav-link nav-link-line"
-            >
-              Contact Us
-            </Nav.Link>
+            <div id="navlinkLandownersExpanded" className="nav-link-landowners">
+              <Nav.Link
+                id="landownersNavlink"
+                as={Link}
+                to="/landowners"
+                className="nav-link nav-link-line"
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}
+              >
+                Landowners
+              </Nav.Link>
+            </div>
+            <div id="navlinkLandownersCollapsed" className="nav-link-pad nav-link-margin">
+              <Nav.Link
+                id="landownersNavlink"
+                as={Link}
+                to="/landowners"
+                className="nav-link nav-link-line"
+              >
+                Landowners
+              </Nav.Link>
+            </div>
+
+            <div className="nav-link-pad nav-link-margin">
+              <Nav.Link
+                id="energystorageLink"
+                as={Link}
+                to="/energystorage"
+                className="nav-link nav-link-line"
+              >
+                Energy Storage
+              </Nav.Link>
+            </div>
+            <div className="nav-link-pad nav-link-margin">
+              <Nav.Link
+                id="aboutusLink"
+                as={Link}
+                to="/aboutus"
+                className="nav-link nav-link-line"
+              >
+                About Us
+              </Nav.Link>
+            </div>
+            <div className="nav-link-pad nav-link-margin">
+              <Nav.Link
+                id="careersLink"
+                as={Link}
+                to="/careers"
+                className="nav-link nav-link-line"
+              >
+                Careers
+              </Nav.Link>
+            </div>
+            <div className="nav-link-pad">
+              <Nav.Link
+                id="contactLink"
+                as={Link}
+                to="/contact"
+                className="nav-link nav-link-line"
+              >
+                Contact Us
+              </Nav.Link>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
-
-/*********************** Collapsable Nav Bar *********************************/
-{
-  /* <Nav className="me-auto bcorpLinkMobile">
-          <a href="https://www.bcorporation.net/en-us/certification">
-            <img
-              src={bcorplogo}
-              className="mt-5"
-              width="15%"
-              alt="Certified B Corporation"
-            />
-          </a>
-        </Nav> */
-}
-
-{
-  /* <NavDropdown
-              title={"About"}
-              id="fe-nav-dropdown"
-              className="nav-link-pad nav-link-line"
-            >
-              <NavDropdown.Item href="/aboutus#team" className="dropdown-item">
-                Our Team
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/aboutus#values"
-                className="dropdown-item"
-              >
-                Our Values
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/aboutus#partners"
-                className="dropdown-item"
-              >
-                Our Partners
-              </NavDropdown.Item>
-            </NavDropdown> */
 }

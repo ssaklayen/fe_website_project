@@ -4,27 +4,24 @@ import Col from "react-bootstrap/Col";
 import StepCard from "./stepcard.component";
 
 export default function LandownersSteps() {
-  const landownersText =
-    "Earn stable, long-term revenue and attractive returns by leasing or selling your property to Flatiron Energy";
-
   return (
     <>
-    {/* <div className="landowners-steps-hr-wrapper">
-      <hr />
-    </div> */}
       <div className="landowners-steps-wrapper">
         <h2>HOW IT WORKS</h2>
-        <Row className="mt-5">
-          <Col md={12} lg={6} xl={4}>
-            <StepCard card={0} />
-          </Col>
-          <Col md={12} lg={6} xl={4}>
-            <StepCard card={1} />
-          </Col>
-          <Col md={12} lg={12} xl={4}>
-            <StepCard card={2} />
-          </Col>
-        </Row>
+
+        <div className="landowners-steps-inner-wrapper">
+          <Row className="mt-5">
+            <Col md={12} lg={6} xl={4}>
+              <StepCard card={0} />
+            </Col>
+            <Col md={12} lg={6} xl={4}>
+              <StepCard card={1} />
+            </Col>
+            <Col md={12} lg={12} xl={4}>
+              <StepCard card={2} />
+            </Col>
+          </Row>
+        </div>
       </div>
       <hr />
     </>

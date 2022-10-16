@@ -25,6 +25,7 @@ export default function SplashPage() {
     navbarLinks.forEach((navlink) => {
       navlink.classList.remove("nav-link-active");
     });
+    document.documentElement.style.setProperty('--nav-landowners-color', '#004359');
   });
 
   return (

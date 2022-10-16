@@ -13,6 +13,7 @@ export default function EnergyStoragePage() {
     });
     let activeLink = document.getElementById("energystorageLink");
     activeLink.classList.add("nav-link-active");
+    document.documentElement.style.setProperty('--nav-landowners-color', '#004359');
   }, []);
 
   const bannerText = {

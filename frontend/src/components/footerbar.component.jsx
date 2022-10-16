@@ -5,7 +5,8 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 
 import fe_symbol from "../images/fe_symbol2.png";
-import bcorpwhitepending from "../images/bcorpwhitepending.png";
+import bcorpwhitepending from "../images/bcorpwhitepending3.png";
+import bcorpwhitependingmobile from "../images/bcorpwhitepending.png";
 
 export default function FooterBar() {
   return (
@@ -17,23 +18,26 @@ export default function FooterBar() {
           <Row id="footerDesktop">
             {/* Company Block */}
             <Col>
-            <div className="w-50 mx-auto">
-              <h5>Company</h5>
-              <Link to="/landowners">
-                <p>Landowners</p>
-              </Link>
-              <Link to="/energystorage">
-                <p>Energy Storage</p>
-              </Link>
-              <Link to="/aboutus">
-                <p>About Us</p>
-              </Link>
-            </div>
-          </Col>
+              <div>
+                <h5>Company</h5>
+                <Link to="/landowners">
+                  <p>Landowners</p>
+                </Link>
+                <Link to="/energystorage">
+                  <p>Energy Storage</p>
+                </Link>
+                <Link to="/aboutus">
+                  <p>About Us</p>
+                </Link>
+                <Link to="/careers">
+                  <p>Careers</p>
+                </Link>
+              </div>
+            </Col>
 
             {/* Contact Block */}
             <Col>
-              <div className="w-50 mx-auto">
+              <div>
                 <h5>Contact</h5>
                 <p>
                   2101 Pearl St
@@ -50,10 +54,12 @@ export default function FooterBar() {
 
             {/* B Corp Logo Block  */}
             <Col className="footer-bcorp-logo">
+              <h5>Certified</h5>
+
               <a href="https://www.bcorporation.net/en-us/certification">
                 <img
                   src={bcorpwhitepending}
-                  width="310"
+                  width="350"
                   alt="B Corporation Certified"
                 />
               </a>
@@ -62,33 +68,39 @@ export default function FooterBar() {
             {/* Fe Logo & Copyright Block */}
             <Col className="footer-fe-symbol">
               <Link to="/">
-                <img src={fe_symbol} width="200" alt="Flatiron Energy Symbol" />
-                <p>
-                  Copyright © 2022
-                  <br />
-                  Flatiron Energy LLC
-                </p>
+                <img src={fe_symbol} width="240" alt="Flatiron Energy Symbol" />
+                <div className="footer-fe-symbol-text">
+                  <p>
+                    Copyright © 2022
+                    <br />
+                    Flatiron Energy LLC
+                  </p>
+                </div>
               </Link>
             </Col>
           </Row>
 
           {/* Footer Mobile*/}
           <Row id="footerMobile">
-            {/* B Corp Logo Block  */}
+            {/* B Corp Logo Block Mobile*/}
             <Col className="footer-bcorp-logo">
               <a href="https://www.bcorporation.net/en-us/certification">
                 <img
-                  src={bcorpwhitepending}
+                  src={bcorpwhitependingmobile}
                   width="190rem"
                   alt="B Corporation Certified"
                 />
               </a>
             </Col>
 
-            {/* Fe Logo & Copyright Block */}
+            {/* Fe Logo & Copyright Block Mobile */}
             <Col className="footer-fe-symbol">
               <Link to="/">
-                <img src={fe_symbol} width="120rem" alt="Flatiron Energy Symbol" />
+                <img
+                  src={fe_symbol}
+                  width="120rem"
+                  alt="Flatiron Energy Symbol"
+                />
                 <p>
                   Copyright © 2022
                   <br />

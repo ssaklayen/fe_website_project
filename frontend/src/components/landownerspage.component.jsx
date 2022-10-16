@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
 import Banner from "./banner.component";
 import LandownersInformation from "./landownersinformation.component";
 import LandownersSteps from "./landownerssteps.component";
@@ -17,6 +15,7 @@ export default function LandownersPage() {
     });
     let activeLink = document.getElementById("landownersNavlink");
     activeLink.classList.add("nav-link-active");
+    document.documentElement.style.setProperty('--nav-landowners-color', '#FFFFFF');
   }, []);
 
   const bannerText = {

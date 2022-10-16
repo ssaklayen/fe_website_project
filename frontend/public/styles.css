@@ -5,6 +5,7 @@
   --banner-gs: #40666a;
   --banner-ge: #1b3138;
   --banner-text-color: #ffffff;
+  --nav-landowners-color: #004359;
 }
 
 body {
@@ -20,10 +21,9 @@ h5 {
 }
 
 hr {
-  border-top: 3px solid #004359;
-  /* width: 25%;
-  margin-left: auto;
-  margin-right: auto; */
+  border-top: 6px solid #1b3138;
+  opacity: 80%;
+  border-radius: 50%;
 }
 
 .content-container {
@@ -101,6 +101,10 @@ hr {
 }
 
 .nav-link-pad {
+  padding: 16px 0 16px;
+}
+
+.nav-link-margin {
   margin-right: 66px;
 }
 
@@ -115,9 +119,14 @@ hr {
 
 .nav-link-landowners {
   margin-right: 66px;
-  padding-top: 33px !important;
-  color: #ffffff;
-  background-color: #004359;
+  padding: 12px 33px;
+  background-color: var(--nav-landowners-color);
+  border: 4px solid #004359;
+  transition-duration: 0.4s;
+}
+
+.nav-link-landowners a {
+  color: #FFFFFF;
 }
 
 .dropdown-menu a {
@@ -503,6 +512,7 @@ hr {
 .footer-wrapper a:hover {
   opacity: 0.5;
 }
+
 .footer-image {
   height: 200px;
 
@@ -522,11 +532,12 @@ hr {
 }
 
 .footer-bcorp-logo {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  padding-top: 12px;
+  max-width: 100%;
   height: auto;
+}
+
+.footer-bcorp-logo h5 {
+  margin-left: 18px;
 }
 
 .footer-fe-symbol {
@@ -535,9 +546,13 @@ hr {
   height: auto;
 }
 
+.footer-fe-symbol-text {
+  text-align: center;
+  width: 90%;
+}
+
 .footer-fe-symbol p {
-  /* text-align: center; */
-  padding-left: 10px;
+  /* padding-left: 30px; */
   font-size: 1rem;
   color: #ffffff;
 }
@@ -546,7 +561,7 @@ hr {
   text-align: center;
   font-size: 1rem;
   width: 95%;
-  margin: 150px auto 200px auto;
+  margin: 150px auto 200px;
   color: grey;
 }
 
@@ -723,7 +738,6 @@ hr {
   font-size: calc(2rem + 1vw);
   font-weight: 600;
   color: #004359;
-  padding-top: 48px;
   text-align: center;
 }
 
@@ -733,7 +747,6 @@ hr {
 
 .landowners-information-body-wrapper {
   background-color: #1b3138;
-  margin-bottom: 100px;
 }
 
 .landowners-information-banner-wrapper {
@@ -743,6 +756,36 @@ hr {
 .landowners-information-banner-wrapper img {
   max-width: 100%;
   height: auto;
+}
+
+.landowners-contact-link-wrapper {
+  text-align: center;
+  margin-bottom: 100px;
+  background-color: #e0f8d8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.landowners-contact-link-wrapper p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: calc(.8rem + 0.5vw);
+  width: 75%;
+}
+
+.landowners-contact-link {
+  text-decoration: none;
+  color: #0b8040;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition-duration: 0.4s;
+}
+
+.landowners-contact-link:hover {
+  color:#3e9a68;
+  border: 1px solid #3e9a68;
 }
 
 /* Landowners Bullet Card */
@@ -760,7 +803,7 @@ hr {
   margin: 0 16px;
   color: #ffffff;
   font-size: calc(1rem + 0.4vw);
-  line-height: 1.8rem;
+  line-height: 1.7rem;
   padding-left: 1rem;
 }
 
@@ -780,10 +823,6 @@ hr {
   padding-bottom: 24px;
 }
 
-.landowners-steps-hr-wrapper {
-  margin-top: 3rem;
-}
-
 .landowners-steps-wrapper h2 {
   margin-top: 40px;
   text-align: center;
@@ -792,8 +831,16 @@ hr {
   font-size: calc(1.2rem + 1.5vw);
 }
 
+.landowners-steps-inner-wrapper {
+
+}
+
+/* .landowners-steps-hr-wrapper {
+  margin-top: 3rem;
+} */
+
 .step-card-outer-wrapper {
-  height: 280px;
+  height: 248px;
   background-color: #f6f6f6;
   margin-bottom: 32px;
   border-radius: 24px;
@@ -835,9 +882,74 @@ hr {
   place-items: center;
 }
 
+/***************** About Us ***********/
+
+.about-us-mission-container {
+  margin-top: 8px;
+  margin-bottom: 48px;
+  display: flex;
+}
+
+.about-us-mission-container img {
+  padding-left: 12px;
+}
+
+.about-us-mission-container p {
+  padding-left: 48px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.7rem;
+}
+
+/* About Us Team Card */
+
+.about-us-team-container {
+  width: 500px;
+  text-align: center;
+}
+
+.about-us-team-container img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 100%;
+  filter: grayscale(100%);
+  transition-duration: 0.4s;
+}
+
+.about-us-team-container img:hover {
+  filter: none;
+}
+
+.about-us-team-container h4 {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #004359
+}
+
+.about-us-team-container h5 {
+  color: #0b8040;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.about-us-team-container a {
+  text-decoration: none;
+  transition-duration: 0.4s;
+  font-size: 1.1rem;
+}
+
+.about-us-map-container {
+  background-image: url('./images/usa.png');
+  background-size: cover;
+  height: 1000px;
+  opacity: 50%;
+}
+
 /* MEDIA */
 
 @media only screen and (max-width: 1399px) {
+
   .infographic-carousel-image img {
     max-width: 95%;
   }
@@ -861,9 +973,33 @@ hr {
   .contact-page-form-foreground {
     left: -95px;
   }
+
+  .landowners-bullet-card li {
+    font-size: calc(1rem + 0.1vw);
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #navlinkLandownersExpanded {
+    display: visible;
+  }
+
+  #navlinkLandownersCollapsed {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
+
+  #navlinkLandownersExpanded {
+    display: none;
+  }
+
+  #navlinkLandownersCollapsed {
+    display: visible;
+  }
+  
   .infographic-text-panel {
     margin-left: 30px;
   }
@@ -897,6 +1033,18 @@ hr {
 
   .contact-page-row-wrapper {
     margin-top: 180px;
+  }
+
+  .landowners-bullet-card li {
+    font-size: calc(.9rem);
+  }
+
+  .landowners-bullet-card {
+    margin-bottom: 8px;
+  }
+
+  .landowners-information-bullets-wrapper {
+    margin-top: 32px;
   }
 }
 
@@ -940,14 +1088,6 @@ hr {
   #navContactUs {
     display: none;
   }
-
-  /* #landownersDesktop {
-    display: none;
-  }
-
-  #landownersMobile {
-    display: visible;
-  } */
 
   .nav-link-pad {
     margin-right: 0 !important;
@@ -1010,9 +1150,11 @@ hr {
     margin-top: 168px;
   }
 
-  /* .landowners-steps-hr-wrapper {
-    margin-top: 224px;
-  } */
+  .landowners-bullet-card li {
+    font-size: calc(1rem + 0.1vw);
+  }
+
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -1056,13 +1198,6 @@ hr {
     display: visible;
   }
 
-  /* #landownersDesktop {
-    display: visible;
-  }
-
-  #landownersMobile {
-    display: none;
-  } */
 }
 
 @media only screen and (max-width: 767px) {

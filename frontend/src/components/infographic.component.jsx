@@ -13,28 +13,6 @@ import operationBiddingImg from "../images/operation_bidding.jpg";
 
 export default function Infographic() {
 
-  const MobileCard = (props) => {
-    console.log(props);
-    
-    return (
-      <>
-        <li id={props.id} onClick={handleMouseClick}>
-          <span
-            id={props.id}
-            className="fas fa-plus-circle"
-          ></span>
-          {props.title}
-        </li>
-        <div className="infographic-card-mobile">
-          <img src={props.img} alt={props.title} width="95%" />
-          <div className="infographic-card-caption-mobile">
-            <p>{slide.body[props.slide]}</p>
-          </div>
-        </div>
-      </>
-    );
-  };
-
   const slide = {
     id: [
       "landAcquisition",
