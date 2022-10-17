@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Banner from "./banner.component";
 
-import mainBannerImage from "../images/main_banner.png";
+import careersBannerImage from "../images/careers_banner.png";
 
 export default function CareersPage() {
   useEffect(() => {
@@ -27,8 +27,8 @@ export default function CareersPage() {
       <Banner
         header={bannerText.header}
         body={bannerText.body}
-        image={mainBannerImage}
-        imageAlt="Mountain Energy Storage"
+        image={careersBannerImage}
+        imageAlt="Careers"
         gradient="blue"
       />
     </Container>

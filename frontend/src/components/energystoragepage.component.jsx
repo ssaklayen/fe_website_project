@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Banner from "./banner.component";
 
-import mainBannerImage from "../images/main_banner.png";
+import energystorageBannerImage from "../images/energystorage_banner.png";
 
 export default function EnergyStoragePage() {
   useEffect(() => {
@@ -27,8 +27,8 @@ export default function EnergyStoragePage() {
       <Banner
         header={bannerText.header}
         body={bannerText.body}
-        image={mainBannerImage}
-        imageAlt="Mountain Energy Storage"
+        image={energystorageBannerImage}
+        imageAlt="Energy Storage Banner Image"
         gradient="green"
       />
     </Container>

@@ -30,7 +30,7 @@ export default function LandownersPage() {
         body={bannerText.body}
         image={landownersBannerImage}
         imageAlt="Landowner Leasing"
-        gradient="lightgreen"
+        gradient="blue"
       />
       <LandownersSteps />
       <LandownersInformation />

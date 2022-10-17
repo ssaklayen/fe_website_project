@@ -133,9 +133,6 @@ hr {
   padding-left: 8px !important;
 }
 
-.bigMargin {
-  margin-bottom: 500px;
-}
 /* Banner Customs */
 
 .banner-wrapper {
@@ -746,7 +743,11 @@ hr {
 }
 
 .landowners-information-body-wrapper {
-  background-color: #1b3138;
+  background: radial-gradient(
+    circle at bottom right,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
 }
 
 .landowners-information-banner-wrapper {
@@ -791,7 +792,6 @@ hr {
 /* Landowners Bullet Card */
 
 .landowners-bullet-card {
-  background-color: #1b3138;
   height: auto;
   margin: 0 auto 24px;
   display: grid;
@@ -817,10 +817,11 @@ hr {
 /* Landowners Steps */
 
 .landowners-steps-wrapper {
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding-top: 24px;
   padding-bottom: 24px;
+  background-color:#e0f8d8;
 }
 
 .landowners-steps-wrapper h2 {
@@ -832,12 +833,10 @@ hr {
 }
 
 .landowners-steps-inner-wrapper {
-
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
 }
-
-/* .landowners-steps-hr-wrapper {
-  margin-top: 3rem;
-} */
 
 .step-card-outer-wrapper {
   height: 248px;

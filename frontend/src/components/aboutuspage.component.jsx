@@ -4,7 +4,7 @@ import Banner from "./banner.component";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import mainBannerImage from "../images/main_banner.png";
+import aboutusBannerImage from "../images/aboutus_banner.png";
 import bcorpLogo from "../images/bcorplogo.png";
 import teamMemberImage from "../images/me.png";
 
@@ -55,8 +55,8 @@ export default function AboutUsPage() {
       <Banner
         header={bannerText.header}
         body={bannerText.body}
-        image={mainBannerImage}
-        imageAlt="Mountain Energy Storage"
+        image={aboutusBannerImage}
+        imageAlt="About Us Team Image"
         gradient="blue"
       />
       <Container className="ps-4 mt-5">

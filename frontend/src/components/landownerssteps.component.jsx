@@ -8,20 +8,19 @@ export default function LandownersSteps() {
     <>
       <div className="landowners-steps-wrapper">
         <h2>HOW IT WORKS</h2>
-
-        <div className="landowners-steps-inner-wrapper">
-          <Row className="mt-5">
-            <Col md={12} lg={6} xl={4}>
-              <StepCard card={0} />
-            </Col>
-            <Col md={12} lg={6} xl={4}>
-              <StepCard card={1} />
-            </Col>
-            <Col md={12} lg={12} xl={4}>
-              <StepCard card={2} />
-            </Col>
-          </Row>
-        </div>
+      </div>
+      <div className="landowners-steps-inner-wrapper">
+        <Row className="mt-5">
+          <Col md={12} lg={6} xl={4}>
+            <StepCard card={0} />
+          </Col>
+          <Col md={12} lg={6} xl={4}>
+            <StepCard card={1} />
+          </Col>
+          <Col md={12} lg={12} xl={4}>
+            <StepCard card={2} />
+          </Col>
+        </Row>
       </div>
       <hr />
     </>
