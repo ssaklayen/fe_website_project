@@ -96,7 +96,15 @@ export default function AboutUsPage() {
         </div>
       </Container>
       <div className="about-us-map-container">
-        
+        <div className="about-us-map-text">
+          <p>Technology has advanced the way energy is produced</p>
+          <h2>Flatiron Energy is leading the transition.</h2>
+          <p>
+            Flatiron Energy develops, acquires, and operates energy
+            infrastructure, including technically advanced utility-scale energy
+            storage facilities.
+          </p>
+        </div>
       </div>
     </Container>
   );
