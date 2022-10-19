@@ -280,7 +280,7 @@ hr {
   width: 100%;
   height: 640px;
   margin-top: 48px;
-  background-color: #dbebe2;
+  background-color: #e0f8d8;
 }
 
 .infographic-text-panel {
@@ -330,7 +330,7 @@ hr {
 }
 
 .infographic-carousel-image img {
-  box-shadow: 10px -10px #b3cfc0 !important;
+  box-shadow: 10px -10px #3e9a68 !important;
   max-width: 98%;
 }
 
@@ -497,11 +497,11 @@ hr {
 
 .footer-wrapper p {
   margin-bottom: 24px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .footer-wrapper a {
-  color: #9eebbf;
+  color: #52d68d;
   text-decoration: none;
   transition: 0.4s;
 }
@@ -881,7 +881,46 @@ hr {
   place-items: center;
 }
 
-/***************** About Us ***********/
+/***************** ENERGY STORAGE *************/
+
+.energy-storage-row-header {
+  height: 144px;
+  background-color: #0b8040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.energy-storage-row-header h1 {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.energy-storage-row-footer {
+  height: 288px;
+  background: radial-gradient(
+    circle at bottom right,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.energy-storage-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.energy-storage-columns p {
+  width: 90%;
+}
+
+/***************** ABOUT US ***************/
 
 .about-us-mission-container {
   margin-top: 8px;
