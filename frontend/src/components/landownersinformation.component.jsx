@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 import BulletCard from "./bulletcard.component";
 import {Link} from "react-router-dom";
 
-import landownersFarm from "../images/landowners_farm.png";
-import landownersCity from "../images/landowners_city2.png";
+import landownersFarm from "../images/landowners_handshake2.png";
+import landownersCity from "../images/landowners_city.png";
 
 export default function LandownersInformation() {
   return (

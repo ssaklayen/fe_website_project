@@ -4,7 +4,7 @@ import Banner from "./banner.component";
 import LandownersInformation from "./landownersinformation.component";
 import LandownersSteps from "./landownerssteps.component";
 
-import landownersBannerImage from "../images/landowners_banner4.png";
+import landownersBannerImage from "../images/landowners_banner.png";
 
 export default function LandownersPage() {
   useEffect(() => {

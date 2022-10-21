@@ -40,60 +40,143 @@ export default function EnergyStoragePage() {
         imageAlt="Energy Storage Banner Image"
         gradient="green"
       />
-      <Container className="p-0 mt-5 mb-5">
-        <h1 style={{ textAlign: "center" }}>
-          Battery Energy Storage Systems Diversify Resources
+      <Container className="energy-storage-icon-heading">
+        <h1>
+          Battery Energy Storage Systems can provide power for Diversified
+          Resources
         </h1>
       </Container>
-      <Container className="p-0">
+      <Container className="energy-storage-icon-image-container">
         <img src={energystorageIconsImage} alt="Energy Storage Icon Image" />
       </Container>
-      <Container className="p-0 energy-storage-row-header"> 
+      <Container className="p-0 energy-storage-row-header">
         <h1>This Is Why</h1>
       </Container>
-      <Container className="p-0">
+
+      <Container id="energyStorageDesktop" className="p-0">
         <Row>
           <Col className="energy-storage-columns">
-            <img src={energystorageLoadLevelImage} alt="Energy Storage Load Level Graph" />
+            <img
+              src={energystorageLoadLevelImage}
+              alt="Energy Storage Load Level Graph"
+            />
           </Col>
           <Col className="energy-storage-columns">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Battery storage facilities are able to draw power from the grid to
+              charge when demand is low. These storage units will intelligently
+              send power back to the grid when demand is high. This relieves
+              stress of the electric grid and helps reduce the negative impact
+              of peak demand periods.
             </p>
           </Col>
         </Row>
         <Row>
           <Col className="energy-storage-columns">
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <div>
+              <h2>Battery Storage Facilities</h2>
+              <ul>
+                <li>Occupy a small footprint of land</li>
+                <li>Have a 3-6 month installation duration</li>
+                <li>Zero emissions and zero noise</li>
+                <li>No traffic during operations</li>
+              </ul>
+            </div>
           </Col>
           <Col className="energy-storage-columns">
-            <img src={energystorageWarehouseImage} alt="Energy Storage Warehouse" />
+            <img
+              src={energystorageWarehouseImage}
+              alt="Energy Storage Warehouse"
+            />
           </Col>
         </Row>
         <Row>
           <Col className="energy-storage-columns">
-            <img src={energystorageInspectionImage} alt="Energy Storage Battery Costs" />
+            <img
+              src={energystorageInspectionImage}
+              alt="Energy Storage Inspection"
+            />
           </Col>
           <Col className="energy-storage-columns">
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <p>
+              Analytics and technical on-site monitoring can be customized to
+              meet your organization’s unique needs. If you’re in an environment
+              that experiences all four seasons, battery energy storage has
+              multiple dispatch modes that can easily meet your cooling and
+              heating needs throughout the day.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container id="energyStorageMobile" className="p-0">
+        <Row>
+          <Col className="energy-storage-columns">
+            <img
+              src={energystorageLoadLevelImage}
+              alt="Energy Storage Load Level Graph"
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="energy-storage-columns">
+            <p>
+              Battery storage facilities are able to draw power from the grid to
+              charge when demand is low. These storage units will intelligently
+              send power back to the grid when demand is high. This relieves
+              stress of the electric grid and helps reduce the negative impact
+              of peak demand periods.
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="energy-storage-columns">
+            <img
+              src={energystorageWarehouseImage}
+              alt="Energy Storage Warehouse"
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="energy-storage-columns">
+            <div>
+              <h2>Battery Storage Facilities</h2>
+              <ul>
+                <li>Occupy a small footprint of land</li>
+                <li>Have a 3-6 month installation duration</li>
+                <li>Zero emissions and zero noise</li>
+                <li>No traffic during operations</li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="energy-storage-columns">
+            <img
+              src={energystorageInspectionImage}
+              alt="Energy Storage Inspection"
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="energy-storage-columns">
+            <p>
+              Analytics and technical on-site monitoring can be customized to
+              meet your organization’s unique needs. If you’re in an environment
+              that experiences all four seasons, battery energy storage has
+              multiple dispatch modes that can easily meet your cooling and
+              heating needs throughout the day.
             </p>
           </Col>
         </Row>
       </Container>
       <Container className="p-0 energy-storage-row-footer">
-        <h1>Lorem Ipsum</h1>
+        <h3>
+          As power and transportation converge and the world’s energy demands
+          move to large-scale wind and solar projects, large-scale energy
+          storage projects provide the missing piece to keep the electric grid
+          stable.
+        </h3>
       </Container>
     </Container>
   );

@@ -126,7 +126,7 @@ hr {
 }
 
 .nav-link-landowners a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .dropdown-menu a {
@@ -770,7 +770,7 @@ hr {
 .landowners-contact-link-wrapper p {
   margin-left: auto;
   margin-right: auto;
-  font-size: calc(.8rem + 0.5vw);
+  font-size: calc(0.8rem + 0.5vw);
   width: 75%;
 }
 
@@ -785,7 +785,7 @@ hr {
 }
 
 .landowners-contact-link:hover {
-  color:#3e9a68;
+  color: #3e9a68;
   border: 1px solid #3e9a68;
 }
 
@@ -818,14 +818,14 @@ hr {
 
 .landowners-steps-wrapper {
   width: 100%;
-  margin: auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  background-color:#e0f8d8;
+  height: 144px;
+  background-color: #e0f8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landowners-steps-wrapper h2 {
-  margin-top: 40px;
   text-align: center;
   font-weight: 700;
   color: #0b8040;
@@ -883,6 +883,28 @@ hr {
 
 /***************** ENERGY STORAGE *************/
 
+.energy-storage-icon-heading {
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.energy-storage-icon-heading h1 {
+  line-height: 3.5rem;
+}
+
+.energy-storage-icon-image-container {
+  padding: 0;
+  width: 100%;
+}
+
+.energy-storage-icon-image-container img {
+  width: 100%;
+  height: auto;
+}
+
 .energy-storage-row-header {
   height: 144px;
   background-color: #0b8040;
@@ -892,7 +914,7 @@ hr {
 }
 
 .energy-storage-row-header h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -909,6 +931,14 @@ hr {
   margin-bottom: 200px;
 }
 
+.energy-storage-row-footer h3 {
+  color: #ffffff;
+  text-align: center;
+  width: 90%;
+  line-height: 2.5rem;
+  font-size: calc(1.1rem + 0.5vw);
+}
+
 .energy-storage-columns {
   display: flex;
   justify-content: center;
@@ -918,6 +948,24 @@ hr {
 
 .energy-storage-columns p {
   width: 90%;
+  line-height: 2rem;
+  font-size: calc(1rem + .2vw);
+}
+
+.energy-storage-columns ul {
+  padding-left: 22px;
+}
+
+.energy-storage-columns ul li {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  padding-left: 0.5rem;
+}
+
+.energy-storage-columns ul li::marker {
+  content: "\f138";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
 /***************** ABOUT US ***************/
@@ -962,7 +1010,7 @@ hr {
   margin-top: 16px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #004359
+  color: #004359;
 }
 
 .about-us-team-container h5 {
@@ -985,7 +1033,7 @@ hr {
 
 .about-us-map-container::before {
   content: "";
-  background-image: url('./images/usa.png');
+  background-image: url("./images/usa.png");
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -1016,7 +1064,6 @@ hr {
 /* MEDIA */
 
 @media only screen and (max-width: 1399px) {
-
   .infographic-carousel-image img {
     max-width: 95%;
   }
@@ -1044,7 +1091,6 @@ hr {
   .landowners-bullet-card li {
     font-size: calc(1rem + 0.1vw);
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1055,10 +1101,17 @@ hr {
   #navlinkLandownersCollapsed {
     display: none;
   }
+
+  #energyStorageDesktop {
+    display: visible;
+  }
+
+  #energyStorageMobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
-
   #navlinkLandownersExpanded {
     display: none;
   }
@@ -1066,7 +1119,20 @@ hr {
   #navlinkLandownersCollapsed {
     display: visible;
   }
-  
+
+  #energyStorageDesktop {
+    display: none;
+  }
+
+  #energyStorageMobile {
+    display: visible;
+  }
+
+  .energy-storage-columns img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .infographic-text-panel {
     margin-left: 30px;
   }
@@ -1103,7 +1169,7 @@ hr {
   }
 
   .landowners-bullet-card li {
-    font-size: calc(.9rem);
+    font-size: calc(0.9rem);
   }
 
   .landowners-bullet-card {
@@ -1214,14 +1280,22 @@ hr {
   }
 
   .landowners-steps-wrapper {
-    margin-top: 168px;
+    margin-top: 180px;
   }
 
   .landowners-bullet-card li {
     font-size: calc(1rem + 0.1vw);
   }
 
+  /* Energy Storage */
 
+  .energy-storage-icon-heading {
+    margin-top: 180px;
+  }
+
+  .energy-storage-icon-heading h1 {
+    line-height: 3rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1264,7 +1338,6 @@ hr {
   #navContactUs {
     display: visible;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -1292,6 +1365,12 @@ hr {
 
   :root {
     --info-mobile-slide-size: 500;
+  }
+
+  /* Energy Storage */
+
+  .energy-storage-columns {
+    height: 300px;
   }
 }
 
