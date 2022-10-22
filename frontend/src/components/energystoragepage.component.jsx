@@ -164,8 +164,8 @@ export default function EnergyStoragePage() {
               Analytics and technical on-site monitoring can be customized to
               meet your organization’s unique needs. If you’re in an environment
               that experiences all four seasons, battery energy storage has
-              multiple dispatch modes that can easily meet your cooling and
-              heating needs throughout the day.
+              multiple dispatch modes that can easily meet your power and
+              electrical needs throughout the day.
             </p>
           </Col>
         </Row>

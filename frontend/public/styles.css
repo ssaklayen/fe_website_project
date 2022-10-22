@@ -1047,6 +1047,7 @@ hr {
   position: relative;
   opacity: 70%;
 }
+
 .about-us-map-text p:first-child {
   padding-top: 160px;
 }
@@ -1059,6 +1060,15 @@ hr {
 .about-us-map-text h2 {
   position: relative;
   padding-top: 32px;
+}
+
+.about-us-icon-container {
+  position: relative;
+  margin-top: 100px;
+}
+
+.about-us-icon-container-image {
+  opacity: 70%;
 }
 
 /* MEDIA */

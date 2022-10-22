@@ -7,6 +7,10 @@ import Col from "react-bootstrap/Col";
 import aboutusBannerImage from "../images/aboutus_banner.png";
 import bcorpLogo from "../images/bcorplogo.png";
 import teamMemberImage from "../images/me.png";
+import batteryIcon from "../images/battery_icon.png";
+import cityIcon from "../images/city_icon.png";
+import powerlinesIcon from "../images/powerlines_icon.png";
+import warehouseIcon from "../images/warehouse_icon.png";
 
 export function TeamCard(props) {
   return (
@@ -104,6 +108,30 @@ export default function AboutUsPage() {
             infrastructure, including technically advanced utility-scale energy
             storage facilities.
           </p>
+        </div>
+        <div className="about-us-icon-container">
+          <Row>
+            <Col>
+            <h4>$65 Million</h4>
+            <p>Invested in energy storage assets</p>
+              <img src={batteryIcon} className="about-us-icon-container-image" alt="Battery Icon" />
+            </Col>
+            <Col>
+            <h4>$7 Billion</h4>
+            <p>Investment Opportunity</p>
+              <img src={warehouseIcon} className="about-us-icon-container-image" alt="Warehouse Icon" />
+            </Col>
+            <Col>
+            <h4>21 GW</h4>
+            <p>Current project Pipeline</p>
+              <img src={powerlinesIcon} className="about-us-icon-container-image" alt="Powerlines Icon" />
+            </Col>
+            <Col>
+            <h4>80 + Years</h4>
+            <p>Leadership Team Industry Experience</p>
+              <img src={cityIcon} className="about-us-icon-container-image" alt="City Icon" />
+            </Col>
+          </Row>
         </div>
       </div>
     </Container>
