@@ -10,7 +10,7 @@ import passionate_image from "../images/passionate.png";
 
 const Strength = (props) => {
   const slides = {
-    header: ["Experience", "Innovative", "Passionate"],
+    header: ["Experienced", "Innovative", "Passionate"],
     body: [
       "We are a team of energy storage veterans with a long track record of delivering operational and profitable projects.",
       "We continue to seek new ideas and to implement pioneering development strategies and first-of-a-kind products.",

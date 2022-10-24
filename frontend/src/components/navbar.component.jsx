@@ -28,7 +28,7 @@ export default function NavBar() {
     )
       document.documentElement.style.setProperty(
         "--nav-landowners-color",
-        "#004359"
+        "#0b8040"
       );
   }
 
@@ -42,8 +42,8 @@ export default function NavBar() {
   return (
     <Navbar sticky="top" collapseOnSelect bg="light" expand="xl">
       <Container>
-        <Navbar.Brand as={Link} to="/" className="nav-link-line">
-          <img src={fe_logo} width="158" height="98" alt="Flatiron Energy" />
+        <Navbar.Brand as={Link} to="/">
+          <img src={fe_logo} className="nav-link-fade" width="128" alt="Flatiron Energy" />
         </Navbar.Brand>
 
         <Navbar.Toggle
@@ -54,7 +54,7 @@ export default function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="fe-navbar-nav">
           <Nav className="ms-auto">
-            <div id="navlinkLandownersExpanded" className="nav-link-landowners">
+            <div id="navlinkLandownersExpanded" className="nav-link-pad nav-link-margin">
               <Nav.Link
                 id="landownersNavlink"
                 as={Link}

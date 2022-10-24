@@ -5,7 +5,7 @@
   --banner-gs: #40666a;
   --banner-ge: #1b3138;
   --banner-text-color: #ffffff;
-  --nav-landowners-color: #004359;
+  --nav-landowners-color: #0b8040;
 }
 
 body {
@@ -32,21 +32,11 @@ hr {
 
 /* Navbar Customs */
 
-#fe-nav-dropdown {
-  font-size: 1.2rem !important;
-  font-weight: 500 !important;
-  color: #004359 !important;
-  transition-duration: 0.4s;
-}
-
-#fe-nav-dropdown:hover {
-  color: #3e9a68 !important;
-}
-
 .navbar {
   /* box-shadow: 0 5px 20px 0 rgba(0, 67, 89, 0.25); */
-  border-bottom: 24px solid #1b3138;
+  border-bottom: 4px solid #1b3138;
   background-color: #ffffff !important;
+  padding: 0;
 }
 
 .navbar span {
@@ -61,6 +51,13 @@ hr {
 
 .navbar-nav a {
   padding: 0 0 2px 0 !important;
+}
+
+.nav-link-fade {
+  transition-duration: 0.4s;
+}
+.nav-link-fade:hover {
+  opacity: 50%;
 }
 
 .nav-link-line {
@@ -121,7 +118,7 @@ hr {
   margin-right: 66px;
   padding: 12px 33px;
   background-color: var(--nav-landowners-color);
-  border: 4px solid #004359;
+  border: 4px solid #0b8040;
   transition-duration: 0.4s;
 }
 
@@ -819,7 +816,7 @@ hr {
 .landowners-steps-wrapper {
   width: 100%;
   height: 144px;
-  background-color: #e0f8d8;
+  /* background-color: #FFFFFF; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,6 +827,7 @@ hr {
   font-weight: 700;
   color: #0b8040;
   font-size: calc(1.2rem + 1.5vw);
+  margin: 0;
 }
 
 .landowners-steps-inner-wrapper {
@@ -907,7 +905,7 @@ hr {
 
 .energy-storage-row-header {
   height: 144px;
-  background-color: #0b8040;
+  background-color: #004359;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1033,7 +1031,7 @@ hr {
 
 .about-us-map-container::before {
   content: "";
-  background-image: url("./images/usa.png");
+  background-image: url("./images/usa2.png");
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -1060,11 +1058,20 @@ hr {
 .about-us-map-text h2 {
   position: relative;
   padding-top: 32px;
+  font-weight: 600;
 }
 
 .about-us-icon-container {
   position: relative;
   margin-top: 100px;
+}
+
+.about-us-icon-text p {
+  opacity: 70%;
+}
+
+.about-us-icon-text h4 {
+  font-weight: 600;
 }
 
 .about-us-icon-container-image {

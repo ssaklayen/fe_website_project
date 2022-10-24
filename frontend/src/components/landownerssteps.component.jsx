@@ -10,7 +10,7 @@ export default function LandownersSteps() {
         <h2>HOW IT WORKS</h2>
       </div>
       <div className="landowners-steps-inner-wrapper">
-        <Row className="mt-5">
+        <Row>
           <Col md={12} lg={6} xl={4}>
             <StepCard card={0} />
           </Col>

@@ -13,13 +13,16 @@ export default function CareersPage() {
     });
     let activeLink = document.getElementById("careersLink");
     activeLink.classList.add("nav-link-active");
-    document.documentElement.style.setProperty('--nav-landowners-color', '#004359');
+    document.documentElement.style.setProperty(
+      "--nav-landowners-color",
+      "#0b8040"
+    );
   }, []);
 
   const bannerText = {
     header: "Careers",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "We are a tight-knit team that has been working together for over seven years in the energy storage industry. If you are as excited about the energy transition to a cleaner, more flexible, and more reliable grid as we are, we want to hear from you.",
   };
 
   return (

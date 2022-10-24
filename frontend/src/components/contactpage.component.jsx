@@ -17,7 +17,7 @@ export default function ContactPage() {
     });
     let activeLink = document.getElementById("contactLink");
     activeLink.classList.add("nav-link-active");
-    document.documentElement.style.setProperty('--nav-landowners-color', '#004359');
+    document.documentElement.style.setProperty('--nav-landowners-color', '#0b8040');
   }, []);
 
   const bannerText = {

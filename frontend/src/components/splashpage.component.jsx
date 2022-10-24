@@ -7,7 +7,7 @@ import Banner from "./banner.component";
 import { Link } from "react-router-dom";
 
 import hullStreetEnergy from "../images/hullstreetenergy.png";
-import mainBannerImage from "../images/main_banner.png";
+import mainBannerImage from "../images/main_banner2.png";
 
 export default function SplashPage() {
   const bannerText = {
@@ -25,7 +25,7 @@ export default function SplashPage() {
     navbarLinks.forEach((navlink) => {
       navlink.classList.remove("nav-link-active");
     });
-    document.documentElement.style.setProperty('--nav-landowners-color', '#004359');
+    document.documentElement.style.setProperty('--nav-landowners-color', '#0b8040');
   });
 
   return (

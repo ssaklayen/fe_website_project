@@ -7,10 +7,10 @@ import Col from "react-bootstrap/Col";
 import aboutusBannerImage from "../images/aboutus_banner.png";
 import bcorpLogo from "../images/bcorplogo.png";
 import teamMemberImage from "../images/me.png";
-import batteryIcon from "../images/battery_icon.png";
-import cityIcon from "../images/city_icon.png";
-import powerlinesIcon from "../images/powerlines_icon.png";
-import warehouseIcon from "../images/warehouse_icon.png";
+import batteryIcon from "../images/battery_icon2.png";
+import cityIcon from "../images/city_icon2.png";
+import powerlinesIcon from "../images/powerlines_icon2.png";
+import warehouseIcon from "../images/warehouse_icon2.png";
 
 export function TeamCard(props) {
   return (
@@ -44,7 +44,7 @@ export default function AboutUsPage() {
     activeLink.classList.add("nav-link-active");
     document.documentElement.style.setProperty(
       "--nav-landowners-color",
-      "#004359"
+      "#0b8040"
     );
   }, []);
 
@@ -68,10 +68,11 @@ export default function AboutUsPage() {
         <div className="about-us-mission-container">
           <img src={bcorpLogo} alt="B Corp Logo" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Flatiron Energy intends to create a material positive impact on
+            society by reducing emissions that contribute to climate change and
+            environmental injustice, increasing the availability of clean
+            energy, and replacing fossil fuel power plants through the
+            development of energy storage projects.
           </p>
         </div>
       </Container>
@@ -111,25 +112,41 @@ export default function AboutUsPage() {
         </div>
         <div className="about-us-icon-container">
           <Row>
-            <Col>
-            <h4>$65 Million</h4>
-            <p>Invested in energy storage assets</p>
-              <img src={batteryIcon} className="about-us-icon-container-image" alt="Battery Icon" />
+            <Col className="about-us-icon-text">
+              <h4>$65 Million</h4>
+              <p>Invested in energy storage assets</p>
+              <img
+                src={batteryIcon}
+                className="about-us-icon-container-image"
+                alt="Battery Icon"
+              />
             </Col>
-            <Col>
-            <h4>$7 Billion</h4>
-            <p>Investment Opportunity</p>
-              <img src={warehouseIcon} className="about-us-icon-container-image" alt="Warehouse Icon" />
+            <Col className="about-us-icon-text">
+              <h4>$7 Billion</h4>
+              <p>Investment Opportunity</p>
+              <img
+                src={warehouseIcon}
+                className="about-us-icon-container-image"
+                alt="Warehouse Icon"
+              />
             </Col>
-            <Col>
-            <h4>21 GW</h4>
-            <p>Current project Pipeline</p>
-              <img src={powerlinesIcon} className="about-us-icon-container-image" alt="Powerlines Icon" />
+            <Col className="about-us-icon-text">
+              <h4>21 GW</h4>
+              <p>Current project Pipeline</p>
+              <img
+                src={powerlinesIcon}
+                className="about-us-icon-container-image"
+                alt="Powerlines Icon"
+              />
             </Col>
-            <Col>
-            <h4>80 + Years</h4>
-            <p>Leadership Team Industry Experience</p>
-              <img src={cityIcon} className="about-us-icon-container-image" alt="City Icon" />
+            <Col className="about-us-icon-text">
+              <h4>7+ Years</h4>
+              <p>Leadership Team Industry Experience</p>
+              <img
+                src={cityIcon}
+                className="about-us-icon-container-image"
+                alt="City Icon"
+              />
             </Col>
           </Row>
         </div>

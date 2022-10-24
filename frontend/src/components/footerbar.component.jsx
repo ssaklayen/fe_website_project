@@ -39,13 +39,13 @@ export default function FooterBar() {
             <Col>
               <div>
                 <h5>Contact</h5>
-                <p>
+                {/* <p>
                   2101 Pearl St
                   <br />
                   Boulder, CO 80302
                   <br />
                   (630) 697-9270
-                </p>
+                </p> */}
                 <Link to="/contact">
                   <p>Contact Us</p>
                 </Link>

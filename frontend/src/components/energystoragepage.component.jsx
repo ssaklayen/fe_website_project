@@ -21,7 +21,7 @@ export default function EnergyStoragePage() {
     activeLink.classList.add("nav-link-active");
     document.documentElement.style.setProperty(
       "--nav-landowners-color",
-      "#004359"
+      "#0b8040"
     );
   }, []);
 
@@ -38,7 +38,7 @@ export default function EnergyStoragePage() {
         body={bannerText.body}
         image={energystorageBannerImage}
         imageAlt="Energy Storage Banner Image"
-        gradient="green"
+        gradient="blue"
       />
       <Container className="energy-storage-icon-heading">
         <h1>
@@ -102,8 +102,8 @@ export default function EnergyStoragePage() {
               Analytics and technical on-site monitoring can be customized to
               meet your organization’s unique needs. If you’re in an environment
               that experiences all four seasons, battery energy storage has
-              multiple dispatch modes that can easily meet your cooling and
-              heating needs throughout the day.
+              multiple dispatch modes that can easily meet your power and
+              electrical needs throughout the day.
             </p>
           </Col>
         </Row>
