@@ -7,7 +7,7 @@ export default function Banner(props) {
   React.useEffect(() => {
     if (props.gradient === "blue") {
       document.documentElement.style.setProperty("--banner-gs", "#40666a");
-      document.documentElement.style.setProperty("--banner-ge", "#1b3138");
+      document.documentElement.style.setProperty("--banner-ge", "#004359");
       document.documentElement.style.setProperty("--banner-text-color", "#FFFFFF");
     }
     if (props.gradient === "green") {
@@ -23,7 +23,7 @@ export default function Banner(props) {
   }, [props.gradient]);
 
   return (
-    <Container className="mt-5 banner-wrapper">
+    <Container className="banner-wrapper">
       <Row className="row-cols-auto" id="bannerDesktop">
         {/* Banner Text */}
         <Col className="g-0 col-lg-6 col-md-12">

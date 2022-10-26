@@ -18,7 +18,7 @@ export function TeamCard(props) {
       <img src={teamMemberImage} alt="me" />
       <h4>Sabir Saklayen</h4>
       <h5>Chief of Web Design</h5>
-      <a href="https://www.linkedin.com/in/sabir-saklayen">
+      <a href="https://www.linkedin.com/in/sabir-saklayen" target="_blank" rel="noopener noreferrer">
         <span className="fa-brands fa-linkedin"></span> Profile
       </a>
       <div className="mt-1">

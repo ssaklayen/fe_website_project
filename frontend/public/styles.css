@@ -30,10 +30,20 @@ hr {
   min-height: calc(100vh - 616px);
 }
 
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Navbar Customs */
 
 .navbar {
-  /* box-shadow: 0 5px 20px 0 rgba(0, 67, 89, 0.25); */
   border-bottom: 4px solid #1b3138;
   background-color: #ffffff !important;
   padding: 0;
@@ -926,7 +936,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 96px;
 }
 
 .energy-storage-row-footer h3 {
@@ -1076,6 +1086,90 @@ hr {
 
 .about-us-icon-container-image {
   opacity: 70%;
+}
+
+/*************** Careers **********/
+
+.job-openings-container {
+  /* background-color: #004359; */
+  background: radial-gradient(
+    circle at bottom right,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
+  padding: 64px 0 0;
+  color: #FFFFFF;
+}
+
+.job-openings-text h1 {
+  margin-top: 24px; 
+  font-weight: 600;
+
+}
+
+.job-openings-text a {
+  text-decoration: none;
+}
+
+.job-openings-text p {
+  line-height: 1.5rem;
+}
+.job-openings-button-wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+.job-openings-button {
+  margin-top: 64px;
+  margin-right: 64px;
+  width: 40%;
+  text-align: center;
+  color: #FFFFFF;
+  /* background-color:#004359; */
+  border: 2px solid #0a58ca;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.job-openings-button:hover {
+  color: #1b3138;
+  background-color:#FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.job-openings-button h4 {
+  padding-top: 8px;
+}
+
+.careers-values-header {
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.careers-values-wrapper {
+  width: 50%;
+  margin: 0 auto 48px;
+}
+.careers-values-header h1 {
+  font-weight: 600;
+}
+
+.careers-value {
+  display: inline-flex;
+  margin-top: 48px;
+}
+
+.careers-value h4 {
+  color:#0b8040;
+  font-weight: 600;
+}
+
+.careers-value p {
+  color: #004359;
+  font-weight: 500;
 }
 
 /* MEDIA */
