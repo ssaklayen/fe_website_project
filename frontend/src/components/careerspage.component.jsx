@@ -5,12 +5,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import careersBannerImage from "../images/careers_banner.png";
-import jobOpeningsImage from "../images/job_openings.png";
-import feLogoImage from "../images/fe_logo.png";
-import respectIcon from "../images/respect.png";
+import respectIcon from "../images/handshake.png";
 import excellenceIcon from "../images/excellence.png";
-import candorIcon from "../images/candor.png";
-import communityIcon from "../images/community.png";
+import candorIcon from "../images/trust.png";
+import communityIcon from "../images/people.png";
 
 export default function CareersPage() {
   useEffect(() => {
@@ -42,48 +40,34 @@ export default function CareersPage() {
         imageAlt="Careers"
         gradient="blue"
       />
-      <Container className="p-0 mt-5 center">
-        <img src={feLogoImage} alt="feLogoImage" />
-      </Container>
+      <hr className="mt-5" />
+
       <Container className="mt-5 job-openings-container">
-        <Row>
-          <Col sm={4}>
-            <img
-              src={jobOpeningsImage}
-              className="responsive"
-              alt="Job Openings Images"
-            />
-          </Col>
-          <Col sm={8} className="job-openings-text">
-            <h1>Job Openings</h1>
-            <p>
-              We are a tight-knit team that has been working together for over
-              seven years in the energy storage industry. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div className="job-openings-button-wrapper">
-              <div className="job-openings-button">
-                <a
-                  href="https://www.linkedin.com/company/flatiron-energy/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h4>
-                    See our job openings{" "}
-                    <span className="ms-2 fa-brands fa-linkedin"></span>
-                  </h4>
-                </a>
-              </div>
+        <div className="job-openings-text">
+          <h1>Job Openings</h1>
+          <p>
+            We are a fast-growing startup with a dynamic, creative, fun,
+            start-up culture. The right candidate will be excited to help build
+            the company from the ground up and support our mission.
+          </p>
+          <div className="job-openings-button-wrapper">
+            <div className="job-openings-button">
+              <a
+                href="https://www.linkedin.com/company/flatiron-energy/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See our job openings{" "}
+                <span className="ms-2 fa-brands fa-linkedin"></span>
+              </a>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
         <div className="careers-values-header">
           <h1>Our Values Align With Our Culture</h1>
         </div>
       </Container>
+
       <Container className="p-0">
         <div className="careers-values-wrapper">
           <div className="careers-value">

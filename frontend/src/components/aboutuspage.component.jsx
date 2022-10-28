@@ -13,20 +13,41 @@ import powerlinesIcon from "../images/powerlines_icon2.png";
 import warehouseIcon from "../images/warehouse_icon2.png";
 
 export function TeamCard(props) {
+
+  const memberName = ["Juliana Mandell", "Brett Cullin", "Jon Jacobjingleheimerschmidt", "Robert Brink"];
+
+  const memberInfo = [
+    "Juliana has over 12 years in the energy industry and 7 years in standalone storage.",
+    "Brett has over 12 years in the energy industry and 6 years in standalone storage.",
+    "Jon has 23 years in the energy industry and 7 years in standalone storage.",
+    "Rob has 15 years in energy, consulting, and finance; 7 years in standalone storage.",
+  ];
+
+  const memberRoles = [
+    "Leadership roles in greenfield development, acquisitions, market development, and regulatory affairs",
+    "Leadership roles in greenfield development, acquisitions, finance, and transmission modeling.",
+    "Leadership roles in development, consulting, project management, and engineering.",
+    "Leadership roles in acquisitions, financing, and battery optimization"
+  ];
+
   return (
     <div className="about-us-team-container">
       <img src={teamMemberImage} alt="me" />
-      <h4>Sabir Saklayen</h4>
+      <h4>{memberName[props.card]}</h4>
       <h5>Chief of Web Design</h5>
-      <a href="https://www.linkedin.com/in/sabir-saklayen" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.linkedin.com/in/sabir-saklayen"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <span className="fa-brands fa-linkedin"></span> Profile
       </a>
-      <div className="mt-1">
+      <div className="about-us-team-text mt-1">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          {memberInfo[props.card]}
+        </p>
+        <p>
+          {memberRoles[props.card]}
         </p>
       </div>
     </div>
@@ -51,7 +72,7 @@ export default function AboutUsPage() {
   const bannerText = {
     header: "About us",
     body:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "We are a tight-knit team that has been working together for over seven years in the energy storage industry.",
   };
 
   return (
@@ -68,11 +89,10 @@ export default function AboutUsPage() {
         <div className="about-us-mission-container">
           <img src={bcorpLogo} alt="B Corp Logo" />
           <p>
-            Flatiron Energy intends to create a material positive impact on
-            society by reducing emissions that contribute to climate change and
-            environmental injustice, increasing the availability of clean
-            energy, and replacing fossil fuel power plants through the
-            development of energy storage projects.
+            Flatiron Energy is reducing emissions that contribute to climate
+            change and environmental injustice by increasing the availability of
+            clean energy through the development of utility-scale energy storage
+            projects.
           </p>
         </div>
       </Container>
@@ -83,19 +103,19 @@ export default function AboutUsPage() {
         <div>
           <Row className="mt-5">
             <Col align="center">
-              <TeamCard />
+              <TeamCard card={0} />
             </Col>
             <Col align="center">
-              <TeamCard />
+              <TeamCard card={1} />
             </Col>
           </Row>
 
           <Row className="mt-5">
             <Col align="center">
-              <TeamCard />
+              <TeamCard card={2} />
             </Col>
             <Col align="center">
-              <TeamCard />
+              <TeamCard card={3} />
             </Col>
           </Row>
         </div>

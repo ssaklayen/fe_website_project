@@ -71,7 +71,7 @@ hr {
 }
 
 .nav-link-line {
-  display: block;
+  display: inline-block;
   position: relative;
 }
 
@@ -504,17 +504,19 @@ hr {
 
 .footer-wrapper p {
   margin-bottom: 24px;
-  font-weight: 400;
+  transition-duration: 0.4s;
 }
 
 .footer-wrapper a {
-  color: #52d68d;
   text-decoration: none;
-  transition: 0.4s;
+  transition-duration: 0.4s;
+  color: #0b8040;
+  font-weight: 500;
+  padding: 0 0 2px 0;
 }
 
 .footer-wrapper a:hover {
-  opacity: 0.5;
+  color: #3e9a68;
 }
 
 .footer-image {
@@ -544,6 +546,10 @@ hr {
   margin-left: 18px;
 }
 
+.footer-bcorp-logo a:hover {
+  opacity: 50%;
+}
+
 .footer-fe-symbol {
   display: grid;
   place-items: center;
@@ -556,9 +562,12 @@ hr {
 }
 
 .footer-fe-symbol p {
-  /* padding-left: 30px; */
   font-size: 1rem;
   color: #ffffff;
+}
+
+.footer-fe-symbol a:hover {
+  opacity: 50%;
 }
 
 .footer-investor-wrapper {
@@ -625,7 +634,7 @@ hr {
 .contact-page-form-background {
   width: 85%;
   height: 700px;
-  background-color: #dbebe2;
+  background-color: #e0f8d8;
   margin-top: 60px;
   position: relative;
 }
@@ -992,7 +1001,7 @@ hr {
   padding-left: 48px;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 /* About Us Team Card */
@@ -1031,6 +1040,10 @@ hr {
   text-decoration: none;
   transition-duration: 0.4s;
   font-size: 1.1rem;
+}
+
+.about-us-team-text {
+  text-align: left;
 }
 
 .about-us-map-container {
@@ -1091,7 +1104,6 @@ hr {
 /*************** Careers **********/
 
 .job-openings-container {
-  /* background-color: #004359; */
   background: radial-gradient(
     circle at bottom right,
     var(--banner-gs),
@@ -1101,8 +1113,11 @@ hr {
   color: #FFFFFF;
 }
 
+.job-openings-text {
+  margin-left: 30px;
+}
+
 .job-openings-text h1 {
-  margin-top: 24px; 
   font-weight: 600;
 
 }
@@ -1112,28 +1127,34 @@ hr {
 }
 
 .job-openings-text p {
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+  font-size: calc(1rem + 0.1vw);
+  width: 60%
 }
+
 .job-openings-button-wrapper {
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 .job-openings-button {
-  margin-top: 64px;
-  margin-right: 64px;
-  width: 40%;
+  width: 35%;
   text-align: center;
-  color: #FFFFFF;
-  /* background-color:#004359; */
-  border: 2px solid #0a58ca;
+  border: 2px solid #FFFFFF;
   border-radius: 4px;
   transition-duration: 0.4s;
+  padding: 16px 0;
+}
+
+.job-openings-button a {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  
 }
 
 .job-openings-button:hover {
   color: #1b3138;
-  background-color:#FFFFFF;
+  background-color: #0b8040;
   border-color: #FFFFFF;
 }
 

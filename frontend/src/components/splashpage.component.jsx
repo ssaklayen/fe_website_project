@@ -7,12 +7,12 @@ import Banner from "./banner.component";
 import { Link } from "react-router-dom";
 
 import hullStreetEnergy from "../images/hullstreetenergy.png";
-import mainBannerImage from "../images/main_banner2.png";
+import mainBannerImage from "../images/main_banner.png";
 
 export default function SplashPage() {
   const bannerText = {
     header: "Building the clean infrastructure for our future",
-    body: "Flatiron Energy is a utility-scale independent power producer (IPP) that develops, builds, owns and operates advanced standalone energy storage projects."
+    body: "Flatiron Energy develops, builds, owns, and operates standalone utility-scale energy storage."
   }
   const investorCaption = [
     "Flatiron Energy is a portfolio company of Hull Street Energy.",

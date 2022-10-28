@@ -20,18 +20,18 @@ export default function FooterBar() {
             <Col>
               <div>
                 <h5>Company</h5>
-                <Link to="/landowners">
-                  <p>Landowners</p>
-                </Link>
-                <Link to="/energystorage">
-                  <p>Energy Storage</p>
-                </Link>
-                <Link to="/aboutus">
-                  <p>About Us</p>
-                </Link>
-                <Link to="/careers">
-                  <p>Careers</p>
-                </Link>
+                <p>
+                  <Link to="/landowners" className="nav-link-line">Landowners</Link>
+                </p>
+                <p>
+                  <Link to="/energystorage" className="nav-link-line">Energy Storage</Link>
+                </p>
+                <p>
+                  <Link to="/aboutus" className="nav-link-line">About Us</Link>
+                </p>
+                <p>
+                  <Link to="/careers" className="nav-link-line">Careers</Link>
+                </p>
               </div>
             </Col>
 
@@ -39,12 +39,20 @@ export default function FooterBar() {
             <Col>
               <div>
                 <h5>Contact</h5>
-                <Link to="/contact">
-                  <p>Contact Us</p>
-                </Link>
-                <a href="https://www.linkedin.com/company/flatiron-energy/about/" target="_blank" rel="noopener noreferrer">
-                  <p>Follow Us<span className="ms-2 fa-brands fa-linkedin"></span></p>
-                </a>
+                <p>
+                  <Link to="/contact" className="nav-link-line">Contact Us</Link>
+                </p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/company/flatiron-energy/about/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="nav-link-line"
+                  >
+                    Follow Us
+                    <span className="ms-2 fa-brands fa-linkedin"></span>
+                  </a>
+                </p>
               </div>
             </Col>
 
@@ -52,7 +60,11 @@ export default function FooterBar() {
             <Col className="footer-bcorp-logo">
               <h5>Certified</h5>
 
-              <a href="https://www.bcorporation.net/en-us/certification" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.bcorporation.net/en-us/certification"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={bcorpwhitepending}
                   width="350"
