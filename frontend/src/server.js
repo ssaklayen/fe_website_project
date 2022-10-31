@@ -5,7 +5,7 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.use(express.static(path.join(__dirname, "../build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
@@ -30,7 +30,7 @@ function sendMail(fName, lName, email, phone, company, subject, message) {
 
   const mailOption = {
     from: email,
-    to: "sabirsaklayen83@gmail.com",
+    to: "sabirsaklayen83@gmail.com, info@flatiron.energy",
     subject: `${subject}`,
     html: `
     <table>

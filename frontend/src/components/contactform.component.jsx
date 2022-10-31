@@ -13,7 +13,7 @@ export default function ContactForm() {
   const [email, setEmail] = React.useState("");
   const [phone, setPhone] = React.useState("");
   const [company, setCompany] = React.useState("");
-  const [subject, setSubject] = React.useState("Careers");
+  const [subject, setSubject] = React.useState("Landowners");
   const [message, setMessage] = React.useState("");
 
   const [success, setSuccess] = React.useState("none");
@@ -61,7 +61,7 @@ export default function ContactForm() {
     };
 
     try {
-      const response = axios.post("https://flatiron.energy/contact", newMessage);
+      const response = axios.post("https://fe-test-website.uc.r.appspot.com/contact", newMessage);
       setFormDisplay("none");
       setSuccess("grid");
       console.log(response);

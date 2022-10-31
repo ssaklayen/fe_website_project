@@ -1,1 +1,0 @@
-gcloud app deploy -q frontend/client.yaml backend/api.yaml

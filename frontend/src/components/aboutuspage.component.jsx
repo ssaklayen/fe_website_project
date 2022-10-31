@@ -14,7 +14,7 @@ import warehouseIcon from "../images/warehouse_icon2.png";
 
 export function TeamCard(props) {
 
-  const memberName = ["Juliana Mandell", "Brett Cullin", "Jon Jacobjingleheimerschmidt", "Robert Brink"];
+  const memberName = ["Juliana Mandell", "Brett Cullin", "Jon Poor", "Robert Brink"];
 
   const memberInfo = [
     "Juliana has over 12 years in the energy industry and 7 years in standalone storage.",
@@ -22,6 +22,8 @@ export function TeamCard(props) {
     "Jon has 23 years in the energy industry and 7 years in standalone storage.",
     "Rob has 15 years in energy, consulting, and finance; 7 years in standalone storage.",
   ];
+
+  
 
   const memberRoles = [
     "Leadership roles in greenfield development, acquisitions, market development, and regulatory affairs",
@@ -31,10 +33,10 @@ export function TeamCard(props) {
   ];
 
   return (
-    <div className="about-us-team-container">
+    <Container className="about-us-team-container">
       <img src={teamMemberImage} alt="me" />
       <h4>{memberName[props.card]}</h4>
-      <h5>Chief of Web Design</h5>
+      <h5>Managing Partner</h5>
       <a
         href="https://www.linkedin.com/in/sabir-saklayen"
         target="_blank"
@@ -50,7 +52,7 @@ export function TeamCard(props) {
           {memberRoles[props.card]}
         </p>
       </div>
-    </div>
+    </Container>
   );
 }
 
@@ -84,10 +86,10 @@ export default function AboutUsPage() {
         imageAlt="About Us Team Image"
         gradient="blue"
       />
-      <Container className="ps-4 mt-5">
+      <Container className="about-us-mission-responsiveness">
         <h1 style={{ color: "#004359", fontWeight: "700" }}>Our Mission</h1>
         <div className="about-us-mission-container">
-          <img src={bcorpLogo} alt="B Corp Logo" />
+          <img src={bcorpLogo} className="responsive" alt="B Corp Logo" />
           <p>
             Flatiron Energy is reducing emissions that contribute to climate
             change and environmental injustice by increasing the availability of
@@ -160,7 +162,7 @@ export default function AboutUsPage() {
               />
             </Col>
             <Col className="about-us-icon-text">
-              <h4>7+ Years</h4>
+              <h4>65+ Years</h4>
               <p>Leadership Team Industry Experience</p>
               <img
                 src={cityIcon}

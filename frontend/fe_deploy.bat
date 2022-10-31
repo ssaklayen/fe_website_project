@@ -1,0 +1,1 @@
+gcloud app deploy -q client.yaml app.yaml dispatch.yaml

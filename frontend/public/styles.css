@@ -35,11 +35,14 @@ hr {
   height: auto;
 }
 
-.center {
+/* .center {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; */
+
+  /* margin-left: auto;
+  margin-right: auto;
+} */
 
 /* Navbar Customs */
 
@@ -987,6 +990,11 @@ hr {
 
 /***************** ABOUT US ***************/
 
+.about-us-mission-responsiveness {
+  margin-top: 48px;
+  padding-left: 30px;
+}
+
 .about-us-mission-container {
   margin-top: 8px;
   margin-bottom: 48px;
@@ -1001,7 +1009,7 @@ hr {
   padding-left: 48px;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 1.6rem;
+  font-size: calc(1.2rem + 0.4vw);
 }
 
 /* About Us Team Card */
@@ -1362,6 +1370,10 @@ hr {
     margin-top: 180px;
   }
 
+  .about-us-mission-responsiveness {
+    margin-top: 228px;
+  }
+
   .footer-bcorp-logo {
     margin-top: 25px;
   }
@@ -1503,6 +1515,21 @@ hr {
 
   .energy-storage-columns {
     height: 300px;
+  }
+
+  /* About Us */
+
+  .about-us-mission-responsiveness {
+    padding-left: 15px;
+  }
+
+  .about-us-mission-container img {
+    display: none;
+  }
+
+  .about-us-mission-container p {
+    padding-left: 4px;
+    font-size: 3.5vw
   }
 }
 
