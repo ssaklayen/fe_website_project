@@ -35,15 +35,6 @@ hr {
   height: auto;
 }
 
-/* .center {
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-
-  /* margin-left: auto;
-  margin-right: auto;
-} */
-
 /* Navbar Customs */
 
 .navbar {
@@ -84,7 +75,7 @@ hr {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #0b8040;
   opacity: 1;
   transition: opacity 0.4s, transform 0.4s;
@@ -290,7 +281,7 @@ hr {
   width: 100%;
   height: 640px;
   margin-top: 48px;
-  background-color: #e0f8d8;
+  background-color: #dbebe2;
 }
 
 .infographic-text-panel {
@@ -340,7 +331,7 @@ hr {
 }
 
 .infographic-carousel-image img {
-  box-shadow: 10px -10px #3e9a68 !important;
+  box-shadow: 10px -10px #b3cfc0 !important;
   max-width: 98%;
 }
 
@@ -513,8 +504,8 @@ hr {
 .footer-wrapper a {
   text-decoration: none;
   transition-duration: 0.4s;
-  color: #0b8040;
-  font-weight: 500;
+  color: #ffffff;
+  font-weight: 300;
   padding: 0 0 2px 0;
 }
 
@@ -637,7 +628,7 @@ hr {
 .contact-page-form-background {
   width: 85%;
   height: 700px;
-  background-color: #e0f8d8;
+  background-color: #dbebe2;
   margin-top: 60px;
   position: relative;
 }
@@ -672,7 +663,7 @@ hr {
 
 .contact-mobile-button {
   padding: 5px 20px;
-  background-color: #1b3138;
+  background-color: #004359;
   color: #ffffff;
   border-style: none;
   transition-duration: 0.4s;
@@ -691,7 +682,7 @@ hr {
 
 .contact-page-button {
   padding: 5px 20px;
-  background-color: #1b3138;
+  background-color: #004359;
   color: #ffffff;
   border-style: none;
   transition-duration: 0.4s;
@@ -747,7 +738,7 @@ hr {
   margin: 0 auto;
   padding-bottom: 32px;
   text-align: left;
-  background-color: #e0f8d8;
+  background-color: #dbebe2;
 }
 
 .landowners-information-heading-wrapper h1 {
@@ -771,6 +762,7 @@ hr {
 
 .landowners-information-banner-wrapper {
   width: 100%;
+  background-color: #dbebe2;
 }
 
 .landowners-information-banner-wrapper img {
@@ -781,7 +773,7 @@ hr {
 .landowners-contact-link-wrapper {
   text-align: center;
   margin-bottom: 100px;
-  background-color: #e0f8d8;
+  background-color: #dbebe2;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -969,7 +961,7 @@ hr {
 .energy-storage-columns p {
   width: 90%;
   line-height: 2rem;
-  font-size: calc(1rem + .2vw);
+  font-size: calc(1rem + 0.2vw);
 }
 
 .energy-storage-columns ul {
@@ -996,13 +988,13 @@ hr {
 }
 
 .about-us-mission-container {
-  margin-top: 8px;
+  margin-top: 24px;
   margin-bottom: 48px;
   display: flex;
 }
 
 .about-us-mission-container img {
-  padding-left: 12px;
+  padding-left: 32px;
 }
 
 .about-us-mission-container p {
@@ -1017,6 +1009,7 @@ hr {
 .about-us-team-container {
   width: 500px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .about-us-team-container img {
@@ -1112,13 +1105,7 @@ hr {
 /*************** Careers **********/
 
 .job-openings-container {
-  background: radial-gradient(
-    circle at bottom right,
-    var(--banner-gs),
-    var(--banner-ge)
-  );
   padding: 64px 0 0;
-  color: #FFFFFF;
 }
 
 .job-openings-text {
@@ -1126,8 +1113,8 @@ hr {
 }
 
 .job-openings-text h1 {
-  font-weight: 600;
-
+  font-weight: 700;
+  color: #004359;
 }
 
 .job-openings-text a {
@@ -1137,53 +1124,49 @@ hr {
 .job-openings-text p {
   line-height: 1.8rem;
   font-size: calc(1rem + 0.1vw);
-  width: 60%
+  width: 60%;
 }
 
 .job-openings-button-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .job-openings-button {
-  width: 35%;
+  width: 400px;
   text-align: center;
-  border: 2px solid #FFFFFF;
+  background-color: #004359;
   border-radius: 4px;
   transition-duration: 0.4s;
   padding: 16px 0;
 }
 
 .job-openings-button a {
-  color: #FFFFFF;
-  font-size: 1.8rem;
-  
+  color: #ffffff;
+  font-size: calc(1.7rem + 0.1vw);
 }
 
 .job-openings-button:hover {
-  color: #1b3138;
-  background-color: #0b8040;
-  border-color: #FFFFFF;
+  background: #0b8040;
 }
 
 .job-openings-button h4 {
   padding-top: 8px;
 }
 
-.careers-values-header {
-  height: 128px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFFFFF;
+.careers-values-wrapper {
+  padding-left: 30px;
+  margin-bottom: 100px;
 }
 
-.careers-values-wrapper {
-  width: 50%;
-  margin: 0 auto 48px;
+.careers-values-header {
+  margin-top: 48px;
 }
+
 .careers-values-header h1 {
-  font-weight: 600;
+  font-weight: 700;
+  color: #0b8040;
 }
 
 .careers-value {
@@ -1192,13 +1175,18 @@ hr {
 }
 
 .careers-value h4 {
-  color:#0b8040;
+  color: #0b8040;
   font-weight: 600;
 }
 
 .careers-value p {
   color: #004359;
   font-weight: 500;
+}
+
+.careers-value-text {
+  padding-left: 24px;
+  margin-top: 16px;
 }
 
 /* MEDIA */
@@ -1234,14 +1222,6 @@ hr {
 }
 
 @media only screen and (min-width: 1200px) {
-  #navlinkLandownersExpanded {
-    display: visible;
-  }
-
-  #navlinkLandownersCollapsed {
-    display: none;
-  }
-
   #energyStorageDesktop {
     display: visible;
   }
@@ -1252,14 +1232,6 @@ hr {
 }
 
 @media only screen and (max-width: 1199px) {
-  #navlinkLandownersExpanded {
-    display: none;
-  }
-
-  #navlinkLandownersCollapsed {
-    display: visible;
-  }
-
   #energyStorageDesktop {
     display: none;
   }
@@ -1440,6 +1412,16 @@ hr {
   .energy-storage-icon-heading h1 {
     line-height: 3rem;
   }
+
+  /* Careers */
+
+  .job-openings-container  {
+    margin-top: 180px;
+  }
+
+  .job-openings-text p {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1529,7 +1511,22 @@ hr {
 
   .about-us-mission-container p {
     padding-left: 4px;
-    font-size: 3.5vw
+    font-size: 3.5vw;
+  }
+
+  .about-us-team-container {
+    width: 430px;
+  }
+
+  /* Careers */
+
+  .careers-value {
+    display: inline;
+  }
+
+  .careers-value-text {
+    padding-left: 0;
+    margin-bottom: 32px;
   }
 }
 

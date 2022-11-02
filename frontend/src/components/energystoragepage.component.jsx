@@ -19,10 +19,6 @@ export default function EnergyStoragePage() {
     });
     let activeLink = document.getElementById("energystorageLink");
     activeLink.classList.add("nav-link-active");
-    document.documentElement.style.setProperty(
-      "--nav-landowners-color",
-      "#0b8040"
-    );
   }, []);
 
   const bannerText = {

@@ -5,10 +5,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import careersBannerImage from "../images/careers_banner.png";
-import respectIcon from "../images/handshake.png";
+import respectIcon from "../images/respect.png";
 import excellenceIcon from "../images/excellence.png";
-import candorIcon from "../images/trust.png";
-import communityIcon from "../images/people.png";
+import candorIcon from "../images/candor.png";
+import communityIcon from "../images/community.png";
 
 export default function CareersPage() {
   useEffect(() => {
@@ -19,16 +19,12 @@ export default function CareersPage() {
     });
     let activeLink = document.getElementById("careersLink");
     activeLink.classList.add("nav-link-active");
-    document.documentElement.style.setProperty(
-      "--nav-landowners-color",
-      "#0b8040"
-    );
   }, []);
 
   const bannerText = {
     header: "Careers",
     body:
-      "If you are as excited about the energy transition to a cleaner, more flexible, and more reliable grid as we are, we want to hear from you.",
+      "If you are as excited as we are about the transition to a cleaner, more flexible, and more reliable grid, we want to hear from you.",
   };
 
   return (
@@ -40,15 +36,14 @@ export default function CareersPage() {
         imageAlt="Careers"
         gradient="blue"
       />
-      <hr className="mt-5" />
 
-      <Container className="mt-5 job-openings-container">
+      <Container className="job-openings-container">
         <div className="job-openings-text">
           <h1>Job Openings</h1>
           <p>
-            We are a fast-growing startup with a dynamic, creative, fun,
-            start-up culture. The right candidate will be excited to help build
-            the company from the ground up and support our mission.
+            We are a fast-growing team with a dynamic, creative, fun, start-up
+            culture. The right candidate will be excited to help build the
+            company from the ground up and support our mission.
           </p>
           <div className="job-openings-button-wrapper">
             <div className="job-openings-button">
@@ -63,16 +58,16 @@ export default function CareersPage() {
             </div>
           </div>
         </div>
-        <div className="careers-values-header">
-          <h1>Our Values Align With Our Culture</h1>
-        </div>
       </Container>
-
+      <hr className="mt-5" />
       <Container className="p-0">
         <div className="careers-values-wrapper">
+          <div className="careers-values-header">
+            <h1>Our Core Values</h1>
+          </div>
           <div className="careers-value">
-            <img src={respectIcon} width="100" alt="Respect Icon" />
-            <div className="ps-3 mt-3">
+            <img src={respectIcon} className="responsive" alt="Respect Icon" />
+            <div className="careers-value-text">
               <h4>Respect</h4>
               <p>
                 We respect and embrace the diversity of our team and believe it
@@ -82,34 +77,32 @@ export default function CareersPage() {
           </div>
 
           <div className="careers-value">
-            <img src={excellenceIcon} width="100" alt="Excellence Icon" />
-            <div className="ps-3 mt-3">
+            <img src={excellenceIcon} alt="Excellence Icon" />
+            <div className="careers-value-text">
               <h4>Excellence</h4>
               <p>
-                We are committed to excellence in everything we do, every day,
-                no exceptions.
+                We are committed to excellence in everything we do, no
+                exceptions.
               </p>
             </div>
           </div>
 
           <div className="careers-value">
-            <img src={candorIcon} width="100" alt="Candor Icon" />
-            <div className="ps-3 mt-3">
-              <h4>Candor</h4>
+            <img src={candorIcon} alt="Candor Icon" />
+            <div className="careers-value-text">
+              <h4>Character</h4>
               <p>
-                We believe in absolute candor and are unfailingly curious and
-                open to learning from mistakes.
+                We believe in transparency, unfailing curiosity, and learning from our mistakes.
               </p>
             </div>
           </div>
 
           <div className="careers-value">
-            <img src={communityIcon} width="100" alt="Community Icon" />
-            <div className="ps-3 mt-3">
+            <img src={communityIcon} alt="Community Icon" />
+            <div className="careers-value-text">
               <h4>Community</h4>
               <p>
-                We believe in the power of community to transform the global
-                energy ecosystem.
+                We are dedicated to transforming the global energy ecosystem, improving local communities, and having fun while we do it.
               </p>
             </div>
           </div>

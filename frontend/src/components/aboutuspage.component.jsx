@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import aboutusBannerImage from "../images/aboutus_banner.png";
-import bcorpLogo from "../images/bcorplogo.png";
+import bcorpLogo from "../images/bcorplogo2.png";
 import teamMemberImage from "../images/me.png";
 import batteryIcon from "../images/battery_icon2.png";
 import cityIcon from "../images/city_icon2.png";
@@ -65,16 +65,12 @@ export default function AboutUsPage() {
     });
     let activeLink = document.getElementById("aboutusLink");
     activeLink.classList.add("nav-link-active");
-    document.documentElement.style.setProperty(
-      "--nav-landowners-color",
-      "#0b8040"
-    );
   }, []);
 
   const bannerText = {
-    header: "About us",
+    header: "About Us",
     body:
-      "We are a tight-knit team that has been working together for over seven years in the energy storage industry.",
+      "The Flatiron Energy team has deep expertise in energy storage project development, construction, finance, and asset optimization.",
   };
 
   return (
@@ -91,10 +87,7 @@ export default function AboutUsPage() {
         <div className="about-us-mission-container">
           <img src={bcorpLogo} className="responsive" alt="B Corp Logo" />
           <p>
-            Flatiron Energy is reducing emissions that contribute to climate
-            change and environmental injustice by increasing the availability of
-            clean energy through the development of utility-scale energy storage
-            projects.
+            To reduce emissions that contribute to climate change and environmental injustice through the development of utility-scale energy storage projects.
           </p>
         </div>
       </Container>
@@ -104,25 +97,32 @@ export default function AboutUsPage() {
 
         <div>
           <Row className="mt-5">
-            <Col align="center">
-              <TeamCard card={0} />
+            <Col>
+              <TeamCard card={2} />
             </Col>
-            <Col align="center">
+            <Col>
               <TeamCard card={1} />
             </Col>
           </Row>
 
-          <Row className="mt-5">
-            <Col align="center">
-              <TeamCard card={2} />
+          <Row>
+            <Col>
+              <TeamCard card={0} />
             </Col>
-            <Col align="center">
+            <Col>
               <TeamCard card={3} />
             </Col>
           </Row>
         </div>
       </Container>
-      <div className="about-us-map-container">
+    </Container>
+  );
+}
+
+
+
+
+      {/* <div className="about-us-map-container">
         <div className="about-us-map-text">
           <p>Technology has advanced the way energy is produced</p>
           <h2>Flatiron Energy is leading the transition.</h2>
@@ -172,7 +172,4 @@ export default function AboutUsPage() {
             </Col>
           </Row>
         </div>
-      </div>
-    </Container>
-  );
-}
+      </div> */}

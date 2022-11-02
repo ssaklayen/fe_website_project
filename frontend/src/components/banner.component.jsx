@@ -15,11 +15,6 @@ export default function Banner(props) {
       document.documentElement.style.setProperty("--banner-ge", "#0b8040");
       document.documentElement.style.setProperty("--banner-text-color", "#FFFFFF");
     }
-    // if (props.gradient === "lightgreen") {
-    //   document.documentElement.style.setProperty("--banner-gs", "#f1fae6");
-    //   document.documentElement.style.setProperty("--banner-ge", "#e0f8d8");
-    //   document.documentElement.style.setProperty("--banner-text-color", "#004359");
-    // }
   }, [props.gradient]);
 
   return (

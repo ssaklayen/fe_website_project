@@ -17,7 +17,6 @@ export default function ContactPage() {
     });
     let activeLink = document.getElementById("contactLink");
     activeLink.classList.add("nav-link-active");
-    document.documentElement.style.setProperty('--nav-landowners-color', '#0b8040');
   }, []);
 
   const bannerText = {
@@ -33,7 +32,7 @@ export default function ContactPage() {
         body={bannerText.body}
         image={contactBannerImage}
         imageAlt="Power Lines"
-        gradient="green"
+        gradient="blue"
       />
       <Row className="contact-page-row-wrapper">
         <Col id="contactInformation">

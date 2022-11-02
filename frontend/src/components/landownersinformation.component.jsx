@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 import BulletCard from "./bulletcard.component";
 import {Link} from "react-router-dom";
 
-import landownersFarm from "../images/landowners_handshake2.png";
-import landownersCity from "../images/landowners_city.png";
+import landownersHandshake from "../images/landowners_handshake.png";
+import landownersCity from "../images/landowners_city2.png";
 
 export default function LandownersInformation() {
   return (
@@ -29,7 +29,7 @@ export default function LandownersInformation() {
         <Row>
           <Col md={0} lg={6} className="p-0">
             <div className="landowners-information-image-wrapper">
-              <img src={landownersFarm} alt="Landowner's Farm" />
+              <img src={landownersHandshake} alt="Landowner's Handshake" />
             </div>
           </Col>
           <Col md={0} lg={6} className="p-0">

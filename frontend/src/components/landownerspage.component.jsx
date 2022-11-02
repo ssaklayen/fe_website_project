@@ -15,7 +15,6 @@ export default function LandownersPage() {
     });
     let activeLink = document.getElementById("landownersNavlink");
     activeLink.classList.add("nav-link-active");
-    document.documentElement.style.setProperty('--nav-landowners-color', '#FFFFFF');
   }, []);
 
   const bannerText = {
@@ -30,7 +29,7 @@ export default function LandownersPage() {
         body={bannerText.body}
         image={landownersBannerImage}
         imageAlt="Landowner Leasing"
-        gradient="green"
+        gradient="blue"
       />
       <LandownersSteps />
       <LandownersInformation />

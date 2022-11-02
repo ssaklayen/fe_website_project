@@ -61,7 +61,7 @@ export default function ContactForm() {
     };
 
     try {
-      const response = axios.post("https://fe-test-website.uc.r.appspot.com/contact", newMessage);
+      const response = axios.post("https://flatiron.energy/contact", newMessage);
       setFormDisplay("none");
       setSuccess("grid");
       console.log(response);
