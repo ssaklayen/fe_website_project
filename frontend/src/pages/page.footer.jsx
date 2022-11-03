@@ -4,9 +4,9 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 
-import fe_symbol from "../images/fe_symbol.png";
-import bcorpwhitepending from "../images/bcorpwhitepending.png";
-import bcorpwhitependingmobile from "../images/bcorpwhitependingmobile.png";
+import fe_symbol from "./images/fe_symbol.png";
+import bcorpwhitepending from "./images/bcorpwhitepending.png";
+import bcorpwhitependingmobile from "./images/bcorpwhitependingmobile.png";
 
 export default function FooterBar() {
   return (

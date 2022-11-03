@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Banner from "./banner.component";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
-import careersBannerImage from "../images/careers_banner.png";
-import respectIcon from "../images/respect.png";
-import excellenceIcon from "../images/excellence.png";
-import candorIcon from "../images/candor.png";
-import communityIcon from "../images/community.png";
+import Banner from "./components/banner.component";
+
+import careersBannerImage from "./images/careers_banner.png";
+import respectIcon from "./images/respect.png";
+import excellenceIcon from "./images/excellence.png";
+import candorIcon from "./images/candor.png";
+import communityIcon from "./images/community.png";
 
 export default function CareersPage() {
   useEffect(() => {

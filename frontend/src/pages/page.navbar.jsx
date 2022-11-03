@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-import fe_logo from "../images/fe_logo.png";
+import fe_logo from "./images/fe_logo.png";
 
 export default function NavBar() {
   const [collapsed, setCollapsed] = React.useState(true);
@@ -14,25 +14,6 @@ export default function NavBar() {
     setCollapsed(!collapsed);
     setExpanded(!expanded);
   }
-
-  // function handleMouseOver() {
-  //   document.documentElement.style.setProperty(
-  //     "--nav-landowners-color",
-  //     "#FFFFFF"
-  //   );
-  // }
-
-  // function handleMouseOut() {
-  //   if (
-  //     !document
-  //       .getElementById("landownersNavlink")
-  //       .classList.contains("nav-link-active")
-  //   )
-  //     document.documentElement.style.setProperty(
-  //       "--nav-landowners-color",
-  //       "#0b8040"
-  //     );
-  // }
 
   useEffect(() => {
     let root = document.documentElement;

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import MissionStatement from "./missionstatement.component";
-import Strengths from "./strengths.component";
-import Infographic from "./infographic.component";
-import Banner from "./banner.component";
+import MissionStatement from "./components/main.missionstatement.component";
+import Strengths from "./components/main.strengths.component";
+import Infographic from "./components/main.infographic.component";
+import Banner from "./components/banner.component";
 import { Link } from "react-router-dom";
 
-import hullStreetEnergy from "../images/hullstreetenergy.png";
-import mainBannerImage from "../images/main_banner.png";
+import hullStreetEnergy from "./images/hullstreetenergy.png";
+import mainBannerImage from "./images/main_banner.png";
 
 export default function SplashPage() {
   const bannerText = {

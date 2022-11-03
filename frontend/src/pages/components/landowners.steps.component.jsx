@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import StepCard from "./stepcard.component";
+import StepCard from "./landowners.stepcard.component";
 
 export default function LandownersSteps() {
   return (

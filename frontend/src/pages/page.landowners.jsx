@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Banner from "./banner.component";
-import LandownersInformation from "./landownersinformation.component";
-import LandownersSteps from "./landownerssteps.component";
 
-import landownersBannerImage from "../images/landowners_banner.png";
+import Banner from "./components/banner.component";
+import LandownersInformation from "./components/landowners.information.component";
+import LandownersSteps from "./components/landowners.steps.component";
+
+import landownersBannerImage from "./images/landowners_banner.png";
 
 export default function LandownersPage() {
   useEffect(() => {

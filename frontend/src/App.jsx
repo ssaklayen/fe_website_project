@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import components here
-import NavBar from "./components/navbar.component";
-import FooterBar from "./components/footerbar.component";
-import SplashPage from "./components/splashpage.component";
-import EnergyStoragePage from "./components/energystoragepage.component";
-import LandownersPage from "./components/landownerspage.component";
-import AboutUsPage from "./components/aboutuspage.component";
-import CareersPage from "./components/careerspage.component";
-import ContactPage from "./components/contactpage.component";
+import NavBar from "./pages/page.navbar";
+import FooterBar from "./pages/page.footer";
+import SplashPage from "./pages/page.main";
+import EnergyStoragePage from "./pages/page.energystorage";
+import LandownersPage from "./pages/page.landowners";
+import AboutUsPage from "./pages/page.aboutus";
+import CareersPage from "./pages/page.careers";
+import ContactPage from "./pages/page.contactus";
 
 function App() {
   return (

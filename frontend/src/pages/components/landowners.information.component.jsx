@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import BulletCard from "./bulletcard.component";
+import BulletCard from "./landowners.bulletcard.component";
 import {Link} from "react-router-dom";
 
 import landownersHandshake from "../images/landowners_handshake.png";

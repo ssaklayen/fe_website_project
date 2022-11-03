@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Banner from "./banner.component";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import aboutusBannerImage from "../images/main_banner.png";
-import bcorpLogo from "../images/bcorplogo2.png";
+import Banner from "./components/banner.component";
 
-import jonImage from "../images/jon.jpg";
-import brettImage from "../images/brett.jpg";
-import julianaImage from "../images/juliana.jpg";
-import robImage from "../images/rob.jpg";
+import aboutusBannerImage from "./images/main_banner.png";
+import bcorpLogo from "./images/bcorplogo2.png";
+import jonImage from "./images/jon.jpg";
+import brettImage from "./images/brett.jpg";
+import julianaImage from "./images/juliana.jpg";
+import robImage from "./images/rob.jpg";
 
 // import batteryIcon from "../images/battery_icon2.png";
 // import cityIcon from "../images/city_icon2.png";

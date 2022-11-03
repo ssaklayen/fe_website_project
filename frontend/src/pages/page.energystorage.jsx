@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Banner from "./banner.component";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import energystorageBannerImage from "../images/energystorage_banner2.png";
-import energystorageIconsImage from "../images/energystorage_icons.png";
-import energystorageLoadLevelImage from "../images/energystorage_loadlevel.png";
-import energystorageWarehouseImage from "../images/energystorage_warehouse.png";
-import energystorageInspectionImage from "../images/energystorage_inspection.png";
+import Banner from "./components/banner.component";
+
+import energystorageBannerImage from "./images/energystorage_banner2.png";
+import energystorageIconsImage from "./images/energystorage_icons.png";
+import energystorageLoadLevelImage from "./images/energystorage_loadlevel.png";
+import energystorageWarehouseImage from "./images/energystorage_warehouse.png";
+import energystorageInspectionImage from "./images/energystorage_inspection.png";
 
 export default function EnergyStoragePage() {
   useEffect(() => {
