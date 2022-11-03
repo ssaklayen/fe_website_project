@@ -4,38 +4,47 @@ import Banner from "./banner.component";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import aboutusBannerImage from "../images/aboutus_banner.png";
+import aboutusBannerImage from "../images/main_banner.png";
 import bcorpLogo from "../images/bcorplogo2.png";
-import teamMemberImage from "../images/me.png";
-import batteryIcon from "../images/battery_icon2.png";
-import cityIcon from "../images/city_icon2.png";
-import powerlinesIcon from "../images/powerlines_icon2.png";
-import warehouseIcon from "../images/warehouse_icon2.png";
+
+import jonImage from "../images/jon.jpg";
+import brettImage from "../images/brett.jpg";
+import julianaImage from "../images/juliana.jpg";
+import robImage from "../images/rob.jpg";
+
+// import batteryIcon from "../images/battery_icon2.png";
+// import cityIcon from "../images/city_icon2.png";
+// import powerlinesIcon from "../images/powerlines_icon2.png";
+// import warehouseIcon from "../images/warehouse_icon2.png";
 
 export function TeamCard(props) {
-
-  const memberName = ["Juliana Mandell", "Brett Cullin", "Jon Poor", "Robert Brink"];
-
-  const memberInfo = [
-    "Juliana has over 12 years in the energy industry and 7 years in standalone storage.",
-    "Brett has over 12 years in the energy industry and 6 years in standalone storage.",
-    "Jon has 23 years in the energy industry and 7 years in standalone storage.",
-    "Rob has 15 years in energy, consulting, and finance; 7 years in standalone storage.",
+  const memberNames = [
+    "Jon Poor",
+    "Brett Cullin",
+    "Juliana Mandell",
+    "Robert Brink",
   ];
 
-  
+  const memberInfo = [
+    "Jon has 23 years in the energy industry and 7 years in standalone storage.",
+    "Brett has over 12 years in the energy industry and 6 years in standalone storage.",
+    "Juliana has over 12 years in the energy industry and 7 years in standalone storage.",
+    "Rob has 15 years in energy, consulting, and finance; 7 years in standalone storage.",
+  ];
 
   const memberRoles = [
     "Leadership roles in greenfield development, acquisitions, market development, and regulatory affairs",
     "Leadership roles in greenfield development, acquisitions, finance, and transmission modeling.",
     "Leadership roles in development, consulting, project management, and engineering.",
-    "Leadership roles in acquisitions, financing, and battery optimization"
+    "Leadership roles in acquisitions, financing, and battery optimization",
   ];
+
+  const memberImages = [jonImage, brettImage, julianaImage, robImage];
 
   return (
     <Container className="about-us-team-container">
-      <img src={teamMemberImage} alt="me" />
-      <h4>{memberName[props.card]}</h4>
+      <img src={memberImages[props.card]} alt="me" />
+      <h4>{memberNames[props.card]}</h4>
       <h5>Managing Partner</h5>
       <a
         href="https://www.linkedin.com/in/sabir-saklayen"
@@ -45,12 +54,8 @@ export function TeamCard(props) {
         <span className="fa-brands fa-linkedin"></span> Profile
       </a>
       <div className="about-us-team-text mt-1">
-        <p>
-          {memberInfo[props.card]}
-        </p>
-        <p>
-          {memberRoles[props.card]}
-        </p>
+        <p>{memberInfo[props.card]}</p>
+        <p>{memberRoles[props.card]}</p>
       </div>
     </Container>
   );
@@ -85,9 +90,17 @@ export default function AboutUsPage() {
       <Container className="about-us-mission-responsiveness">
         <h1 style={{ color: "#004359", fontWeight: "700" }}>Our Mission</h1>
         <div className="about-us-mission-container">
-          <img src={bcorpLogo} className="responsive" alt="B Corp Logo" />
+          <a
+            href="https://www.bcorporation.net/en-us/certification"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={bcorpLogo} alt="B Corp Logo" />
+          </a>
           <p>
-            To reduce emissions that contribute to climate change and environmental injustice through the development of utility-scale energy storage projects.
+            To reduce emissions that contribute to climate change and
+            environmental injustice through the development of utility-scale
+            energy storage projects.
           </p>
         </div>
       </Container>
@@ -98,7 +111,7 @@ export default function AboutUsPage() {
         <div>
           <Row className="mt-5">
             <Col>
-              <TeamCard card={2} />
+              <TeamCard card={0} />
             </Col>
             <Col>
               <TeamCard card={1} />
@@ -107,7 +120,7 @@ export default function AboutUsPage() {
 
           <Row>
             <Col>
-              <TeamCard card={0} />
+              <TeamCard card={2} />
             </Col>
             <Col>
               <TeamCard card={3} />
@@ -119,10 +132,8 @@ export default function AboutUsPage() {
   );
 }
 
-
-
-
-      {/* <div className="about-us-map-container">
+{
+  /* <div className="about-us-map-container">
         <div className="about-us-map-text">
           <p>Technology has advanced the way energy is produced</p>
           <h2>Flatiron Energy is leading the transition.</h2>
@@ -172,4 +183,5 @@ export default function AboutUsPage() {
             </Col>
           </Row>
         </div>
-      </div> */}
+      </div> */
+}

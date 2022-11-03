@@ -41,7 +41,7 @@ export default function CareersPage() {
         <div className="job-openings-text">
           <h1>Job Openings</h1>
           <p>
-            We are a fast-growing team with a dynamic, creative, fun, start-up
+            We are a fast-growing team with a creative, dynamic start-up
             culture. The right candidate will be excited to help build the
             company from the ground up and support our mission.
           </p>
@@ -52,7 +52,7 @@ export default function CareersPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                See our job openings{" "}
+                See our job listings{" "}
                 <span className="ms-2 fa-brands fa-linkedin"></span>
               </a>
             </div>

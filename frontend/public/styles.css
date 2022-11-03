@@ -984,7 +984,7 @@ hr {
 
 .about-us-mission-responsiveness {
   margin-top: 48px;
-  padding-left: 30px;
+  padding-left: 24px;
 }
 
 .about-us-mission-container {
@@ -1001,7 +1001,8 @@ hr {
   padding-left: 48px;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: calc(1.2rem + 0.4vw);
+  font-size: calc(1rem + 0.6vw);
+  width: 70%;
 }
 
 /* About Us Team Card */
@@ -1124,13 +1125,14 @@ hr {
 .job-openings-text p {
   line-height: 1.8rem;
   font-size: calc(1rem + 0.1vw);
-  width: 60%;
+  width: 70%;
 }
 
 .job-openings-button-wrapper {
   display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  justify-content: right;
+  margin-top: 48px;
+  margin-right: 120px;
 }
 
 .job-openings-button {
@@ -1144,7 +1146,7 @@ hr {
 
 .job-openings-button a {
   color: #ffffff;
-  font-size: calc(1.7rem + 0.1vw);
+  font-size: calc(1.4rem + 0.4vw);
 }
 
 .job-openings-button:hover {
@@ -1411,6 +1413,12 @@ hr {
 
   .energy-storage-icon-heading h1 {
     line-height: 3rem;
+  }
+
+  /*About Us */
+
+  .about-us-mission-container p {
+    width: 100%;
   }
 
   /* Careers */
