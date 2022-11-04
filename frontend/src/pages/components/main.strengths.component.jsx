@@ -21,9 +21,6 @@ const Strength = (props) => {
 
   return (
     <>
-    {/* <div className="strength-image-wrapper">
-      <img src={slides.image[props.slide]} alt="Strength Image" />
-    </div> */}
       <div className="strength-wrapper">
         <h4>{slides.header[props.slide]}</h4>
         <p>{slides.body[props.slide]}</p>

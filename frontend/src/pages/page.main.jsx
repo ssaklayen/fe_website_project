@@ -5,6 +5,7 @@ import Strengths from "./components/main.strengths.component";
 import Infographic from "./components/main.infographic.component";
 import Banner from "./components/banner.component";
 import { Link } from "react-router-dom";
+import "./css/page.main.css";
 
 import hullStreetEnergy from "./images/hullstreetenergy.png";
 import mainBannerImage from "./images/main_banner.png";
@@ -12,8 +13,9 @@ import mainBannerImage from "./images/main_banner.png";
 export default function SplashPage() {
   const bannerText = {
     header: "Building the clean infrastructure for our future",
-    body: "Flatiron Energy develops, builds, owns, and operates standalone utility-scale energy storage."
-  }
+    body:
+      "Flatiron Energy develops, builds, owns, and operates standalone utility-scale energy storage.",
+  };
   const investorCaption = [
     "Flatiron Energy is a portfolio company of Hull Street Energy.",
     "Hull Street Energy invests in companies that are strategically positioned for growth as North America transitions to a more sustainable future.",

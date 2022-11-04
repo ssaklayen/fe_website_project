@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
+import "./css/page.careers.css";
 
 import Banner from "./components/banner.component";
 
@@ -91,7 +92,8 @@ export default function CareersPage() {
             <div className="careers-value-text">
               <h4>Character</h4>
               <p>
-                We believe in transparency, unfailing curiosity, and learning from our mistakes.
+                We believe in transparency, unfailing curiosity, and learning
+                from our mistakes.
               </p>
             </div>
           </div>
@@ -101,7 +103,8 @@ export default function CareersPage() {
             <div className="careers-value-text">
               <h4>Community</h4>
               <p>
-                We are dedicated to transforming the global energy ecosystem, improving local communities, and having fun while we do it.
+                We are dedicated to transforming the global energy ecosystem,
+                improving local communities, and having fun while we do it.
               </p>
             </div>
           </div>

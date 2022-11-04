@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import axios from "axios";
 
@@ -61,7 +61,10 @@ export default function ContactForm() {
     };
 
     try {
-      const response = axios.post("https://flatiron.energy/contact", newMessage);
+      const response = axios.post(
+        "https://flatiron.energy/contact",
+        newMessage
+      );
       setFormDisplay("none");
       setSuccess("grid");
       console.log(response);
@@ -74,7 +77,10 @@ export default function ContactForm() {
     <Container className="p-0">
       <div className="ms-auto contact-page-form-background">
         <div className="contact-page-form-foreground">
-          <div className="contact-page-form-wrapper" style={{ display: formDisplay }}>
+          <div
+            className="contact-page-form-wrapper"
+            style={{ display: formDisplay }}
+          >
             <Form action="/contact" method="post" onSubmit={handleSubmit}>
               <Row>
                 <Col>
@@ -142,7 +148,11 @@ export default function ContactForm() {
                   <Form.Group className="mb-4" controlId="formSubject">
                     <Form.Label>Regarding</Form.Label>
                     <Form.Select onChange={handleSubject}>
-                      <option defaultValue value="Landowners" onChange={handleSubject}>
+                      <option
+                        defaultValue
+                        value="Landowners"
+                        onChange={handleSubject}
+                      >
                         Landowners
                       </option>
                       <option value="Partners" onChange={handleSubject}>
@@ -183,10 +193,18 @@ export default function ContactForm() {
             </Form>
           </div>
 
-          <div className="contact-page-message-sent" style={{ display: success }}>
-              <span className="fas fa-envelope fa-5x contact-page-custom-icon"></span>
-              <p>Thank you! Your message has been sent!</p>
-              <Link to="/" className="mt-2 contact-page-button contact-page-return-btn">Back to <span className="fas fa-home"></span></Link>
+          <div
+            className="contact-page-message-sent"
+            style={{ display: success }}
+          >
+            <span className="fas fa-envelope fa-5x contact-page-custom-icon"></span>
+            <p>Thank you! Your message has been sent!</p>
+            <Link
+              to="/"
+              className="mt-2 contact-page-button contact-page-return-btn"
+            >
+              Back to <span className="fas fa-home"></span>
+            </Link>
           </div>
         </div>
       </div>

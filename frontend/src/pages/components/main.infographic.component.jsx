@@ -12,7 +12,6 @@ import constructionProcurementImg from "../images/construction_procurement.png";
 import operationBiddingImg from "../images/operation_bidding.jpg";
 
 export default function Infographic() {
-
   const slide = {
     id: [
       "landAcquisition",
@@ -41,7 +40,11 @@ export default function Infographic() {
   };
 
   const [index, setIndex] = React.useState(0);
-  const [infoHeight, setInfoHeight] = React.useState(getComputedStyle(document.documentElement).getPropertyValue("--info-mobile-height"));
+  const [infoHeight, setInfoHeight] = React.useState(
+    getComputedStyle(document.documentElement).getPropertyValue(
+      "--info-mobile-height"
+    )
+  );
 
   React.useEffect(() => {
     document.documentElement.style.setProperty(
@@ -62,7 +65,9 @@ export default function Infographic() {
   function handleMouseClick(e) {
     const slideText = document.getElementById(e.target.id).nextElementSibling;
     const slideIcon = document.getElementById(e.target.id).firstElementChild;
-    const slideHeight = getComputedStyle(document.documentElement).getPropertyValue("--info-mobile-slide-size")
+    const slideHeight = getComputedStyle(
+      document.documentElement
+    ).getPropertyValue("--info-mobile-slide-size");
     let newHeight = 0;
 
     if (
@@ -262,7 +267,6 @@ export default function Infographic() {
               <h1>What We Do</h1>
               <div className="infographic-list-wrapper-mobile">
                 <ul id="slideList">
-
                   <li id="landAcquisitionMobile" onClick={handleMouseClick}>
                     <span
                       id="landAcquisitionMobile"
@@ -281,7 +285,10 @@ export default function Infographic() {
                     </div>
                   </div>
 
-                  <li id="greenfieldDevelopmentMobile" onClick={handleMouseClick}>
+                  <li
+                    id="greenfieldDevelopmentMobile"
+                    onClick={handleMouseClick}
+                  >
                     <span
                       id="greenfieldDevelopmentMobile"
                       className="fas fa-plus-circle"
@@ -316,8 +323,11 @@ export default function Infographic() {
                       <p>{slide.body[2]}</p>
                     </div>
                   </div>
-                               
-                  <li id="commercialStructuringMobile" onClick={handleMouseClick}>
+
+                  <li
+                    id="commercialStructuringMobile"
+                    onClick={handleMouseClick}
+                  >
                     <span
                       id="commercialStructuringMobile"
                       className="fas fa-plus-circle"
@@ -335,7 +345,10 @@ export default function Infographic() {
                     </div>
                   </div>
 
-                  <li id="constructionProcurementMobile" onClick={handleMouseClick}>
+                  <li
+                    id="constructionProcurementMobile"
+                    onClick={handleMouseClick}
+                  >
                     <span
                       id="constructionProcurementMobile"
                       className="fas fa-plus-circle"
@@ -370,7 +383,6 @@ export default function Infographic() {
                       <p>{slide.body[5]}</p>
                     </div>
                   </div>
-
                 </ul>
               </div>
             </div>

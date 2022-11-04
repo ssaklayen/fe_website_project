@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
+import "./css/page.landowners.css";
 
 import Banner from "./components/banner.component";
 import LandownersInformation from "./components/landowners.information.component";
@@ -20,7 +21,8 @@ export default function LandownersPage() {
 
   const bannerText = {
     header: "Let's work together",
-    body: "Lease or sell your property to Flatiron Energy to earn stable, long-term revenue and returns.",
+    body:
+      "Lease or sell your property to Flatiron Energy to earn stable, long-term revenue and returns.",
   };
 
   return (

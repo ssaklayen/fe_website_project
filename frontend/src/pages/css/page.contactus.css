@@ -1,0 +1,130 @@
+.contact-page-wrapper {
+    margin-bottom: 200px;
+  }
+  
+  /* Contact Information */
+  
+  .contact-page-info-outer-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-page-info-inner-wrapper {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  
+  .contact-page-card {
+    margin-top: 40px;
+  }
+  
+  .contact-page-card h4 {
+    color: #1b3138;
+    font-weight: 700;
+  }
+  
+  .contact-page-card p {
+    margin-left: 2px;
+  }
+  
+  .contact-page-info-link {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .contact-page-info-link:hover {
+    color: #000000;
+  }
+  
+  /* Contact Form */
+  
+  .contact-page-form-background {
+    width: 85%;
+    height: 700px;
+    background-color: #dbebe2;
+    margin-top: 60px;
+    position: relative;
+  }
+  
+  .contact-page-form-foreground {
+    position: absolute;
+    height: 600px;
+    width: 110%;
+    background-color: #ffffff;
+    box-shadow: 0 5px 30px 0 rgba(0, 67, 89, 0.25);
+    top: 50px;
+    left: -110px;
+  }
+  
+  .contact-page-form-wrapper {
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-page-form-wrapper label {
+    color: #1b3138;
+    font-weight: 500;
+  }
+  
+  .contact-mobile-wrapper {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+  }
+  
+  .contact-mobile-button {
+    padding: 5px 20px;
+    background-color: #004359;
+    color: #ffffff;
+    border-style: none;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+    z-index: 2;
+  }
+  
+  .contact-mobile-button:hover {
+    background-color: #3e9a68;
+    color: #ffffff;
+  }
+  
+  .contact-page-button {
+    padding: 5px 20px;
+    background-color: #004359;
+    color: #ffffff;
+    border-style: none;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact-page-return-btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .contact-page-return-btn:hover {
+    color: #ffffff;
+  }
+  
+  .contact-page-button:hover {
+    background-color: #3e9a68;
+  }
+  
+  .contact-page-message-sent {
+    display: grid;
+    place-items: center;
+    margin-top: 200px;
+  }
+  
+  .contact-page-custom-icon {
+    color: #3e9a68;
+    margin-bottom: 16px;
+  }

@@ -1,0 +1,120 @@
+.about-us-mission-responsiveness {
+  margin-top: 48px;
+  padding-left: 24px;
+}
+
+.about-us-mission-container {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  display: flex;
+}
+
+.about-us-mission-container img {
+  padding-left: 32px;
+}
+
+.about-us-mission-container p {
+  padding-left: 48px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: calc(1rem + 0.6vw);
+  width: 70%;
+}
+
+/* About Us Team Card */
+
+.about-us-team-container {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about-us-team-container img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 100%;
+  filter: grayscale(100%);
+  transition-duration: 0.4s;
+}
+
+.about-us-team-container img:hover {
+  filter: none;
+}
+
+.about-us-team-container h4 {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #004359;
+}
+
+.about-us-team-container h5 {
+  color: #0b8040;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.about-us-team-container a {
+  text-decoration: none;
+  transition-duration: 0.4s;
+  font-size: 1.1rem;
+}
+
+.about-us-team-text {
+  text-align: left;
+}
+
+/* .about-us-map-container {
+  position: relative;
+  height: 1000px;
+  text-align: center;
+}
+
+.about-us-map-container::before {
+  content: "";
+  background-image: url("./images/usa2.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 60%;
+}
+
+.about-us-map-text p {
+  position: relative;
+  opacity: 70%;
+}
+
+.about-us-map-text p:first-child {
+  padding-top: 160px;
+}
+
+.about-us-map-text p:last-child {
+  width: 60%;
+  margin: auto;
+}
+
+.about-us-map-text h2 {
+  position: relative;
+  padding-top: 32px;
+  font-weight: 600;
+}
+
+.about-us-icon-container {
+  position: relative;
+  margin-top: 100px;
+}
+
+.about-us-icon-text p {
+  opacity: 70%;
+}
+
+.about-us-icon-text h4 {
+  font-weight: 600;
+}
+
+.about-us-icon-container-image {
+  opacity: 70%;
+} */

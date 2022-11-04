@@ -1,7 +1,8 @@
-import React, {useEffect } from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./css/page.contactus.css";
 
 import Banner from "./components/banner.component";
 import ContactInformation from "./components/contactus.information.component";

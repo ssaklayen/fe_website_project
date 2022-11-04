@@ -2,18 +2,25 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./banner.component.css";
 
 export default function Banner(props) {
   React.useEffect(() => {
     if (props.gradient === "blue") {
       document.documentElement.style.setProperty("--banner-gs", "#40666a");
       document.documentElement.style.setProperty("--banner-ge", "#004359");
-      document.documentElement.style.setProperty("--banner-text-color", "#FFFFFF");
+      document.documentElement.style.setProperty(
+        "--banner-text-color",
+        "#FFFFFF"
+      );
     }
     if (props.gradient === "green") {
       document.documentElement.style.setProperty("--banner-gs", "#3e9a68");
       document.documentElement.style.setProperty("--banner-ge", "#0b8040");
-      document.documentElement.style.setProperty("--banner-text-color", "#FFFFFF");
+      document.documentElement.style.setProperty(
+        "--banner-text-color",
+        "#FFFFFF"
+      );
     }
   }, [props.gradient]);
 

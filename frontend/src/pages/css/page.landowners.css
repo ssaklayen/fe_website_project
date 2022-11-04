@@ -1,0 +1,176 @@
+/* Landowners Information */
+
+.landowners-information-image-wrapper {
+  width: 100%;
+}
+
+.landowners-information-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: right;
+}
+
+.landowners-information-bullets-wrapper {
+  width: 100%;
+  margin: 48px 0 0 auto;
+}
+
+.landowners-information-heading-wrapper {
+  margin: 0 auto;
+  padding-bottom: 32px;
+  text-align: left;
+  background-color: #dbebe2;
+}
+
+.landowners-information-heading-wrapper h1 {
+  font-size: calc(2rem + 1vw);
+  font-weight: 600;
+  color: #004359;
+  text-align: center;
+}
+
+.landowners-information-heading-wrapper span {
+  color: #0b8040;
+}
+
+.landowners-information-body-wrapper {
+  background: radial-gradient(
+    circle at bottom right,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
+}
+
+.landowners-information-banner-wrapper {
+  width: 100%;
+  background-color: #dbebe2;
+}
+
+.landowners-information-banner-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.landowners-contact-link-wrapper {
+  text-align: center;
+  margin-bottom: 100px;
+  background-color: #dbebe2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.landowners-contact-link-wrapper p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: calc(0.8rem + 0.5vw);
+  width: 75%;
+}
+
+.landowners-contact-link {
+  text-decoration: none;
+  color: #0b8040;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition-duration: 0.4s;
+}
+
+.landowners-contact-link:hover {
+  color: #3e9a68;
+  border: 1px solid #3e9a68;
+}
+
+/* Landowners Bullet Card */
+
+.landowners-bullet-card {
+  height: auto;
+  margin: 0 auto 24px;
+  display: grid;
+  align-items: center;
+  width: 100%;
+}
+
+.landowners-bullet-card li {
+  margin: 0 16px;
+  color: #ffffff;
+  font-size: calc(1rem + 0.4vw);
+  line-height: 1.7rem;
+  padding-left: 1rem;
+}
+
+.landowners-bullet-card li::marker {
+  color: #ffffff;
+  content: "\f138";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/* Landowners Steps */
+
+.landowners-steps-wrapper {
+  width: 100%;
+  height: 144px;
+  /* background-color: #FFFFFF; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landowners-steps-wrapper h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #0b8040;
+  font-size: calc(1.2rem + 1.5vw);
+  margin: 0;
+}
+
+.landowners-steps-inner-wrapper {
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.step-card-outer-wrapper {
+  height: 248px;
+  background-color: #f6f6f6;
+  margin-bottom: 32px;
+  border-radius: 24px;
+  box-shadow: 0 2px 10px 0 rgba(0, 67, 89, 0.15);
+  transition-duration: 0.4s;
+}
+
+.step-card-outer-wrapper:hover {
+  background-color: #f0f7e9;
+}
+
+.step-card-inner-wrapper {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.step-card-inner-wrapper h3 {
+  font-weight: 700;
+  color: #7cc56c;
+
+  letter-spacing: 1px;
+  padding-top: 24px;
+}
+
+.step-card-inner-wrapper h4 {
+  color: #004359;
+  font-weight: 600;
+}
+
+.step-card-inner-wrapper p {
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+.step-card-image {
+  margin-bottom: 40px;
+  display: grid;
+  place-items: center;
+}

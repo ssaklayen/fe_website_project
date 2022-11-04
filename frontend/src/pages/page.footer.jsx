@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
+import "./css/page.footer.css";
 
 import fe_symbol from "./images/fe_symbol.png";
 import bcorpwhitepending from "./images/bcorpwhitepending.png";
@@ -21,16 +22,24 @@ export default function FooterBar() {
               <div>
                 <h5>Company</h5>
                 <p>
-                  <Link to="/landowners" className="nav-link-line">Landowners</Link>
+                  <Link to="/landowners" className="nav-link-line">
+                    Landowners
+                  </Link>
                 </p>
                 <p>
-                  <Link to="/energystorage" className="nav-link-line">Energy Storage</Link>
+                  <Link to="/energystorage" className="nav-link-line">
+                    Energy Storage
+                  </Link>
                 </p>
                 <p>
-                  <Link to="/aboutus" className="nav-link-line">About Us</Link>
+                  <Link to="/aboutus" className="nav-link-line">
+                    About Us
+                  </Link>
                 </p>
                 <p>
-                  <Link to="/careers" className="nav-link-line">Careers</Link>
+                  <Link to="/careers" className="nav-link-line">
+                    Careers
+                  </Link>
                 </p>
               </div>
             </Col>
@@ -40,7 +49,9 @@ export default function FooterBar() {
               <div>
                 <h5>Contact</h5>
                 <p>
-                  <Link to="/contact" className="nav-link-line">Contact Us</Link>
+                  <Link to="/contact" className="nav-link-line">
+                    Contact Us
+                  </Link>
                 </p>
                 <p>
                   <a

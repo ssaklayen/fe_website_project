@@ -1,0 +1,105 @@
+#footerDesktop {
+  margin-top: 50px;
+}
+
+.footer-wrapper {
+  color: #ffffff;
+  background-color: #1b3138;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-wrapper h5 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.footer-wrapper p {
+  margin-bottom: 24px;
+  transition-duration: 0.4s;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  transition-duration: 0.4s;
+  color: #ffffff;
+  font-weight: 300;
+  padding: 0 0 2px 0;
+}
+
+.footer-wrapper a:hover {
+  color: #3e9a68;
+}
+
+.footer-image {
+  height: 200px;
+
+  background: -webkit-radial-gradient(
+      circle at top left,
+      rgba(64, 102, 106, 0.8),
+      rgba(27, 49, 56, 0.8)
+    ),
+    url(../images/footer_banner.png) center fixed;
+  background: radial-gradient(
+      circle at top left,
+      rgba(64, 102, 106, 0.8),
+      rgba(27, 49, 56, 0.8)
+    ),
+    url(../images/footer_banner.png) center fixed;
+  background-size: cover;
+}
+
+.footer-bcorp-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-bcorp-logo h5 {
+  margin-left: 18px;
+}
+
+.footer-bcorp-logo a:hover {
+  opacity: 50%;
+}
+
+.footer-fe-symbol {
+  display: grid;
+  place-items: center;
+  height: auto;
+}
+
+.footer-fe-symbol-text {
+  text-align: center;
+  width: 90%;
+}
+
+.footer-fe-symbol p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.footer-fe-symbol a:hover {
+  opacity: 50%;
+}
+
+.footer-investor-wrapper {
+  text-align: center;
+  font-size: 1rem;
+  width: 95%;
+  margin: 150px auto 200px;
+  color: grey;
+}
+
+.footer-investor-wrapper p {
+  margin-top: 16px;
+  line-height: 1.4rem;
+}
+
+.footer-investor-image {
+  width: 30%;
+}

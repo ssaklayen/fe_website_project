@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BulletCard from "./landowners.bulletcard.component";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import landownersHandshake from "../images/landowners_handshake.png";
 import landownersCity from "../images/landowners_city2.png";
@@ -44,10 +44,13 @@ export default function LandownersInformation() {
         </Row>
       </Container>
       <div className="landowners-contact-link-wrapper">
-      <Link to="/contact" className="landowners-contact-link">
+        <Link to="/contact" className="landowners-contact-link">
           Contact Us
         </Link>
-        <p>If you're interested in learning more about how we can add value to your property please reach out to us.</p>
+        <p>
+          If you're interested in learning more about how we can add value to
+          your property please reach out to us.
+        </p>
       </div>
     </>
   );

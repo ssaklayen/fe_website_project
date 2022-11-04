@@ -1,0 +1,85 @@
+.job-openings-container {
+  padding: 64px 0 0;
+}
+
+.job-openings-text {
+  margin-left: 30px;
+}
+
+.job-openings-text h1 {
+  font-weight: 700;
+  color: #004359;
+}
+
+.job-openings-text a {
+  text-decoration: none;
+}
+
+.job-openings-text p {
+  line-height: 1.8rem;
+  font-size: calc(1rem + 0.1vw);
+  width: 100%;
+}
+
+.job-openings-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.job-openings-button {
+  width: 400px;
+  text-align: center;
+  background-color: #004359;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  padding: 16px 0;
+}
+
+.job-openings-button a {
+  color: #ffffff;
+  font-size: calc(1.7rem + 0.1vw);
+  font-weight: 600;
+}
+
+.job-openings-button:hover {
+  background: #0b8040;
+}
+
+.job-openings-button h4 {
+  padding-top: 8px;
+}
+
+.careers-values-wrapper {
+  padding-left: 30px;
+  margin-bottom: 100px;
+}
+
+.careers-values-header {
+  margin-top: 48px;
+}
+
+.careers-values-header h1 {
+  font-weight: 700;
+  color: #0b8040;
+}
+
+.careers-value {
+  display: inline-flex;
+  margin-top: 48px;
+}
+
+.careers-value h4 {
+  color: #0b8040;
+  font-weight: 600;
+}
+
+.careers-value p {
+  color: #004359;
+  font-weight: 500;
+}
+
+.careers-value-text {
+  padding-left: 24px;
+  margin-top: 16px;
+}

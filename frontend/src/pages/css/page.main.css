@@ -1,0 +1,254 @@
+/* Mission Statement */
+
+.mission-statement-wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+.mission-statement-wrapper h2 {
+  line-height: 2.8rem;
+  text-align: center;
+}
+
+.mission-statement-wrapper span {
+  color: #0b8040;
+  font-weight: 700;
+}
+
+/* Strengths */
+
+.strengths-container {
+  padding: 12px 12px;
+}
+
+.strengths-container h4 {
+  color: #004359;
+  font-weight: 700;
+}
+
+.strengths-container p {
+  margin-left: 2px;
+  margin-bottom: 0;
+}
+
+.strength-wrapper {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.strength-image-wrapper {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.strength-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Infographic Customs */
+
+#slideList {
+  margin: 0;
+  padding: 0;
+}
+
+.infographic-wrapper {
+  width: 100%;
+  height: 640px;
+  margin-top: 48px;
+  background-color: #dbebe2;
+}
+
+.infographic-text-panel {
+  vertical-align: top;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.infographic-text-panel h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  color: #0b8040;
+}
+
+.infographic-list-wrapper {
+  padding-left: 27px;
+  font-size: 1.3rem;
+  color: #004359;
+}
+
+.infographic-list-wrapper li {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 0;
+  transition-duration: 0.4s;
+  list-style-type: none;
+}
+
+.infographic-list-wrapper li:first-child {
+  margin-top: 24px;
+}
+
+.infographic-list-wrapper span {
+  padding-right: 16px;
+  max-width: 40px;
+}
+
+.infographic-list-wrapper li:hover {
+  color: #3e9a68;
+  cursor: default;
+}
+
+.infographic-carousel-image {
+  margin: 60px auto;
+  position: relative;
+  width: 587px;
+}
+
+.infographic-carousel-image img {
+  box-shadow: 10px -10px #b3cfc0 !important;
+  max-width: 98%;
+}
+
+.infographic-carousel-image-caption {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 5px 30px 0 rgba(0, 67, 89, 0.25);
+  padding: 20px;
+  bottom: -55px;
+  left: 60px;
+  width: 500px;
+  height: 160px;
+  z-index: 1;
+}
+
+.infographic-carousel-image-caption h3 {
+  font-weight: 300;
+  color: #3e9a68;
+}
+
+.infographic-carousel-wrapper {
+  position: relative;
+}
+
+/* Infographic Mobile */
+@keyframes slideDownHeight {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--info-mobile-height);
+  }
+}
+
+@keyframes slideDownOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpHeight {
+  from {
+    height: var(--info-mobile-height);
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+@keyframes slideUpOpacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-down {
+  animation: slideDownHeight 0.4s forwards, slideDownOpacity 0.2s 0.1s forwards;
+}
+
+.animate-up {
+  animation: slideUpOpacity 0.2s forwards, slideUpHeight 0.4s forwards;
+}
+
+.infographic-mobile-wrapper {
+  width: 100%;
+  height: var(--info-mobile-height);
+  margin-top: 60px;
+  background-color: #dbebe2;
+  transition-duration: 0.4s;
+}
+
+.infographic-card-mobile {
+  color: #000000;
+  padding-top: 5px;
+  padding-right: 15px;
+  font-size: 0.9rem;
+  height: 0;
+  opacity: 0;
+}
+
+.infographic-card-caption-mobile {
+  width: 95%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.infographic-text-panel-mobile {
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.infographic-text-panel-mobile h1 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: #0b8040;
+  margin-left: 0;
+}
+
+.infographic-text-panel-mobile p {
+  margin: 0;
+}
+
+.infographic-list-wrapper-mobile {
+  padding-left: 16px;
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+  color: #004359;
+}
+
+.infographic-list-wrapper-mobile li {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 0;
+  transition-duration: 0.4s;
+  list-style-type: none;
+}
+
+.infographic-list-wrapper-mobile li:first-child {
+  margin-top: 24px;
+}
+
+.infographic-list-wrapper-mobile span {
+  padding-right: 16px;
+}
+
+.infographic-list-wrapper-mobile li:hover {
+  color: #3e9a68;
+  cursor: default;
+}

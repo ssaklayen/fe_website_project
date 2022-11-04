@@ -1,0 +1,84 @@
+.energy-storage-icon-heading {
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.energy-storage-icon-heading h1 {
+  line-height: 3.5rem;
+}
+
+.energy-storage-icon-image-container {
+  padding: 0;
+  width: 100%;
+}
+
+.energy-storage-icon-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.energy-storage-row-header {
+  height: 144px;
+  background-color: #004359;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.energy-storage-row-header h1 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.energy-storage-row-footer {
+  height: 288px;
+  background: radial-gradient(
+    circle at bottom right,
+    var(--banner-gs),
+    var(--banner-ge)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 96px;
+}
+
+.energy-storage-row-footer h3 {
+  color: #ffffff;
+  text-align: center;
+  width: 90%;
+  line-height: 2.5rem;
+  font-size: calc(1.1rem + 0.5vw);
+}
+
+.energy-storage-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.energy-storage-columns p {
+  width: 90%;
+  line-height: 2rem;
+  font-size: calc(1rem + 0.2vw);
+}
+
+.energy-storage-columns ul {
+  padding-left: 22px;
+}
+
+.energy-storage-columns ul li {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  padding-left: 0.5rem;
+}
+
+.energy-storage-columns ul li::marker {
+  content: "\f138";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}

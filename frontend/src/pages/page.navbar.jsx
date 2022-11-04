@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "./css/page.navbar.css";
 
 import fe_logo from "./images/fe_logo.png";
 
@@ -23,10 +24,28 @@ export default function NavBar() {
   });
 
   return (
-    <Navbar sticky="top" collapseOnSelect bg="light" expand="xl" expanded={expanded}>
+    <Navbar
+      sticky="top"
+      collapseOnSelect
+      bg="light"
+      expand="xl"
+      expanded={expanded}
+    >
       <Container>
-        <Navbar.Brand as={Link} to="/" onClick={() => {setExpanded(false); setCollapsed(true)}}>
-          <img src={fe_logo} className="nav-link-fade" width="128" alt="Flatiron Energy" />
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          onClick={() => {
+            setExpanded(false);
+            setCollapsed(true);
+          }}
+        >
+          <img
+            src={fe_logo}
+            className="nav-link-fade"
+            width="128"
+            alt="Flatiron Energy"
+          />
         </Navbar.Brand>
 
         <Navbar.Toggle
@@ -36,7 +55,13 @@ export default function NavBar() {
           <span className="fas fa-bars"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="fe-navbar-nav">
-          <Nav className="ms-auto" onClick={() => {setExpanded(false); setCollapsed(true)}}>
+          <Nav
+            className="ms-auto"
+            onClick={() => {
+              setExpanded(false);
+              setCollapsed(true);
+            }}
+          >
             <div className="nav-link-pad nav-link-margin">
               <Nav.Link
                 id="landownersNavlink"

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function BulletCard(props) {
   const cards = [
     "Backed by an institutional investor and asset manager",
