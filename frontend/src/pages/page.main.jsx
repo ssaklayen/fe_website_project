@@ -49,9 +49,9 @@ export default function SplashPage() {
           Contact Us
         </Link>
       </div>
-      <div className="footer-investor-wrapper">
+      <div className="investor-wrapper">
         <img
-          className="footer-investor-image"
+          className="investor-image"
           src={hullStreetEnergy}
           alt="Hull Street Energy"
         />

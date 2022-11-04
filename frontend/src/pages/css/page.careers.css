@@ -83,3 +83,31 @@
   padding-left: 24px;
   margin-top: 16px;
 }
+
+@media only screen and (max-width: 991px) {
+  .job-openings-container  {
+    margin-top: 180px;
+  }
+
+  .job-openings-text p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .careers-value {
+    display: inline;
+  }
+
+  .careers-value-text {
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .job-openings-button {
+    width: 300px;
+  }
+  .job-openings-button a {
+    font-size: calc(1.4rem + 0.1vw);
+  }
+}

@@ -107,7 +107,7 @@ export default function AboutUsPage() {
       </Container>
       <hr />
       <Container className="ps-4 mt-5">
-        <h1 style={{ color: "#0b8040", fontWeight: "700" }}>Our Leaders</h1>
+        <h1 style={{ color: "#0b8040", fontWeight: "700" }}>Leadership Team</h1>
 
         <div>
           <Row className="mt-5">
@@ -117,9 +117,6 @@ export default function AboutUsPage() {
             <Col>
               <TeamCard card={1} />
             </Col>
-          </Row>
-
-          <Row>
             <Col>
               <TeamCard card={2} />
             </Col>

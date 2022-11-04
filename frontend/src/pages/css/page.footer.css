@@ -87,19 +87,48 @@
   opacity: 50%;
 }
 
-.footer-investor-wrapper {
-  text-align: center;
-  font-size: 1rem;
-  width: 95%;
-  margin: 150px auto 200px;
-  color: grey;
+/* MEDIA */
+
+@media only screen and (max-width: 991px) {
+  #footerDesktop {
+    display: none;
+  }
+
+  #footerMobile {
+    display: visible;
+  }
+
+  .footer-bcorp-logo {
+    margin-top: 25px;
+  }
+
+  .footer-fe-symbol {
+    margin-top: 25px;
+  }
+
+  .footer-wrapper {
+    padding-bottom: 25px;
+  }
 }
 
-.footer-investor-wrapper p {
-  margin-top: 16px;
-  line-height: 1.4rem;
+@media only screen and (min-width: 992px) {
+  #footerDesktop {
+    display: visible;
+  }
+
+  #footerMobile {
+    display: none;
+  }
 }
 
-.footer-investor-image {
-  width: 30%;
+@media only screen and (max-width: 767px) {
+  .footer-fe-symbol p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-fe-symbol p {
+    font-size: 1rem;
+  }
 }

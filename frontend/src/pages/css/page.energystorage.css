@@ -82,3 +82,46 @@
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
 }
+
+/* MEDIA */
+
+@media only screen and (min-width: 1200px) {
+  #energyStorageDesktop {
+    display: visible;
+  }
+
+  #energyStorageMobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #energyStorageDesktop {
+    display: none;
+  }
+
+  #energyStorageMobile {
+    display: visible;
+  }
+
+  .energy-storage-columns img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .energy-storage-icon-heading {
+    margin-top: 180px;
+  }
+
+  .energy-storage-icon-heading h1 {
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .energy-storage-columns {
+    height: 300px;
+  }
+}

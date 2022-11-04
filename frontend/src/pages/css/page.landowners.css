@@ -174,3 +174,43 @@
   display: grid;
   place-items: center;
 }
+
+/* MEDIA */
+
+@media only screen and (max-width: 1399px) {
+  .landowners-bullet-card li {
+    font-size: calc(1rem + 0.1vw);
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .landowners-bullet-card li {
+    font-size: calc(0.9rem);
+  }
+
+  .landowners-bullet-card {
+    margin-bottom: 8px;
+  }
+
+  .landowners-information-bullets-wrapper {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .landowners-steps-h1-wrapper h1 {
+    line-height: 2.5rem;
+  }
+
+  .landowners-bullet-card {
+    width: 100%;
+  }
+
+  .landowners-steps-wrapper {
+    margin-top: 180px;
+  }
+
+  .landowners-bullet-card li {
+    font-size: calc(1rem + 0.1vw);
+  }
+}
