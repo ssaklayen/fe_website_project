@@ -42,7 +42,7 @@ export default function NavBar() {
         >
           <img
             src={fe_logo}
-            className="nav-link-fade"
+            className="link-fade"
             width="128"
             alt="Flatiron Energy"
           />
@@ -67,7 +67,7 @@ export default function NavBar() {
                 id="landownersNavlink"
                 as={Link}
                 to="/landowners"
-                className="nav-link nav-link-line"
+                className="nav-link link-line"
               >
                 Landowners
               </Nav.Link>
@@ -78,7 +78,7 @@ export default function NavBar() {
                 id="energystorageLink"
                 as={Link}
                 to="/energystorage"
-                className="nav-link nav-link-line"
+                className="nav-link link-line"
               >
                 Energy Storage
               </Nav.Link>
@@ -88,7 +88,7 @@ export default function NavBar() {
                 id="aboutusLink"
                 as={Link}
                 to="/aboutus"
-                className="nav-link nav-link-line"
+                className="nav-link link-line"
               >
                 About Us
               </Nav.Link>
@@ -98,7 +98,7 @@ export default function NavBar() {
                 id="careersLink"
                 as={Link}
                 to="/careers"
-                className="nav-link nav-link-line"
+                className="nav-link link-line"
               >
                 Careers
               </Nav.Link>
@@ -108,7 +108,7 @@ export default function NavBar() {
                 id="contactLink"
                 as={Link}
                 to="/contact"
-                className="nav-link nav-link-line"
+                className="nav-link link-line"
               >
                 Contact Us
               </Nav.Link>

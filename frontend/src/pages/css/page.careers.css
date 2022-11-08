@@ -17,8 +17,10 @@
 
 .job-openings-text p {
   line-height: 1.8rem;
-  font-size: calc(1rem + 0.1vw);
-  width: 100%;
+  font-size: calc(1.1rem + 0.1vw);
+  width: 75%;
+  /* text-align: center; */
+  margin: 40px auto 0;
 }
 
 .job-openings-button-wrapper {

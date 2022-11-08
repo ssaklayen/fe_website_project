@@ -22,22 +22,22 @@ export default function FooterBar() {
               <div>
                 <h5>Company</h5>
                 <p>
-                  <Link to="/landowners" className="nav-link-line">
+                  <Link to="/landowners" className="link-line">
                     Landowners
                   </Link>
                 </p>
                 <p>
-                  <Link to="/energystorage" className="nav-link-line">
+                  <Link to="/energystorage" className="link-line">
                     Energy Storage
                   </Link>
                 </p>
                 <p>
-                  <Link to="/aboutus" className="nav-link-line">
+                  <Link to="/aboutus" className="link-line">
                     About Us
                   </Link>
                 </p>
                 <p>
-                  <Link to="/careers" className="nav-link-line">
+                  <Link to="/careers" className="link-line">
                     Careers
                   </Link>
                 </p>
@@ -49,7 +49,7 @@ export default function FooterBar() {
               <div>
                 <h5>Contact</h5>
                 <p>
-                  <Link to="/contact" className="nav-link-line">
+                  <Link to="/contact" className="link-line">
                     Contact Us
                   </Link>
                 </p>
@@ -58,7 +58,7 @@ export default function FooterBar() {
                     href="https://www.linkedin.com/company/flatiron-energy/about/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="nav-link-line"
+                    className="link-line"
                   >
                     Follow Us
                     <span className="ms-2 fa-brands fa-linkedin"></span>
@@ -75,6 +75,7 @@ export default function FooterBar() {
                 href="https://www.bcorporation.net/en-us/certification"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="link-fade"
               >
                 <img
                   src={bcorpwhitepending}
@@ -86,7 +87,7 @@ export default function FooterBar() {
 
             {/* Fe Logo & Copyright Block */}
             <Col className="footer-fe-symbol">
-              <Link to="/">
+              <Link to="/" className="link-fade">
                 <img src={fe_symbol} width="240" alt="Flatiron Energy Symbol" />
                 <div className="footer-fe-symbol-text">
                   <p>
@@ -103,7 +104,12 @@ export default function FooterBar() {
           <Row id="footerMobile">
             {/* B Corp Logo Block Mobile*/}
             <Col className="footer-bcorp-logo">
-              <a href="https://www.bcorporation.net/en-us/certification">
+              <a
+                href="https://www.bcorporation.net/en-us/certification"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-fade"
+              >
                 <img
                   src={bcorpwhitependingmobile}
                   width="190rem"
@@ -114,7 +120,7 @@ export default function FooterBar() {
 
             {/* Fe Logo & Copyright Block Mobile */}
             <Col className="footer-fe-symbol">
-              <Link to="/">
+              <Link to="/" className="link-fade">
                 <img
                   src={fe_symbol}
                   width="120rem"

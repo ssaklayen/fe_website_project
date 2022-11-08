@@ -1,36 +1,54 @@
-.about-us-mission-responsiveness {
+.about-us-mission-container {
   margin-top: 48px;
   padding-left: 24px;
+  text-align: center;
 }
 
-.about-us-mission-container {
-  margin-top: 24px;
+.about-us-mission-container h1{
+  color: #004359;
+  font-weight: 700;
+}
+
+.about-us-mission-wrapper {
+  margin-top: 32px;
   margin-bottom: 48px;
   display: flex;
 }
 
-.about-us-mission-container img {
-  padding-left: 32px;
-}
-
-.about-us-mission-container p {
-  padding-left: 48px;
+.about-us-mission-wrapper p {
+  padding-left: 24px;
   margin-top: auto;
   margin-bottom: auto;
   font-size: calc(1rem + 0.6vw);
-  width: 70%;
+  width: 100%;
+  text-align: left;
+}
+
+/* About Us Partners */
+.about-us-partners-container {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.about-us-partners-container h1 {
+  color: #0b8040;
+  font-weight: 700;
 }
 
 /* About Us Team Card */
 
 .about-us-team-container {
-  width: 280px;
+  width: 290px;
   text-align: center;
   margin-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .about-us-team-container img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   /* border-radius: 100%; */
   filter: grayscale(100%);
@@ -46,7 +64,7 @@
   margin-bottom: 0;
   font-weight: 600;
   color: #004359;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .about-us-team-container h5 {
@@ -63,7 +81,7 @@
 }
 
 .about-us-team-container p {
-  font-size: .8rem;
+  font-size: .9rem;
   margin-top: 8px;
 }
 

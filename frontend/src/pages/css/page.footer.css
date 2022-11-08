@@ -60,11 +60,7 @@
 }
 
 .footer-bcorp-logo h5 {
-  margin-left: 18px;
-}
-
-.footer-bcorp-logo a:hover {
-  opacity: 50%;
+  margin-left: 20px;
 }
 
 .footer-fe-symbol {
@@ -81,10 +77,6 @@
 .footer-fe-symbol p {
   font-size: 1rem;
   color: #ffffff;
-}
-
-.footer-fe-symbol a:hover {
-  opacity: 50%;
 }
 
 /* MEDIA */

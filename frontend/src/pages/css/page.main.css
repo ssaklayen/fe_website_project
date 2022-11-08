@@ -1,16 +1,18 @@
-/* Mission Statement */
+/* Main Banner Caption Statement */
 
-.mission-statement-wrapper {
+.main-banner-caption {
   width: 95%;
   margin: auto;
+  padding-top: 40px;
+  padding-bottom: 16px;
 }
 
-.mission-statement-wrapper h2 {
+.main-banner-caption h2 {
   line-height: 2.8rem;
   text-align: center;
 }
 
-.mission-statement-wrapper span {
+.main-banner-caption span {
   color: #0b8040;
   font-weight: 700;
 }
@@ -346,9 +348,9 @@
     display: visible;
   }
 
-  .mt-mission-statement {
+  /* .mt-mission-statement {
     margin-top: 180px;
-  }
+  } */
 
   .investor-wrapper {
     margin: 100px auto 100px auto;
@@ -382,7 +384,7 @@
     display: none;
   }
 
-  .mission-statement-wrapper h2 {
+  .main-banner-caption h2 {
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
@@ -425,7 +427,7 @@
     font-size: 3.7vw;
   }
 
-  .mission-statement-wrapper h2 {
+  .main-banner-caption h2 {
     font-size: 4.1vw;
     line-height: 1.7rem;
   }

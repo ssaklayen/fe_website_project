@@ -25,25 +25,23 @@ export default function Banner(props) {
   }, [props.gradient]);
 
   return (
-    <Container className="banner-wrapper">
-      <Row className="row-cols-auto" id="bannerDesktop">
-        {/* Banner Text */}
-        <Col className="g-0 col-lg-6 col-md-12">
-          <div className="d-inline-block banner-text">
+    <div>
+      <Row>
+        <Col className="g-0 banner-column">
+          <div className="banner-text">
             <h1>{props.header}</h1>
             <p>{props.body}</p>
           </div>
         </Col>
 
-        {/* Banner Image */}
-        <Col className="g-0 col-lg-6">
+        <Col className="g-0">
           <div className="banner-image-wrapper">
             <img src={props.image} alt={props.imageAlt} />
           </div>
         </Col>
       </Row>
 
-      {/***** Banner Mobile *****/}
+      {/* **** Banner Mobile ****
       <Row id="bannerMobile">
         <Col className="g-0">
           <div className="banner-wrapper-mobile">
@@ -54,7 +52,7 @@ export default function Banner(props) {
             <img src={props.image} alt={props.imageAlt} />
           </div>
         </Col>
-      </Row>
-    </Container>
+      </Row> */}
+    </div>
   );
 }

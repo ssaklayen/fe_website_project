@@ -6,8 +6,8 @@ import "./css/page.aboutus.css";
 
 import Banner from "./components/banner.component";
 
-import aboutusBannerImage from "./images/main_banner.png";
-import bcorpLogo from "./images/bcorplogo2.png";
+import aboutusBannerImage from "./images/flatirons2.png";
+import bcorpLogo from "./images/bcorplogo3.png";
 import jonImage from "./images/jon.jpg";
 import brettImage from "./images/brett.jpg";
 import julianaImage from "./images/juliana.jpg";
@@ -27,10 +27,10 @@ export function TeamCard(props) {
   ];
 
   const memberInfo = [
-    "Jon has 23 years in the energy industry and 7 years in standalone storage.",
-    "Brett has over 12 years in the energy industry and 6 years in standalone storage.",
-    "Juliana has over 12 years in the energy industry and 7 years in standalone storage.",
-    "Rob has 15 years in energy, consulting, and finance; 7 years in standalone storage.",
+    "Jon has 24 years of experience working in the energy industry and 8 years in standalone storage. He has held leadership roles in development, consulting, project management, and engineering.",
+    "Brett has 13 years of experience working in the energy industry and 5 years in standalone storage. He has held leadership roles in greenfield development, acquisitions, finance, and transmission modeling.",
+    "Juliana has 13 years of experience working in the energy industry and 8 years in standalone storage. She has held leadership roles in greenfield development, acquisitions, market development, and regulatory affairs.",
+    "Rob has 16 years of experience working in energy, consulting, and finance and 8 years in standalone storage. He has held leadership roles in acquisitions, financing, and battery optimization.",
   ];
 
   const memberRoles = [
@@ -44,9 +44,8 @@ export function TeamCard(props) {
 
   return (
     <Container className="about-us-team-container">
-      <img src={memberImages[props.card]} alt="me" />
+      <img src={memberImages[props.card]} alt={memberNames[props.card]} />
       <h4>{memberNames[props.card]}</h4>
-      <h5>Managing Partner</h5>
       <a
         href="https://www.linkedin.com/in/sabir-saklayen"
         target="_blank"
@@ -56,7 +55,7 @@ export function TeamCard(props) {
       </a>
       <div className="about-us-team-text mt-1">
         <p>{memberInfo[props.card]}</p>
-        <p>{memberRoles[props.card]}</p>
+        {/* <p>{memberRoles[props.card]}</p> */}
       </div>
     </Container>
   );
@@ -88,13 +87,14 @@ export default function AboutUsPage() {
         imageAlt="About Us Team Image"
         gradient="blue"
       />
-      <Container className="about-us-mission-responsiveness">
-        <h1 style={{ color: "#004359", fontWeight: "700" }}>Our Mission</h1>
-        <div className="about-us-mission-container">
+      <Container className="about-us-mission-container">
+        <h1>Our Mission</h1>
+        <div className="about-us-mission-wrapper">
           <a
             href="https://www.bcorporation.net/en-us/certification"
             target="_blank"
             rel="noopener noreferrer"
+            className="link-fade"
           >
             <img src={bcorpLogo} alt="B Corp Logo" />
           </a>
@@ -106,8 +106,8 @@ export default function AboutUsPage() {
         </div>
       </Container>
       <hr />
-      <Container className="ps-4 mt-5">
-        <h1 style={{ color: "#0b8040", fontWeight: "700" }}>Leadership Team</h1>
+      <Container className="about-us-partners-container">
+        <h1>Managing Partners</h1>
 
         <div>
           <Row className="mt-5">
