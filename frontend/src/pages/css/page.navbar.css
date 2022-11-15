@@ -1,6 +1,6 @@
 .navbar {
-  border-bottom: 4px solid #1b3138;
-  background-color: #ffffff !important;
+  border-bottom: 4px solid var(--fe-dark-highlight);
+  background-color: var(--fe-white) !important;
   padding: 0;
 }
 
@@ -11,7 +11,7 @@
 .nav-link {
   font-size: 1.3rem !important;
   font-weight: 600 !important;
-  color: #004359;
+  color: var(--fe-blue);
 }
 
 .navbar-nav a {
@@ -20,11 +20,11 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #3e9a68 !important;
+  color: var(--fe-green-highlight) !important;
 }
 
 .nav-link-active {
-  color: #3e9a68 !important;
+  color: var(--fe-green-highlight) !important;
 }
 
 .nav-link-active::after {

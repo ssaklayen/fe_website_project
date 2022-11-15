@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import "./css/page.main.css";
 
 import hullStreetEnergy from "./images/hullstreetenergy.png";
-import mainBannerImage from "./images/flatirons.jpg";
+import mainBannerImage from "./images/main_banner.png";
 
 export default function SplashPage() {
   const bannerText = {
@@ -30,7 +30,8 @@ export default function SplashPage() {
   });
 
   return (
-    <>
+    <Container className="content-container">
+      {/* <MainBanner /> */}
       <Banner
         header={bannerText.header}
         body={bannerText.body}
@@ -38,30 +39,28 @@ export default function SplashPage() {
         imageAlt="Mountain Energy Storage"
         gradient="blue"
       />
-      <Container className="content-container">
-        <MissionStatement />
-        <hr />
-        <Strengths />
-        <hr />
-        <Infographic />
-        <div id="contactMobileButton" className="contact-mobile-wrapper">
-          <Link to="/contact" className="contact-mobile-button">
-            Contact Us
-          </Link>
-        </div>
-        <div className="investor-wrapper">
-          <img
-            className="investor-image"
-            src={hullStreetEnergy}
-            alt="Hull Street Energy"
-          />
-          <p>
-            {investorCaption[0]}
-            <br />
-            {investorCaption[1]}
-          </p>
-        </div>
-      </Container>
-    </>
+      <MissionStatement />
+      <hr />
+      <Strengths />
+      <hr />
+      <Infographic />
+      <div id="contactMobileButton" className="contact-mobile-wrapper">
+        <Link to="/contact" className="contact-mobile-button">
+          Contact Us
+        </Link>
+      </div>
+      <div className="investor-wrapper">
+        <img
+          className="investor-image"
+          src={hullStreetEnergy}
+          alt="Hull Street Energy"
+        />
+        <p>
+          {investorCaption[0]}
+          <br />
+          {investorCaption[1]}
+        </p>
+      </div>
+    </Container>
   );
 }

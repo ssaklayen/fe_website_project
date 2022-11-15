@@ -8,7 +8,7 @@
 
 .job-openings-text h1 {
   font-weight: 700;
-  color: #004359;
+  color: var(--fe-blue);
 }
 
 .job-openings-text a {
@@ -32,20 +32,20 @@
 .job-openings-button {
   width: 400px;
   text-align: center;
-  background-color: #004359;
+  background-color: var(--fe-blue);
   border-radius: 4px;
   transition-duration: 0.4s;
   padding: 16px 0;
 }
 
 .job-openings-button a {
-  color: #ffffff;
+  color: var(--fe-white);
   font-size: calc(1.7rem + 0.1vw);
   font-weight: 600;
 }
 
 .job-openings-button:hover {
-  background: #0b8040;
+  background: var(--fe-green);
 }
 
 .job-openings-button h4 {
@@ -63,7 +63,7 @@
 
 .careers-values-header h1 {
   font-weight: 700;
-  color: #0b8040;
+  color: var(--fe-green);
 }
 
 .careers-value {
@@ -72,12 +72,12 @@
 }
 
 .careers-value h4 {
-  color: #0b8040;
+  color: var(--fe-green);
   font-weight: 600;
 }
 
 .careers-value p {
-  color: #004359;
+  color: var(--fe-blue);
   font-weight: 500;
 }
 

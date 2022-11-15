@@ -3,8 +3,8 @@
 }
 
 .footer-wrapper {
-  color: #ffffff;
-  background-color: #1b3138;
+  color: var(--fe-white);
+  background-color: var(--fe-dark-highlight);
   padding-top: 100px;
   padding-bottom: 50px;
   margin-top: 0px;
@@ -22,18 +22,19 @@
 .footer-wrapper p {
   margin-bottom: 24px;
   transition-duration: 0.4s;
+  padding-left: 2px;
 }
 
 .footer-wrapper a {
   text-decoration: none;
   transition-duration: 0.4s;
-  color: #ffffff;
+  color: var(--fe-white);
   font-weight: 300;
   padding: 0 0 2px 0;
 }
 
 .footer-wrapper a:hover {
-  color: #3e9a68;
+  color: var(--fe-green-highlight);
 }
 
 .footer-image {
@@ -76,7 +77,7 @@
 
 .footer-fe-symbol p {
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--fe-white);
 }
 
 /* MEDIA */

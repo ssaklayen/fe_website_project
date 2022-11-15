@@ -19,8 +19,8 @@ export default function NavBar() {
   useEffect(() => {
     let root = document.documentElement;
     collapsed === false
-      ? root.style.setProperty("--nav-toggle-color", "#3e9a68")
-      : root.style.setProperty("--nav-toggle-color", "#004359");
+      ? root.style.setProperty("--nav-toggle-color", "var(--fe-green-highlight)")
+      : root.style.setProperty("--nav-toggle-color", "var(--fe-blue)");
   });
 
   return (
@@ -73,7 +73,7 @@ export default function NavBar() {
               </Nav.Link>
             </div>
 
-            <div className="nav-link-pad nav-link-margin">
+            {/* <div className="nav-link-pad nav-link-margin">
               <Nav.Link
                 id="energystorageLink"
                 as={Link}
@@ -92,7 +92,7 @@ export default function NavBar() {
               >
                 About Us
               </Nav.Link>
-            </div>
+            </div> */}
             <div className="nav-link-pad nav-link-margin">
               <Nav.Link
                 id="careersLink"

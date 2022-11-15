@@ -53,7 +53,7 @@ export function TeamCard(props) {
       >
         <span className="fa-brands fa-linkedin"></span> Profile
       </a>
-      <div className="about-us-team-text mt-1">
+      <div className="about-us-team-text">
         <p>{memberInfo[props.card]}</p>
         {/* <p>{memberRoles[props.card]}</p> */}
       </div>

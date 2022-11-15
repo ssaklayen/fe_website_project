@@ -22,14 +22,14 @@
 
 .energy-storage-row-header {
   height: 144px;
-  background-color: #004359;
+  background-color: var(--fe-blue);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .energy-storage-row-header h1 {
-  color: #ffffff;
+  color: var(--fe-white);
   font-weight: 700;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .energy-storage-row-footer h3 {
-  color: #ffffff;
+  color: var(--fe-white);
   text-align: center;
   width: 90%;
   line-height: 2.5rem;

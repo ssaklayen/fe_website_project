@@ -21,7 +21,7 @@
   }
   
   .contact-page-card h4 {
-    color: #1b3138;
+    color: var(--fe-dark-highlight);
     font-weight: 700;
   }
   
@@ -31,11 +31,11 @@
   
   .contact-page-info-link {
     text-decoration: none;
-    color: #000000;
+    color: var(--fe-black);
   }
   
   .contact-page-info-link:hover {
-    color: #000000;
+    color: var(--fe-black);
   }
   
   /* Contact Form */
@@ -52,7 +52,7 @@
     position: absolute;
     height: 600px;
     width: 110%;
-    background-color: #ffffff;
+    background-color: var(--fe-white);
     box-shadow: 0 5px 30px 0 rgba(0, 67, 89, 0.25);
     top: 50px;
     left: -110px;
@@ -66,7 +66,7 @@
   }
   
   .contact-page-form-wrapper label {
-    color: #1b3138;
+    color: var(--fe-dark-highlight);
     font-weight: 500;
   }
   
@@ -78,8 +78,8 @@
   
   .contact-mobile-button {
     padding: 5px 20px;
-    background-color: #004359;
-    color: #ffffff;
+    background-color: var(--fe-blue);
+    color: var(--fe-white);
     border-style: none;
     transition-duration: 0.4s;
     border-radius: 4px;
@@ -91,14 +91,14 @@
   }
   
   .contact-mobile-button:hover {
-    background-color: #3e9a68;
-    color: #ffffff;
+    background-color: var(--fe-green-highlight);
+    color: var(--fe-white);
   }
   
   .contact-page-button {
     padding: 5px 20px;
-    background-color: #004359;
-    color: #ffffff;
+    background-color: var(--fe-blue);
+    color: var(--fe-white);
     border-style: none;
     transition-duration: 0.4s;
     border-radius: 4px;
@@ -106,16 +106,16 @@
   
   .contact-page-return-btn {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--fe-white);
     font-weight: 500;
   }
   
   .contact-page-return-btn:hover {
-    color: #ffffff;
+    color: var(--fe-white);
   }
   
   .contact-page-button:hover {
-    background-color: #3e9a68;
+    background-color: var(--fe-green-highlight);
   }
   
   .contact-page-message-sent {
@@ -125,7 +125,7 @@
   }
   
   .contact-page-custom-icon {
-    color: #3e9a68;
+    color: var(--fe-green-highlight);
     margin-bottom: 16px;
   }
 

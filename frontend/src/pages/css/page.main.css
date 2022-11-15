@@ -13,7 +13,7 @@
 }
 
 .main-banner-caption span {
-  color: #0b8040;
+  color: var(--fe-green);
   font-weight: 700;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .strengths-container h4 {
-  color: #004359;
+  color: var(--fe-blue);
   font-weight: 700;
 }
 
@@ -75,13 +75,13 @@
 .infographic-text-panel h1 {
   font-weight: 600;
   font-size: 4rem;
-  color: #0b8040;
+  color: var(--fe-green);
 }
 
 .infographic-list-wrapper {
   padding-left: 27px;
   font-size: 1.3rem;
-  color: #004359;
+  color: var(--fe-blue);
 }
 
 .infographic-list-wrapper li {
@@ -102,7 +102,7 @@
 }
 
 .infographic-list-wrapper li:hover {
-  color: #3e9a68;
+  color: var(--fe-green-highlight);
   cursor: default;
 }
 
@@ -131,7 +131,7 @@
 
 .infographic-carousel-image-caption h3 {
   font-weight: 300;
-  color: #3e9a68;
+  color: var(--fe-green-highlight);
 }
 
 .infographic-carousel-wrapper {
@@ -196,7 +196,7 @@
 }
 
 .infographic-card-mobile {
-  color: #000000;
+  color: var(--fe-black);
   padding-top: 5px;
   padding-right: 15px;
   font-size: 0.9rem;
@@ -219,7 +219,7 @@
 .infographic-text-panel-mobile h1 {
   font-weight: 600;
   font-size: 2.8rem;
-  color: #0b8040;
+  color: var(--fe-green);
   margin-left: 0;
 }
 
@@ -231,7 +231,7 @@
   padding-left: 16px;
   padding-bottom: 20px;
   font-size: 1.3rem;
-  color: #004359;
+  color: var(--fe-blue);
 }
 
 .infographic-list-wrapper-mobile li {
@@ -251,7 +251,7 @@
 }
 
 .infographic-list-wrapper-mobile li:hover {
-  color: #3e9a68;
+  color: var(--fe-green-highlight);
   cursor: default;
 }
 

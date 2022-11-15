@@ -8,40 +8,42 @@ export default function Banner(props) {
   React.useEffect(() => {
     if (props.gradient === "blue") {
       document.documentElement.style.setProperty("--banner-gs", "#40666a");
-      document.documentElement.style.setProperty("--banner-ge", "#004359");
+      document.documentElement.style.setProperty("--banner-ge", "var(--fe-blue)");
       document.documentElement.style.setProperty(
         "--banner-text-color",
-        "#FFFFFF"
+        "var(--fe-white)"
       );
     }
     if (props.gradient === "green") {
-      document.documentElement.style.setProperty("--banner-gs", "#3e9a68");
-      document.documentElement.style.setProperty("--banner-ge", "#0b8040");
+      document.documentElement.style.setProperty("--banner-gs", "var(--fe-green-highlight)");
+      document.documentElement.style.setProperty("--banner-ge", "var(--fe-green)");
       document.documentElement.style.setProperty(
         "--banner-text-color",
-        "#FFFFFF"
+        "var(--fe-white)"
       );
     }
   }, [props.gradient]);
 
   return (
-    <div>
-      <Row>
-        <Col className="g-0 banner-column">
-          <div className="banner-text">
+    <Container className="banner-wrapper">
+      <Row className="row-cols-auto" id="bannerDesktop">
+        {/* Banner Text */}
+        <Col className="g-0 col-lg-6 col-md-12">
+          <div className="d-inline-block banner-text">
             <h1>{props.header}</h1>
             <p>{props.body}</p>
           </div>
         </Col>
 
-        <Col className="g-0">
+        {/* Banner Image */}
+        <Col className="g-0 col-lg-6">
           <div className="banner-image-wrapper">
             <img src={props.image} alt={props.imageAlt} />
           </div>
         </Col>
       </Row>
 
-      {/* **** Banner Mobile ****
+      {/***** Banner Mobile *****/}
       <Row id="bannerMobile">
         <Col className="g-0">
           <div className="banner-wrapper-mobile">
@@ -52,7 +54,7 @@ export default function Banner(props) {
             <img src={props.image} alt={props.imageAlt} />
           </div>
         </Col>
-      </Row> */}
-    </div>
+      </Row>
+    </Container>
   );
 }

@@ -16,10 +16,10 @@ export default function LandownersInformation() {
       </div>
       <div className="landowners-information-heading-wrapper">
         <h1>
-          <span style={{ color: "#004359", fontWeight: "700" }}>
+          <span style={{ color: "var(--fe-blue)", fontWeight: "700" }}>
             Flatiron Energy
           </span>{" "}
-          <span style={{ color: "#004359", fontWeight: "400" }}>
+          <span style={{ color: "var(--fe-blue)", fontWeight: "400" }}>
             is a tenant you can{" "}
           </span>
           <span>trust</span>

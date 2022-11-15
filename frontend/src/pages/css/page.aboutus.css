@@ -5,7 +5,7 @@
 }
 
 .about-us-mission-container h1{
-  color: #004359;
+  color: var(--fe-blue);
   font-weight: 700;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .about-us-partners-container h1 {
-  color: #0b8040;
+  color: var(--fe-green);
   font-weight: 700;
 }
 
@@ -63,12 +63,12 @@
   margin-top: 16px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #004359;
+  color: var(--fe-blue);
   font-size: 1.4rem;
 }
 
 .about-us-team-container h5 {
-  color: #0b8040;
+  color: var(--fe-green);
   font-weight: 400;
   margin-bottom: 4px;
   font-size: 1.1rem;
@@ -80,15 +80,15 @@
   font-size: .8rem;
 }
 
-.about-us-team-container p {
+.about-us-team-text {
+  text-align: justify;
+  margin-top: 16px;
+}
+
+.about-us-team-text p {
   font-size: .9rem;
   margin-top: 8px;
 }
-
-.about-us-team-text {
-  text-align: left;
-}
-
 
 /* MEDIA */
 

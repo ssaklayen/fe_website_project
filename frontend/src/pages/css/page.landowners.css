@@ -26,12 +26,12 @@
 .landowners-information-heading-wrapper h1 {
   font-size: calc(2rem + 1vw);
   font-weight: 600;
-  color: #004359;
+  color: var(--fe-blue);
   text-align: center;
 }
 
 .landowners-information-heading-wrapper span {
-  color: #0b8040;
+  color: var(--fe-green);
 }
 
 .landowners-information-body-wrapper {
@@ -69,7 +69,7 @@
 
 .landowners-contact-link {
   text-decoration: none;
-  color: #0b8040;
+  color: var(--fe-green);
   font-size: 3rem;
   font-weight: 600;
   padding-left: 16px;
@@ -78,8 +78,8 @@
 }
 
 .landowners-contact-link:hover {
-  color: #3e9a68;
-  border: 1px solid #3e9a68;
+  color: var(--fe-green-highlight);
+  border: 1px solid var(--fe-green-highlight);
 }
 
 /* Landowners Bullet Card */
@@ -94,14 +94,14 @@
 
 .landowners-bullet-card li {
   margin: 0 16px;
-  color: #ffffff;
+  color: var(--fe-white);
   font-size: calc(1rem + 0.4vw);
   line-height: 1.7rem;
   padding-left: 1rem;
 }
 
 .landowners-bullet-card li::marker {
-  color: #ffffff;
+  color: var(--fe-white);
   content: "\f138";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -112,7 +112,7 @@
 .landowners-steps-wrapper {
   width: 100%;
   height: 144px;
-  /* background-color: #FFFFFF; */
+  /* background-color: var(--fe-white); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +121,7 @@
 .landowners-steps-wrapper h2 {
   text-align: center;
   font-weight: 700;
-  color: #0b8040;
+  color: var(--fe-green);
   font-size: calc(1.2rem + 1.5vw);
   margin: 0;
 }
@@ -129,7 +129,7 @@
 .landowners-steps-inner-wrapper {
   width: 90%;
   margin: auto;
-  background-color: #ffffff;
+  background-color: var(--fe-white);
 }
 
 .step-card-outer-wrapper {
@@ -160,7 +160,7 @@
 }
 
 .step-card-inner-wrapper h4 {
-  color: #004359;
+  color: var(--fe-blue);
   font-weight: 600;
 }
 
