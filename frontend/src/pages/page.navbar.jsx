@@ -73,7 +73,7 @@ export default function NavBar() {
               </Nav.Link>
             </div>
 
-            {/* <div className="nav-link-pad nav-link-margin">
+            <div className="nav-link-pad nav-link-margin">
               <Nav.Link
                 id="energystorageLink"
                 as={Link}
@@ -92,7 +92,7 @@ export default function NavBar() {
               >
                 About Us
               </Nav.Link>
-            </div> */}
+            </div>
             <div className="nav-link-pad nav-link-margin">
               <Nav.Link
                 id="careersLink"

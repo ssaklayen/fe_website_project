@@ -26,7 +26,7 @@ export default function FooterBar() {
                     Landowners
                   </Link>
                 </p>
-                {/* <p>
+                <p>
                   <Link to="/energystorage" className="link-line">
                     Energy Storage
                   </Link>
@@ -35,7 +35,7 @@ export default function FooterBar() {
                   <Link to="/aboutus" className="link-line">
                     About Us
                   </Link>
-                </p> */}
+                </p>
                 <p>
                   <Link to="/careers" className="link-line">
                     Careers

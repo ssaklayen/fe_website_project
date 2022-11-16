@@ -18,7 +18,9 @@ import robImage from "./images/rob.jpg";
 // import powerlinesIcon from "../images/powerlines_icon2.png";
 // import warehouseIcon from "../images/warehouse_icon2.png";
 
-export function TeamCard(props) {
+export default function AboutUsPage() {
+  const [memberIndex, setMemberIndex] = React.useState(0);
+
   const memberNames = [
     "Jon Poor",
     "Brett Cullin",
@@ -33,35 +35,35 @@ export function TeamCard(props) {
     "Rob has 16 years of experience working in energy, consulting, and finance and 8 years in standalone storage. He has held leadership roles in acquisitions, financing, and battery optimization.",
   ];
 
-  const memberRoles = [
-    "Leadership roles in greenfield development, acquisitions, market development, and regulatory affairs",
-    "Leadership roles in greenfield development, acquisitions, finance, and transmission modeling.",
-    "Leadership roles in development, consulting, project management, and engineering.",
-    "Leadership roles in acquisitions, financing, and battery optimization",
-  ];
+  function TeamCard(props) {
+    const memberImages = [jonImage, brettImage, julianaImage, robImage];
 
-  const memberImages = [jonImage, brettImage, julianaImage, robImage];
+    function handleImageClick(props) {
+      setMemberIndex(parseInt(props.target.id));
+      let modal = document.getElementById("partnerBio");
+      modal.style.display = "block";
+    }
 
-  return (
-    <Container className="about-us-team-container">
-      <img src={memberImages[props.card]} alt={memberNames[props.card]} />
-      <h4>{memberNames[props.card]}</h4>
-      <a
-        href="https://www.linkedin.com/in/sabir-saklayen"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span className="fa-brands fa-linkedin"></span> Profile
-      </a>
-      <div className="about-us-team-text">
-        <p>{memberInfo[props.card]}</p>
-        {/* <p>{memberRoles[props.card]}</p> */}
-      </div>
-    </Container>
-  );
-}
+    return (
+      <Container className="about-us-team-container">
+        <div className="img-hover-zoom">
+          <img
+            src={memberImages[props.card]}
+            alt={memberNames[props.card]}
+            onClick={handleImageClick}
+            id={props.card}
+          />
+        </div>
+        <h4>{memberNames[props.card]}</h4>
+      </Container>
+    );
+  }
 
-export default function AboutUsPage() {
+  function handleSpanClick() {
+    let modal = document.getElementById("partnerBio");
+    modal.style.display = "none";
+  }
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     let navbarLinks = document.querySelectorAll(".nav-link");
@@ -70,6 +72,12 @@ export default function AboutUsPage() {
     });
     let activeLink = document.getElementById("aboutusLink");
     activeLink.classList.add("nav-link-active");
+    let modal = document.getElementById("partnerBio");
+    window.addEventListener("click", function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
   }, []);
 
   const bannerText = {
@@ -124,6 +132,29 @@ export default function AboutUsPage() {
               <TeamCard card={3} />
             </Col>
           </Row>
+        </div>
+        <div id="partnerBio" className="modal">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h2>{memberNames[memberIndex]}</h2>
+              <span className="modal-close" onClick={handleSpanClick}>
+                &times;
+              </span>
+            </div>
+            <div className="modal-body">
+              <p>{memberInfo[memberIndex]}</p>
+            </div>
+            <div className="modal-footer">
+              <a
+                href="https://www.linkedin.com/company/flatiron-energy/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-line-blue"
+              >
+                <span className="fa-brands fa-linkedin"></span> Profile
+              </a>
+            </div>
+          </div>
         </div>
       </Container>
     </Container>
