@@ -93,6 +93,7 @@ export default function NavBar() {
                 About Us
               </Nav.Link>
             </div>
+            
             <div className="nav-link-pad nav-link-margin">
               <Nav.Link
                 id="careersLink"

@@ -19,7 +19,7 @@ import robImage from "./images/rob.jpg";
 // import warehouseIcon from "../images/warehouse_icon2.png";
 
 export default function AboutUsPage() {
-  const [memberIndex, setMemberIndex] = React.useState(0);
+  const [memberIndex, setMemberIndex] = React.useState([0]);
 
   const memberNames = [
     "Jon Poor",
@@ -29,39 +29,81 @@ export default function AboutUsPage() {
   ];
 
   const memberInfo = [
-    "Jon has 24 years of experience working in the energy industry and 8 years in standalone storage. He has held leadership roles in development, consulting, project management, and engineering.",
-    "Brett has 13 years of experience working in the energy industry and 5 years in standalone storage. He has held leadership roles in greenfield development, acquisitions, finance, and transmission modeling.",
-    "Juliana has 13 years of experience working in the energy industry and 8 years in standalone storage. She has held leadership roles in greenfield development, acquisitions, market development, and regulatory affairs.",
-    "Rob has 16 years of experience working in energy, consulting, and finance and 8 years in standalone storage. He has held leadership roles in acquisitions, financing, and battery optimization.",
+    "Jon leads operations and development at Flatiron. He previously held leadership roles in development, consulting, project management, and engineering at ENGIE, National Grid, and General Electric. Jon brings 24 years of experience working in the energy industry and 8 years in standalone storage to his role.",
+    "Brett leads development efforts across the Flatiron portfolio. He previously held leadership roles in greenfield development, acquisitions, finance, and transmission modeling at ENGIE, Socore Energy, and Navigant. Brett brings 13 years of experience working in the energy industry and 5 years in standalone storage to his role.",
+    "Juliana leads commercial operations and development at Flatiron. She previously held leadership roles in greenfield development, acquisitions, market development, and regulatory affairs at ENGIE, Green Charge Networks, and General Electric. Juliana brings 13 years of experience working in the energy industry and 8 years in standalone storage to her role.",
+    "Rob leads financing and acquisitions at Flatiron. He previously held leadership roles in acquisitions, financing, and battery optimization at ENGIE, Advanced Microgrid Solutions, and General Electric. Rob brings 16 years of experience working in the energy, consulting, and finance industries and 8 years in standalone storage to his role.",
   ];
+
+  function handleMouseEnter(props) {
+    let partnerBio = document.getElementById("partnerBio");
+    if (!partnerBio.classList.contains("locked")) {
+      setMemberIndex(parseInt(props.target.id));
+      partnerBio.style.display = "block";
+    }
+  }
+
+  function handleMouseOut(props) {
+    let partnerBio = document.getElementById("partnerBio");
+    let currentElement = document.elementFromPoint(
+      props.clientX,
+      props.clientY
+    );
+    if (
+      !partnerBio.classList.contains("locked") &&
+      (currentElement.parentElement != partnerBio &&
+       currentElement.parentElement.parentElement != partnerBio)
+    ) {
+      partnerBio.style.display = "none";
+    }
+  }
+
+  function handleClose() {
+    let partnerBio = document.getElementById("partnerBio");
+    let partnerModal = document.getElementById("partnerModal");
+    let partnerModalBio = document.getElementById("partnerModalBio");
+    partnerBio.style.display = "none";
+    partnerModal.style.visibility = "hidden";
+    partnerModalBio.style.display = "none";
+    partnerBio.classList.remove("locked");
+  }
+
+  function handleClick() {
+    let partnerBio = document.getElementById("partnerBio");
+    let partnerModal = document.getElementById("partnerModal");
+    let partnerModalBio = document.getElementById("partnerModalBio");
+
+    partnerBio.classList.add("locked");
+    partnerBio.style.display = "none";
+    partnerModal.style.visibility = "visible";
+    partnerModalBio.style.display = "block";
+  }
+
+  function handlePartnerMouseOut() {
+    let partnerBio = document.getElementById("partnerBio");
+    partnerBio.style.display = "none";
+  }
 
   function TeamCard(props) {
     const memberImages = [jonImage, brettImage, julianaImage, robImage];
 
-    function handleImageClick(props) {
-      setMemberIndex(parseInt(props.target.id));
-      let modal = document.getElementById("partnerBio");
-      modal.style.display = "block";
-    }
-
     return (
       <Container className="about-us-team-container">
-        <div className="img-hover-zoom">
+        <div
+          className="img-hover-zoom"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseOut}
+          onClick={handleClick}
+        >
           <img
             src={memberImages[props.card]}
             alt={memberNames[props.card]}
-            onClick={handleImageClick}
             id={props.card}
           />
         </div>
         <h4>{memberNames[props.card]}</h4>
       </Container>
     );
-  }
-
-  function handleSpanClick() {
-    let modal = document.getElementById("partnerBio");
-    modal.style.display = "none";
   }
 
   useEffect(() => {
@@ -72,12 +114,6 @@ export default function AboutUsPage() {
     });
     let activeLink = document.getElementById("aboutusLink");
     activeLink.classList.add("nav-link-active");
-    let modal = document.getElementById("partnerBio");
-    window.addEventListener("click", function(e) {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
-    });
   }, []);
 
   const bannerText = {
@@ -96,7 +132,6 @@ export default function AboutUsPage() {
         gradient="blue"
       />
       <Container className="about-us-mission-container">
-        <h1>Our Mission</h1>
         <div className="about-us-mission-wrapper">
           <a
             href="https://www.bcorporation.net/en-us/certification"
@@ -107,9 +142,9 @@ export default function AboutUsPage() {
             <img src={bcorpLogo} alt="B Corp Logo" />
           </a>
           <p>
-            To reduce emissions that contribute to climate change and
-            environmental injustice through the development of utility-scale
-            energy storage projects.
+            Our mission at Flatiron Energy is to reduce emissions that
+            contribute to climate change and environmental injustice through the
+            development of utility-scale energy storage projects.
           </p>
         </div>
       </Container>
@@ -118,7 +153,7 @@ export default function AboutUsPage() {
         <h1>Managing Partners</h1>
 
         <div>
-          <Row className="mt-5">
+          <Row id="partnerRow" className="mt-5">
             <Col>
               <TeamCard card={0} />
             </Col>
@@ -133,18 +168,41 @@ export default function AboutUsPage() {
             </Col>
           </Row>
         </div>
-        <div id="partnerBio" className="modal">
-          <div className="modal-content">
-            <div className="modal-header">
+
+        <div id="partnerBio" className="partner-bio" onMouseLeave={handlePartnerMouseOut}>
+          <div className="partner-bio-header">
+            <h2>{memberNames[memberIndex]}</h2>
+            <span className="partner-bio-close" onClick={handleClose}>
+              &times;
+            </span>
+          </div>
+          <div className="partner-bio-body">
+            <p>{memberInfo[memberIndex]}</p>
+          </div>
+          <div className="partner-bio-footer">
+            <a
+              href="https://www.linkedin.com/company/flatiron-energy/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-line-blue"
+            >
+              <span className="fa-brands fa-linkedin"></span> Profile
+            </a>
+          </div>
+        </div>
+
+        <div id="partnerModal" className="modal">
+          <div id="partnerModalBio" className="partner-bio">
+            <div className="partner-bio-header">
               <h2>{memberNames[memberIndex]}</h2>
-              <span className="modal-close" onClick={handleSpanClick}>
+              <span className="partner-bio-close" onClick={handleClose}>
                 &times;
               </span>
             </div>
-            <div className="modal-body">
+            <div className="partner-bio-body">
               <p>{memberInfo[memberIndex]}</p>
             </div>
-            <div className="modal-footer">
+            <div className="partner-bio-footer">
               <a
                 href="https://www.linkedin.com/company/flatiron-energy/about/"
                 target="_blank"
@@ -159,6 +217,32 @@ export default function AboutUsPage() {
       </Container>
     </Container>
   );
+}
+
+{
+  /* <div id="partnerBio" className="modal">
+<div className="modal-content">
+  <div className="modal-header">
+    <h2>{memberNames[memberIndex]}</h2>
+    <span className="modal-close" onClick={handleSpanClick}>
+      &times;
+    </span>
+  </div>
+  <div className="modal-body">
+    <p>{memberInfo[memberIndex]}</p>
+  </div>
+  <div className="modal-footer">
+    <a
+      href="https://www.linkedin.com/company/flatiron-energy/about/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="link-line-blue"
+    >
+      <span className="fa-brands fa-linkedin"></span> Profile
+    </a>
+  </div>
+</div>
+</div> */
 }
 
 {

@@ -1,6 +1,6 @@
 .about-us-mission-container {
   margin-top: 48px;
-  /* padding-left: 12px; */
+  padding-left: 12px;
   text-align: left;
 }
 
@@ -12,7 +12,7 @@
 .about-us-mission-wrapper {
   margin-top: 32px;
   margin-bottom: 48px;
-  /* margin-left: 32px; */
+  margin-left: 32px;
   display: flex;
 }
 
@@ -40,6 +40,7 @@
 
 .about-us-team-container {
   width: 290px;
+  text-align: center;
   margin-bottom: 100px;
   padding-left: 0;
   padding-right: 0;
@@ -64,9 +65,6 @@
   width: 290px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
-  display: inline-block;
-  user-select: none;
 }
 
 .img-hover-zoom img {
@@ -78,7 +76,8 @@
 }
 
 .img-hover-zoom:hover img {
-  transform: scale(1.15);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .about-us-team-container h4 {
@@ -87,7 +86,6 @@
   font-weight: 600;
   color: var(--fe-blue);
   font-size: 1.4rem;
-  text-align: center;
 }
 
 .about-us-team-container h5 {
@@ -115,92 +113,8 @@
 
 /* About Us Bio Modal */
 
-.partner-bio {
-  position: fixed;
-  width: 640px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  z-index: 1;
-  box-shadow: 0 3px 20px 0 rgba(0, 67, 89, 0.25);
-  border-radius: 10px;
-}
-
-.partner-bio-header {
-  background-color: var(--fe-blue);
-  color: white;
-  height: 68px;
-  width: 640px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  display: flex;
-}
-
-.partner-bio-header h2 {
-  padding-top: 16px;
-  padding-left: 16px;
-  width: 608px;
-}
-
-.partner-bio-body {
-  background-color: #dbebe2;
-  height: 168px;
-}
-
-.partner-bio-body p {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 8px;
-  line-height: 1.7rem;
-}
-
-.partner-bio-footer {
-  height: 40px;
-  background-color: #dbebe2;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: right;
-}
-
-.partner-bio-footer a {
-  text-decoration: none;
-  margin-right: 16px;
-  color: var(--fe-blue);
-  transition-duration: 0.4s;
-}
-
-.partner-bio-footer a:hover {
-  color: var(--linkedin-blue);
-}
-
-.partner-bio-close {
-  color: white;
-  float: right;
-  font-size: 32px;
-  font-weight: bold;
-  width: 32px;
-  padding-top: 12px;
-  transition-duration: 0.4s;
-}
-
-.partner-bio-close:hover,
-.partner-bio-close:focus {
-  color: var(--fe-green);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-/* About Us Bio Modal */
-
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -214,19 +128,18 @@
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
   animation-duration: 0.4s;
-  visibility: hidden;
 }
 
 .modal-content {
   position: fixed;
-  top: 30%;
+  bottom: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #dbebe2;
   width: 700px;
-  -webkit-animation-name: fadeIn;
+  -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
+  animation-name: slideIn;
   animation-duration: 0.4s;
 }
 

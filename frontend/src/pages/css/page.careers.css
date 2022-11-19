@@ -1,9 +1,9 @@
 .job-openings-container {
-  padding: 64px 0 0;
+  padding: 48px 0 0;
 }
 
 .job-openings-text {
-  margin-left: 30px;
+  margin-left: 12px;
 }
 
 .job-openings-text h1 {
@@ -53,7 +53,7 @@
 }
 
 .careers-values-wrapper {
-  padding-left: 30px;
+  padding-left: 12px;
   margin-bottom: 100px;
 }
 
@@ -64,6 +64,7 @@
 .careers-values-header h1 {
   font-weight: 700;
   color: var(--fe-green);
+  margin: 0;
 }
 
 .careers-value {

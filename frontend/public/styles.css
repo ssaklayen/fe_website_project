@@ -5,6 +5,7 @@
   --fe-dark-highlight: #1b3138;
   --fe-white: #ffffff;
   --fe-black: #000000;
+  --linkedin-blue: #0072b1;
   --info-mobile-height: 500px;
   --info-mobile-slide-size: 336;
   --nav-toggle-color: var(--fe-blue);
@@ -82,7 +83,7 @@ hr {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: var(--fe-blue);
+  background-color: var(--linkedin-blue);
   opacity: 1;
   transition: opacity 0.4s, transform 0.4s;
   transform: scale(0);
