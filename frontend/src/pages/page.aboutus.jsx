@@ -35,6 +35,13 @@ export default function AboutUsPage() {
     "Rob leads financing and acquisitions at Flatiron. He previously held leadership roles in acquisitions, financing, and battery optimization at ENGIE, Advanced Microgrid Solutions, and General Electric. Rob brings 16 years of experience working in the energy, consulting, and finance industries and 8 years in standalone storage to his role.",
   ];
 
+  const memberLinkedIn = [
+    "https://www.linkedin.com/in/jonathan-poor-a83347/",
+    "https://www.linkedin.com/in/brett-cullen-18763aa/",
+    "https://www.linkedin.com/in/juliana-mandell-4052ab21/",
+    "https://www.linkedin.com/in/brinkrob/"
+  ]
+
   function handleMouseEnter(props) {
     let partnerBio = document.getElementById("partnerBio");
     if (!partnerBio.classList.contains("locked")) {
@@ -181,10 +188,11 @@ export default function AboutUsPage() {
           </div>
           <div className="partner-bio-footer">
             <a
-              href="https://www.linkedin.com/company/flatiron-energy/about/"
+              href={memberLinkedIn[memberIndex]}
               target="_blank"
               rel="noopener noreferrer"
               className="link-line-blue"
+              onClick={handleClose}
             >
               <span className="fa-brands fa-linkedin"></span> Profile
             </a>
@@ -204,10 +212,11 @@ export default function AboutUsPage() {
             </div>
             <div className="partner-bio-footer">
               <a
-                href="https://www.linkedin.com/company/flatiron-energy/about/"
+                href={memberLinkedIn[memberIndex]}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link-line-blue"
+                onClick={handleClose}
               >
                 <span className="fa-brands fa-linkedin"></span> Profile
               </a>
