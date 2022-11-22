@@ -6,7 +6,7 @@ import Banner from "./components/banner.component";
 import LandownersInformation from "./components/landowners.information.component";
 import LandownersSteps from "./components/landowners.steps.component";
 
-import landownersBannerImage from "./images/landowners_banner.png";
+import landownersBannerImage from "./images/landowners_banner.jpg";
 
 export default function LandownersPage() {
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function LandownersPage() {
   };
 
   return (
-    <Container className="content-container">
+    <>
       <Banner
         header={bannerText.header}
         body={bannerText.body}
@@ -34,8 +34,10 @@ export default function LandownersPage() {
         imageAlt="Landowner Leasing"
         gradient="blue"
       />
-      <LandownersSteps />
-      <LandownersInformation />
-    </Container>
+      <Container className="content-container">
+        <LandownersSteps />
+        <LandownersInformation />
+      </Container>
+    </>
   );
 }

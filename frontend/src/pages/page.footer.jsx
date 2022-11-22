@@ -26,11 +26,11 @@ export default function FooterBar() {
                     Landowners
                   </Link>
                 </p>
-                <p>
+                {/* <p>
                   <Link to="/energystorage" className="link-line">
                     Energy Storage
                   </Link>
-                </p>
+                </p> */}
                 <p>
                   <Link to="/aboutus" className="link-line">
                     About Us

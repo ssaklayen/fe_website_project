@@ -6,7 +6,7 @@ import "./css/page.aboutus.css";
 
 import Banner from "./components/banner.component";
 
-import aboutusBannerImage from "./images/flatirons2.png";
+import aboutusBannerImage from "./images/aboutus_banner.jpg";
 import bcorpLogo from "./images/bcorplogo3.png";
 import jonImage from "./images/jon.jpg";
 import brettImage from "./images/brett.jpg";
@@ -39,8 +39,8 @@ export default function AboutUsPage() {
     "https://www.linkedin.com/in/jonathan-poor-a83347/",
     "https://www.linkedin.com/in/brett-cullen-18763aa/",
     "https://www.linkedin.com/in/juliana-mandell-4052ab21/",
-    "https://www.linkedin.com/in/brinkrob/"
-  ]
+    "https://www.linkedin.com/in/brinkrob/",
+  ];
 
   function handleMouseEnter(props) {
     let partnerBio = document.getElementById("partnerBio");
@@ -58,8 +58,10 @@ export default function AboutUsPage() {
     );
     if (
       !partnerBio.classList.contains("locked") &&
-      (currentElement.parentElement != partnerBio &&
-       currentElement.parentElement.parentElement != partnerBio)
+      currentElement != null &&
+      currentElement.parentElement != null &&
+      currentElement.parentElement != partnerBio &&
+      currentElement.parentElement.parentElement != partnerBio
     ) {
       partnerBio.style.display = "none";
     }
@@ -130,7 +132,7 @@ export default function AboutUsPage() {
   };
 
   return (
-    <Container className="content-container">
+    <>
       <Banner
         header={bannerText.header}
         body={bannerText.body}
@@ -138,69 +140,69 @@ export default function AboutUsPage() {
         imageAlt="About Us Team Image"
         gradient="blue"
       />
-      <Container className="about-us-mission-container">
-        <div className="about-us-mission-wrapper">
-          <a
-            href="https://www.bcorporation.net/en-us/certification"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-fade"
-          >
-            <img src={bcorpLogo} alt="B Corp Logo" />
-          </a>
-          <p>
-            Our mission at Flatiron Energy is to reduce emissions that
-            contribute to climate change and environmental injustice through the
-            development of utility-scale energy storage projects.
-          </p>
-        </div>
-      </Container>
-      <hr />
-      <Container className="about-us-partners-container">
-        <h1>Managing Partners</h1>
-
-        <div>
-          <Row id="partnerRow" className="mt-5">
-            <Col>
-              <TeamCard card={0} />
-            </Col>
-            <Col>
-              <TeamCard card={1} />
-            </Col>
-            <Col>
-              <TeamCard card={2} />
-            </Col>
-            <Col>
-              <TeamCard card={3} />
-            </Col>
-          </Row>
-        </div>
-
-        <div id="partnerBio" className="partner-bio" onMouseLeave={handlePartnerMouseOut}>
-          <div className="partner-bio-header">
-            <h2>{memberNames[memberIndex]}</h2>
-            <span className="partner-bio-close" onClick={handleClose}>
-              &times;
-            </span>
-          </div>
-          <div className="partner-bio-body">
-            <p>{memberInfo[memberIndex]}</p>
-          </div>
-          <div className="partner-bio-footer">
+      <Container className="content-container">
+        <Container className="about-us-mission-container">
+          <div className="about-us-mission-wrapper">
             <a
-              href={memberLinkedIn[memberIndex]}
+              href="https://www.bcorporation.net/en-us/certification"
               target="_blank"
               rel="noopener noreferrer"
-              className="link-line-blue"
-              onClick={handleClose}
+              className="link-fade"
             >
-              <span className="fa-brands fa-linkedin"></span> Profile
+              <img src={bcorpLogo} alt="B Corp Logo" />
             </a>
+            <p>
+              Our mission at Flatiron Energy is to reduce emissions that
+              contribute to climate change and environmental injustice through
+              the development of utility-scale energy storage projects.
+            </p>
           </div>
-        </div>
+        </Container>
+        <hr />
+        <Container className="about-us-partners-container">
+          <h1>Managing Partners</h1>
 
-        <div id="partnerModal" className="modal">
-          <div id="partnerModalBio" className="partner-bio">
+          <div id="partnerRowLarge" className="mt-5">
+            <Row>
+              <Col align="center">
+                <TeamCard card={0} />
+              </Col>
+              <Col align="center">
+                <TeamCard card={1} />
+              </Col>
+              <Col align="center">
+                <TeamCard card={2} />
+              </Col>
+              <Col align="center">
+                <TeamCard card={3} />
+              </Col>
+            </Row>
+          </div>
+
+          <div id="partnerRowMedium">
+            <Row className="mt-5">
+              <Col align="center">
+                <TeamCard card={0} />
+              </Col>
+              <Col align="center">
+                <TeamCard card={1} />
+              </Col>
+            </Row>
+            <Row>
+              <Col align="center">
+                <TeamCard card={2} />
+              </Col>
+              <Col align="center">
+                <TeamCard card={3} />
+              </Col>
+            </Row>
+          </div>
+
+          <div
+            id="partnerBio"
+            className="partner-bio"
+            onMouseLeave={handlePartnerMouseOut}
+          >
             <div className="partner-bio-header">
               <h2>{memberNames[memberIndex]}</h2>
               <span className="partner-bio-close" onClick={handleClose}>
@@ -222,9 +224,34 @@ export default function AboutUsPage() {
               </a>
             </div>
           </div>
-        </div>
+
+          <div id="partnerModal" className="modal">
+            <div id="partnerModalBio" className="partner-bio">
+              <div className="partner-bio-header">
+                <h2>{memberNames[memberIndex]}</h2>
+                <span className="partner-bio-close" onClick={handleClose}>
+                  &times;
+                </span>
+              </div>
+              <div className="partner-bio-body">
+                <p>{memberInfo[memberIndex]}</p>
+              </div>
+              <div className="partner-bio-footer">
+                <a
+                  href={memberLinkedIn[memberIndex]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-line-blue"
+                  onClick={handleClose}
+                >
+                  <span className="fa-brands fa-linkedin"></span> Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </Container>
       </Container>
-    </Container>
+    </>
   );
 }
 

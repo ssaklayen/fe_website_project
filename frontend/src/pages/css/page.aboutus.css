@@ -145,25 +145,31 @@
 
 .partner-bio-body {
   background-color: #dbebe2;
-  height: 168px;
+  height: auto;
+  margin-bottom: 0;
 }
 
 .partner-bio-body p {
   padding-top: 16px;
   padding-left: 16px;
   padding-right: 8px;
+  padding-bottom: 8px;
   line-height: 1.7rem;
+  margin-bottom: 0;
 }
 
 .partner-bio-footer {
-  height: 40px;
+  height: auto;
   background-color: #dbebe2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: right;
+  padding-bottom: 16px;
+  margin-top: -2px;
 }
 
 .partner-bio-footer a {
+  /* padding-top: 8px; */
   text-decoration: none;
   margin-right: 16px;
   color: var(--fe-blue);
@@ -315,14 +321,32 @@
 }
 /* MEDIA */
 
+@media only screen and (min-width: 1400px) {
+  #partnerRowLarge {
+    display: visible
+  }
+  #partnerRowMedium {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  #partnerRowLarge {
+    display: none
+  }
+  #partnerRowMedium {
+    display: visible;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .about-us-mission-container p {
     width: 100%;
   }
 
-  .about-us-mission-container {
+  /* .about-us-mission-container {
     margin-top: 228px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -341,6 +365,24 @@
 
   .about-us-team-container {
     width: 430px;
+  }
+
+  .partner-bio {
+    width: 400px;
+  }
+
+  /* .partner-bio-body {
+    height: 264px;
+    margin-bottom: 0;
+  } */
+
+  .partner-bio-header {
+    width: 400px;
+  }
+
+  .partner-bio-header h2 {
+    width: 368px;
+    padding-top: 20px;
   }
 }
 

@@ -8,7 +8,7 @@ import Banner from "./components/banner.component";
 import ContactInformation from "./components/contactus.information.component";
 import ContactForm from "./components/contactus.form.component";
 
-import contactBannerImage from "./images/contact_banner.png";
+import contactBannerImage from "./images/contact_banner.jpg";
 
 export default function ContactPage() {
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function ContactPage() {
   };
 
   return (
-    <Container className="content-container contact-page-wrapper">
+    <>
       <Banner
         header={bannerText.header}
         body={bannerText.body}
@@ -36,15 +36,17 @@ export default function ContactPage() {
         imageAlt="Power Lines"
         gradient="blue"
       />
-      <Row className="contact-page-row-wrapper">
-        <Col id="contactInformation">
-          <ContactInformation />
-        </Col>
+      <Container className="content-container contact-page-wrapper">
+        <Row className="contact-page-row-wrapper">
+          <Col id="contactInformation">
+            <ContactInformation />
+          </Col>
 
-        <Col>
-          <ContactForm />
-        </Col>
-      </Row>
-    </Container>
+          <Col>
+            <ContactForm />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }

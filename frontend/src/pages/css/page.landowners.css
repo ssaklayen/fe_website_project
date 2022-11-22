@@ -206,9 +206,9 @@
     width: 100%;
   }
 
-  .landowners-steps-wrapper {
+  /* .landowners-steps-wrapper {
     margin-top: 180px;
-  }
+  } */
 
   .landowners-bullet-card li {
     font-size: calc(1rem + 0.1vw);
