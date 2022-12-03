@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import "./css/page.main.css";
 
 import hullStreetEnergy from "./images/hullstreetenergy.png";
-import mainBannerImage from "./images/flatirons_banner.png";
+import mainBannerImage from "./images/flatirons_banner.jpg";
 
 export default function SplashPage() {
   const bannerText = {

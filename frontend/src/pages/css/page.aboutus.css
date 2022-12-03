@@ -67,6 +67,7 @@
   cursor: pointer;
   display: inline-block;
   user-select: none;
+  height: auto;
 }
 
 .img-hover-zoom img {

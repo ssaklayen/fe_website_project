@@ -52,7 +52,7 @@ export default function AboutUsPage() {
       let navbarHeight = $("#feNavbar").outerHeight();
       let clientWidth = $("body").innerWidth();
       let windowTop = $(window).scrollTop() + navbarHeight;
-      let partnerIDTopPosition = $("#" + memberID[memberIndex]).position().top;
+      let partnerIDTopPosition = $("#" + memberID[parseInt(props.target.id)]).position().top;
       let windowDistance = partnerIDTopPosition - windowTop;
       if (clientWidth > 767) {
         if (windowDistance < 281) {
@@ -68,7 +68,7 @@ export default function AboutUsPage() {
         }
       }
       
-      console.log(`windowTop: ${windowTop} | partnerIDTopPosition: ${partnerIDTopPosition} | windowDistance: ${windowDistance}  | navbarHeight: ${navbarHeight} | clientWidth: ${clientWidth}`);
+      console.log(`ID: ${props.target} | memberIndex: ${memberIndex}`);
 
       partnerBio.style.display = "block";
     }
