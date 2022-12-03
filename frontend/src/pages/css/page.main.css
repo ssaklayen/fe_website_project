@@ -348,10 +348,6 @@
     display: visible;
   }
 
-  /* .main-banner-caption {
-    margin-top: 180px;
-  } */
-
   .investor-wrapper {
     margin: 100px auto 100px auto;
   }
@@ -426,10 +422,14 @@
   .infographic-text-panel-mobile p {
     font-size: 3.7vw;
   }
+  .main-banner-caption {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
 
   .main-banner-caption h2 {
-    font-size: 4.1vw;
-    line-height: 1.7rem;
+    font-size: .9rem;
+    line-height: 1.3rem;
   }
 
   .strength-wrapper p {

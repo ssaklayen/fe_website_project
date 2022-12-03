@@ -24,7 +24,7 @@
 }
 
 .landowners-information-heading-wrapper h1 {
-  font-size: calc(2rem + 1vw);
+  font-size: 3rem;
   font-weight: 600;
   color: var(--fe-blue);
   text-align: center;
@@ -112,7 +112,6 @@
 .landowners-steps-wrapper {
   width: 100%;
   height: 144px;
-  /* background-color: var(--fe-white); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,13 +178,13 @@
 
 @media only screen and (max-width: 1399px) {
   .landowners-bullet-card li {
-    font-size: calc(1rem + 0.1vw);
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 1199px) {
   .landowners-bullet-card li {
-    font-size: calc(0.9rem);
+    font-size: .9rem;
   }
 
   .landowners-bullet-card {
@@ -194,6 +193,14 @@
 
   .landowners-information-bullets-wrapper {
     margin-top: 32px;
+  }
+
+  .landowners-information-heading-wrapper h1 {
+    font-size: 2.5rem;
+  }
+
+  .landowners-contact-link {
+    font-size: 2.5rem;
   }
 }
 
@@ -206,11 +213,17 @@
     width: 100%;
   }
 
-  /* .landowners-steps-wrapper {
-    margin-top: 180px;
-  } */
-
   .landowners-bullet-card li {
     font-size: calc(1rem + 0.1vw);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .landowners-information-heading-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .landowners-contact-link {
+    font-size: 2rem;
   }
 }

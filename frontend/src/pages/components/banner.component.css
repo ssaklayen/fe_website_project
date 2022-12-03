@@ -49,7 +49,7 @@
     var(--banner-gs),
     var(--banner-ge)
   );
-  /* vertical-align: top; */
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -112,9 +112,9 @@
   }
 }
 
-/* @media only screen and (max-width: 515px) {
+@media only screen and (max-width: 515px) {
   .banner-wrapper-mobile h1 {
-    font-size: 5.5vw;
+    font-size: 1.6rem;
   }
 
   .banner-wrapper-mobile p {
@@ -122,7 +122,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   .banner-wrapper-mobile h1 {
     padding-top: 30px;
   }

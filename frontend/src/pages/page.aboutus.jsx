@@ -61,11 +61,12 @@ export default function AboutUsPage() {
           document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance-55}px`);
         }
       } else {
-        if (windowDistance < 355) {
-          document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance+575}px`);
-        } else {
-          document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance-105}px`);
-        }
+        // if (windowDistance < 300) {
+        //   document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance+575}px`);
+        // } else {
+        //   document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance-105}px`);
+        // }
+        document.documentElement.style.setProperty("--partner-bio-top", `50%`);
       }
       
       console.log(`ID: ${props.target} | memberIndex: ${memberIndex}`);
