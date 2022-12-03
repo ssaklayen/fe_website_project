@@ -30,6 +30,7 @@ export default function NavBar() {
       bg="light"
       expand="xl"
       expanded={expanded}
+      id="feNavbar"
     >
       <Container>
         <Navbar.Brand

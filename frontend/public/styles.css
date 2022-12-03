@@ -11,6 +11,7 @@
   --nav-toggle-color: var(--fe-blue);
   --banner-gs: #40666a;
   --banner-ge: var(--fe-blue);
+  --partner-bio-top: 200px;
 }
 
 body {

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import $ from "jquery";
 import "./css/page.aboutus.css";
 
 import Banner from "./components/banner.component";
@@ -28,6 +29,8 @@ export default function AboutUsPage() {
     "Robert Brink",
   ];
 
+  const memberID = ["jonID", "brettID", "julianaID", "robID"];
+
   const memberInfo = [
     "Jon leads operations and development at Flatiron. He previously held leadership roles in development, consulting, project management, and engineering at ENGIE, National Grid, and General Electric. Jon brings 24 years of experience working in the energy industry and 8 years in standalone storage to his role.",
     "Brett leads development efforts across the Flatiron portfolio. He previously held leadership roles in greenfield development, acquisitions, finance, and transmission modeling at ENGIE, Socore Energy, and Navigant. Brett brings 13 years of experience working in the energy industry and 5 years in standalone storage to his role.",
@@ -46,6 +49,27 @@ export default function AboutUsPage() {
     let partnerBio = document.getElementById("partnerBio");
     if (!partnerBio.classList.contains("locked")) {
       setMemberIndex(parseInt(props.target.id));
+      let navbarHeight = $("#feNavbar").outerHeight();
+      let clientWidth = $("body").innerWidth();
+      let windowTop = $(window).scrollTop() + navbarHeight;
+      let partnerIDTopPosition = $("#" + memberID[memberIndex]).position().top;
+      let windowDistance = partnerIDTopPosition - windowTop;
+      if (clientWidth > 767) {
+        if (windowDistance < 281) {
+          document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance+525}px`);
+        } else {
+          document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance-55}px`);
+        }
+      } else {
+        if (windowDistance < 355) {
+          document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance+575}px`);
+        } else {
+          document.documentElement.style.setProperty("--partner-bio-top", `${windowDistance-105}px`);
+        }
+      }
+      
+      console.log(`windowTop: ${windowTop} | partnerIDTopPosition: ${partnerIDTopPosition} | windowDistance: ${windowDistance}  | navbarHeight: ${navbarHeight} | clientWidth: ${clientWidth}`);
+
       partnerBio.style.display = "block";
     }
   }
@@ -95,7 +119,6 @@ export default function AboutUsPage() {
 
   function TeamCard(props) {
     const memberImages = [jonImage, brettImage, julianaImage, robImage];
-
     return (
       <Container className="about-us-team-container">
         <div
@@ -103,6 +126,7 @@ export default function AboutUsPage() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseOut}
           onClick={handleClick}
+          id={memberID[props.card]}
         >
           <img
             src={memberImages[props.card]}
@@ -116,13 +140,14 @@ export default function AboutUsPage() {
   }
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     let navbarLinks = document.querySelectorAll(".nav-link");
+    let activeLink = document.getElementById("aboutusLink");
     navbarLinks.forEach((navlink) => {
       navlink.classList.remove("nav-link-active");
     });
-    let activeLink = document.getElementById("aboutusLink");
     activeLink.classList.add("nav-link-active");
+
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
   const bannerText = {
@@ -162,33 +187,14 @@ export default function AboutUsPage() {
         <Container className="about-us-partners-container">
           <h1>Managing Partners</h1>
 
-          <div id="partnerRowLarge" className="mt-5">
-            <Row>
+          <div className="mt-5">
+            <Row xl={2} xxl="auto" className="justify-content-md-center">
               <Col align="center">
                 <TeamCard card={0} />
               </Col>
               <Col align="center">
                 <TeamCard card={1} />
               </Col>
-              <Col align="center">
-                <TeamCard card={2} />
-              </Col>
-              <Col align="center">
-                <TeamCard card={3} />
-              </Col>
-            </Row>
-          </div>
-
-          <div id="partnerRowMedium">
-            <Row className="mt-5">
-              <Col align="center">
-                <TeamCard card={0} />
-              </Col>
-              <Col align="center">
-                <TeamCard card={1} />
-              </Col>
-            </Row>
-            <Row>
               <Col align="center">
                 <TeamCard card={2} />
               </Col>
