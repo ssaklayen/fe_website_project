@@ -6,11 +6,16 @@ import "./css/page.energystorage.css";
 
 import Banner from "./components/banner.component";
 
-import energystorageBannerImage from "./images/energystorage_banner2.png";
+import energystorageBannerImage from "./images/energystorage_banner.png";
 import energystorageIconsImage from "./images/energystorage_icons.png";
 import energystorageLoadLevelImage from "./images/energystorage_loadlevel.png";
 import energystorageWarehouseImage from "./images/energystorage_warehouse.png";
 import energystorageInspectionImage from "./images/energystorage_inspection.png";
+
+// import batteryIcon from "../images/battery_icon2.png";
+// import cityIcon from "../images/city_icon2.png";
+// import powerlinesIcon from "../images/powerlines_icon2.png";
+// import warehouseIcon from "../images/warehouse_icon2.png";
 
 export default function EnergyStoragePage() {
   useEffect(() => {
@@ -178,4 +183,84 @@ export default function EnergyStoragePage() {
       </Container>
     </Container>
   );
+}
+
+{
+  /* <div id="partnerBio" className="modal">
+<div className="modal-content">
+  <div className="modal-header">
+    <h2>{memberNames[memberIndex]}</h2>
+    <span className="modal-close" onClick={handleSpanClick}>
+      &times;
+    </span>
+  </div>
+  <div className="modal-body">
+    <p>{memberInfo[memberIndex]}</p>
+  </div>
+  <div className="modal-footer">
+    <a
+      href="https://www.linkedin.com/company/flatiron-energy/about/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="link-line-blue"
+    >
+      <span className="fa-brands fa-linkedin"></span> Profile
+    </a>
+  </div>
+</div>
+</div> */
+}
+
+{
+  /* <div className="about-us-map-container">
+        <div className="about-us-map-text">
+          <p>Technology has advanced the way energy is produced</p>
+          <h2>Flatiron Energy is leading the transition.</h2>
+          <p>
+            Flatiron Energy develops, acquires, and operates energy
+            infrastructure, including technically advanced utility-scale energy
+            storage facilities.
+          </p>
+        </div>
+        <div className="about-us-icon-container">
+          <Row>
+            <Col className="about-us-icon-text">
+              <h4>$65 Million</h4>
+              <p>Invested in energy storage assets</p>
+              <img
+                src={batteryIcon}
+                className="about-us-icon-container-image"
+                alt="Battery Icon"
+              />
+            </Col>
+            <Col className="about-us-icon-text">
+              <h4>$7 Billion</h4>
+              <p>Investment Opportunity</p>
+              <img
+                src={warehouseIcon}
+                className="about-us-icon-container-image"
+                alt="Warehouse Icon"
+              />
+            </Col>
+            <Col className="about-us-icon-text">
+              <h4>21 GW</h4>
+              <p>Current project Pipeline</p>
+              <img
+                src={powerlinesIcon}
+                className="about-us-icon-container-image"
+                alt="Powerlines Icon"
+              />
+            </Col>
+            <Col className="about-us-icon-text">
+              <h4>65+ Years</h4>
+              <p>Leadership Team Industry Experience</p>
+              <img
+                src={cityIcon}
+                className="about-us-icon-container-image"
+                alt="City Icon"
+              />
+            </Col>
+          </Row>
+        </div>
+      </div> */
 }

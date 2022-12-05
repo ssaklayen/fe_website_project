@@ -76,21 +76,11 @@
 }
 
 .banner-image-wrapper-mobile img {
-  /* object-fit: none;
-  object-position: center; */
   max-width: 100%;
   height: auto;
-  /* max-height: 260px; */
 }
 
-
 /* MEDIA */
-
-/* @media only screen and (max-width: 1399px) {
-  .banner-text h1 {
-    font-size: 2.1rem;
-  }
-} */
 
 @media only screen and (max-width: 991px) {
   #bannerDesktop {
@@ -121,9 +111,3 @@
     font-size: 3.3vw;
   }
 }
-
-/* @media only screen and (max-width: 480px) {
-  .banner-wrapper-mobile h1 {
-    padding-top: 30px;
-  }
-} */

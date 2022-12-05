@@ -87,10 +87,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-  /* .job-openings-container  {
-    margin-top: 180px;
-  } */
-
   .job-openings-text p {
     width: 90%;
     margin-left: 0;

@@ -1,6 +1,5 @@
 .about-us-mission-container {
   margin-top: 48px;
-  /* padding-left: 12px; */
   text-align: left;
 }
 
@@ -12,7 +11,6 @@
 .about-us-mission-wrapper {
   margin-top: 32px;
   margin-bottom: 48px;
-  /* margin-left: 32px; */
   display: flex;
 }
 
@@ -38,7 +36,7 @@
 
 /* About Us Team Card */
 
-.about-us-team-container {
+.about-us-partner-container {
   width: 290px;
   margin-bottom: 100px;
   padding-left: 0;
@@ -47,7 +45,7 @@
   margin-right: 0;
 }
 
-/* .about-us-team-container img {
+/* .about-us-partner-container img {
   max-width: 100%;
   height: auto;
   border-radius: 100%;
@@ -55,7 +53,7 @@
   transition: transform .4s ease;
 }
 
-.about-us-team-container img:hover {
+.about-us-partner-container img:hover {
   filter: none;
   transform: scale(1.5);
 } */
@@ -82,7 +80,7 @@
   transform: scale(1.15);
 }
 
-.about-us-team-container h4 {
+.about-us-partner-container h4 {
   margin-top: 16px;
   margin-bottom: 0;
   font-weight: 600;
@@ -91,27 +89,17 @@
   text-align: center;
 }
 
-.about-us-team-container h5 {
+.about-us-partner-container h5 {
   color: var(--fe-green);
   font-weight: 400;
   margin-bottom: 4px;
   font-size: 1.1rem;
 }
 
-.about-us-team-container a {
+.about-us-partner-container a {
   text-decoration: none;
   transition-duration: 0.4s;
   font-size: 0.8rem;
-}
-
-.about-us-team-text {
-  text-align: justify;
-  margin-top: 16px;
-}
-
-.about-us-team-text p {
-  font-size: 0.9rem;
-  margin-top: 8px;
 }
 
 /* About Us Bio Modal */
@@ -170,7 +158,6 @@
 }
 
 .partner-bio-footer a {
-  /* padding-top: 8px; */
   text-decoration: none;
   margin-right: 16px;
   color: var(--fe-blue);
@@ -198,156 +185,12 @@
   cursor: pointer;
 }
 
-
-
-
-
-
-
-/* About Us Bio Modal */
-
-.modal {
-  display: block;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgb(0, 0, 0, 0.4);
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
-  visibility: hidden;
-}
-
-.modal-content {
-  position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #dbebe2;
-  width: 700px;
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
-}
-
-.modal-close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  transition-duration: 0.4s;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: var(--fe-green);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 16px 16px;
-  background-color: var(--fe-blue);
-  color: white;
-}
-
-.modal-header h2 {
-  margin: 0;
-}
-
-.modal-body {
-  padding: 2px 16px;
-}
-
-.modal-body p {
-  margin: 24px 0;
-  line-height: 1.7rem;
-}
-
-.modal-footer {
-  padding: 0 16px 16px;
-  border: none;
-}
-
-.modal-footer a {
-  text-decoration: none;
-  color: #0072b1;
-}
-
-@-webkit-keyframes slideIn {
-  from {
-    bottom: -600px;
-    opacity: 0;
-  }
-  to {
-    bottom: 30%;
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    bottom: -600px;
-    opacity: 0;
-  }
-  to {
-    bottom: 30%;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* MEDIA */
-
-/* @media only screen and (min-width: 1400px) {
-  #partnerRowLarge {
-    display: block;
-  }
-  #partnerRowMedium {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1399px) {
-  #partnerRowLarge {
-    display: none;
-  }
-  #partnerRowMedium {
-    display: block;
-  }
-} */
 
 @media only screen and (max-width: 991px) {
   .about-us-mission-container p {
     width: 100%;
   }
-
-  /* .about-us-mission-container {
-    margin-top: 228px;
-  } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -364,18 +207,13 @@
     font-size: 3.5vw;
   }
 
-  .about-us-team-container {
+  .about-us-partner-container {
     width: 430px;
   }
 
   .partner-bio {
     width: 400px;
   }
-
-  /* .partner-bio-body {
-    height: 264px;
-    margin-bottom: 0;
-  } */
 
   .partner-bio-header {
     width: 400px;
@@ -386,58 +224,3 @@
     padding-top: 20px;
   }
 }
-
-/* .about-us-map-container {
-  position: relative;
-  height: 1000px;
-  text-align: center;
-}
-
-.about-us-map-container::before {
-  content: "";
-  background-image: url("./images/usa2.png");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 60%;
-}
-
-.about-us-map-text p {
-  position: relative;
-  opacity: 70%;
-}
-
-.about-us-map-text p:first-child {
-  padding-top: 160px;
-}
-
-.about-us-map-text p:last-child {
-  width: 60%;
-  margin: auto;
-}
-
-.about-us-map-text h2 {
-  position: relative;
-  padding-top: 32px;
-  font-weight: 600;
-}
-
-.about-us-icon-container {
-  position: relative;
-  margin-top: 100px;
-}
-
-.about-us-icon-text p {
-  opacity: 70%;
-}
-
-.about-us-icon-text h4 {
-  font-weight: 600;
-}
-
-.about-us-icon-container-image {
-  opacity: 70%;
-} */

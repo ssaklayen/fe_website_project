@@ -6,10 +6,10 @@ import StepCard from "./landowners.stepcard.component";
 export default function LandownersSteps() {
   return (
     <>
-      <div className="landowners-steps-wrapper">
+      <div className="landowners-steps-heading">
         <h2>HOW IT WORKS</h2>
       </div>
-      <div className="landowners-steps-inner-wrapper">
+      <div className="landowners-steps-wrapper">
         <Row>
           <Col md={12} lg={6} xl={4}>
             <StepCard card={0} />

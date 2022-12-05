@@ -6,7 +6,7 @@ import BulletCard from "./landowners.bulletcard.component";
 import { Link } from "react-router-dom";
 
 import landownersHandshake from "../images/landowners_handshake.png";
-import landownersCity from "../images/landowners_city2.png";
+import landownersCity from "../images/landowners_city.png";
 
 export default function LandownersInformation() {
   return (

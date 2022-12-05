@@ -428,7 +428,7 @@
   }
 
   .main-banner-caption h2 {
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1.3rem;
   }
 
@@ -440,4 +440,3 @@
     --info-mobile-slide-size: 336;
   }
 }
-

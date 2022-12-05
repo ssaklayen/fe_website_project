@@ -1,8 +1,7 @@
 import React from "react";
 
-
 export default function BulletCard(props) {
-  const cards = [
+  const bullets = [
     "Backed by an institutional investor and asset manager",
     "Up to 35-year term options",
     "Predictable, long-term lease revenue",
@@ -14,7 +13,7 @@ export default function BulletCard(props) {
   return (
     <div className="landowners-bullet-card">
       <ul>
-        <li>{cards[props.card]}</li>
+        <li>{bullets[props.card]}</li>
       </ul>
     </div>
   );

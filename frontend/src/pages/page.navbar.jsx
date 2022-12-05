@@ -19,7 +19,10 @@ export default function NavBar() {
   useEffect(() => {
     let root = document.documentElement;
     collapsed === false
-      ? root.style.setProperty("--nav-toggle-color", "var(--fe-green-highlight)")
+      ? root.style.setProperty(
+          "--nav-toggle-color",
+          "var(--fe-green-highlight)"
+        )
       : root.style.setProperty("--nav-toggle-color", "var(--fe-blue)");
   });
 

@@ -125,3 +125,58 @@
     height: 300px;
   }
 }
+
+/* .about-us-map-container {
+  position: relative;
+  height: 1000px;
+  text-align: center;
+}
+
+.about-us-map-container::before {
+  content: "";
+  background-image: url("./images/usa2.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 60%;
+}
+
+.about-us-map-text p {
+  position: relative;
+  opacity: 70%;
+}
+
+.about-us-map-text p:first-child {
+  padding-top: 160px;
+}
+
+.about-us-map-text p:last-child {
+  width: 60%;
+  margin: auto;
+}
+
+.about-us-map-text h2 {
+  position: relative;
+  padding-top: 32px;
+  font-weight: 600;
+}
+
+.about-us-icon-container {
+  position: relative;
+  margin-top: 100px;
+}
+
+.about-us-icon-text p {
+  opacity: 70%;
+}
+
+.about-us-icon-text h4 {
+  font-weight: 600;
+}
+
+.about-us-icon-container-image {
+  opacity: 70%;
+} */

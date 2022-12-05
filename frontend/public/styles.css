@@ -19,6 +19,13 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-width: 100%;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
 }
 
 body h1,

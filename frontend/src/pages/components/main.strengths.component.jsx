@@ -4,9 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
-import experience_image from "../images/experience.png";
-import innovative_image from "../images/innovative.png";
-import passionate_image from "../images/passionate.png";
+// import experience_image from "../images/experience.png";
+// import innovative_image from "../images/innovative.png";
+// import passionate_image from "../images/passionate.png";
 
 const Strength = (props) => {
   const slides = {
@@ -16,7 +16,7 @@ const Strength = (props) => {
       "We continue to seek new ideas and to implement pioneering development strategies and first-of-a-kind products.",
       "We are on a mission to build the energy storage infrastructure necessary to enable the clean energy transition.",
     ],
-    image: [experience_image, innovative_image, passionate_image],
+    // image: [experience_image, innovative_image, passionate_image],
   };
 
   return (

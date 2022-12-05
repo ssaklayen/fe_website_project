@@ -1,21 +1,9 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./banner.component.css";
 
 export default function Banner(props) {
-  // React.useEffect(() => {
-  //   if (props.gradient === "blue") {
-  //     document.documentElement.style.setProperty("--banner-gs", "#40666a");
-  //     document.documentElement.style.setProperty("--banner-ge", "var(--fe-blue)");
-  //     document.documentElement.style.setProperty(
-  //       "--banner-text-color",
-  //       "var(--fe-white)"
-  //     );
-  //   }
-  // }, [props.gradient]);
-
   return (
     <div>
       <Row id="bannerDesktop">

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import "./css/page.footer.css";
 
 import fe_symbol from "./images/fe_symbol.png";
-import bcorpwhitepending from "./images/bcorpwhitepending.png";
-import bcorpwhitependingmobile from "./images/bcorpwhitependingmobile.png";
+import bcorpwhitepending from "./images/bcorp_white_logo.png";
+import bcorpwhitependingmobile from "./images/bcorp_white_logo_mobile.png";
 
 export default function FooterBar() {
   return (
