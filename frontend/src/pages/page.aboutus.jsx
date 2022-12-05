@@ -228,7 +228,7 @@ export default function AboutUsPage() {
             </div>
           </div>
 
-          <div id="partnerModal" className="modal">
+          <div id="partnerModal" className="partner-modal">
             <div id="partnerModalBio" className="partner-bio">
               <div className="partner-bio-header">
                 <h2>{partnerNames[partnerIndex]}</h2>
