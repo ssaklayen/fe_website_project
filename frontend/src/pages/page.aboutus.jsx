@@ -19,7 +19,7 @@ export default function AboutUsPage() {
 
   const partnerNames = [
     "Jon Poor",
-    "Brett Cullin",
+    "Brett Cullen",
     "Juliana Mandell",
     "Robert Brink",
   ];

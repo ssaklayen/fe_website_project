@@ -14,12 +14,15 @@
   --partner-bio-top: 200px;
 }
 
+html, body {
+  position: relative;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
 body {
   background-color: var(--fe-white);
   font-family: "Poppins", sans-serif;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  -ms-overflow-style: none;
   scrollbar-width: none;
   max-width: 100%;
 }

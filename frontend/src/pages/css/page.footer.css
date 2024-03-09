@@ -42,16 +42,16 @@
 
   background: -webkit-radial-gradient(
       circle at top left,
-      rgba(64, 102, 106, 0.8),
-      rgba(27, 49, 56, 0.8)
+      rgba(64, 102, 106, 0.6),
+      rgba(27, 49, 56, 0.6)
     ),
-    url(../images/footer_banner.png) center fixed;
+    url(../images/footer_banner.jpg) center center scroll;
   background: radial-gradient(
       circle at top left,
-      rgba(64, 102, 106, 0.8),
-      rgba(27, 49, 56, 0.8)
+      rgba(64, 102, 106, 0.6),
+      rgba(27, 49, 56, 0.6)
     ),
-    url(../images/footer_banner.png) center fixed;
+    url(../images/footer_banner.jpg)  center center scroll;
   background-size: cover;
 }
 

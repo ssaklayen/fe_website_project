@@ -26,11 +26,6 @@ export default function FooterBar() {
                     Landowners
                   </Link>
                 </p>
-                {/* <p>
-                  <Link to="/energystorage" className="link-line">
-                    Energy Storage
-                  </Link>
-                </p> */}
                 <p>
                   <Link to="/aboutus" className="link-line">
                     About Us
@@ -91,7 +86,7 @@ export default function FooterBar() {
                 <img src={fe_symbol} width="240" alt="Flatiron Energy Symbol" />
                 <div className="footer-fe-symbol-text">
                   <p>
-                    Copyright © 2022
+                    Copyright © 2024
                     <br />
                     Flatiron Energy LLC
                   </p>

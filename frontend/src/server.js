@@ -59,7 +59,7 @@ function sendMail(fName, lName, email, phone, company, subject, message) {
 
   const mailOption = {
     from: SENDER_EMAIL_ADDRESS,
-    to: "sabirsaklayen83@gmail.com, info@flatiron.energy",
+    to: "info@flatiron.energy",
     subject: `${subject}`,
     html: `
     <table>
